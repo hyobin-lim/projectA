@@ -1,0 +1,21 @@
+Git 작업 전체 흐름 명령어 정리
+
+# Git 작업 전체 흐름 (한 장소 → 수정 → 원격 반영 → 다른 장소에서 반영 받기)
+
+## 1. 첫 번째 장소 (프로젝트 내려받기 → 수정 → 원격 반영)
+
+git clone <원격저장소URL>
+cd <저장소폴더명>
+git status
+git add .
+git commit -m "작업 내용 설명"
+git push origin main
+
+## 2️. 두 번째 장소 (수정된 파일 내려받기)
+
+# 처음 내려받을 때
+git clone <원격저장소URL>
+
+# 이미 저장소가 있다면 최신 내용 가져오기
+cd <저장소폴더명>
+git pull origin main
