@@ -6,8 +6,6 @@ Ctrt `(백틱)
 저장소 관련:
 - git init → 현재 디렉토리를 Git 저장소로 초기화 (새 프로젝트 시작할 때)
 - git clone <URL> → 원격 저장소를 로컬로 복제 (GitHub 등에서 내려받을 때)
--원격 저장소의 파일을 로컬 저장소로 복제할 때 현재 폴더에 저장
-git clone https://github.com/qwerewqwerew/b-02.git .
 
 변경 사항 관리:
 - git status → 현재 작업 디렉토리 상태 확인 (수정/스테이징 여부)
