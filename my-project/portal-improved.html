@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>국가정신건강정보포털</title>
+  <meta name="description" content="국가정신건강정보포털 - 정신건강정보제공 및 서비스">
+  <meta name="keywords" content="정신건강, 정신질환, 자가검진, 정신의료기관">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --primary-blue: #0075C2;
+      --text-dark: #333333;
+      --text-gray: #666666;
+      --border-light: #EEEEEE;
+      --bg-light: #F5F5F5;
+      --bg-light2: #F8FAFF;
+      --white: #FFFFFF;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--white);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    /* ===========================
+    HEADER & NAVIGATION
+    =========================== */
+    header {
+      background: var(--white);
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      z-index: 100;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+
+    /* Top Area: Logo + Utility Menu */
+    .top_area {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: block;
+      position: relative;
+      text-align: center;
+      height: auto;
+      padding: 10px 40px;
+      background: var(--white);
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .top_area h1 {
+      font-size: 14px;
+      font-weight: normal;
+      margin: 0;
+      padding: 8px 0;
+    }
+
+    .top_area h1 a {
+      color: var(--primary-blue);
+      text-decoration: none;
+    }
+
+    .top_area h1 a:hover {
+      text-decoration: underline;
+    }
+
+    /* Login Utility Menu - Absolute positioned */
+    .login_util {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+      font-size: 12px;
+      position: absolute;
+      top: 10px;
+      right: 40px;
+    }
+
+    .login_util li {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .login_util a {
+      color: var(--primary-blue);
+      text-decoration: none;
+      font-size: 12px;
+    }
+
+    .login_util a:hover {
+      text-decoration: underline;
+    }
+
+    .cartCount {
+      background: #FF0000;
+      color: var(--white);
+      border-radius: 50%;
+      width: 18px;
+      height: 18px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 10px;
+      font-weight: bold;
+    }
+
+    /* GNB Area */
+    .gnb_area {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      height: 60px;
+      padding: 0 40px;
+      background: var(--white);
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .hidden_obj {
+      position: absolute;
+      left: -10000px;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+
+    #gnb {
+      display: flex;
+      gap: 0;
+      align-items: center;
+      flex: 1;
+      height: 100%;
+    }
+
+    #gnb > ul {
+      display: flex;
+      gap: 0;
+      height: 100%;
+      align-items: center;
+    }
+
+    #gnb > ul > li {
+      position: relative;
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+    #gnb > ul > li > a {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      padding: 0 20px;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text-dark);
+      transition: all 0.3s ease;
+    }
+
+    #gnb > ul > li > a:hover {
+      background: var(--bg-light2);
+      color: var(--primary-blue);
+    }
+
+    /* Dropdown Menu */
+    .th2 {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      min-width: 200px;
+      background: var(--white);
+      border-top: 2px solid var(--primary-blue);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      z-index: 10;
+    }
+
+    #gnb > ul > li:hover .th2 {
+      display: block;
+    }
+
+    .th2 li {
+      display: block;
+    }
+
+    .th2 li a {
+      display: block;
+      padding: 12px 20px;
+      font-size: 13px;
+      color: var(--text-dark);
+      transition: all 0.3s ease;
+    }
+
+    .th2 li a:hover {
+      background: var(--bg-light2);
+      color: var(--primary-blue);
+      padding-left: 24px;
+    }
+
+    /* Search Button */
+    .btn_sch {
+      margin-left: auto;
+      padding: 0 20px;
+    }
+
+    .btn_sch a {
+      font-size: 20px;
+      color: var(--text-dark);
+      cursor: pointer;
+    }
+
+    /* Main Content */
+    main {
+      margin-top: 130px;
+      background: var(--white);
+    }
+
+    .wr {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 40px;
+    }
+
+    /* ===========================
+    MAIN SECTIONS
+    =========================== */
+
+    /* Section 01: Hero + Quick Menu */
+    .main_sec01 {
+      background: var(--white);
+      padding: 40px 0;
+    }
+
+    .main_sec01 .flex_box {
+      display: flex;
+      gap: 30px;
+      align-items: flex-start;
+    }
+
+    .main_sec01 .left {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .main_sec01 .right {
+      flex: 1;
+    }
+
+    .main_visual {
+      background: linear-gradient(135deg, #0075C2 0%, #00A8E8 100%);
+      border-radius: 8px;
+      overflow: hidden;
+      aspect-ratio: 16/9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .sch_wrap {
+      background: var(--white);
+      padding: 20px;
+      border: 1px solid var(--border-light);
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .sch_box {
+      display: flex;
+      gap: 10px;
+    }
+
+    .sch_box input[type="text"] {
+      flex: 1;
+      padding: 12px 15px;
+      border: 1px solid var(--border-light);
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    .sch_box input[type="submit"] {
+      padding: 12px 30px;
+      background: var(--primary-blue);
+      color: var(--white);
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .sch_box input[type="submit"]:hover {
+      background: #005FA3;
+    }
+
+    /* Quick Menu Cards */
+    .main_quick {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+
+    .main_quick .flex_box {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+
+    .card01, .card02, .card03, .card04 {
+      padding: 30px 20px;
+      border-radius: 8px;
+      text-align: center;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      min-height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card01 {
+      background: linear-gradient(135deg, #FF6B6B 0%, #FF8787 100%);
+    }
+
+    .card02 {
+      background: linear-gradient(135deg, #4ECDC4 0%, #6EEDDB 100%);
+    }
+
+    .card03 {
+      background: linear-gradient(135deg, #FFB347 0%, #FFCC99 100%);
+    }
+
+    .card04 {
+      background: linear-gradient(135deg, #95E1D3 0%, #C5F9D7 100%);
+    }
+
+    .card01 a, .card02 a, .card03 a, .card04 a {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card01:hover, .card02:hover, .card03:hover, .card04:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+
+    .card01 .tit, .card02 .tit, .card03 .tit, .card04 .tit {
+      color: var(--white);
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+
+    /* Section 02: Mental Health Info */
+    .main_sec02 {
+      background: var(--bg-light2);
+      padding: 60px 0;
+    }
+
+    .main_sec02 .flex_box {
+      display: flex;
+      gap: 40px;
+      align-items: flex-start;
+    }
+
+    .main_sec02 .left {
+      flex: 0.8;
+    }
+
+    .main_sec02 .right {
+      flex: 1.2;
+    }
+
+    .main_tit h2 {
+      font-size: 28px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: var(--text-dark);
+    }
+
+    .main_tit h2 b {
+      color: var(--primary-blue);
+      font-weight: 700;
+    }
+
+    .main_tit p {
+      font-size: 14px;
+      color: var(--text-gray);
+      line-height: 1.6;
+    }
+
+    .info_icon ul {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .info_icon li {
+      text-align: center;
+    }
+
+    .info_icon a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      transition: all 0.3s ease;
+    }
+
+    .info_icon a:hover {
+      transform: translateY(-5px);
+    }
+
+    .info_icon img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+    }
+
+    .info_icon p {
+      font-size: 13px;
+      color: var(--text-dark);
+      font-weight: 500;
+    }
+
+    /* Section 03: Awareness Info */
+    .main_sec03 {
+      background: var(--white);
+      padding: 60px 0;
+    }
+
+    .main_sec03 .flex_box {
+      display: flex;
+      gap: 40px;
+    }
+
+    .main_sec03 .left {
+      flex: 1;
+    }
+
+    .main_sec03 .right {
+      flex: 1;
+    }
+
+    .news_slider {
+      margin-top: 30px;
+    }
+
+    .news_slider .swiper-wr {
+      background: var(--bg-light);
+      border-radius: 8px;
+      padding: 20px;
+      min-height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-gray);
+    }
+
+    .main_news {
+      background: var(--bg-light2);
+      padding: 30px;
+      border-radius: 8px;
+    }
+
+    .main_news .main_tit h2 {
+      margin-bottom: 25px;
+    }
+
+    .notice {
+      background: var(--white);
+      padding: 20px;
+      border-radius: 6px;
+      margin-bottom: 20px;
+      border-left: 4px solid var(--primary-blue);
+      display: flex;
+      gap: 15px;
+      align-items: flex-start;
+    }
+
+    .notice .date {
+      font-size: 12px;
+      color: var(--text-gray);
+      text-align: center;
+      min-width: 50px;
+    }
+
+    .notice .date strong {
+      display: block;
+      font-size: 18px;
+      font-weight: bold;
+      color: var(--primary-blue);
+    }
+
+    .notice .tit p {
+      font-size: 13px;
+      color: var(--text-dark);
+      line-height: 1.5;
+    }
+
+    .main_news .list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .main_news .list li {
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .main_news .list li:last-child {
+      border-bottom: none;
+    }
+
+    .main_news .list a {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+      color: var(--text-dark);
+      transition: all 0.3s ease;
+    }
+
+    .main_news .list a:hover {
+      color: var(--primary-blue);
+    }
+
+    .main_news .list .date {
+      font-size: 12px;
+      color: var(--text-gray);
+      white-space: nowrap;
+      margin-left: 20px;
+    }
+
+    /* Section 04: Organization */
+    .main_sec04 {
+      background: var(--bg-light2);
+      padding: 60px 0;
+    }
+
+    .main_sec04 .flex_box {
+      display: flex;
+      gap: 40px;
+      align-items: flex-start;
+    }
+
+    .main_sec04 .left {
+      flex: 0.8;
+    }
+
+    .main_sec04 .right {
+      flex: 1.2;
+    }
+
+    .agency {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .agency li {
+      background: var(--white);
+      padding: 25px 20px;
+      border-radius: 8px;
+      text-align: center;
+      transition: all 0.3s ease;
+      border: 1px solid var(--border-light);
+    }
+
+    .agency li:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+      border-color: var(--primary-blue);
+    }
+
+    .agency .icon {
+      margin-bottom: 15px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .agency img {
+      max-height: 50px;
+      max-width: 50px;
+    }
+
+    .agency p {
+      font-size: 13px;
+      color: var(--text-dark);
+      font-weight: 500;
+      line-height: 1.5;
+    }
+
+    /* ===========================
+    FOOTER
+    =========================== */
+    footer {
+      background: #333333;
+      color: var(--white);
+      padding: 40px;
+    }
+
+    footer ul {
+      display: flex;
+      gap: 30px;
+      margin-bottom: 30px;
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+      padding-bottom: 20px;
+    }
+
+    footer ul li a {
+      color: var(--white);
+      font-size: 13px;
+      transition: all 0.3s ease;
+    }
+
+    footer ul li a:hover {
+      color: var(--primary-blue);
+    }
+
+    footer ul li a strong {
+      font-weight: bold;
+    }
+
+    .address {
+      display: flex;
+      gap: 30px;
+      align-items: flex-start;
+    }
+
+    .ft-family {
+      position: relative;
+      flex: 1;
+    }
+
+    .ft-family > a {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      color: var(--white);
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .ft-family > a:hover {
+      color: var(--primary-blue);
+    }
+
+    .ft-family > ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: rgba(0,0,0,0.3);
+      min-width: 250px;
+      border-radius: 4px;
+      margin-top: 8px;
+    }
+
+    .ft-family.on > ul {
+      display: block;
+    }
+
+    .ft-family ul li {
+      list-style: none;
+    }
+
+    .ft-family ul li a {
+      display: block;
+      padding: 10px 15px;
+      font-size: 12px;
+      transition: all 0.3s ease;
+    }
+
+    .ft-family ul li a:hover {
+      background: rgba(0,0,0,0.2);
+    }
+
+    address {
+      font-style: normal;
+      font-size: 12px;
+      line-height: 1.8;
+      color: rgba(255,255,255,0.8);
+    }
+
+    .copy {
+      margin-top: 10px;
+      font-size: 11px;
+      color: rgba(255,255,255,0.6);
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .wr {
+        padding: 0 30px;
+      }
+
+      .top_area, .gnb_area {
+        padding: 0 30px;
+      }
+
+      .main_sec01 .flex_box,
+      .main_sec02 .flex_box,
+      .main_sec03 .flex_box,
+      .main_sec04 .flex_box {
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      .agency {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .info_icon ul {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      header {
+        position: static;
+      }
+
+      main {
+        margin-top: 0;
+      }
+
+      .top_area {
+        padding: 10px 20px;
+      }
+
+      .login_util {
+        position: static;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+        gap: 15px;
+      }
+
+      .gnb_area {
+        display: none;
+      }
+
+      .main_quick .flex_box {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .agency {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .info_icon ul {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .address {
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .wr {
+        padding: 0 15px;
+      }
+
+      .main_tit h2 {
+        font-size: 20px;
+      }
+
+      .main_quick .flex_box {
+        grid-template-columns: 1fr;
+      }
+
+      .agency {
+        grid-template-columns: 1fr;
+      }
+
+      .info_icon ul {
+        grid-template-columns: 1fr;
+      }
+
+      footer ul {
+        flex-direction: column;
+        gap: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Skip Menu -->
+  <div id="skip_menu" class="hidden_obj">
+    <ul>
+      <li><a href="#gnb">주메뉴 바로가기</a></li>
+      <li><a href="#container">본문 바로가기</a></li>
+    </ul>
+  </div>
+
+  <!-- Header -->
+  <header id="top">
+    <!-- Top Area: Logo + Utility Menu -->
+    <div class="top_area">
+      <h1><a href="#" title="메인페이지로 이동">국가정신건강정보포털</a></h1>
+      <ul class="login_util">
+        <li><a href="#self-diagnosis">자가검진</a></li>
+        <li><a href="#contents">콘텐츠신청</a><span class="cartCount">0</span></li>
+      </ul>
+    </div>
+
+    <!-- GNB Navigation -->
+    <div class="gnb_area">
+      <h2 class="hidden_obj">주메뉴</h2>
+      <nav id="gnb">
+        <ul>
+          <li>
+            <a href="#">마주해요</a>
+            <ul class="th2">
+              <li><a href="#">마주해요 소개</a></li>
+              <li><a href="#">마주해요 캠페인</a></li>
+              <li><a href="#">연간 캘린더</a></li>
+              <li><a href="#">마주해요 함께한 순간</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#self-diagnosis">자가검진</a>
+            <ul class="th2">
+              <li><a href="#">생애주기별 자가검진</a></li>
+              <li><a href="#">질환별 자가검진</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">정신건강정보</a>
+            <ul class="th2">
+              <li><a href="#">질환별 정보</a></li>
+              <li><a href="#">질환별 FAQ</a></li>
+              <li><a href="#">약정보</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">인식개선정보</a>
+            <ul class="th2">
+              <li><a href="#">칼럼</a></li>
+              <li><a href="#">회복 수기</a></li>
+              <li><a href="#">카드뉴스</a></li>
+              <li><a href="#">동영상</a></li>
+              <li><a href="#">도움이 되는 정보</a></li>
+              <li><a href="#">웹툰</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">정신건강관련기관</a>
+            <ul class="th2">
+              <li><a href="#">정신건강관련기관</a></li>
+              <li><a href="#">유관 기관</a></li>
+              <li><a href="#">관련 단체</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">정신건강통계</a>
+            <ul class="th2">
+              <li><a href="#">정신건강통계</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">소개/알림</a>
+            <ul class="th2">
+              <li><a href="#">소개</a></li>
+              <li><a href="#">콘텐츠 이용안내</a></li>
+              <li><a href="#">공지사항</a></li>
+              <li><a href="#">설문조사</a></li>
+              <li><a href="#">이벤트</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="btn_sch">
+        <a href="#" title="검색">🔍</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="container" class="main">
+    <!-- Section 01: Hero + Quick Menu -->
+    <section class="main_sec01">
+      <div class="wr">
+        <div class="flex_box">
+          <div class="left">
+            <div class="main_visual">
+              정신건강 정보 슬라이더
+            </div>
+          </div>
+          <div class="right">
+            <!-- Search -->
+            <div class="sch_wrap" id="con_wrap">
+              <div class="sch_box">
+                <input type="text" placeholder="정신건강 정보를 찾아보세요." title="검색어 입력">
+                <input type="submit" value="검색">
+              </div>
+            </div>
+
+            <!-- Quick Menu -->
+            <div class="main_quick">
+              <div class="flex_box">
+                <div class="card01">
+                  <a href="#self-diagnosis">
+                    <p class="tit">생애주기별<br>자가검진</p>
+                  </a>
+                </div>
+                <div class="card02">
+                  <a href="#">
+                    <p class="tit">질환별<br>자가검진</p>
+                  </a>
+                </div>
+                <div class="card03">
+                  <a href="#">
+                    <p class="tit">정신건강<br>질환별 정보</p>
+                  </a>
+                </div>
+                <div class="card04">
+                  <a href="#">
+                    <p class="tit">정신건강관련<br>기관</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 02: Mental Health Info -->
+    <section class="main_sec02">
+      <div class="wr">
+        <div class="flex_box">
+          <div class="left">
+            <div class="main_tit">
+              <h2><b>실생활 정신건강</b> 정보</h2>
+              <p><b>실생활에 필요한 정신건강에 관련된 정보</b>를<br>
+                분야별로 빠르게 찾아보세요.</p>
+            </div>
+          </div>
+          <div class="right">
+            <div class="info_icon">
+              <ul>
+                <li>
+                  <a href="#">
+                    <div style="width: 60px; height: 60px; background: #FFB6C1; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto; font-size: 28px;">📰</div>
+                    <p>카드뉴스</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div style="width: 60px; height: 60px; background: #FFD700; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto; font-size: 28px;">🎨</div>
+                    <p>웹툰</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div style="width: 60px; height: 60px; background: #87CEEB; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto; font-size: 28px;">🎬</div>
+                    <p>동영상</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div style="width: 60px; height: 60px; background: #90EE90; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto; font-size: 28px;">📊</div>
+                    <p>통계</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div style="width: 60px; height: 60px; background: #DDA0DD; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto; font-size: 28px;">ℹ️</div>
+                    <p>도움이 되는 정보</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div style="width: 60px; height: 60px; background: #F0E68C; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto; font-size: 28px;">✍️</div>
+                    <p>칼럼</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div style="width: 60px; height: 60px; background: #FFA07A; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto; font-size: 28px;">❓</div>
+                    <p>FAQ</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div style="width: 60px; height: 60px; background: #B0E0E6; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto; font-size: 28px;">💊</div>
+                    <p>약정보</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 03: Awareness Info -->
+    <section class="main_sec03">
+      <div class="wr">
+        <div class="flex_box">
+          <div class="left">
+            <div class="main_tit">
+              <h2><b>인식개선</b>정보</h2>
+            </div>
+            <div class="news_slider">
+              <div class="swiper-wr">
+                인식개선 관련 슬라이더 콘텐츠
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <div class="main_news">
+              <div class="main_tit">
+                <h2>정신건강포털 <b>새소식</b></h2>
+              </div>
+              <div class="notice">
+                <div class="date">
+                  25
+                  <strong>12</strong>
+                </div>
+                <div class="tit">
+                  <p>2025년 중독 주요 지표 모음집</p>
+                </div>
+              </div>
+              <ul class="list">
+                <li>
+                  <a href="#">
+                    <span>국가 정신건강현황 보고서 2024 발간</span>
+                    <span class="date">2025.11.13</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>국가 정신건강현황 통계 이용자 만족도 설문조사</span>
+                    <span class="date">2025.10.31</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>제7회 국립정신건강센터 중독 정신건강 심포지엄</span>
+                    <span class="date">2025.10.16</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>2025년 트라우마 치유주간 홍보 영상</span>
+                    <span class="date">2025.04.09</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 04: Organization -->
+    <section class="main_sec04">
+      <div class="wr">
+        <div class="flex_box">
+          <div class="left">
+            <div class="main_tit">
+              <h2>정신건강관련 <b>기관</b></h2>
+              <p>원하는 기관의 정보를 확인해보세요.</p>
+            </div>
+          </div>
+          <div class="right">
+            <ul class="agency">
+              <li>
+                <a href="#">
+                  <div class="icon">🖊️</div>
+                  <p>정신건강<br>정보신청</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="icon">🏥</div>
+                  <p>정신건강<br>복지센터</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="icon">🆘</div>
+                  <p>자살예방<br>센터</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="icon">🎯</div>
+                  <p>중독관리<br>통합지원센터</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="icon">🏢</div>
+                  <p>정신요양<br>시설</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="icon">⚕️</div>
+                  <p>정신의료<br>기관</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="icon">🗺️</div>
+                  <p>기관지도<br>찾기</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="wr">
+      <ul>
+        <li><a href="#">이용약관</a></li>
+        <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+        <li><a href="#">저작권정책</a></li>
+        <li><a href="#">사이트맵</a></li>
+      </ul>
+      <div class="address">
+        <div class="ft-family">
+          <a href="#">관련 사이트 ⬆</a>
+          <ul>
+            <li><a href="#">보건복지부-국립정신건강센터</a></li>
+          </ul>
+        </div>
+        <address>
+          <p><span>주소: (우)04933 서울특별시 광진구 용마산로 127</span></p>
+          <p><span>대표전화: (02) 2204-0114</span></p>
+          <p class="copy">Copyright National Center for Mental Health All right Reserved.</p>
+        </address>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Footer family menu toggle
+    document.addEventListener('DOMContentLoaded', function() {
+      const familyLink = document.querySelector('.ft-family > a');
+      if (familyLink) {
+        familyLink.addEventListener('click', function(e) {
+          e.preventDefault();
+          document.querySelector('.ft-family').classList.toggle('on');
+        });
+      }
+
+      // Close family menu when clicking outside
+      document.addEventListener('click', function(e) {
+        if (!e.target.closest('.ft-family')) {
+          document.querySelector('.ft-family').classList.remove('on');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
