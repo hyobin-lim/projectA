@@ -1,380 +1,414 @@
-<!-- 
-  [포트폴리오용 정리 노트]
-  1. 불필요한 브라우저 확장 프로그램(CocoShot) 스타일 및 스크립트 제거
-  2. 서버 통신(AJAX, Session Check) 관련 스크립트 제거 또는 주석 처리
-  3. Google Analytics 등 추적 스크립트 제거
-  4. 로컬 환경에서 작동하도록 기본 구조 정리
--->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
-<head>
-    <meta charset="utf-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G069CLDMZR"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-G069CLDMZR");
+    </script>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
 
     <title>국가정신건강정보포털 (Portfolio)</title>
-    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
-    <link  rel= "apple-touch-icon"  sizes= "57x57"  href= "images/favicon/apple-icon-57x57.png" > 
-<link  rel= "apple-touch-icon"  sizes= "60x60"  href= "images/favicon/apple-icon-60x60.png" > 
-<link  rel= "apple-touch-icon"  sizes= "72x72"  href= "images/favicon/apple-icon-72x72.png" > 
-<link  rel= "apple-touch-icon"  sizes= "76x76"  href= "images/favicon/apple-icon-76x76.png" > 
-<link  rel= "apple-touch-icon"  sizes= "114x114"  href= "images/favicon/apple-icon-114x114.png" > 
-<link  rel= "apple-touch-icon"  sizes= "120x120"  href= "images/favicon/apple-icon-120x120.png" > 
-<link  <link rel= "apple-touch-icon"  sizes= "144x144"  href= "images/favicon/apple-icon-144x144.png" > 
-<link  rel= "apple-touch-icon"  sizes= "152x152"  href= "images/favicon/apple-icon-152x152.png" > 
-<link  rel= "apple-touch-icon"  sizes= "180x180"  href= "images/favicon/apple-icon-180x180.png" > 
-<link  rel= "icon"  type= "image/png"  sizes= "192x192"   href= "images/favicon/android-icon-192x192.png" > 
-<link  rel= "icon"  type= "image/png"  sizes= "32x32"  href= "images/favicon/favicon-32x32.png" > 
-<link  rel= "icon"  type= "image/png"  sizes= "96x96"  href= "images/favicon/favicon-96x96.png" > 
-<link  rel= "icon"  type= "image/png"  sizes= "16x16"  href= "images/favicon/favicon-16x16.png" > 
-<link  rel= "manifest"  href= "images/favicon/manifest.json" > 
-<meta  name= "msapplication-TileColor"  content= "#ffffff" > 
-<meta  name= "msapplication-TileImage"  content= "images/favicon/ms-icon-144x144.png" > 
-    
-<link rel="stylesheet" href="css/style.css">
 
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="images/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png" />
 
-    
+    <link rel="stylesheet" href="css/style.css" />
+
     <style>
-        /* 로컬 테스트를 위한 임시 스타일 (이미지가 없을 경우 영역 표시) */
-        .thumb img { min-height: 200px; background: #eee; }
-        .swiper-slide { background: #f9f9f9; }
+      /* 로컬 테스트용 임시 스타일 */
+      .thumb img {
+        min-height: 200px;
+        background: #eee;
+      }
+      .swiper-slide {
+        background: #f9f9f9;
+      }
     </style>
-</head>
+  </head>
 
-<body data-aos-easing="ease" data-aos-duration="800" data-aos-delay="0">
+  <body data-aos-easing="ease" data-aos-duration="800" data-aos-delay="0">
     <!-- popup -->
-  <div class="popup-overlay" id="popupOverlay">
-    <div class="popup">
-      <div class="popup_content">
-        <p>이 프로젝트는 구직용 포트폴리오입니다.</p>
-        <p>국가정신건강정보포털과 무관함을 알려드립니다.</p>
+    <div class="popup-overlay" id="popupOverlay">
+      <div class="popup">
+        <div class="popup_content">
+          <p>이 프로젝트는 구직용 포트폴리오입니다.</p>
+          <p>국가정신건강정보포털과 무관함을 알려드립니다.</p>
+        </div>
+        <button class="popup_close" onclick="closePopup()">닫기</button>
       </div>
-      <button class="popup_close" onclick="closePopup()">닫기</button>
     </div>
-  </div>
-    
+
     <div id="wrap">
-        <!-- Header -->
-        <header id="top">
-            <div class="top_area">
-                <h1>
-                    <a href="./portal-structure.html" title="메인페이지로 이동">
-                        <!-- 로고 이미지가 필요합니다 -->
-                        <img src="./images/ncmhp/contents/logo.png" alt="국가정신건강정보포털 로고" style="height: 40px;"> 
-                    </a>
-                </h1>
-                <ul class="login_util">
-                    <li><a href="#">자가검진</a></li>
-                    <li><a href="#">콘텐츠 신청</a><span class="cartCount cart-count">0</span></li>
+      <!-- Header -->
+      <header id="top">
+        <div class="top_area">
+          <h1>
+            <a href="./portal-structure.html" title="메인페이지로 이동">
+              <img src="./images/ncmhp/contents/logo.png" alt="국가정신건강정보포털 로고" style="height: 40px" />
+            </a>
+          </h1>
+          <ul class="login_util">
+            <li><a href="#">자가검진</a></li>
+            <li><a href="#">콘텐츠 신청</a><span class="cartCount cart-count">0</span></li>
+          </ul>
+        </div>
+
+        <!-- GNB -->
+        <div class="gnb_area">
+          <h2 class="hidden_obj">주메뉴</h2>
+          <button type="button" class="m_nav_btn">주메뉴열기</button>
+          <nav id="gnb" class="gnb_nav gnb_pc">
+            <ul>
+              <li class="th1">
+                <a href="javascript:void(0)">마주해요</a>
+                <ul class="th2 reset">
+                  <li><a href="#">마주해요 소개</a></li>
+                  <li><a href="#">마주해요 캠페인</a></li>
+                  <li><a href="#">연간 캘린더</a></li>
+                  <li><a href="#">마주해요 함께한 순간</a></li>
                 </ul>
+              </li>
+              <li class="th1">
+                <a href="javascript:void(0)">자가검진</a>
+                <ul class="th2 reset">
+                  <li><a href="#">생애주기별 자가검진</a></li>
+                  <li><a href="#">질환별 자가검진</a></li>
+                </ul>
+              </li>
+              <li class="th1">
+                <a href="javascript:void(0)">정신건강정보</a>
+                <ul class="th2 reset">
+                  <li><a href="#">질환별 정보</a></li>
+                  <li><a href="#">질환별 FAQ</a></li>
+                  <li><a href="#">약정보</a></li>
+                </ul>
+              </li>
+              <li class="th1">
+                <a href="javascript:void(0)">인식개선정보</a>
+                <ul class="th2 reset">
+                  <li><a href="#">칼럼</a></li>
+                  <li><a href="#">회복 수기</a></li>
+                  <li><a href="#">카드뉴스</a></li>
+                  <li><a href="#">동영상</a></li>
+                  <li><a href="#">도움이 되는 정보</a></li>
+                  <li><a href="#">웹툰</a></li>
+                </ul>
+              </li>
+              <li class="th1">
+                <a href="javascript:void(0)">정신건강관련기관</a>
+                <ul class="th2 reset">
+                  <li><a href="#">정신건강관련기관</a></li>
+                  <li><a href="#">유관 기관</a></li>
+                  <li><a href="#">관련 단체</a></li>
+                </ul>
+              </li>
+              <li class="th1">
+                <a href="javascript:void(0)">정신건강통계</a>
+                <ul class="th2 reset">
+                  <li><a href="#">정신건강통계</a></li>
+                </ul>
+              </li>
+              <li class="th1">
+                <a href="javascript:void(0)">소개/알림</a>
+                <ul class="th2 reset">
+                  <li><a href="#">소개</a></li>
+                  <li><a href="#">콘텐츠 이용안내</a></li>
+                  <li><a href="#">공지사항</a></li>
+                  <li><a href="#">설문조사</a></li>
+                  <li><a href="#">이벤트</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+
+          <p class="btn_home"><a href="./portal-structure.html">홈으로 가기</a></p>
+          <div class="all_menu">
+            <a href="#"><span class="hidden_obj">전체메뉴</span><i class="xi-bars"></i></a>
+          </div>
+          <div class="btn_sch">
+            <a href="#"><span class="hidden_obj">검색창 열기</span><i class="xi-search"></i></a>
+          </div>
+          <div class="sch_area">
+            <div class="sch_box">
+              <label for="searchDataTop" class="hidden_obj">검색어 입력</label>
+              <input type="text" name="searchDataTop" id="searchDataTop" placeholder="검색어를 입력하세요." title="검색어 입력" />
+              <input type="submit" value="검색" id="searchBtnTop" class="sch_send" />
             </div>
+            <div class="recommend">
+              <span class="keyword_tit">추천검색어</span>
+              <a href="#">#코로나우울</a>
+              <a href="#">#마음건강지침</a>
+              <a href="#">#정신건강</a>
+            </div>
+          </div>
+          <div class="btn_sch_clo">
+            <a href="#"><span class="hidden_obj">검색창 닫기</span><i class="xi-close"></i></a>
+          </div>
+        </div>
+      </header>
 
-            <!-- GNB -->
-            <div class="gnb_area">
-                <h2 class="hidden_obj">주메뉴</h2>
-                <button type="button" class="m_nav_btn">주메뉴열기</button>
-                <div class="gnb_nav gnb_pc">
-                    <nav id="gnb">
-                        
-                        <ul>
-                            <li class="th1">
-                                <a href="javascript:void(0)">마주해요</a>
-                                <ul class="th2 reset">
-                                    <li><a href="#">마주해요 소개</a></li>
-                                    <li><a href="#">마주해요 캠페인</a></li>
-                                    <li><a href="#">연간 캘린더</a></li>
-                                    <li><a href="#">마주해요 함께한 순간</a></li>
-                                </ul>
-                            </li>
-                            <li class="th1">
-                                <a href="javascript:void(0)">자가검진</a>
-                                <ul class="th2 reset">
-                                    <li><a href="#">생애주기별 자가검진</a></li>
-                                    <li><a href="#">질환별 자가검진</a></li>
-                                </ul>
-                            </li>
-                            <li class="th1">
-                                <a href="javascript:void(0)">정신건강정보</a>
-                                <ul class="th2 reset">
-                                    <li><a href="#">질환별 정보</a></li>
-                                    <li><a href="#">질환별 FAQ</a></li>
-                                    <li><a href="#">약정보</a></li>
-                                </ul>
-                            </li>
-                            <li class="th1">
-                                <a href="javascript:void(0)">인식개선정보</a>
-                                <ul class="th2 reset">
-                                    <li><a href="#">칼럼</a></li>
-                                    <li><a href="#">회복 수기</a></li>
-                                    <li><a href="#">카드뉴스</a></li>
-                                    <li><a href="#">동영상</a></li>
-                                    <li><a href="#">도움이 되는 정보</a></li>
-                                    <li><a href="#">웹툰</a></li>
-                                </ul>
-                            </li>
-                            <li class="th1">
-                                <a href="javascript:void(0)">정신건강관련기관</a>
-                                <ul class="th2 reset">
-                                    <li><a href="#">정신건강관련기관</a></li>
-                                    <li><a href="#">유관 기관</a></li>
-                                    <li><a href="#">관련 단체</a></li>
-                                </ul>
-                            </li>
-                            <li class="th1">
-                                <a href="javascript:void(0)">정신건강통계</a>
-                                <ul class="th2 reset">
-                                    <li><a href="#">정신건강통계</a></li>
-                                </ul>
-                            </li>
-                            <li class="th1">
-                                <a href="javascript:void(0)">소개/알림</a>
-                                <ul class="th2 reset">
-                                    <li><a href="#">소개</a></li>
-                                    <li><a href="#">콘텐츠 이용안내</a></li>
-                                    <li><a href="#">공지사항</a></li>
-                                    <li><a href="#">설문조사</a></li>
-                                    <li><a href="#">이벤트</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </nav>
-                    
+      <!-- Main Container -->
+      <section id="container" class="main">
+        <div>
+          <!-- Main Section 01: Visual Slider -->
+          <div class="main_sec01">
+            <div class="flex_box wr">
+              <div class="left">
+                <div class="main_visual">
+                  <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="thumb">
+                          <a href="#"><img src="./images/sample1.jpg" alt="샘플 이미지 1" /></a>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="thumb">
+                          <a href="#"><img src="./images/sample2.jpg" alt="샘플 이미지 2" /></a>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="thumb">
+                          <a href="#"><img src="./images/sample3.jpg" alt="샘플 이미지 3" /></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-control-box">
+                      <p>팝업존</p>
+                      <div class="swiper-pagination swiper-pagination-custom"></div>
+                      <div class="swiper-button-wr">
+                        <div class="swiper-button-prev" tabindex="0" role="button" aria-label="이전 슬라이드"></div>
+                        <div class="swiper-pause-wr">
+                          <div id="pause" tabindex="0" role="button" aria-label="정지"><i class="xi-pause"></i></div>
+                          <div id="play" tabindex="0" role="button" aria-label="재생" style="display: none"><i class="xi-play"></i></div>
+                        </div>
+                        <div class="swiper-button-next" tabindex="0" role="button" aria-label="다음 슬라이드"></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-
-                <!-- Stick Home -->
-                <p class="btn_home"><a href="./portal-structure.html">홈으로 가기</a></p>
-
-                <!-- PC 전체메뉴 -->
-                <div class="all_menu"><a href="#"><span class="hidden_obj">전체메뉴</span><i class="xi-bars"></i></a></div>
-                
-                <!-- 상단검색 -->
-                <div class="btn_sch"><a href="#"><span class="hidden_obj">검색창 열기</span><i class="xi-search"></i></a></div>
-                <div class="sch_area">
+              </div>
+              <div class="right">
+                <!-- 검색 -->
+                <div class="sch_wrap" id="con_wrap">
+                  <div class="sch_all">
                     <div class="sch_box">
-                        <label for="searchDataTop" class="hidden_obj">검색어 입력</label>
-                        <input type="text" name="searchDataTop" id="searchDataTop" placeholder="검색어를 입력하세요." title="검색어 입력">
-                        <input type="submit" value="검색" id="searchBtnTop" class="sch_send">
+                      <div class="input_area">
+                        <label for="searchData" class="hidden_obj">검색어 입력</label>
+                        <input type="text" name="searchData" id="searchData" placeholder="정신건강 정보를 찾아보세요." title="검색어 입력" />
+                        <input type="submit" value="검색" id="searchBtn" class="sch_send" />
+                      </div>
                     </div>
-                    <div class="recommend">
-                        <span class="keyword_tit">추천검색어</span>
-                        <a href="#">#코로나우울</a>
-                        <a href="#">#마음건강지침</a>
-                        <a href="#">#정신건강</a>
-                    </div>
+                  </div>
                 </div>
-                <div class="btn_sch_clo"><a href="#"><span class="hidden_obj">검색창 닫기</span><i class="xi-close"></i></a></div>
+                <!-- 퀵메뉴 -->
+                <div class="main_quick">
+                  <div class="flex_box">
+                    <div class="card01">
+                      <a href="#"
+                        ><p class="tit">생애주기별 <br />자가검진</p></a
+                      >
+                    </div>
+                    <div class="card02">
+                      <a href="#"
+                        ><p class="tit">질환별 <br />자가검진</p></a
+                      >
+                    </div>
+                    <div class="card03">
+                      <a href="#"><p class="tit">정신건강 질환별 정보</p></a>
+                    </div>
+                    <div class="card04">
+                      <a href="#"><p class="tit">정신건강관련기관</p></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </header>
+          </div>
 
-        <!-- Main Container -->
-        <section id="container" class="main">
-            <div>
-                <!-- Main Section 01: Visual Slider -->
-                <div class="main_sec01">
-                    <div class="flex_box wr">
-                        <div class="left">
-                            <div class="main_visual">
-                                <div class="swiper-container">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="thumb">
-                                                <a href="#"><img src="./images/sample1.jpg" alt="샘플 이미지 1"></a>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="thumb">
-                                                <a href="#"><img src="./images/sample2.jpg" alt="샘플 이미지 2"></a>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="thumb">
-                                                <a href="#"><img src="./images/sample3.jpg" alt="샘플 이미지 3"></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-control-box">
-                                        <p>팝업존</p>
-                                        <div class="swiper-pagination swiper-pagination-custom"></div>
-                                        <div class="swiper-button-wr">
-                                            <div class="swiper-button-prev" tabindex="0" role="button" aria-label="이전 슬라이드"></div>
-                                            <div class="swiper-pause-wr">
-                                                <div id="puase" tabindex="0" role="button" aria-label="정지"><i class="xi-pause"></i></div>
-                                                <div id="play" tabindex="0" role="button" aria-label="재생" style="display:none;"><i class="xi-play"></i></div>
-                                            </div>
-                                            <div class="swiper-button-next" tabindex="0" role="button" aria-label="다음 슬라이드"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="right">
-                            <!-- 검색 -->
-                            <div class="sch_wrap" id="con_wrap">
-                                <div class="sch_all">
-                                    <div class="sch_box">
-                                        <div class="input_area">
-                                            <label for="searchData" class="hidden_obj">검색어 입력</label>
-                                            <input type="text" name="searchData" id="searchData" placeholder="정신건강 정보를 찾아보세요." title="검색어 입력">
-                                            <input type="submit" value="검색" id="searchBtn" class="sch_send">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- 퀵메뉴 -->
-                            <div class="main_quick">
-                                <div class="flex_box">
-                                    <div class="card01"><a href="#"><p class="tit">생애주기별 <br>자가검진</p></a></div>
-                                    <div class="card02"><a href="#"><p class="tit">질환별 <br>자가검진</p></a></div>
-                                    <div class="card03"><a href="#"><p class="tit">정신건강 질환별 정보</p></a></div>
-                                    <div class="card04"><a href="#"><p class="tit">정신건강관련기관</p></a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+          <!-- Main Section 02: Icons -->
+          <div class="main_sec02">
+            <div class="flex_box wr" data-aos="fade-up">
+              <div class="left">
+                <div class="main_tit">
+                  <h2><b>실생활 정신건강</b> 정보</h2>
+                  <p><b>실생활에 필요한 정신건강에 관련된 정보</b>를 <br />분야별로 빠르게 찾아보세요.</p>
                 </div>
-
-                <!-- Main Section 02: Icons -->
-                <div class="main_sec02">
-                    <div class="flex_box wr" data-aos="fade-up">
-                        <div class="left">
-                            <div class="main_tit">
-                                <h2><b>실생활 정신건강</b> 정보</h2>
-                                <p><b>실생활에 필요한 정신건강에 관련된 정보</b>를 <br>분야별로 빠르게 찾아보세요.</p>
-                            </div>
-                        </div>
-                        <div class="right">
-                            <div class="info_icon">
-                                <ul class="flex_box">
-                                    <li><a href="#"><img src="./images/ncmhp/contents/main_sec02_icon01.png" alt=""><p>카드뉴스</p></a></li>
-                                    <li><a href="#"><img src="./images/ncmhp/contents/main_sec02_icon02.png" alt=""><p>웹툰</p></a></li>
-                                    <li><a href="#"><img src="./images/ncmhp/contents/main_sec02_icon03.png" alt=""><p>동영상</p></a></li>
-                                    <li><a href="#"><img src="./images/ncmhp/contents/main_sec02_icon04.png" alt=""><p>통계</p></a></li>
-                                    <li><a href="#"><img src="./images/ncmhp/contents/main_sec02_icon05.png" alt=""><p>도움이 되는 정보</p></a></li>
-                                    <li><a href="#"><img src="./images/ncmhp/contents/main_sec02_icon06.png" alt=""><p>칼럼</p></a></li>
-                                    <li><a href="#"><img src="./images/ncmhp/contents/main_sec02_icon07.png" alt="F"><p>FAQ</p></a></li>
-                                    <li><a href="#"><img src="./images/ncmhp/contents/main_sec02_icon08.png" alt=""><p>약정보</p></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+              <div class="right">
+                <div class="info_icon">
+                  <ul class="flex_box">
+                    <li>
+                      <a href="#"
+                        ><img src="./images/ncmhp/contents/main_sec02_icon01.png" alt="카드뉴스 아이콘" />
+                        <p>카드뉴스</p></a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img src="./images/ncmhp/contents/main_sec02_icon02.png" alt="웹툰 아이콘" />
+                        <p>웹툰</p></a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img src="./images/ncmhp/contents/main_sec02_icon03.png" alt="동영상 아이콘" />
+                        <p>동영상</p></a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img src="./images/ncmhp/contents/main_sec02_icon04.png" alt="통계 아이콘" />
+                        <p>통계</p></a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img src="./images/ncmhp/contents/main_sec02_icon05.png" alt="도움이 되는 정보 아이콘" />
+                        <p>도움이 되는 정보</p></a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img src="./images/ncmhp/contents/main_sec02_icon06.png" alt="칼럼 아이콘" />
+                        <p>칼럼</p></a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img src="./images/ncmhp/contents/main_sec02_icon07.png" alt="FAQ 아이콘" />
+                        <p>FAQ</p></a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img src="./images/ncmhp/contents/main_sec02_icon08.png" alt="약정보 아이콘" />
+                        <p>약정보</p></a
+                      >
+                    </li>
+                  </ul>
                 </div>
-
-                <!-- Main Section 03: News Slider -->
-                <div class="main_sec03">
-                    <div class="flex_box wr" data-aos="fade-up">
-                        <div class="left">
-                            <div class="main_tit">
-                                <h2><b>인식개선</b>정보</h2>
-                            </div>
-                            <div class="news_slider">
-                                <div class="swiper-wr">
-                                    <div class="swiper-container">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide">
-                                                <a href="#">
-                                                    <div class="thumb"><img src="./images/sample_news1.jpg" alt="뉴스 이미지 1"></div>
-                                                </a>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <a href="#">
-                                                    <div class="thumb"><img src="./images/sample_news2.jpg" alt="뉴스 이미지 2"></div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-button-wr">
-                                            <div class="swiper-button-prev" tabindex="0" role="button"></div>
-                                            <div class="swiper-pause-wr">
-                                                <div id="puaseNews" tabindex="0" role="button"><i class="xi-pause"></i></div>
-                                                <div id="playNews" tabindex="0" role="button" style="display: none;"><i class="xi-play"></i></div>
-                                            </div>
-                                            <div class="swiper-button-next" tabindex="0" role="button"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="right">
-                            <div class="main_news">
-                                <div class="main_tit">
-                                    <h2>정신건강포털 <b>새소식</b></h2>
-                                </div>
-                                <div class="notice">
-                                    <a href="#">
-                                        <div class="date">2025.12<strong>15</strong></div>
-                                        <div class="tit">
-                                            <span class="hidden_obj">새글</span>
-                                            <p>2025년 중독 주요 지표 모음집</p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <ul class="list">
-                                    <li><a href="#">「국가 정신건강현황 보고서 2024」 발간 <span class="date">2025.11.13</span></a></li>
-                                    <li><a href="#">국가 정신건강현황 통계 이용자 만족도 설문조사 <span class="date">2025.10.31</span></a></li>
-                                    <li><a href="#">중독 정신건강 심포지엄 <span class="date">2025.10.16</span></a></li>
-                                    <li><a href="#">트라우마 치유주간 홍보 영상 <span class="date">2025.04.09</span></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Main Section 04: Agency -->
-                <div class="main_sec04">
-                    <div class="flex_box wr" data-aos="fade-up">
-                        <div class="left">
-                            <div class="main_tit">
-                                <h2>정신건강관련 <b>기관</b></h2>
-                                <p>원하는 기관의 정보를 확인해보세요.</p>
-                            </div>
-                        </div>
-                        <div class="right">
-                            <ul class="agency flex_box">
-                                <li><a href="#"><div class="icon"><img src="./images/ncmhp/contents/main_sec04_icon01.png" alt=""></div><p>정신건강정보신청</p></a></li>
-                                <li><a href="#"><div class="icon"><img src="./images/ncmhp/contents/main_sec04_icon02.png" alt=""></div><p>정신건강복지센터</p></a></li>
-                                <li><a href="#"><div class="icon"><img src="./images/ncmhp/contents/main_sec04_icon03.png" alt=""></div><p>자살예방센터</p></a></li>
-                                <li><a href="#"><div class="icon"><img src="./images/ncmhp/contents/main_sec04_icon04.png" alt=""></div><p>중독관리통합<br>지원센터</p></a></li>
-                                <li><a href="#"><div class="icon"><img src="./images/ncmhp/contents/main_sec04_icon05.png" alt=""></div><p>정신요양시설</p></a></li>
-                                <li><a href="#"><div class="icon"><img src="./images/ncmhp/contents/main_sec04_icon06.png" alt=""></div><p>정신의료기관</p></a></li>
-                                <li><a href="#"><div class="icon"><img src="./images/ncmhp/contents/main_sec04_icon07.png" alt=""></div><p>기관지도찾기</p></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-        </section>
+          </div>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <div>
-                <ul>
-                    <li><a href="#">이용약관</a></li>
-                    <li><a href="#" target="_blank"><strong>개인정보처리방침</strong></a></li>
-                    <li><a href="#">저작권정책</a></li>
-                    <li><a href="#">사이트맵</a></li>
+          <!-- Main Section 04: Agency -->
+          <div class="main_sec04">
+            <div class="flex_box wr" data-aos="fade-up">
+              <div class="left">
+                <div class="main_tit">
+                  <h2>정신건강관련 <b>기관</b></h2>
+                  <p>원하는 기관의 정보를 확인해보세요.</p>
+                </div>
+              </div>
+              <div class="right">
+                <ul class="agency flex_box">
+                  <li>
+                    <a href="#"
+                      ><div class="icon"><img src="./images/ncmhp/contents/main_sec04_icon01.png" alt="정신건강정보신청 아이콘" /></div>
+                      <p>정신건강정보신청</p></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><div class="icon"><img src="./images/ncmhp/contents/main_sec04_icon02.png" alt="정신건강복지센터 아이콘" /></div>
+                      <p>정신건강복지센터</p></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><div class="icon"><img src="./images/ncmhp/contents/main_sec04_icon03.png" alt="자살예방센터 아이콘" /></div>
+                      <p>자살예방센터</p></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><div class="icon"><img src="./images/ncmhp/contents/main_sec04_icon04.png" alt="중독관리통합지원센터 아이콘" /></div>
+                      <p>중독관리통합<br />지원센터</p></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><div class="icon"><img src="./images/ncmhp/contents/main_sec04_icon05.png" alt="정신요양시설 아이콘" /></div>
+                      <p>정신요양시설</p></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><div class="icon"><img src="./images/ncmhp/contents/main_sec04_icon06.png" alt="정신의료기관 아이콘" /></div>
+                      <p>정신의료기관</p></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><div class="icon"><img src="./images/ncmhp/contents/main_sec04_icon07.png" alt="기관지도찾기 아이콘" /></div>
+                      <p>기관지도찾기</p></a
+                    >
+                  </li>
                 </ul>
-                <div class="address">
-                    <div class="ft-family">
-                        <a href="#">관련 사이트<i class="xi-angle-up-min"></i></a>
-                        <ul>
-                            <li><a href="#" target="_blank">보건복지부-국립정신건강센터</a></li>
-                        </ul>
-                    </div>
-                    <span>
-                        <!-- WA 인증 마크 이미지 -->
-                        <img src="./images/ncmhp/cms/WA_img.png" style="width:80px;margin-left:20px;margin-top:10px;" alt="WA인증마크">
-                    </span>
-                    <address>
-                        <p><span>주소 : (우)04933 서울특별시 광진구 용마산로 127 </span><span>대표전화 : (02) 2204-0114 </span></p>
-                        <p class="copy">Copyright National Center for Mental Health All right Reserved.</p>
-                    </address>
-                </div>
+              </div>
             </div>
-        </footer>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div>
+          <ul>
+            <li><a href="#">이용약관</a></li>
+            <li>
+              <a href="#" target="_blank"><strong>개인정보처리방침</strong></a>
+            </li>
+            <li><a href="#">저작권정책</a></li>
+            <li><a href="#">사이트맵</a></li>
+          </ul>
+          <div class="address">
+            <div class="ft-family">
+              <a href="#">관련 사이트<i class="xi-angle-up-min"></i></a>
+              <ul>
+                <li><a href="#" target="_blank">보건복지부-국립정신건강센터</a></li>
+              </ul>
+            </div>
+            <img src="./images/ncmhp/cms/WA_img.png" style="width: 80px; margin-left: 20px; margin-top: 10px" alt="WA 인증마크" />
+            <address>
+              <p>주소 : (우)04933 서울특별시 광진구 용마산로 127</p>
+              <p>대표전화 : (02) 2204-0114</p>
+            </address>
+            <p class="copy">
+              <small>Copyright National Center for Mental Health All rights reserved.</small>
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
+    <!-- wrap 끝 -->
 
-
-<script src="js/script.js"></script>
-
-</body>
+    <script src="js/script.js"></script>
+  </body>
 </html>
