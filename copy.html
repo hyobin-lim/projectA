@@ -1,0 +1,1204 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>국가정신건강정보포털</title>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+    <meta name="title" content="국가정신건강정보포털" />
+    <meta name="keywords" content="생애주기별검진,질환별자가검진,정신건강정보신청,질환별정보,약정보,회복수기,컬럼" />
+    <meta
+      name="description"
+      content="국민들에게 검증된 양질의 정신건강정보를 제공합니다.국민의 수요에 기반하여 전문가에 의해 검증된 양질의 정신건강 정보를 통합적ㆍ체계적으로 제공하는 공공포털입니다.국가정신건강정보포털은 정신건강 질병정보, 자가진단, 의료기관 정보, 의약품 정보 등 각 기관별로 분산된 정보를 통합ㆍ연계하여
+국민들이 정신건강 질병 관련 필요한 정보를 한 곳에서 얻을 수 있도록 정보제공 채널을 일원화하였습니다."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="국가정신건강정보포털" />
+    <meta
+      property="og:description"
+      content="국민들에게 검증된 양질의 정신건강정보를 제공합니다.국민의 수요에 기반하여 전문가에 의해 검증된 양질의 정신건강 정보를 통합적ㆍ체계적으로 제공하는 공공포털입니다.국가정신건강정보포털은 정신건강 질병정보, 자가진단, 의료기관 정보, 의약품 정보 등 각 기관별로 분산된 정보를 통합ㆍ연계하여
+국민들이 정신건강 질병 관련 필요한 정보를 한 곳에서 얻을 수 있도록 정보제공 채널을 일원화하였습니다."
+    />
+    <meta property="og:image" content="https://www.mentalhealth.go.kr/images/ncmhp/contents/logo_sns.jpg" />
+    <meta property="og:url" content="https://www.mentalhealth.go.kr/" />
+
+    <!-- 추가 -->
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-5Y97CFSG9V&amp;cx=c&amp;gtm=4e61q1"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css" />
+    <link rel="stylesheet" href="/css/ncmhp/xeicon.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ungveloper/web-fonts/SCoreDream/font-face.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ungveloper/web-fonts/SCoreDream/font-family.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- //추가 -->
+
+    <link type="text/css" rel="stylesheet" href="/css/ncmhp/jqueryui.css" />
+    <link rel="stylesheet" href="/css/ncmhp/portal_reset.css" type="text/css" />
+    <link rel="stylesheet" href="/css/ncmhp/portal_layout.css?v=20250627" type="text/css" />
+    <link rel="stylesheet" href="/css/ncmhp/portal_contents.css?v=20251206" type="text/css" />
+    <!-- 구글 애널리틱스 script -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-172724630-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-172724630-1");
+    </script>
+    <script src="/js/ncmhp/common/jquery.min.js"></script>
+    <script src="/js/ncmhp/common/jquery-ui.min.js"></script>
+    <script src="/js/ncmhp/common/jquery-migrate-3.0.0.js"></script>
+    <script src="/js/ncmhp/common/slick.min.js"></script>
+    <script src="/js/ncmhp/portal_contents.js?v=20250717"></script>
+    <script src="/js/ncmhp/common/common.js"></script>
+  </head>
+  <body data-aos-easing="ease" data-aos-duration="800" data-aos-delay="0">
+    <div id="skip_menu">
+      <ul>
+        <li><a href="#gnb">주메뉴 바로가기</a></li>
+        <li><a href="#con_wrap">본문 바로가기</a></li>
+      </ul>
+    </div>
+    <div id="wrap">
+      <header id="top">
+        <script type="text/javascript">
+          $(document).ready(function () {
+            //회원 서비스 사용 여부  ( 국가정신건강서비스포털 고도화('22) 회원 서비스 중지 요구사항 )
+            moveCheckLoginMenu = function (url) {
+              moveMenu(url);
+            };
+
+            /** 페이지 이동
+             **/
+            moveMenu = function (url, id) {
+              // 메뉴 Hit
+              if (typeof id != "undefined" && id != null && id != "") {
+                $.ajax({
+                  type: "POST",
+                  url: "/portal/menu/menuHit.do",
+                  data: {
+                    menuNo: id,
+                  },
+                  async: false,
+                  dataType: "json",
+                  success: function (returnData, status) {},
+                });
+              }
+
+              //$("#contents").children().remove();
+              //$("#contents").load(""+url+"");
+
+              //if(url != "" && url !="dir"  && url !="#"){
+              //	setTimeout(function(){
+              //		loadingPop();
+              //	},5000);
+              //}
+
+              if (url != "" && url != "dir") window.location.href = url;
+            };
+
+            /** 로그아웃
+             **/
+            logout = function () {
+              if (confirm("로그아웃 하시겠습니까?")) {
+                window.location.href = "/portal/login/actionLogout.do";
+              }
+            };
+
+            var indvdlTmprPasswordAtVal = "null";
+            var passwordValidDeVal = "null";
+            if (indvdlTmprPasswordAtVal == "Y") {
+              var modal = document.getElementById("passwordChange");
+              modal.style.display = "block";
+              return;
+            } else if (passwordValidDeVal == "Y") {
+              var modal2 = document.getElementById("passwordChange2");
+              modal2.style.display = "block";
+              return;
+            }
+
+            /*
+	sessionChk = function() {
+
+		$.ajax({
+			type:"POST",
+			url:"/portal/login/sessCheck.do",
+			data: $("#listForm").serialize(),
+			dataType : 'json',
+			success:function(returnData, status){
+				if(returnData.sess == "Y")
+				setTimeout(eval('sessionChk'),300000);
+				else
+				sessInvalidModal();
+			},
+			error:function(e){
+				console.log(e);
+			}
+		});
+
+	};
+
+	cudSess = function() {
+	  var rtnVal = "NN";
+	  
+	  return rtnVal;
+
+	};
+
+	if('' !='' || ''!=''){
+		sessionChk();
+	}
+	*/
+
+            sessInvalidModal = function () {
+              var modal = document.getElementById("sessInvalid");
+              modal.style.display = "block";
+            };
+
+            closeSessPop = function () {
+              var modal = document.getElementById("sessInvalid");
+              modal.style.display = "none";
+              location.href = "/portal/main/index.do";
+            };
+
+            $("#searchDataTop").keypress(function (e) {
+              if (e.keyCode == 13) {
+                fnSearchBtnTop();
+              }
+            });
+          });
+
+          function loadingPop() {
+            var pop = document.getElementById("lodingPop");
+            pop.style.display = "block";
+          }
+          //2022-12 국가정신건강서비스포털 고도화('22) 회원 서비스 중지
+
+          function myCtntPopClose() {
+            var modal = document.getElementById("myCtntDiv");
+            modal.style.display = "none";
+            $(".scrap")[0].focus(); /* 웹접근성 webaccess_pub   */
+          }
+
+          function myCtntSave() {
+            var sendctntSj = $("#ctntSj").val();
+            if (sendctntSj == null || sendctntSj.trim() == "") {
+              alert("페이지명을 입력해 주세요.");
+              return;
+            }
+
+            var myctntForm = $("<form></form>");
+            //set attribute (form)
+            myctntForm.attr("name", "myctntForm");
+            myctntForm.attr("id", "myctntForm");
+            myctntForm.attr("method", "post");
+            // create element & set attribute (input)
+            myctntForm.append($("<input/>", { type: "hidden", name: "ctntSj", value: $("#ctntSj").val() }));
+            myctntForm.append($("<input/>", { type: "hidden", name: "ctntUrl", value: $("#myctntUrl").text() }));
+            // append form (to body)
+            myctntForm.appendTo("body");
+            // submit form
+            //newForm.submt();
+            var formData = new FormData($("#myctntForm")[0]);
+            $.ajax({
+              type: "POST",
+              url: "/portal/myctnt/executeMyCtnt.do",
+              data: formData,
+              dataType: "json",
+              processData: false,
+              contentType: false,
+              success: function (returnData, status) {
+                if (confirm(returnData.message)) {
+                  if (returnData.result) {
+                    var modal = document.getElementById("myCtntDiv");
+                    modal.style.display = "none";
+                    location.href = "/portal/mypage/myctnt/myctntList.do";
+                  }
+                } else {
+                  var modal = document.getElementById("myCtntDiv");
+                  modal.style.display = "none";
+                  $(".scrap")[0].focus(); /* 웹접근성 webaccess_pub   */
+                }
+              },
+              error: function (request, status, error) {
+                alert("입력오류가 발생하였습니다.");
+              },
+            });
+          }
+          ////////////////////////////////////////////////////////
+
+          function closePop1() {
+            var modal1 = document.getElementById("passwordChange");
+            modal1.style.display = "none";
+          }
+
+          function closePop2() {
+            var modal2 = document.getElementById("passwordChange2");
+            modal2.style.display = "none";
+          }
+
+          function goPassCg() {
+            window.location.href = "/portal/mypage/member/selectPassword.do";
+          }
+
+          function goPassNext() {
+            window.location.href = "/portal/mypage/member/nextPassword.do";
+          }
+
+          function fnSearchBtnTop() {
+            var data = $("#searchDataTop").val();
+            var url = "/search/front/Search.jsp?qt=" + encodeURI(data);
+            window.open(url);
+          }
+
+          //디지털원패스 회원가입 팝업
+          function onePassRegistPop() {
+            // var popUrl = "https://www.onepass.go.kr/regist/agree?redirectSiteUrl=https://health.cdc.go.kr/healthinfo/biz/health/main/digitalOnepass/joinAction.do";
+            var popUrl = "https://www.onepass.go.kr/regist/agree?redirectSiteSeq=950";
+            var popOption = "width=700, height=800, resizable=no, scrollbars=yes, status=no, title=디지털원패스 회원가입, top=100, left=100, location=no";
+            window.name = "hcmhp";
+            var popupWindow = window.open(popUrl, "디지털원패스 회원가입", popOption);
+
+            popupWindow.focus();
+          }
+
+          //디지털원패스 로그인 팝업
+          function onePassLoginPop() {
+            var popUrl = "/portal/digitalOnepass/loginout.do?serviceType=LOGIN";
+            var popOption = "width=700, height=700, resizable=no, scrollbars=yes, status=no, title=디지털원패스 로그인, top=100, left=100, location=no";
+            window.name = "hcmhp";
+            var popupWindow = window.open(popUrl, "디지털원패스 로그인", popOption);
+
+            popupWindow.focus();
+          }
+
+          // AuthenticInterceptor전 로그인여부 체크하여 OnePass 로그인창을 유도한다.
+          //2022-12 국가정신건강서비스포털 고도화('22) 회원 서비스 중지
+          function fnAuthOnePassLoginPop() {
+            return true;
+          }
+        </script>
+
+        <div class="top_area">
+          <!-- 웹접근성 점검 2022-12-29 -->
+          <!-- (1) 텍스트 아닌 콘텐츠는 그 의미나 용도를 이해할 수 있도록 대체텍스트를 제공해야 한다.-1 -->
+          <h1><a href="javascript:moveMenu('/portal/main/index.do')" title="메인페이지로 이동">보건복지부 국립정신건강센터 국가정신건강정보포털 로고</a></h1>
+
+          <ul class="login_util">
+            <li><a href="javascript:moveMenu('/portal/mdexmn/selectMdexmnList.do','10100');">자가검진</a></li>
+            <li><a href="javascript:moveMenu('/portal/cnts/cntsCartList.do','20400');">콘텐츠 신청</a><span class="cartCount cart-count">0</span></li>
+          </ul>
+        </div>
+
+        <!-- GNB -->
+        <div class="gnb_area">
+          <h2 class="hidden_obj">주메뉴</h2>
+          <button type="button" class="m_nav_btn">주메뉴열기</button>
+          <div class="gnb_nav gnb_pc" style="left: 0px">
+            <nav id="gnb" style="left: 0px">
+              <div class="m_top_login">
+                <span><a title="정신건겅정보신청 메뉴이동" href="javascript:moveMenu('/portal/cnts/cntsCartList.do');">콘텐츠 신청</a></span
+                ><span class="cartCount cart-count">0</span>
+              </div>
+
+              <ul>
+                <li class="th1">
+                  <a href="javascript:void(0)">
+                    <img src="/images/ncmhp/contents/cmpn_logo.png?v=1" style="width: 85px; margin-bottom: 4px" alt="마주해요 메뉴" />
+                  </a>
+
+                  <ul class="th2 reset">
+                    <li><a href="javascript:moveMenu('/portal/bbs/bbsDetail.do?bbsId=BBSINIT_8&amp;nttId=753','110100')">마주해요 소개</a></li>
+
+                    <li><a href="javascript:moveMenu('/portal/bbs/bbsList.do?bbsId=BBSINIT_9','110200')">마주해요 캠페인</a></li>
+
+                    <li><a href="javascript:moveMenu('/portal/bbs/bbsList.do?bbsId=BBSINIT_14','110300')">연간 캘린더</a></li>
+
+                    <li><a href="javascript:moveMenu('/portal/bbs/bbsList.do?bbsId=BBSINIT_10','110400')">마주해요 함께한 순간</a></li>
+                  </ul>
+                </li>
+
+                <li class="th1">
+                  <a href="javascript:void(0)"> 자가검진 </a>
+
+                  <ul class="th2 reset">
+                    <li><a href="javascript:moveMenu('/portal/mdexmn/selectMdexmnList.do','10100')">생애주기별 자가검진</a></li>
+
+                    <li><a href="javascript:moveMenu('/portal/mdexmnDtl/mdexmnTypeList.do','10200')">질환별 자가검진</a></li>
+                  </ul>
+                </li>
+
+                <li class="th1">
+                  <a href="javascript:void(0)"> 정신건강정보 </a>
+
+                  <ul class="th2 reset">
+                    <li><a href="javascript:moveMenu('/portal/disease/diseaseList.do','20100')">질환별 정보</a></li>
+
+                    <li><a href="javascript:moveMenu('/portal/faq/portalFaqList.do','20110')">질환별 FAQ</a></li>
+
+                    <li><a href="javascript:moveMenu('/portal/rndrPage.do?jsp=portal/rndr/mediInfo&amp;path=/portal/mediInfo/','20200')">약정보</a></li>
+                  </ul>
+                </li>
+
+                <li class="th1">
+                  <a href="javascript:void(0)"> 인식개선정보 </a>
+
+                  <ul class="th2 reset">
+                    <li><a href="javascript:moveMenu('/portal/bbs/bbsList.do?bbsId=BBSINIT_2','30201')">칼럼</a></li>
+
+                    <li><a href="javascript:moveMenu('/portal/bbs/bbsList.do?bbsId=BBSINIT_3','30202')">회복 수기</a></li>
+
+                    <li><a href="javascript:moveMenu('/portal/bbs/bbsList.do?bbsId=BBSINIT_6','30203')">카드뉴스</a></li>
+
+                    <li><a href="javascript:moveMenu('/portal/bbs/bbsList.do?bbsId=BBSINIT_5','30204')">동영상</a></li>
+
+                    <li><a href="javascript:moveMenu('/portal/bbs/bbsList.do?bbsId=BBSINIT_4','30205')">도움이 되는 정보</a></li>
+
+                    <li><a href="javascript:moveMenu('/portal/bbs/bbsList.do?bbsId=BBSINIT_7','30206')">웹툰</a></li>
+                  </ul>
+                </li>
+
+                <li class="th1">
+                  <a href="javascript:void(0)"> 정신건강관련기관 </a>
+
+                  <ul class="th2 reset">
+                    <li><a href="javascript:moveMenu('/portal/health/fac/PotalHealthFacListTab1.do','40100')">정신건강관련기관</a></li>
+
+                    <li><a href="javascript:moveMenu('/portal/rndrPage.do?jsp=portal/rndr/relatedInsInfo&amp;path=/portal/relatedInsInfo/','40200')">유관 기관</a></li>
+
+                    <li><a href="javascript:moveMenu('/portal/rndrPage.do?jsp=portal/rndr/relatedOrganInfo&amp;path=/portal/relatedOrganInfo/','40300')">관련 단체</a></li>
+                  </ul>
+                </li>
+
+                <li class="th1">
+                  <a href="javascript:void(0)"> 정신건강통계 </a>
+
+                  <ul class="th2 reset">
+                    <li><a href="javascript:moveMenu('/portal/bbs/bbsList.do?bbsId=BBSSTATS','50100')">정신건강통계</a></li>
+                  </ul>
+                </li>
+
+                <li class="th1">
+                  <a href="javascript:void(0)"> 소개/알림 </a>
+
+                  <ul class="th2 reset">
+                    <li><a href="javascript:moveMenu('/portal/intro4/introSalu.do','60300')">소개</a></li>
+
+                    <li><a href="javascript:moveMenu('/portal/intro1/introInfo.do','60400')">콘텐츠 이용안내</a></li>
+
+                    <li><a href="javascript:moveMenu('/portal/bbs/bbsList.do?bbsId=BBSNOTICE','60410')">공지사항</a></li>
+
+                    <li><a href="javascript:moveMenu('/portal/svy/svyList.do','60500')">설문조사</a></li>
+
+                    <li><a href="javascript:moveMenu('/portal/evnt/evntList.do','60600')">이벤트</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+
+            <a class="close" href="#">주메뉴닫기</a>
+            <div class="backdrop"></div>
+          </div>
+
+          <!-- Stick Home -->
+          <p class="btn_home"><a href="javascript:moveMenu('/portal/main/index.do','0')">홈으로 가기</a></p>
+
+          <!-- PC 전체메뉴 -->
+          <div class="all_menu">
+            <a href="#"><span class="hidden_obj">전체메뉴</span><i class="xi-bars"></i></a>
+          </div>
+          <div class="all_menu_area">
+            <ul>
+              <li class="th1">
+                <a href="#">마주해요</a>
+
+                <ul class="th2">
+                  <li><a href="#" onclick="moveMenu('/portal/bbs/bbsDetail.do?bbsId=BBSINIT_8&amp;nttId=753', '110100')">마주해요 소개</a></li>
+
+                  <li><a href="#" onclick="moveMenu('/portal/bbs/bbsList.do?bbsId=BBSINIT_9', '110200')">마주해요 캠페인</a></li>
+
+                  <li><a href="#" onclick="moveMenu('/portal/bbs/bbsList.do?bbsId=BBSINIT_14', '110300')">연간 캘린더</a></li>
+
+                  <li><a href="#" onclick="moveMenu('/portal/bbs/bbsList.do?bbsId=BBSINIT_10', '110400')">마주해요 함께한 순간</a></li>
+                </ul>
+              </li>
+
+              <li class="th1">
+                <a href="#">자가검진</a>
+
+                <ul class="th2">
+                  <li><a href="#" onclick="moveMenu('/portal/mdexmn/selectMdexmnList.do', '10100')">생애주기별 자가검진</a></li>
+
+                  <li><a href="#" onclick="moveMenu('/portal/mdexmnDtl/mdexmnTypeList.do', '10200')">질환별 자가검진</a></li>
+                </ul>
+              </li>
+
+              <li class="th1">
+                <a href="#">정신건강정보</a>
+
+                <ul class="th2">
+                  <li><a href="#" onclick="moveMenu('/portal/disease/diseaseList.do', '20100')">질환별 정보</a></li>
+
+                  <li><a href="#" onclick="moveMenu('/portal/faq/portalFaqList.do', '20110')">질환별 FAQ</a></li>
+
+                  <li><a href="#" onclick="moveMenu('/portal/rndrPage.do?jsp=portal/rndr/mediInfo&amp;path=/portal/mediInfo/', '20200')">약정보</a></li>
+                </ul>
+              </li>
+
+              <li class="th1">
+                <a href="#">인식개선정보</a>
+
+                <ul class="th2">
+                  <li><a href="#" onclick="moveMenu('/portal/bbs/bbsList.do?bbsId=BBSINIT_2', '30201')">칼럼</a></li>
+
+                  <li><a href="#" onclick="moveMenu('/portal/bbs/bbsList.do?bbsId=BBSINIT_3', '30202')">회복 수기</a></li>
+
+                  <li><a href="#" onclick="moveMenu('/portal/bbs/bbsList.do?bbsId=BBSINIT_6', '30203')">카드뉴스</a></li>
+
+                  <li><a href="#" onclick="moveMenu('/portal/bbs/bbsList.do?bbsId=BBSINIT_5', '30204')">동영상</a></li>
+
+                  <li><a href="#" onclick="moveMenu('/portal/bbs/bbsList.do?bbsId=BBSINIT_4', '30205')">도움이 되는 정보</a></li>
+
+                  <li><a href="#" onclick="moveMenu('/portal/bbs/bbsList.do?bbsId=BBSINIT_7', '30206')">웹툰</a></li>
+                </ul>
+              </li>
+
+              <li class="th1">
+                <a href="#">정신건강관련기관</a>
+
+                <ul class="th2">
+                  <li><a href="#" onclick="moveMenu('/portal/health/fac/PotalHealthFacListTab1.do', '40100')">정신건강관련기관</a></li>
+
+                  <li><a href="#" onclick="moveMenu('/portal/rndrPage.do?jsp=portal/rndr/relatedInsInfo&amp;path=/portal/relatedInsInfo/', '40200')">유관 기관</a></li>
+
+                  <li><a href="#" onclick="moveMenu('/portal/rndrPage.do?jsp=portal/rndr/relatedOrganInfo&amp;path=/portal/relatedOrganInfo/', '40300')">관련 단체</a></li>
+                </ul>
+              </li>
+
+              <li class="th1">
+                <a href="#">정신건강통계</a>
+
+                <ul class="th2">
+                  <li><a href="#" onclick="moveMenu('/portal/bbs/bbsList.do?bbsId=BBSSTATS', '50100')">정신건강통계</a></li>
+                </ul>
+              </li>
+
+              <li class="th1">
+                <a href="#">소개/알림</a>
+
+                <ul class="th2">
+                  <li><a href="#" onclick="moveMenu('/portal/intro4/introSalu.do', '60300')">소개</a></li>
+
+                  <li><a href="#" onclick="moveMenu('/portal/intro1/introInfo.do', '60400')">콘텐츠 이용안내</a></li>
+
+                  <li><a href="#" onclick="moveMenu('/portal/bbs/bbsList.do?bbsId=BBSNOTICE', '60410')">공지사항</a></li>
+
+                  <li><a href="#" onclick="moveMenu('/portal/svy/svyList.do', '60500')">설문조사</a></li>
+
+                  <li><a href="#" onclick="moveMenu('/portal/evnt/evntList.do', '60600')">이벤트</a></li>
+                </ul>
+              </li>
+            </ul>
+            <p class="btn_all_clo">
+              <a href="#"><img src="/images/ncmhp/contents/btn_all_clo.png" alt="전체메뉴 닫기" /></a>
+            </p>
+          </div>
+
+          <!-- 상단검색 -->
+          <div class="btn_sch">
+            <a href="#"><span class="hidden_obj">검색창 열기</span><i class="xi-search"></i></a>
+          </div>
+          <div class="sch_area">
+            <div class="sch_box">
+              <label for="searchDataTop" class="hidden_obj">검색어 입력</label>
+              <input type="text" name="searchDataTop" id="searchDataTop" placeholder="검색어를 입력하세요." title="검색어 입력" />
+              <input type="submit" value="검색" id="searchBtnTop" onclick="fnSearchBtnTop()" class="sch_send" />
+            </div>
+            <div class="recommend">
+              <span class="keyword_tit">추천검색어</span>
+              <a href="/search/front/Search.jsp?qt=코로나우울" target="_blank" title="새창으로 열림">#코로나우울</a>
+              <a href="/search/front/Search.jsp?qt=마음건강지침" target="_blank" title="새창으로 열림">#마음건강지침</a>
+              <a href="/search/front/Search.jsp?qt=정신건강" target="_blank" title="새창으로 열림">#정신건강</a>
+            </div>
+          </div>
+          <div class="btn_sch_clo">
+            <a href="#"><span class="hidden_obj">검색창 닫기</span><i class="xi-close"></i></a>
+          </div>
+        </div>
+        <!-- //GNB -->
+
+        <div id="passwordChange" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div id="pop1">
+              <div class="pop_top">
+                <h1>비밀번호변경</h1>
+                <p><a href="javascript:closePop1();">팝업닫기</a></p>
+              </div>
+              <div class="pop_con">
+                <!-- 내용시작 -->
+
+                <p class="pw_change_pop">
+                  임시비밀번호로 로그인 되었습니다.
+                  <span>소중한 회원님의 정보보호를 위해 비밀번호를 변경해주세요.</span>
+                </p>
+
+                <p class="btn_center big">
+                  <span><input type="button" name="passCg1" id="passCg1" onclick="goPassCg()" value="비밀번호 변경하기" class="btn btn_l btn_point" /></span>
+                  <span><input type="button" name="cloasePop1" id="cloasePop1" onclick="closePop1()" value="닫기" class="btn btn_l btn_grey" /></span>
+                </p>
+
+                <!-- // 내용끝 -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="passwordChange2" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div id="pop2">
+              <div class="pop_top">
+                <h1>비밀번호변경</h1>
+                <p><a href="javascript:closePop2();">팝업닫기</a></p>
+              </div>
+              <div class="pop_con">
+                <!-- 내용시작 -->
+
+                <p class="pw_change_pop">
+                  장기간 비밀번호변경 기록이 없습니다.
+                  <span>소중한 회원님의 정보보호를 위해 비밀번호를 변경해주세요.</span>
+                </p>
+
+                <p class="btn_center big">
+                  <span><input type="button" name="passCg2" id="passCg2" onclick="goPassCg()" value="비밀번호 변경하기" class="btn btn_l btn_point" /></span>
+                  <span><input type="button" name="cloasePop2" id="cloasePop2" onclick="goPassNext()" value="다음에 변경하기" class="btn btn_l btn_grey" /></span>
+                </p>
+
+                <!-- // 내용끝 -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="sessInvalid" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div id="pop3">
+              <div class="pop_top">
+                <h1>페이지만료</h1>
+                <p><a href="javascript:closeSessPop();">팝업닫기</a></p>
+              </div>
+              <div class="pop_con">
+                <!-- 내용시작 -->
+
+                <p class="sess_pop">
+                  장시간 이용하지 않아<br />
+                  페이지가 만료되었습니다.
+                </p>
+
+                <p class="btn_center big">
+                  <span><input type="button" name="btnSessMain" id="btnSessMain" onclick="closeSessPop()" value="메인이동" class="btn btn_l btn_grey" /></span>
+                </p>
+
+                <!-- // 내용끝 -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="lodingPop" class="loading_pop" style="display: none">
+          <p><img src="/images/ncmhp/contents/loading.gif" width="100px" alt="로딩 아이콘" /></p>
+          <p>로딩 중 입니다. 잠시만 기다려주세요.</p>
+        </div>
+
+        <!-- eutopos 추가 스크랩 Layer -->
+        <div id="myCtntDiv" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div id="pop4">
+              <div class="pop_top">
+                <h1>스크랩하기</h1>
+                <p><a href="javascript:myCtntPopClose();">팝업닫기</a></p>
+              </div>
+              <div class="pop_con">
+                <!-- 내용시작 2020-12-07 추가 -->
+                <table class="lineT">
+                  <caption>
+                    스크랩하기 – 페이지명, URL로 구성
+                  </caption>
+                  <colgroup>
+                    <col style="width: 150px" />
+                    <col style="width: auto" />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th scope="row"><label for="ctntSj">페이지명</label></th>
+                      <td class="inputT"><input type="text" name="ctntSj" id="ctntSj" style="width: 300px" /></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">URL</th>
+                      <td id="myctntUrl"></td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <p class="btn_center">
+                  <span><input type="button" name="save1" id="save1" value="저장" onclick="myCtntSave()" class="btn btn_l btn_grey" style="width: 185px" /></span>
+                  <span><input type="button" name="close1" id="close1" value="닫기" onclick="myCtntPopClose()" class="btn btn_l btn_point" style="width: 185px" /></span>
+                </p>
+                <!-- //내용끝 2020-12-07 추가 -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <script type="text/javascript">
+        $(document).ready(function () {
+          /*처리 메세지*/
+          if ("" != "") {
+            alert("");
+          }
+
+          moveBbsDetail = function (bbsId, nttId) {
+            var url = "/portal/bbs/bbsDetail.do?bbsId=" + bbsId + "&nttId=" + nttId;
+            location.href = "" + url + "";
+          };
+
+          //점검일 : 20230831, 취약점ID : , 취약점명 : 쿠키속정(SameSite)
+          document.cookie = "safeCookie1=foo;SameSite=Lax";
+          document.cookie = "safeCookie1=foo";
+          document.cookie = "crossCookie=bar;SameSite=None;Secure";
+
+          $("#searchData").keypress(function (e) {
+            if (e.keyCode == 13) {
+              fnSearchBtn();
+            }
+          });
+        });
+
+        function setCookie(name, value, expires) {
+          var today = new Date();
+          today.setDate(today.getDate() + expires);
+          document.cookie = name + "=" + escape(value) + "; path=/; expires=" + today.toGMTString();
+        }
+
+        function getCookie(Name) {
+          var search = Name + "=";
+          if (document.cookie.length > 0) {
+            // 쿠키가 설정되어 있다면
+            offset = document.cookie.indexOf(search);
+            if (offset != -1) {
+              // 쿠키가 존재하면
+              offset += search.length;
+              // set index of beginning of value
+              end = document.cookie.indexOf(";", offset);
+              // 쿠키 값의 마지막 위치 인덱스 번호 설정
+              if (end == -1) end = document.cookie.length;
+              return unescape(document.cookie.substring(offset, end));
+            }
+          }
+          return "";
+        }
+
+        function fnClose(id) {
+          var todayVal = document.getElementById("check" + id);
+          if ($(todayVal).prop("checked") == true) {
+            setCookie(id, "Y", 1);
+          }
+          var pop1 = document.getElementById(id);
+          pop1.style.display = "none";
+        }
+
+        function fnSearchBtn() {
+          var data1 = $("#searchData").val();
+          var data2 = $("#menu_info").val();
+          var url = "/search/front/Search.jsp?qt=" + encodeURI(data1) + "&menu=" + encodeURI(data2);
+          //window.open(url);
+          window.location.href = url;
+        }
+      </script>
+
+      <section id="container" class="main">
+        <!-- main만 class="main" 추가 -->
+        <div>
+          <!-- section 과 바로 아래 div 사이에 어떠한 태그도 넣지 마세요 -->
+          <!-- main sec01 -->
+          <div class="main_sec01">
+            <div class="flex_box wr">
+              <div class="left">
+                <div class="main_visual">
+                  <div class="swiper-container swiper-container-initialized swiper-container-horizontal">
+                    <div class="swiper-wrapper" style="transform: translate3d(-2196px, 0px, 0px); transition-duration: 500ms">
+                      <div class="swiper-slide" style="width: 732px">
+                        <div class="thumb">
+                          <a href="javascript:moveMenu('https://www.mentalhealth.go.kr/portal/bbs/bbsDetail.do?bbsId=BBSINIT_4&amp;nttId=816')">
+                            <img src="/cmm/fms/getImage.do?atchFileId=FILE_000000000010305" alt="CURE 23호 발간" />
+                          </a>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide" style="width: 732px">
+                        <div class="thumb">
+                          <a href="javascript:moveMenu('https://www.mentalhealth.go.kr/portal/bbs/bbsDetail.do?bbsId=BBSINIT_4&amp;nttId=730')">
+                            <img src="/cmm/fms/getImage.do?atchFileId=FILE_000000000009935" alt="2024년 중독 주요 지표 모음집" />
+                          </a>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide swiper-slide-prev" style="width: 732px">
+                        <div class="thumb">
+                          <a href="javascript:moveMenu('https://www.mentalhealth.go.kr/portal/bbs/bbsDetail.do?bbsId=BBSINIT_4&amp;nttId=831')">
+                            <img src="/cmm/fms/getImage.do?atchFileId=FILE_000000000010401" alt="MIND 2025 No.4 발간" />
+                          </a>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide swiper-slide-active" style="width: 732px">
+                        <div class="thumb">
+                          <a href="javascript:moveMenu('https://www.mentalhealth.go.kr/portal/bbs/bbsDetail.do?bbsId=BBSINIT_7&amp;nttId=626')">
+                            <img src="/cmm/fms/getImage.do?atchFileId=FILE_000000000009589" alt="입적심, 먹는건가요?? 입적심사제도 홍보 웹툰" />
+                          </a>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide swiper-slide-next" style="width: 732px">
+                        <div class="thumb">
+                          <a href="javascript:moveMenu('https://www.mentalhealth.go.kr/portal/bbs/bbsDetail.do?bbsId=BBSINIT_6&amp;nttId=803')">
+                            <img src="/cmm/fms/getImage.do?atchFileId=FILE_000000000010221" alt="2025년 입원제도과 치료비 지원사업" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-control-box">
+                      <p>팝업존</p>
+                      <div class="swiper-pagination swiper-pagination-custom"><span>04</span><span class="line">ㅡ</span><span class="swiper-pagination-total">05</span></div>
+                      <div class="swiper-button-wr">
+                        <div class="swiper-button-prev" tabindex="0" role="button" aria-label="팝업존 이전 슬라이드" aria-disabled="false"></div>
+                        <div class="swiper-pause-wr">
+                          <div id="puase" tabindex="0" role="button" aria-label="슬라이드 롤링 정지"><i class="xi-pause"></i></div>
+                          <div id="play" tabindex="0" role="button" aria-label="슬라이드 롤링 재생"><i class="xi-play"></i></div>
+                        </div>
+                        <div class="swiper-button-next" tabindex="0" role="button" aria-label="팝업존 다음 슬라이드" aria-disabled="false"></div>
+                      </div>
+                    </div>
+                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="right">
+                <!-- 검색 -->
+                <div class="sch_wrap" id="con_wrap">
+                  <div class="sch_all">
+                    <div class="sch_box">
+                      <div class="input_area">
+                        <label for="searchData" class="hidden_obj">검색어 입력</label>
+                        <input type="text" name="searchData" id="searchData" placeholder="정신건강 정보를 찾아보세요." title="검색어 입력" />
+                        <input type="submit" value="검색" id="searchBtn" onclick="fnSearchBtn()" class="sch_send" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="main_quick">
+                  <div class="flex_box">
+                    <div class="card01">
+                      <a href="javascript:moveMenu('/portal/mdexmn/selectMdexmnList.do?mdexmnId=100')"
+                        ><p class="tit">생애주기별 <br />자가검진</p></a
+                      >
+                    </div>
+                    <div class="card02">
+                      <a href="javascript:moveMenu('/portal/mdexmnDtl/mdexmnTypeList.do')"
+                        ><p class="tit">질환별 <br />자가검진</p></a
+                      >
+                    </div>
+                    <div class="card03">
+                      <a href="javascript:moveMenu('/portal/disease/diseaseDetail.do?dissId=63')"><p class="tit">정신건강 질환별 정보</p></a>
+                    </div>
+                    <div class="card04">
+                      <a href="javascript:moveMenu('/portal/health/fac/PotalHealthFacListTab1.do');"><p class="tit">정신건강관련기관</p></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- main sec02 -->
+          <div class="main_sec02">
+            <div class="flex_box wr aos-init" data-aos="fade-up">
+              <div class="left">
+                <div class="main_tit">
+                  <h2><b>실생활 정신건강</b> 정보</h2>
+                  <p>
+                    <b>실생활에 필요한 정신건강에 관련된 정보</b>를 <br />
+                    분야별로 빠르게 찾아보세요.
+                  </p>
+                </div>
+              </div>
+              <div class="right">
+                <div class="info_icon">
+                  <ul class="flex_box">
+                    <li>
+                      <a href="javascript:moveMenu('/portal/bbs/bbsList.do?bbsId=BBSINIT_6');"
+                        ><img src="/images/ncmhp/contents/main_sec02_icon01.png" alt="" />
+                        <p>카드뉴스</p></a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:moveMenu('/portal/bbs/bbsList.do?bbsId=BBSINIT_7');"
+                        ><img src="/images/ncmhp/contents/main_sec02_icon02.png" alt="" />
+                        <p>웹툰</p></a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:moveMenu('/portal/bbs/bbsList.do?bbsId=BBSINIT_5');"
+                        ><img src="/images/ncmhp/contents/main_sec02_icon03.png" alt="" />
+                        <p>동영상</p></a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:moveMenu('/portal/bbs/bbsList.do?bbsId=BBSSTATS');"
+                        ><img src="/images/ncmhp/contents/main_sec02_icon04.png" alt="" />
+                        <p>통계</p></a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:moveMenu('/portal/bbs/bbsList.do?bbsId=BBSINIT_4');"
+                        ><img src="/images/ncmhp/contents/main_sec02_icon05.png" alt="" />
+                        <p>도움이 되는 정보</p></a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:moveMenu('/portal/bbs/bbsList.do?bbsId=BBSINIT_2');"
+                        ><img src="/images/ncmhp/contents/main_sec02_icon06.png" alt="" />
+                        <p>칼럼</p></a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:moveMenu('/portal/faq/portalFaqList.do');"
+                        ><img src="/images/ncmhp/contents/main_sec02_icon07.png" alt="F" />
+                        <p>FAQ</p></a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:moveMenu('/portal/rndrPage.do?jsp=portal/rndr/mediInfo&amp;path=/portal/mediInfo/');"
+                        ><img src="/images/ncmhp/contents/main_sec02_icon08.png" alt="" />
+                        <p>약정보</p></a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- main sec03 -->
+          <div class="main_sec03">
+            <div class="flex_box wr aos-init" data-aos="fade-up">
+              <div class="left">
+                <div class="main_tit">
+                  <h2><b>인식개선</b>정보</h2>
+                </div>
+                <div class="news_slider">
+                  <div class="swiper-wr">
+                    <div class="swiper-container swiper-container-initialized swiper-container-horizontal">
+                      <div class="swiper-wrapper" style="transform: translate3d(-464px, 0px, 0px); transition-duration: 0ms">
+                        <div class="swiper-slide swiper-slide-prev" style="width: 464px">
+                          <a href="javascript:moveBbsDetail('BBSINIT_6','803');">
+                            <div class="thumb">
+                              <img src="/cmm/fms/getImage.do?atchFileId=THMN_000000000001020" alt="Check! GPT 정신질환자 치료비 지원 사업을 알려줘!" />
+                            </div>
+                          </a>
+                        </div>
+
+                        <div class="swiper-slide swiper-slide-active" style="width: 464px">
+                          <a href="javascript:moveBbsDetail('BBSINIT_5','672');">
+                            <div class="thumb">
+                              <img src="/cmm/fms/getImage.do?atchFileId=THMN_000000000000801" alt="[정신건강한사람] 학교폭력에 대한 정신건강 이야기 '은따' 처벌 받게 하는 방법은?" />
+                            </div>
+                          </a>
+                        </div>
+
+                        <div class="swiper-slide swiper-slide-next" style="width: 464px">
+                          <a href="javascript:moveBbsDetail('BBSINIT_4','831');">
+                            <div class="thumb">
+                              <img src="/cmm/fms/getImage.do?atchFileId=THMN_000000000001080" alt="[MIND] 2025 No.4 영유아의 스마트폰 사용" />
+                            </div>
+                          </a>
+                        </div>
+
+                        <div class="swiper-slide" style="width: 464px">
+                          <a href="javascript:moveBbsDetail('BBSINIT_7','703');">
+                            <div class="thumb">
+                              <img src="/cmm/fms/getImage.do?atchFileId=THMN_000000000000860" alt="입원적합성심사제도 홍보 웹툰 '입적심, 먹는 건가요??' #마주해요#모두가_건강해지는_그날까지_특별판" />
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="swiper-button-wr">
+                        <div class="swiper-button-prev" tabindex="0" role="button" aria-label="인식개선 이전 슬라이드" aria-disabled="false"></div>
+                        <div class="swiper-pause-wr">
+                          <div id="puaseNews" tabindex="0" role="button" aria-label="슬라이드 롤링 정지"><i class="xi-pause"></i></div>
+                          <div id="playNews" tabindex="0" role="button" aria-label="슬라이드 롤링 재생" style="display: none"><i class="xi-play"></i></div>
+                        </div>
+                        <div class="swiper-button-next" tabindex="0" role="button" aria-label="인식개선 다음 슬라이드" aria-disabled="false"></div>
+                      </div>
+                      <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="right">
+                <div class="main_news">
+                  <div class="main_tit">
+                    <h2>정신건강포털 <b>새소식</b></h2>
+                  </div>
+                  <div class="notice">
+                    <a href="javascript:moveBbsDetail('BBSNOTICE','829');">
+                      <div class="date">
+                        2025.12
+                        <strong>15</strong>
+                      </div>
+                      <div class="tit">
+                        <span class="hidden_obj">새글</span>
+                        <p>2025년 중독 주요 지표 모음집</p>
+                      </div>
+                    </a>
+                  </div>
+                  <ul class="list">
+                    <li>
+                      <a href="javascript:moveBbsDetail('BBSNOTICE','822');">「국가 정신건강형황 보고서 2024」, 「국가 정신건강현황 주요지표 2024」 발간 <span class="date">2025.11.13</span></a>
+                    </li>
+
+                    <li>
+                      <a href="javascript:moveBbsDetail('BBSNOTICE','821');"> 국가 정신건강현황 통계 이용자 만족도 설문조사(11.3.~11.16.) <span class="date">2025.10.31</span></a>
+                    </li>
+
+                    <li>
+                      <a href="javascript:moveBbsDetail('BBSNOTICE','818');">「제7회 국립정신건강센터 중독 정신건강 심포지엄 및 중독 우수사업 경진대회」 <span class="date">2025.10.16</span></a>
+                    </li>
+
+                    <li>
+                      <a href="javascript:moveBbsDetail('BBSNOTICE','750');">「2025년 트라우마 치유주간」 홍보 영상 <span class="date">2025.04.09</span></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- main sec04 -->
+          <div class="main_sec04">
+            <div class="flex_box wr aos-init" data-aos="fade-up">
+              <div class="left">
+                <div class="main_tit">
+                  <h2>정신건강관련 <b>기관</b></h2>
+                  <p>원하는 기관의 정보를 확인해보세요.</p>
+                </div>
+              </div>
+              <div class="right">
+                <ul class="agency flex_box">
+                  <li>
+                    <a href="javascript:moveCheckLoginMenu('/portal/cnts/cntsCartList.do');"
+                      ><div class="icon"><img src="/images/ncmhp/contents/main_sec04_icon01.png" alt="" /></div>
+                      <p>정신건강정보신청</p></a
+                    >
+                  </li>
+                  <li>
+                    <a href="javascript:moveMenu('/portal/health/fac/PotalHealthFacListTab1.do?tab1no=tab1no1')"
+                      ><div class="icon"><img src="/images/ncmhp/contents/main_sec04_icon02.png" alt="" /></div>
+                      <p>정신건강복지센터</p></a
+                    >
+                  </li>
+                  <li>
+                    <a href="javascript:moveMenu('/portal/health/fac/PotalHealthFacListTab1.do?tab1no=tab1no4')"
+                      ><div class="icon"><img src="/images/ncmhp/contents/main_sec04_icon03.png" alt="" /></div>
+                      <p>자살예방센터</p></a
+                    >
+                  </li>
+                  <li>
+                    <a href="javascript:moveMenu('/portal/health/fac/PotalHealthFacListTab1.do?tab1no=tab1no3')"
+                      ><div class="icon"><img src="/images/ncmhp/contents/main_sec04_icon04.png" alt="" /></div>
+                      <p>중독관리통합<br />지원센터</p></a
+                    >
+                  </li>
+                  <li>
+                    <a href="javascript:moveMenu('/portal/health/fac/PotalHealthFacListTab1.do?tab1no=tab1no6')"
+                      ><div class="icon"><img src="/images/ncmhp/contents/main_sec04_icon05.png" alt="" /></div>
+                      <p>정신요양시설</p></a
+                    >
+                  </li>
+                  <li>
+                    <a href="javascript:moveMenu('/portal/health/fac/PotalHealthFacListTab1.do?tab1no=tab1no7')"
+                      ><div class="icon"><img src="/images/ncmhp/contents/main_sec04_icon06.png" alt="" /></div>
+                      <p>정신의료기관</p></a
+                    >
+                  </li>
+                  <li>
+                    <a href="javascript:moveMenu('/portal/health/fac/PotalHealthFacListTab2.do?sc3=AFCS1,AFCS1_1,AFCS1_2')"
+                      ><div class="icon"><img src="/images/ncmhp/contents/main_sec04_icon07.png" alt="" /></div>
+                      <p>기관지도찾기</p></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <script>
+        $(document).ready(function () {
+          var mainSwiper = new Swiper(".main_visual .swiper-container", {
+            autoplay: {
+              delay: 3000,
+              disableOnInteraction: false,
+            },
+            speed: 500,
+            loop: false,
+            pagination: {
+              el: ".main_visual .swiper-pagination",
+              type: "custom",
+              renderCustom: function (swiper, current, total) {
+                return "<span>0" + current + "</span>" + '<span class="line">ㅡ</span>' + '<span class="swiper-pagination-total">0' + total + "</span>";
+              },
+            },
+            navigation: {
+              nextEl: ".main_visual .swiper-button-next",
+              prevEl: ".main_visual .swiper-button-prev",
+            },
+            on: {
+              slideChange: function () {
+                this.slides[this.activeIndex].focus();
+              },
+            },
+            a11y: {
+              enabled: true, // 접근성 기능 활성화
+            },
+          });
+
+          var $mainPopup = $(".main_visual .swiper-container");
+          $mainPopup.keyup(function () {
+            $(this).find("#puase").trigger("click");
+            $(this).find(".swiper-wrapper").css("transform", "translate3d(0,0,0)");
+          });
+
+          document.querySelector(".main_visual .swiper-button-prev").setAttribute("aria-label", "팝업존 이전 슬라이드");
+          document.querySelector(".main_visual .swiper-button-next").setAttribute("aria-label", "팝업존 다음 슬라이드");
+
+          var puaseButton = document.getElementById("puase");
+          puaseButton.addEventListener("click", (event) => {
+            mainSwiper.autoplay.stop();
+            puaseButton.style.display = "none";
+            playButton.style.display = "flex";
+          });
+
+          var playButton = document.getElementById("play");
+          playButton.addEventListener("click", (event) => {
+            mainSwiper.autoplay.start();
+            playButton.style.display = "none";
+            puaseButton.style.display = "flex";
+          });
+
+          var newsSwiper = new Swiper(".news_slider .swiper-container", {
+            autoplay: {
+              delay: 5000,
+              disableOnInteraction: false,
+            },
+            speed: 500,
+            loop: false,
+            navigation: {
+              nextEl: ".news_slider .swiper-button-next",
+              prevEl: ".news_slider .swiper-button-prev",
+            },
+            on: {
+              slideChange: function () {
+                this.slides[this.activeIndex].focus();
+              },
+            },
+            a11y: {
+              enabled: true, // 접근성 기능 활성화
+            },
+          });
+
+          var $newsPopup = $(".news_slider .swiper-container");
+          $newsPopup.keyup(function () {
+            $(this).find("#puaseNews").trigger("click");
+            $(this).find(".swiper-wrapper").css("transform", "translate3d(0,0,0)");
+          });
+
+          document.querySelector(".news_slider .swiper-button-prev").setAttribute("aria-label", "인식개선 이전 슬라이드");
+          document.querySelector(".news_slider .swiper-button-next").setAttribute("aria-label", "인식개선 다음 슬라이드");
+
+          var puaseNewsButton = document.getElementById("puaseNews");
+          puaseNewsButton.addEventListener("click", (event) => {
+            newsSwiper.autoplay.stop();
+            puaseNewsButton.style.display = "none";
+            playNewsButton.style.display = "flex";
+          });
+
+          var playNewsButton = document.getElementById("playNews");
+          playNewsButton.addEventListener("click", (event) => {
+            newsSwiper.autoplay.start();
+            playNewsButton.style.display = "none";
+            puaseNewsButton.style.display = "flex";
+          });
+          playNewsButton.style.display = "none";
+        });
+      </script>
+
+      <!-- foot -->
+      <p class="m_only btn_top"><a href="#wrap" tabindex="-1">Top</a></p>
+      <footer class="footer">
+        <script type="text/javascript">
+          $(document).ready(function () {});
+        </script>
+        <div>
+          <ul>
+            <li><a href="javascript:moveMenu('/portal/board/policy/selectStplatInfo.do')">이용약관</a></li>
+            <li>
+              <a href="http://www.ncmh.go.kr/ncmh/html/content.do?depth=gu&amp;menu_cd=06_02_01" target="_blank" title="새 창"><strong>개인정보처리방침</strong></a>
+            </li>
+            <li><a href="javascript:moveMenu('/portal/board/policy/selectCpyrhtInfo.do')">저작권정책</a></li>
+            <li><a href="javascript:moveMenu('/portal/board/siteMap/selectMenuSiteMap.do')">사이트맵</a></li>
+          </ul>
+          <div class="address">
+            <div class="ft-family">
+              <a href="#">관련 사이트<i class="xi-angle-up-min"></i></a>
+              <ul>
+                <li><a href="http://www.ncmh.go.kr" target="_blank" title="새창으로 열림">보건복자부-국립정신건강센터</a></li>
+              </ul>
+            </div>
+            <span>
+              <img src="/images/ncmhp/cms/WA_img_20250814.png" style="width: 80px; margin-left: 20px; margin-top: 10px" />
+            </span>
+            <address>
+              <p><span>주소 : (우)04933 서울특별시 광진구 용마산로 127 </span><span>대표전화 : (02) 2204-0114 </span></p>
+              <p class="copy">Copyright National Center for Mental Health All right Reserved.</p>
+            </address>
+          </div>
+        </div>
+
+        <script>
+          window.addEventListener("load", () => {
+            $(".ft-family > a").click(function () {
+              event.preventDefault();
+              $(".ft-family > ul").stop().slideToggle();
+              $(".ft-family").stop().toggleClass("on");
+            });
+            $(document).on("click", function (event) {
+              if (!$(event.target).closest(".ft-family").length) {
+                $(".ft-family > ul").stop().slideUp();
+              }
+            });
+          });
+        </script>
+      </footer>
+    </div>
+    <!-- //wrap -->
+  </body>
+</html>
