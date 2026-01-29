@@ -1,83 +1,178 @@
+<!--
+  이 문서는 HTML5 표준에 따라 작성되었음을 선언합니다.
+  웹 브라우저는 이 선언을 보고 HTML5 문법에 맞춰 페이지를 렌더링합니다.
+-->
 <!doctype html>
+
+<!--
+  html 태그는 HTML 문서의 최상위 요소(Root Element)입니다.
+  lang="ko" 속성은 이 문서의 주 사용 언어가 한국어임을 명시하여,
+  검색 엔진이나 스크린 리더 등이 문서의 언어를 올바르게 인식하고 처리하도록 돕습니다.
+-->
 <html lang="ko">
+  <!--
+    head 태그는 문서의 메타데이터(metadata)를 포함하는 영역입니다.
+    메타데이터는 문서 자체에 대한 정보로, 웹 브라우저나 검색 엔진에게 정보를 제공하지만
+    실제 페이지 화면에는 직접적으로 표시되지 않습니다.
+  -->
   <head>
+    <!--
+      meta 태그는 문서의 다양한 메타데이터를 정의합니다.
+      charset="utf-8" 속성은 문서의 문자 인코딩을 UTF-8로 지정합니다.
+      UTF-8은 전 세계 대부분의 문자를 표현할 수 있는 표준 인코딩 방식입니다.
+    -->
     <meta charset="utf-8" />
+    <!--
+      http-equiv="X-UA-Compatible" content="IE=edge" 속성은
+      인터넷 익스플로러(IE) 브라우저에서 최신 렌더링 엔진을 사용하도록 지시합니다.
+      과거 IE 버전과의 호환성 문제를 방지하기 위해 사용됩니다.
+    -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- title 태그는 문서의 제목을 정의합니다. 이 제목은 브라우저 탭이나 즐겨찾기 목록에 표시됩니다. -->
     <title>국가정신건강정보포털</title>
+    <!--
+      viewport 메타 태그는 모바일 기기에서의 화면 표시 방법을 제어합니다.
+      - user-scalable=no: 사용자의 확대/축소 기능을 비활성화합니다.
+      - initial-scale=1.0: 페이지 초기 확대 배율을 1.0으로 설정합니다.
+      - maximum-scale=1.0: 최대 확대 배율을 1.0으로 제한합니다.
+      - minimum-scale=1.0: 최소 축소 배율을 1.0으로 제한합니다.
+      - width=device-width: 뷰포트의 너비를 기기의 화면 너비에 맞춥니다.
+    -->
     <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+    <!-- name="title" 메타 태그는 검색 엔진 최적화(SEO)를 위해 페이지의 제목을 명시적으로 제공합니다. -->
     <meta name="title" content="국가정신건강정보포털" />
+    <!--
+      name="keywords" 메타 태그는 검색 엔진이 페이지의 콘텐츠와 관련된 키워드를 파악하는 데 도움을 줍니다.
+      현재는 검색 엔진들이 이 태그를 거의 고려하지 않지만, 과거 SEO 방식의 흔적으로 남아있습니다.
+    -->
     <meta name="keywords" content="생애주기별검진,질환별자가검진,정신건강정보신청,질환별정보,약정보,회복수기,컬럼" />
+    <!-- name="description" 메타 태그는 페이지의 내용을 간략하게 요약한 설명입니다. 검색 결과 페이지에 표시되어 사용자의 클릭을 유도하는 중요한 역할을 합니다. -->
     <meta
       name="description"
       content="국민들에게 검증된 양질의 정신건강정보를 제공합니다.국민의 수요에 기반하여 전문가에 의해 검증된 양질의 정신건강 정보를 통합적ㆍ체계적으로 제공하는 공공포털입니다.국가정신건강정보포털은 정신건강 질병정보, 자가진단, 의료기관 정보, 의약품 정보 등 각 기관별로 분산된 정보를 통합ㆍ연계하여
 국민들이 정신건강 질병 관련 필요한 정보를 한 곳에서 얻을 수 있도록 정보제공 채널을 일원화하였습니다."
     />
+    <!--
+      og: (Open Graph) 메타 태그들은 페이스북, 카카오톡 등 소셜 미디어에서
+      웹 페이지가 공유될 때 표시되는 방식을 제어합니다.
+    -->
+    <!-- og:type은 공유되는 콘텐츠의 유형을 정의합니다. (예: website, article) -->
     <meta property="og:type" content="website" />
+    <!-- og:title은 소셜 미디어에 표시될 제목입니다. -->
     <meta property="og:title" content="국가정신건강정보포털" />
+    <!-- og:description은 소셜 미디어에 표시될 설명입니다. -->
     <meta
       property="og:description"
       content="국민들에게 검증된 양질의 정신건강정보를 제공합니다.국민의 수요에 기반하여 전문가에 의해 검증된 양질의 정신건강 정보를 통합적ㆍ체계적으로 제공하는 공공포털입니다.국가정신건강정보포털은 정신건강 질병정보, 자가진단, 의료기관 정보, 의약품 정보 등 각 기관별로 분산된 정보를 통합ㆍ연계하여
 국민들이 정신건강 질병 관련 필요한 정보를 한 곳에서 얻을 수 있도록 정보제공 채널을 일원화하였습니다."
     />
+    <!-- og:image는 소셜 미디어에 표시될 대표 이미지의 URL입니다. -->
     <meta property="og:image" content="https://www.mentalhealth.go.kr/images/ncmhp/contents/logo_sns.jpg" />
+    <!-- og:url은 해당 페이지의 대표 URL입니다. -->
     <meta property="og:url" content="https://www.mentalhealth.go.kr/" />
 
-    <!-- 추가 -->
+    <!-- 외부 스크립트 및 스타일시트 추가 -->
+    <!-- Google Analytics 및 Google Tag Manager 스크립트입니다. 웹사이트 트래픽 분석 및 마케팅 효과 측정을 위해 사용됩니다. -->
     <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
     <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-5Y97CFSG9V&amp;cx=c&amp;gtm=4e61q1"></script>
+    <!-- Swiper.js는 터치 슬라이드 기능을 구현하기 위한 JavaScript 라이브러리입니다. -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+    <!-- XEIcon은 다양한 아이콘을 웹폰트 형태로 제공하는 라이브러리입니다. -->
     <link rel="stylesheet" href="https://www.mentalhealth.go.kr/css/ncmhp/xeicon.min.css" type="text/css" />
+    <!-- Swiper.js의 CSS 파일입니다. 슬라이더의 기본 스타일을 정의합니다. -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css" />
+    <!-- S-Core Dream 웹폰트 CSS 파일입니다. -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ungveloper/web-fonts/SCoreDream/font-face.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ungveloper/web-fonts/SCoreDream/font-family.css" />
+    <!-- Pretendard 웹폰트 CSS 파일입니다. -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+    <!-- AOS (Animate On Scroll) 라이브러리 CSS 파일입니다. 스크롤 시 요소에 애니메이션 효과를 부여합니다. -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- AOS 라이브러리 JavaScript 파일입니다. -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- //추가 -->
+    <!-- //외부 리소스 추가 끝 -->
 
+    <!-- jQuery UI CSS 파일입니다. jQuery 기반의 사용자 인터페이스 위젯들의 스타일을 정의합니다. -->
     <link type="text/css" rel="stylesheet" href="https://www.mentalhealth.go.kr/css/ncmhp/jqueryui.css" />
+    <!-- 포털 공통 리셋(reset) CSS 파일입니다. 브라우저별 기본 스타일을 초기화하여 일관된 디자인을 유지합니다. -->
     <link rel="stylesheet" href="https://www.mentalhealth.go.kr/css/ncmhp/portal_reset.css" type="text/css" />
+    <!-- 포털 레이아웃 CSS 파일입니다. 웹사이트의 전체적인 구조와 레이아웃 스타일을 정의합니다. (?v=... 부분은 캐시 방지를 위한 버전 정보입니다.) -->
     <link rel="stylesheet" href="https://www.mentalhealth.go.kr/css/ncmhp/portal_layout.css?v=20250627" type="text/css" />
+    <!-- 포털 콘텐츠 CSS 파일입니다. 웹사이트의 콘텐츠(본문) 스타일을 정의합니다. -->
     <link rel="stylesheet" href="https://www.mentalhealth.go.kr/css/ncmhp/portal_contents.css?v=20251206" type="text/css" />
-    <!-- 구글 애널리틱스 script -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- 구글 애널리틱스 스크립트 (Global site tag - gtag.js) -->
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-172724630-1"></script>
     <script>
+      // 데이터 레이어를 초기화합니다. Google Tag Manager에서 사용됩니다.
       window.dataLayer = window.dataLayer || [];
+      // gtag 함수를 정의하여 데이터 레이어에 이벤트를 푸시합니다.
       function gtag() {
         dataLayer.push(arguments);
       }
+      // 현재 시간을 기준으로 gtag를 초기화합니다.
       gtag("js", new Date());
 
+      // 구글 애널리틱스 추적 ID(UA-172724630-1)를 설정합니다.
       gtag("config", "UA-172724630-1");
     </script>
+    <!-- jQuery 라이브러리 파일입니다. DOM 조작, 이벤트 처리, AJAX 등을 쉽게 할 수 있도록 돕는 JavaScript 라이브러리입니다. -->
     <script src="https://www.mentalhealth.go.kr/js/ncmhp/common/jquery.min.js"></script>
+    <!-- jQuery UI 라이브러리 파일입니다. -->
     <script src="https://www.mentalhealth.go.kr/js/ncmhp/common/jquery-ui.min.js"></script>
+    <!-- jQuery Migrate 플러그인입니다. 이전 버전의 jQuery 코드가 최신 버전과 호환되도록 돕습니다. -->
     <script src="https://www.mentalhealth.go.kr/js/ncmhp/common/jquery-migrate-3.0.0.js"></script>
+    <!-- Slick 슬라이더 플러그인입니다. 이미지나 콘텐츠 슬라이더를 구현하는 데 사용됩니다. -->
     <script src="https://www.mentalhealth.go.kr/js/ncmhp/common/slick.min.js"></script>
+    <!-- 포털 콘텐츠 관련 JavaScript 파일입니다. -->
     <script src="https://www.mentalhealth.go.kr/js/ncmhp/portal_contents.js?v=20250717"></script>
+    <!-- 공통 JavaScript 파일입니다. 여러 페이지에서 공통으로 사용되는 스크립트를 포함합니다. -->
     <script src="https://www.mentalhealth.go.kr/js/ncmhp/common/common.js"></script>
   </head>
+  <!--
+    body 태그는 문서의 실제 내용을 담는 영역입니다.
+    AOS 관련 속성들이 적용되어 있어, 스크롤 시 애니메이션 효과가 발생합니다.
+    - data-aos-easing: 애니메이션의 가속/감속 효과 (ease)
+    - data-aos-duration: 애니메이션 지속 시간 (800ms)
+    - data-aos-delay: 애니메이션 지연 시간 (0ms)
+  -->
   <body data-aos-easing="ease" data-aos-duration="800" data-aos-delay="0">
+    <!--
+      skip_menu (스킵 네비게이션)
+      웹 접근성 지침에 따라, 키보드 사용자가 페이지의 주요 영역(주메뉴, 본문)으로
+      빠르게 이동할 수 있도록 돕는 링크입니다. 화면에는 보이지 않지만 스크린 리더나
+      키보드 탭 이동 시 나타납니다.
+    -->
     <div id="skip_menu">
       <ul>
         <li><a href="#gnb">주메뉴 바로가기</a></li>
         <li><a href="#con_wrap">본문 바로가기</a></li>
       </ul>
     </div>
+    <!--
+      wrap (전체 래퍼)
+      웹사이트의 모든 콘텐츠를 감싸는 최상위 컨테이너입니다.
+      페이지의 전체적인 폭이나 정렬을 제어하는 역할을 합니다.
+    -->
     <div id="wrap">
+      <!-- header (상단 영역) -->
       <header id="top">
+        <!-- 페이지 로드 시 실행될 jQuery 스크립트 -->
         <script type="text/javascript">
+          // 문서가 완전히 로드된 후 스크립트를 실행합니다.
           $(document).ready(function () {
-            //회원 서비스 사용 여부  ( 국가정신건강서비스포털 고도화('22) 회원 서비스 중지 요구사항 )
+            // 회원 서비스 사용 여부 확인 및 페이지 이동 함수
+            // '국가정신건강서비스포털 고도화('22)' 프로젝트에서 회원 서비스 중지 요구사항에 따라 재정의된 함수로 보입니다.
             moveCheckLoginMenu = function (url) {
-              moveMenu(url);
+              moveMenu(url); // 로그인 확인 없이 바로 moveMenu 함수를 호출합니다.
             };
 
-            /** 페이지 이동
-             **/
+            /**
+             * 페이지 이동 함수
+             * @param {string} url - 이동할 페이지의 URL
+             * @param {string} id - 메뉴 ID (메뉴 클릭 수 집계를 위해 사용)
+             */
             moveMenu = function (url, id) {
-              // 메뉴 Hit
+              // 메뉴 ID가 있으면, AJAX를 통해 메뉴 클릭 수를 서버에 전송합니다.
               if (typeof id != "undefined" && id != null && id != "") {
                 $.ajax({
                   type: "POST",
@@ -85,145 +180,125 @@
                   data: {
                     menuNo: id,
                   },
-                  async: false,
+                  async: false, // 동기 방식으로 실행하여, 이 요청이 끝날 때까지 다음 코드가 실행되지 않습니다.
                   dataType: "json",
-                  success: function (returnData, status) {},
+                  success: function (returnData, status) {
+                    // 성공 시 별도 처리 없음
+                  },
                 });
               }
 
-              //$("#contents").children().remove();
-              //$("#contents").load(""+url+"");
-
-              //if(url != "" && url !="dir"  && url !="#"){
-              //	setTimeout(function(){
-              //		loadingPop();
-              //	},5000);
-              //}
-
+              // URL이 유효하면 해당 URL로 페이지를 이동시킵니다.
               if (url != "" && url != "dir") window.location.href = url;
             };
 
-            /** 로그아웃
-             **/
+            /**
+             * 로그아웃 함수
+             */
             logout = function () {
               if (confirm("로그아웃 하시겠습니까?")) {
                 window.location.href = "https://www.mentalhealth.go.kr/portal/login/actionLogout.do";
               }
             };
 
+            // 임시 비밀번호 또는 비밀번호 유효기간 만료 여부 확인 및 팝업 처리
             var indvdlTmprPasswordAtVal = "null";
             var passwordValidDeVal = "null";
+            // 임시 비밀번호로 로그인한 경우, 비밀번호 변경 팝업을 표시합니다.
             if (indvdlTmprPasswordAtVal == "Y") {
               var modal = document.getElementById("passwordChange");
               modal.style.display = "block";
               return;
-            } else if (passwordValidDeVal == "Y") {
+            }
+            // 비밀번호 유효기간이 만료된 경우, 비밀번호 변경 안내 팝업을 표시합니다.
+            else if (passwordValidDeVal == "Y") {
               var modal2 = document.getElementById("passwordChange2");
               modal2.style.display = "block";
               return;
             }
 
             /*
-	sessionChk = function() {
+              주석 처리된 세션 체크 관련 코드
+              - 주기적으로(300초마다) 사용자의 세션이 유효한지 서버에 확인하는 기능으로 추정됩니다.
+              - 세션이 만료되면 'sessInvalidModal' 함수를 호출하여 세션 만료 팝업을 띄웁니다.
+            */
 
-		$.ajax({
-			type:"POST",
-			url:"https://www.mentalhealth.go.kr/portal/login/sessCheck.do",
-			data: $("#listForm").serialize(),
-			dataType : 'json',
-			success:function(returnData, status){
-				if(returnData.sess == "Y")
-				setTimeout(eval('sessionChk'),300000);
-				else
-				sessInvalidModal();
-			},
-			error:function(e){
-				console.log(e);
-			}
-		});
-
-	};
-
-	cudSess = function() {
-	  var rtnVal = "NN";
-	  
-	  return rtnVal;
-
-	};
-
-	if('' !='' || ''!=''){
-		sessionChk();
-	}
-	*/
-
+            // 세션 만료 팝업을 표시하는 함수
             sessInvalidModal = function () {
               var modal = document.getElementById("sessInvalid");
               modal.style.display = "block";
             };
 
+            // 세션 만료 팝업을 닫고 메인 페이지로 이동하는 함수
             closeSessPop = function () {
               var modal = document.getElementById("sessInvalid");
               modal.style.display = "none";
               location.href = "https://www.mentalhealth.go.kr/portal/main/index.do";
             };
 
+            // 상단 검색창에서 Enter 키를 눌렀을 때 검색을 실행하는 이벤트 핸들러
             $("#searchDataTop").keypress(function (e) {
               if (e.keyCode == 13) {
+                // Enter 키의 keyCode는 13입니다.
                 fnSearchBtnTop();
               }
             });
           });
 
+          // 로딩 팝업을 표시하는 함수
           function loadingPop() {
             var pop = document.getElementById("lodingPop");
             pop.style.display = "block";
           }
           //2022-12 국가정신건강서비스포털 고도화('22) 회원 서비스 중지
 
+          // '내 콘텐츠' (스크랩) 팝업을 닫는 함수
           function myCtntPopClose() {
             var modal = document.getElementById("myCtntDiv");
             modal.style.display = "none";
             $(".scrap")[0].focus(); /* 웹접근성 webaccess_pub   */
           }
 
+          // '내 콘텐츠' (스크랩)를 저장하는 함수
           function myCtntSave() {
-            var sendctntSj = $("#ctntSj").val();
+            var sendctntSj = $("#ctntSj").val(); // 페이지명 입력값 가져오기
+            // 페이지명이 비어있는지 확인
             if (sendctntSj == null || sendctntSj.trim() == "") {
               alert("페이지명을 입력해 주세요.");
               return;
             }
 
+            // 동적으로 form을 생성하여 서버에 데이터를 전송합니다.
             var myctntForm = $("<form></form>");
-            //set attribute (form)
             myctntForm.attr("name", "myctntForm");
             myctntForm.attr("id", "myctntForm");
             myctntForm.attr("method", "post");
-            // create element & set attribute (input)
-            myctntForm.append($("<input/>", { type: "hidden", name: "ctntSj", value: $("#ctntSj").val() }));
-            myctntForm.append($("<input/>", { type: "hidden", name: "ctntUrl", value: $("#myctntUrl").text() }));
-            // append form (to body)
+            myctntForm.append($("<input/>", { type: "hidden", name: "ctntSj", value: $("#ctntSj").val() })); // 페이지명
+            myctntForm.append($("<input/>", { type: "hidden", name: "ctntUrl", value: $("#myctntUrl").text() })); // 페이지 URL
             myctntForm.appendTo("body");
-            // submit form
-            //newForm.submt();
+
+            // FormData 객체를 사용하여 AJAX로 폼 데이터 전송
             var formData = new FormData($("#myctntForm")[0]);
             $.ajax({
               type: "POST",
               url: "https://www.mentalhealth.go.kr/portal/myctnt/executeMyCtnt.do",
               data: formData,
               dataType: "json",
-              processData: false,
-              contentType: false,
+              processData: false, // FormData 사용 시 필수 설정
+              contentType: false, // FormData 사용 시 필수 설정
               success: function (returnData, status) {
                 if (confirm(returnData.message)) {
+                  // 서버에서 받은 메시지를 confirm 창으로 보여줌
                   if (returnData.result) {
+                    // 저장이 성공하면
                     var modal = document.getElementById("myCtntDiv");
-                    modal.style.display = "none";
-                    location.href = "https://www.mentalhealth.go.kr/portal/mypage/myctnt/myctntList.do";
+                    modal.style.display = "none"; // 팝업 닫기
+                    location.href = "https://www.mentalhealth.go.kr/portal/mypage/myctnt/myctntList.do"; // '내 콘텐츠 목록' 페이지로 이동
                   }
                 } else {
                   var modal = document.getElementById("myCtntDiv");
-                  modal.style.display = "none";
-                  $(".scrap")[0].focus(); /* 웹접근성 webaccess_pub   */
+                  modal.style.display = "none"; // 팝업 닫기
+                  $(".scrap")[0].focus(); /* 웹 접근성을 위해 포커스 이동 */
                 }
               },
               error: function (request, status, error) {
@@ -233,53 +308,55 @@
           }
           ////////////////////////////////////////////////////////
 
+          // 비밀번호 변경 팝업(임시 비밀번호)을 닫는 함수
           function closePop1() {
             var modal1 = document.getElementById("passwordChange");
             modal1.style.display = "none";
           }
 
+          // 비밀번호 변경 팝업(유효기간 만료)을 닫는 함수
           function closePop2() {
             var modal2 = document.getElementById("passwordChange2");
             modal2.style.display = "none";
           }
 
+          // 비밀번호 변경 페이지로 이동하는 함수
           function goPassCg() {
             window.location.href = "https://www.mentalhealth.go.kr/portal/mypage/member/selectPassword.do";
           }
 
+          // '다음에 변경하기' 선택 시 호출되는 함수
           function goPassNext() {
             window.location.href = "https://www.mentalhealth.go.kr/portal/mypage/member/nextPassword.do";
           }
 
+          // 상단 검색창에서 검색을 실행하는 함수
           function fnSearchBtnTop() {
             var data = $("#searchDataTop").val();
-            var url = "https://www.mentalhealth.go.kr/search/front/Search.jsp?qt=" + encodeURI(data);
-            window.open(url);
+            var url = "https://www.mentalhealth.go.kr/search/front/Search.jsp?qt=" + encodeURI(data); // 검색어를 UTF-8로 인코딩하여 URL 생성
+            window.open(url); // 새 창에서 검색 결과 페이지를 엽니다.
           }
 
-          //디지털원패스 회원가입 팝업
+          // 디지털원패스 회원가입 팝업을 여는 함수
           function onePassRegistPop() {
-            // var popUrl = "https://www.onepass.go.kr/regist/agree?redirectSiteUrl=https://health.cdc.go.kr/healthinfo/biz/health/main/digitalOnepass/joinAction.do";
             var popUrl = "https://www.onepass.go.kr/regist/agree?redirectSiteSeq=950";
             var popOption = "width=700, height=800, resizable=no, scrollbars=yes, status=no, title=디지털원패스 회원가입, top=100, left=100, location=no";
             window.name = "hcmhp";
             var popupWindow = window.open(popUrl, "디지털원패스 회원가입", popOption);
-
             popupWindow.focus();
           }
 
-          //디지털원패스 로그인 팝업
+          // 디지털원패스 로그인 팝업을 여는 함수
           function onePassLoginPop() {
             var popUrl = "https://www.mentalhealth.go.kr/portal/digitalOnepass/loginout.do?serviceType=LOGIN";
             var popOption = "width=700, height=700, resizable=no, scrollbars=yes, status=no, title=디지털원패스 로그인, top=100, left=100, location=no";
             window.name = "hcmhp";
             var popupWindow = window.open(popUrl, "디지털원패스 로그인", popOption);
-
             popupWindow.focus();
           }
 
-          // AuthenticInterceptor전 로그인여부 체크하여 OnePass 로그인창을 유도한다.
-          //2022-12 국가정신건강서비스포털 고도화('22) 회원 서비스 중지
+          // 인증 인터셉터에서 로그인 여부를 체크하여 원패스 로그인 창을 유도하는 함수
+          // (2022-12 고도화 프로젝트에서 회원 서비스 중지로 인해 항상 true를 반환하도록 수정됨)
           function fnAuthOnePassLoginPop() {
             return true;
           }
@@ -1149,7 +1226,7 @@
         <script type="text/javascript">
           $(document).ready(function () {});
         </script>
-        <div>/exit
+        <div>
           <ul>
             <li><a href="javascript:moveMenu('https://www.mentalhealth.go.kr/portal/board/policy/selectStplatInfo.do')">이용약관</a></li>
             <li>
