@@ -91,7 +91,7 @@ a.btn_l {
   background: #fff;
   outline: none;
   font-size: 1.8rem;
-  background: url("/images/ncmhp/contents/btn_arrowLine.png") no-repeat right center;
+  background: url("../images/extracted/btn_arrowLine.png") no-repeat right center;
 }
 .nextResult {
   position: relative;
@@ -102,7 +102,7 @@ a.btn_l {
   margin: 2px 6px 2px 0;
   outline: none;
   border: 1px solid #e8e8e8;
-  box-sizing: border-box; /*background:#fff url('/images/ncmhp/contents/bullet_disease_part_on.png') no-repeat right center;*/
+  box-sizing: border-box; /*background:#fff url('../images/extracted/bullet_disease_part_on.png') no-repeat right center;*/
   vertical-align: middle;
   transition: all ease 0.3s;
 }
@@ -141,7 +141,7 @@ a.btn_l {
   vertical-align: middle;
   border: 1px solid #aaa;
   border-left: none;
-  background: #f4f4f4 url("/images/ncmhp/contents/btn_calen.png") no-repeat center center;
+  background: #f4f4f4 url("../images/extracted/btn_calen.png") no-repeat center center;
 }
 .btn_right {
   margin-bottom: 40px;
@@ -314,7 +314,7 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: #f8f8f8 url("/images/ncmhp/contents/ico_select.png") no-repeat right 15px center;
+  background: #f8f8f8 url("../images/extracted/ico_select.png") no-repeat right 15px center;
 }
 select::-ms-expand {
   display: none;
@@ -429,10 +429,10 @@ textarea {
 .top_box.symp > p {
   padding-left: 75px;
   height: 56px;
-  background: url("/images/ncmhp/contents/symp_img.png") no-repeat 0 center;
+  background: url("../images/extracted/symp_img.png") no-repeat 0 center;
 }
 .top_box.medi_info {
-  background: #f9f9f9 url("/images/ncmhp/contents/ico_noti.png") no-repeat 35px 25px;
+  background: #f9f9f9 url("../images/extracted/ico_noti.png") no-repeat 35px 25px;
 }
 
 .top_box.medi_info:after {
@@ -476,7 +476,7 @@ textarea {
   padding: 0;
   border: 0;
   margin-bottom: 0px;
-  background: url("/images/ncmhp/contents/ico_noti.png") no-repeat 0px 1px;
+  background: url("../images/extracted/ico_noti.png") no-repeat 0px 1px;
 }
 .top_box.medi_info.renew2012.mb15 {
   margin-bottom: 15px;
@@ -498,7 +498,7 @@ textarea {
   padding: 4px 0 4px 40px;
   border: 0;
   margin: 0 0 50px 0;
-  background: url("/images/ncmhp/contents/ico_notice.png") no-repeat left top;
+  background: url("../images/extracted/ico_notice.png") no-repeat left top;
 }
 .top_box.renew2012 > p {
   font-size: 1.5rem;
@@ -571,7 +571,7 @@ textarea {
   margin-left: -5px;
 }
 .ico_sch input {
-  background: url("/images/ncmhp/contents/btn_sch_b.png") #f8f8f8 no-repeat center center;
+  background: url("../images/extracted/btn_sch_b.png") #f8f8f8 no-repeat center center;
   font-size: 0;
 }
 
@@ -646,16 +646,16 @@ textarea {
 }
 
 .paging li a.first {
-  background: url("/images/ncmhp/contents/btn_first.png") no-repeat center center;
+  background: url("../images/extracted/btn_first.png") no-repeat center center;
 }
 .paging li a.prev {
-  background: url("/images/ncmhp/contents/btn_prev.png") no-repeat center center;
+  background: url("../images/extracted/btn_prev.png") no-repeat center center;
 }
 .paging li a.next {
-  background: url("/images/ncmhp/contents/btn_next.png") no-repeat center center;
+  background: url("../images/extracted/btn_next.png") no-repeat center center;
 }
 .paging li a.last {
-  background: url("/images/ncmhp/contents/btn_end.png") no-repeat center center;
+  background: url("../images/extracted/btn_end.png") no-repeat center center;
 }
 
 /* 3X2 */
@@ -978,7 +978,7 @@ textarea {
   width: 16px;
   height: 16px;
   vertical-align: middle;
-  background: url("/images/ncmhp/contents/bul_all.png") no-repeat 0 -100px;
+  background: url("../images/extracted/bul_all.png") no-repeat 0 -100px;
 }
 
 .img_list.drug > li {
@@ -1061,7 +1061,7 @@ textarea {
   top: 5px;
   width: 14px;
   height: 17px;
-  background: url("/images/ncmhp/contents/ico_info.png") no-repeat 0 0;
+  background: url("../images/extracted/ico_info.png") no-repeat 0 0;
 }
 .medi-infoArea .mi-link {
   float: right;
@@ -1186,7 +1186,7 @@ textarea {
   width: 22px;
   height: 21px;
   vertical-align: middle;
-  background: url("/images/ncmhp/contents/ico_all.png") no-repeat -450px -100px;
+  background: url("../images/downloaded/ico_all.png") no-repeat -450px -100px;
 }
 
 /* 바로보기 */
@@ -1650,14 +1650,14 @@ textarea {
   width: 15px;
   height: 7px;
   vertical-align: middle;
-  background: url("/images/ncmhp/contents/bul_all.png") no-repeat -250px -50px;
+  background: url("../images/extracted/bul_all.png") no-repeat -250px -50px;
   filter: invert(1);
 }
 .open_all.on:before {
   content: "모두 닫기";
 }
 .open_all.on:after {
-  background: url("/images/ncmhp/contents/bul_all.png") no-repeat -200px -50px;
+  background: url("../images/extracted/bul_all.png") no-repeat -200px -50px;
 }
 
 /* 2020-11-30 추가 */
@@ -1720,7 +1720,7 @@ textarea {
   height: 29px;
   margin: 0 auto;
   vertical-align: middle;
-  background: url("/images/ncmhp/contents/bul_all.png") no-repeat -177px -95px;
+  background: url("../images/extracted/bul_all.png") no-repeat -177px -95px;
 }
 .accordi.faq > li .tit > a > .faq-keyword {
   width: 13.714285%;
@@ -1811,7 +1811,7 @@ textarea {
 .greeting-box {
   position: relative;
   width: 62%;
-  background: url("/images/ncmhp/contents/greeting_bg.png") no-repeat top right;
+  background: url("../images/extracted/greeting_bg.png") no-repeat top right;
 }
 .greeting-box .gree-tit {
   text-align: left;
@@ -1961,7 +1961,7 @@ textarea {
   width: 100%;
   margin: 0 auto;
   padding-top: 80px;
-  background: url("/images/ncmhp/contents/bg_portal_arrow_top.png") no-repeat center bottom;
+  background: url("../images/extracted/bg_portal_arrow_top.png") no-repeat center bottom;
   background: #f1f8ff;
   padding: 7%;
 }
@@ -2035,7 +2035,7 @@ textarea {
 
 /* 소개알림 - 공정 */
 .self_boxTop.process > div {
-  background: #fff url("/images/ncmhp/contents/process_icon01.png") no-repeat 50px center;
+  background: #fff url("../images/extracted/process_icon01.png") no-repeat 50px center;
 }
 .self_boxTop.process > div .con .pointColor {
   font-style: normal;
@@ -2191,40 +2191,40 @@ textarea {
   margin-right: 20px;
 }
 .prosess-flowChart ul li > div .icon-graph.typeA {
-  background: url("/images/ncmhp/contents/icon_prosess_typeA.png") no-repeat left bottom;
+  background: url("../images/extracted/icon_prosess_typeA.png") no-repeat left bottom;
 }
 .prosess-flowChart ul li > div .icon-graph.typeB {
-  background: url("/images/ncmhp/contents/icon_prosess_typeB.png") no-repeat left bottom;
+  background: url("../images/extracted/icon_prosess_typeB.png") no-repeat left bottom;
 }
 .prosess-flowChart ul li > div .icon-graph.typeC {
-  background: url("/images/ncmhp/contents/icon_prosess_typeC.png") no-repeat left bottom;
+  background: url("../images/extracted/icon_prosess_typeC.png") no-repeat left bottom;
 }
 .prosess-flowChart ul li > div .icon-graph.typeD {
-  background: url("/images/ncmhp/contents/icon_prosess_typeD.png") no-repeat left bottom;
+  background: url("../images/extracted/icon_prosess_typeD.png") no-repeat left bottom;
 }
 .prosess-flowChart ul li > div .icon-graph.typeE {
-  background: url("/images/ncmhp/contents/icon_prosess_typeE.png") no-repeat left bottom;
+  background: url("../images/extracted/icon_prosess_typeE.png") no-repeat left bottom;
 }
 .prosess-flowChart ul li > div .icon-graph.typeF {
-  background: url("/images/ncmhp/contents/icon_prosess_typeF.png") no-repeat left bottom;
+  background: url("../images/extracted/icon_prosess_typeF.png") no-repeat left bottom;
 }
 .prosess-flowChart ul li > div .icon-graph.typeG {
-  background: url("/images/ncmhp/contents/icon_prosess_typeG.png") no-repeat left bottom;
+  background: url("../images/extracted/icon_prosess_typeG.png") no-repeat left bottom;
 }
 .prosess-flowChart ul li > div .icon-graph.typeH {
-  background: url("/images/ncmhp/contents/icon_prosess_typeH.png") no-repeat left bottom;
+  background: url("../images/extracted/icon_prosess_typeH.png") no-repeat left bottom;
 }
 .prosess-flowChart ul li > div .icon-graph.typeI {
-  background: url("/images/ncmhp/contents/icon_prosess_typeI.png") no-repeat left bottom;
+  background: url("../images/extracted/icon_prosess_typeI.png") no-repeat left bottom;
 }
 .prosess-flowChart ul li > div .icon-graph.typeJ {
-  background: url("/images/ncmhp/contents/icon_prosess_typeJ.png") no-repeat left bottom;
+  background: url("../images/extracted/icon_prosess_typeJ.png") no-repeat left bottom;
 }
 .prosess-flowChart ul li > div .icon-graph.typeK {
-  background: url("/images/ncmhp/contents/icon_prosess_typeK.png") no-repeat left bottom;
+  background: url("../images/extracted/icon_prosess_typeK.png") no-repeat left bottom;
 }
 .prosess-flowChart ul li > div .icon-graph.typeL {
-  background: url("/images/ncmhp/contents/icon_prosess_typeL.png") no-repeat left bottom;
+  background: url("../images/extracted/icon_prosess_typeL.png") no-repeat left bottom;
 }
 .prosess-flowChart ul li > div .ig-tit {
   display: inline-block;
@@ -2383,7 +2383,7 @@ textarea {
   top: 0;
   width: 29px;
   height: 29px;
-  background: url("/images/ncmhp/contents/bul_all.png") no-repeat 0 -206px;
+  background: url("../images/extracted/bul_all.png") no-repeat 0 -206px;
   vertical-align: middle;
 }
 .info-qnaArea dl dd {
@@ -2403,7 +2403,7 @@ textarea {
   font-size: 1.6rem;
   line-height: 1.5em;
   vertical-align: middle;
-  background: url("/images/ncmhp/contents/ico_notice.png") no-repeat left top 2px;
+  background: url("../images/extracted/ico_notice.png") no-repeat left top 2px;
 }
 
 /* 위치검색 */
@@ -2579,7 +2579,7 @@ textarea {
   padding: 7px 10px 7px 30px;
   font-size: 1.4rem;
   border: 1px solid #333;
-  background: #fff url("/images/ncmhp/contents/bul_posi.png") no-repeat left 10px center;
+  background: #fff url("../images/extracted/bul_posi.png") no-repeat left 10px center;
   border-radius: 4px;
 }
 
@@ -2697,13 +2697,13 @@ textarea {
   background-size: contain !important;
 }
 .self_exam > li:nth-child(1) dl {
-  background: url("/images/ncmhp/contents/life_cycle_card01.png") no-repeat center bottom;
+  background: url("../images/extracted/life_cycle_card01.png") no-repeat center bottom;
 }
 .self_exam > li:nth-child(2) dl {
-  background: url("/images/ncmhp/contents/life_cycle_card02.png") no-repeat center bottom;
+  background: url("../images/extracted/life_cycle_card02.png") no-repeat center bottom;
 }
 .self_exam > li:nth-child(3) dl {
-  background: url("/images/ncmhp/contents/life_cycle_card03.png") no-repeat center bottom;
+  background: url("../images/extracted/life_cycle_card03.png") no-repeat center bottom;
 }
 .self_exam > li dl dt,
 .self_exam > li dl dd {
@@ -2744,7 +2744,7 @@ textarea {
   border: 6px solid #f6f6f6;
   padding: 50px 20px 50px 200px;
   margin: 0 auto 50px;
-  background: #fff url("/images/ncmhp/contents/self_child.png") no-repeat 50px center;
+  background: #fff url("../images/extracted/self_child.png") no-repeat 50px center;
 }
 .self_boxTop > div:before {
   content: "";
@@ -2753,7 +2753,7 @@ textarea {
   position: absolute;
   left: -6px;
   top: -6px;
-  background: url("/images/ncmhp/contents/subTitl_line_left.png") no-repeat left top;
+  background: url("../images/extracted/subTitl_line_left.png") no-repeat left top;
 }
 .self_boxTop > div:after {
   content: "";
@@ -2762,7 +2762,7 @@ textarea {
   position: absolute;
   right: -6px;
   bottom: -6px;
-  background: url("/images/ncmhp/contents/subTitl_line_right.png") no-repeat right bottom;
+  background: url("../images/extracted/subTitl_line_right.png") no-repeat right bottom;
 }
 
 .self_boxTop.noBoard {
@@ -2804,30 +2804,30 @@ textarea {
 }
 
 .self_boxTop.teen > div {
-  background-image: url("/images/ncmhp/contents/self_teen.png");
+  background-image: url("../images/extracted/self_teen.png");
 }
 .self_boxTop.adult > div {
-  background-image: url("/images/ncmhp/contents/self_adult.png");
+  background-image: url("../images/extracted/self_adult.png");
 }
 .self_boxTop.checkup > div {
-  background-image: url("/images/ncmhp/contents/self_icon01.png");
+  background-image: url("../images/extracted/self_icon01.png");
 }
 .self_boxTop.checkup .btn_posi {
   display: inline-block;
   margin-top: 20px;
 }
 .self_boxTop.online > div {
-  background-image: url("/images/ncmhp/contents/online.png");
+  background-image: url("../images/extracted/online.png");
 }
 .self_boxTop.screen_test > div {
-  background-image: url("/images/ncmhp/contents/self_icon01.png");
+  background-image: url("../images/extracted/self_icon01.png");
 }
 /* 2020-11-30 추가 */
 .self_boxTop.faq {
   min-height: 157px;
 }
 .self_boxTop.faq > div {
-  background: #fff url("/images/ncmhp/contents/self_boxTop_faq.png") no-repeat 50px center;
+  background: #fff url("../images/extracted/self_boxTop_faq.png") no-repeat 50px center;
 }
 
 .self_boxBottom.faq {
@@ -2841,7 +2841,7 @@ textarea {
   height: auto;
   padding: 19px 40px 19px 120px;
   border: 1px solid #a3b4c4;
-  background: #f4f7f9 url("/images/ncmhp/contents/self_mail.png") no-repeat 40px center;
+  background: #f4f7f9 url("../images/extracted/self_mail.png") no-repeat 40px center;
 }
 .self_boxBottom.faq > div {
   display: table-cell;
@@ -2865,7 +2865,7 @@ textarea {
 }
 
 .self_boxTop.recover > div {
-  background-image: url("/images/ncmhp/contents/recover_icon01.png");
+  background-image: url("../images/extracted/recover_icon01.png");
 }
 .self_boxTop.recover > div .tit {
   margin-bottom: 0;
@@ -2876,7 +2876,7 @@ textarea {
 }
 .self_boxTop.disease_txt > div {
   padding-left: 360px;
-  background: #fff url("/images/ncmhp/contents/disease_img_inverse.png") no-repeat 50px center;
+  background: #fff url("../images/extracted/disease_img_inverse.png") no-repeat 50px center;
 }
 .self_boxTop.disease_txt > div .tit {
   margin-top: 20px;
@@ -2886,7 +2886,7 @@ textarea {
 }
 
 .self_boxTop.drug_img > div {
-  background-image: url("/images/ncmhp/contents/drug_icon01.png");
+  background-image: url("../images/extracted/drug_icon01.png");
 }
 .self_boxTop.drug_img .tit {
   margin-bottom: 0;
@@ -2982,74 +2982,74 @@ textarea {
 
 /* 청소년 */
 .self_list .con ul > li:nth-child(1) > a > div {
-  background-image: url("/images/ncmhp/contents/gloom.png");
+  background-image: url("../images/extracted/gloom.png");
 }
 .self_list .con ul > li:nth-child(2) > a > div {
-  background-image: url("/images/ncmhp/contents/defect.png");
+  background-image: url("../images/extracted/defect.png");
 }
 .self_list .con ul > li:nth-child(3) > a > div {
-  background-image: url("/images/ncmhp/contents/suicide.png");
+  background-image: url("../images/extracted/suicide.png");
 }
 .self_list .con ul > li:nth-child(4) > a > div {
-  background-image: url("/images/ncmhp/contents/internet.png");
+  background-image: url("../images/extracted/internet.png");
 }
 .self_list .con ul > li:nth-child(5) > a > div {
-  background-image: url("/images/ncmhp/contents/game.png");
+  background-image: url("../images/extracted/game.png");
 }
 .self_list .con ul > li:nth-child(6) > a > div {
-  background-image: url("/images/ncmhp/contents/phone.png");
+  background-image: url("../images/extracted/phone.png");
 }
 
 /* 아동 */
 .self_list.child .con ul > li:nth-child(1) > a > div {
-  background-image: url("/images/ncmhp/contents/adhd.png");
+  background-image: url("../images/extracted/adhd.png");
 }
 
 /* 성인 */
 .self_list.adult .con ul > li:nth-child(1) > a > div {
-  background-image: url("/images/ncmhp/contents/gloom.png");
+  background-image: url("../images/extracted/gloom.png");
 }
 .self_list.adult .con ul > li:nth-child(2) > a > div {
-  background-image: url("/images/ncmhp/contents/aged.png");
+  background-image: url("../images/extracted/aged.png");
 }
 .self_list.adult .con ul > li:nth-child(3) > a > div {
-  background-image: url("/images/ncmhp/contents/bipolar.png");
+  background-image: url("../images/extracted/bipolar.png");
 }
 .self_list.adult .con ul > li:nth-child(4) > a > div {
-  background-image: url("/images/ncmhp/contents/panic.png");
+  background-image: url("../images/extracted/panic.png");
 }
 .self_list.adult .con ul > li:nth-child(5) > a > div {
-  background-image: url("/images/ncmhp/contents/disorder.png");
+  background-image: url("../images/extracted/disorder.png");
 }
 .self_list.adult .con ul > li:nth-child(6) > a > div {
-  background-image: url("/images/ncmhp/contents/stress.png");
+  background-image: url("../images/extracted/stress.png");
 }
 .self_list.adult .con ul > li:nth-child(7) > a > div {
-  background-image: url("/images/ncmhp/contents/defect.png");
+  background-image: url("../images/extracted/defect.png");
 }
 .self_list.adult .con ul > li:nth-child(8) > a > div {
-  background-image: url("/images/ncmhp/contents/insomnia.png");
+  background-image: url("../images/extracted/insomnia.png");
 }
 .self_list.adult .con ul > li:nth-child(9) > a > div {
-  background-image: url("/images/ncmhp/contents/cognitive.png");
+  background-image: url("../images/extracted/cognitive.png");
 }
 .self_list.adult .con ul > li:nth-child(10) > a > div {
-  background-image: url("/images/ncmhp/contents/obessive.png");
+  background-image: url("../images/extracted/obessive.png");
 }
 .self_list.adult .con ul > li:nth-child(11) > a > div {
-  background-image: url("/images/ncmhp/contents/alcohol.png");
+  background-image: url("../images/extracted/alcohol.png");
 }
 .self_list.adult .con ul > li:nth-child(12) > a > div {
-  background-image: url("/images/ncmhp/contents/suicide.png");
+  background-image: url("../images/extracted/suicide.png");
 }
 .self_list.adult .con ul > li:nth-child(13) > a > div {
-  background-image: url("/images/ncmhp/contents/internet.png");
+  background-image: url("../images/extracted/internet.png");
 }
 .self_list.adult .con ul > li:nth-child(14) > a > div {
-  background-image: url("/images/ncmhp/contents/game.png");
+  background-image: url("../images/extracted/game.png");
 }
 .self_list.adult .con ul > li:nth-child(15) > a > div {
-  background-image: url("/images/ncmhp/contents/phone.png");
+  background-image: url("../images/extracted/phone.png");
 }
 
 .self_list > li .on,
@@ -3159,25 +3159,25 @@ textarea {
   text-decoration: underline;
   text-underline-position: under;
 }
-/* .self_checkLsit > li:nth-child(1) .thumb{background-image:url('/images/ncmhp/contents/self_thumb01.jpg');}
-.self_checkLsit > li:nth-child(2) .thumb{background-image:url('/images/ncmhp/contents/self_thumb02.jpg');}
-.self_checkLsit > li:nth-child(3) .thumb{background-image:url('/images/ncmhp/contents/self_thumb03.jpg');}
-.self_checkLsit > li:nth-child(4) .thumb{background-image:url('/images/ncmhp/contents/self_thumb04.jpg');}
-.self_checkLsit > li:nth-child(5) .thumb{background-image:url('/images/ncmhp/contents/self_thumb05.jpg');}
-.self_checkLsit > li:nth-child(6) .thumb{background-image:url('/images/ncmhp/contents/self_thumb06.jpg');}
-.self_checkLsit > li:nth-child(7) .thumb{background-image:url('/images/ncmhp/contents/self_thumb07.jpg');}
-.self_checkLsit > li:nth-child(8) .thumb{background-image:url('/images/ncmhp/contents/self_thumb08.jpg');}
-.self_checkLsit > li:nth-child(9) .thumb{background-image:url('/images/ncmhp/contents/self_thumb09.jpg');}
-.self_checkLsit > li:nth-child(10) .thumb{background-image:url('/images/ncmhp/contents/self_thumb10.jpg');}
-.self_checkLsit > li:nth-child(11) .thumb{background-image:url('/images/ncmhp/contents/self_thumb11.jpg');}
-.self_checkLsit > li:nth-child(12) .thumb{background-image:url('/images/ncmhp/contents/self_thumb12.jpg');}
-.self_checkLsit > li:nth-child(13) .thumb{background-image:url('/images/ncmhp/contents/self_thumb13.jpg');}
-.self_checkLsit > li:nth-child(14) .thumb{background-image:url('/images/ncmhp/contents/self_thumb14.jpg');}
-.self_checkLsit > li:nth-child(15) .thumb{background-image:url('/images/ncmhp/contents/self_thumb15.jpg');}
-.self_checkLsit > li:nth-child(16) .thumb{background-image:url('/images/ncmhp/contents/self_thumb16.jpg');}
-.self_checkLsit > li:nth-child(17) .thumb{background-image:url('/images/ncmhp/contents/self_thumb17.jpg');}
-.self_checkLsit > li:nth-child(18) .thumb{background-image:url('/images/ncmhp/contents/self_thumb18.jpg');}
-.self_checkLsit > li:nth-child(19) .thumb{background-image:url('/images/ncmhp/contents/self_thumb19.jpg');} */
+/* .self_checkLsit > li:nth-child(1) .thumb{background-image:url('../images/extracted/self_thumb01.jpg');}
+.self_checkLsit > li:nth-child(2) .thumb{background-image:url('../images/extracted/self_thumb02.jpg');}
+.self_checkLsit > li:nth-child(3) .thumb{background-image:url('../images/extracted/self_thumb03.jpg');}
+.self_checkLsit > li:nth-child(4) .thumb{background-image:url('../images/extracted/self_thumb04.jpg');}
+.self_checkLsit > li:nth-child(5) .thumb{background-image:url('../images/extracted/self_thumb05.jpg');}
+.self_checkLsit > li:nth-child(6) .thumb{background-image:url('../images/extracted/self_thumb06.jpg');}
+.self_checkLsit > li:nth-child(7) .thumb{background-image:url('../images/extracted/self_thumb07.jpg');}
+.self_checkLsit > li:nth-child(8) .thumb{background-image:url('../images/extracted/self_thumb08.jpg');}
+.self_checkLsit > li:nth-child(9) .thumb{background-image:url('../images/extracted/self_thumb09.jpg');}
+.self_checkLsit > li:nth-child(10) .thumb{background-image:url('../images/extracted/self_thumb10.jpg');}
+.self_checkLsit > li:nth-child(11) .thumb{background-image:url('../images/extracted/self_thumb11.jpg');}
+.self_checkLsit > li:nth-child(12) .thumb{background-image:url('../images/extracted/self_thumb12.jpg');}
+.self_checkLsit > li:nth-child(13) .thumb{background-image:url('../images/extracted/self_thumb13.jpg');}
+.self_checkLsit > li:nth-child(14) .thumb{background-image:url('../images/extracted/self_thumb14.jpg');}
+.self_checkLsit > li:nth-child(15) .thumb{background-image:url('../images/extracted/self_thumb15.jpg');}
+.self_checkLsit > li:nth-child(16) .thumb{background-image:url('../images/extracted/self_thumb16.jpg');}
+.self_checkLsit > li:nth-child(17) .thumb{background-image:url('../images/extracted/self_thumb17.jpg');}
+.self_checkLsit > li:nth-child(18) .thumb{background-image:url('../images/extracted/self_thumb18.jpg');}
+.self_checkLsit > li:nth-child(19) .thumb{background-image:url('../images/extracted/self_thumb19.jpg');} */
 
 .self_ico {
   position: absolute;
@@ -3343,7 +3343,7 @@ textarea {
   width: 16px;
   height: 18px;
   vertical-align: middle;
-  background: url("/images/ncmhp/contents/ico_all.png") no-repeat -600px -550px;
+  background: url("../images/downloaded/ico_all.png") no-repeat -600px -550px;
 }
 
 /* 자가검진 결과 */
@@ -3453,7 +3453,7 @@ textarea {
 .box_wrap > div > p {
   display: block;
   padding: 40px 50px 40px 200px;
-  background: url("/images/ncmhp/contents/self_icon02.png") no-repeat 45px 40px;
+  background: url("../images/extracted/self_icon02.png") no-repeat 45px 40px;
 }
 .box_wrap > div > p strong {
   display: block;
@@ -3468,7 +3468,7 @@ textarea {
   color: #fff;
 }
 .box_wrap > div:nth-of-type(3) > p {
-  background-image: url("/images/ncmhp/contents/self_icon03.png");
+  background-image: url("../images/extracted/self_icon03.png");
 }
 .box_wrap > div > p > span {
   display: block;
@@ -3516,7 +3516,7 @@ textarea {
   width: 43px;
   height: 5px;
   vertical-align: middle;
-  background: url("/images/ncmhp/contents/ico_all.png") no-repeat -150px -650px;
+  background: url("../images/downloaded/ico_all.png") no-repeat -150px -650px;
 }
 
 .result2_go > ul > li {
@@ -3617,7 +3617,7 @@ textarea {
   text-align: center;
   font-size: 0;
   line-height: 0;
-  background: url("/images/ncmhp/contents/disease_dot.png") repeat-x 0 center;
+  background: url("../images/extracted/disease_dot.png") repeat-x 0 center;
   filter: grayscale(1) brightness(1.4);
 }
 .disease_part .all_open > a {
@@ -3627,10 +3627,10 @@ textarea {
   font-size: 0;
   line-height: 0;
   text-indent: -9999px;
-  background: url("/images/ncmhp/contents/btn_down.png") no-repeat 0 0;
+  background: url("../images/extracted/btn_down.png") no-repeat 0 0;
 }
 .disease_part .all_open > a.on {
-  background: url("/images/ncmhp/contents/btn_up.png") no-repeat 0 0;
+  background: url("../images/extracted/btn_up.png") no-repeat 0 0;
 }
 
 /* list */
@@ -3841,7 +3841,7 @@ textarea {
   margin: 0 auto 40px auto;
   width: 178px;
   height: 178px;
-  background: url("/images/ncmhp/contents/ico_all.png") no-repeat -400px -350px;
+  background: url("../images/downloaded/ico_all.png") no-repeat -400px -350px;
 }
 .pw_change > p {
   margin-bottom: 30px;
@@ -3868,7 +3868,7 @@ textarea {
   float: left;
   width: 23.5%;
   margin-right: 2%;
-  background: url("/images/ncmhp/contents/join_bg.png") no-repeat right center;
+  background: url("../images/extracted/join_bg.png") no-repeat right center;
 }
 .join_step > li:last-child {
   margin-right: 0;
@@ -3891,7 +3891,7 @@ textarea {
   font-style: italic;
 }
 .join_step > li.on {
-  background: url("/images/ncmhp/contents/join_bg_on.png") no-repeat right center;
+  background: url("../images/extracted/join_bg_on.png") no-repeat right center;
 }
 .join_step > li.on > span {
   border: 1px solid #007cb7;
@@ -3922,7 +3922,7 @@ textarea {
   margin: 0 auto 30px auto;
   width: 178px;
   height: 178px;
-  background: url("/images/ncmhp/contents/ico_all.png") no-repeat -200px -150px;
+  background: url("../images/downloaded/ico_all.png") no-repeat -200px -150px;
 }
 .join_end p > span {
   display: block;
@@ -3945,7 +3945,7 @@ textarea {
   margin: 0 auto 30px auto;
   width: 178px;
   height: 178px;
-  background: url("/images/ncmhp/contents/ico_all.png") no-repeat -600px -150px;
+  background: url("../images/downloaded/ico_all.png") no-repeat -600px -150px;
 }
 
 /* 로그인 */
@@ -3965,7 +3965,7 @@ textarea {
   margin: 0 auto 30px auto;
   width: 178px;
   height: 178px;
-  background: url("/images/ncmhp/contents/ico_all.png") no-repeat 0px -150px;
+  background: url("../images/downloaded/ico_all.png") no-repeat 0px -150px;
 }
 .login ul {
   margin: 0 85px 20px 0;
@@ -4176,7 +4176,7 @@ textarea {
   width: 38px;
   height: 45px;
   margin: 25px auto 10px auto;
-  background: url("/images/ncmhp/contents/ico_all.png") no-repeat 0 -650px;
+  background: url("../images/downloaded/ico_all.png") no-repeat 0 -650px;
 }
 .quick > ul > li:nth-child(2) > a:before {
   width: 39px;
@@ -4215,7 +4215,7 @@ textarea {
   display: inline-block;
   padding-left: 220px;
   text-align: left;
-  background: url("/images/ncmhp/contents/error.png") no-repeat 0 center;
+  background: url("../images/extracted/error.png") no-repeat 0 center;
 }
 .error .error_con > div p {
   line-height: 1.8em;
@@ -4268,7 +4268,7 @@ textarea {
   display: inline-block;
   width: 21px;
   height: 20px;
-  background: url("/images/ncmhp/contents/ico_all.png") no-repeat -350px 0;
+  background: url("../images/downloaded/ico_all.png") no-repeat -350px 0;
 }
 
 .pop_con {
@@ -4293,7 +4293,7 @@ textarea {
   margin: 0 auto 20px auto;
   width: 178px;
   height: 178px;
-  background: url("/images/ncmhp/contents/ico_all.png") no-repeat -400px -150px;
+  background: url("../images/downloaded/ico_all.png") no-repeat -400px -150px;
 }
 
 .sch_pw_pop {
@@ -4306,7 +4306,7 @@ textarea {
   margin: 0 auto 20px auto;
   width: 178px;
   height: 178px;
-  background: url("/images/ncmhp/contents/ico_all.png") no-repeat 0px -350px;
+  background: url("../images/downloaded/ico_all.png") no-repeat 0px -350px;
 }
 .sch_pw_pop > span {
   display: block;
@@ -4324,7 +4324,7 @@ textarea {
   margin: 0 auto 20px auto;
   width: 178px;
   height: 178px;
-  background: url("/images/ncmhp/contents/ico_all.png") no-repeat -200px -350px;
+  background: url("../images/downloaded/ico_all.png") no-repeat -200px -350px;
 }
 .pw_change_pop > span {
   display: block;
@@ -4354,7 +4354,7 @@ textarea {
   width: 50px;
   height: 50px;
   font-size: 0;
-  background: url("/images/ncmhp/contents/btn_sch.png") no-repeat center center;
+  background: url("../images/extracted/btn_sch.png") no-repeat center center;
 }
 .intgra_schTop .sch_input select,
 .intgra_schTop .sch_input input[type="text"] {
@@ -4404,7 +4404,7 @@ textarea {
   margin-left: 5px;
   width: 17px;
   height: 8px;
-  background: url("/images/ncmhp/contents/bul_all.png") no-repeat -250px -50px;
+  background: url("../images/extracted/bul_all.png") no-repeat -250px -50px;
 }
 .intgra_schTop .sch_btn.close_sch:after {
   background-position: -200px -50px;
@@ -4478,10 +4478,10 @@ textarea {
   display: block;
   width: 30px;
   height: 24px;
-  background: #fff url("/images/ncmhp/contents/btn_sel.png") no-repeat right center;
+  background: #fff url("../images/extracted/btn_sel.png") no-repeat right center;
 }
 .sch_con .sch_date.on > a:after {
-  background: #fff url("/images/ncmhp/contents/btn_sel_up.png") no-repeat right center;
+  background: #fff url("../images/extracted/btn_sel_up.png") no-repeat right center;
 }
 
 .sch_period {
@@ -4903,7 +4903,7 @@ iframe {
   width: 25px;
   height: 24px;
   vertical-align: -5px;
-  background: url("/images/ncmhp/contents/bul_all.png") no-repeat -200px 0;
+  background: url("../images/extracted/bul_all.png") no-repeat -200px 0;
 }
 
 .state_con .state_box {
@@ -4935,7 +4935,7 @@ iframe {
   width: 18px;
   height: 15px;
   vertical-align: middle;
-  background: url("/images/ncmhp/contents/bul_all.png") no-repeat -250px 0;
+  background: url("../images/extracted/bul_all.png") no-repeat -250px 0;
 }
 .define .wid_same > dt,
 .define .wid_same > dd {
@@ -4952,7 +4952,7 @@ iframe {
   width: 18px;
   height: 15px;
   vertical-align: middle;
-  background: url("/images/ncmhp/contents/bul_all.png") no-repeat -250px 0;
+  background: url("../images/extracted/bul_all.png") no-repeat -250px 0;
 }
 
 .define .list_sty2 > dt:before {
@@ -5102,7 +5102,7 @@ iframe {
   line-height: 183px;
   font-size: 3.5rem;
   text-align: center;
-  background: url("/images/ncmhp/contents/map_total.png") no-repeat 0 0;
+  background: url("../images/extracted/map_total.png") no-repeat 0 0;
 }
 .state_map .total > div {
   padding-left: 25px;
@@ -5167,7 +5167,7 @@ iframe {
   width: 20px;
   height: 47px;
   vertical-align: top;
-  background: url("/images/ncmhp/contents/bul_all.png") no-repeat -60px -150px;
+  background: url("../images/extracted/bul_all.png") no-repeat -60px -150px;
 }
 
 .state_map .total > div > ul > li:nth-child(2) > span:before {
@@ -5201,7 +5201,7 @@ iframe {
   width: 7px;
   height: 7px;
   vertical-align: 2px;
-  background: url("/images/ncmhp/contents/bul_all.png") no-repeat -150px -100px;
+  background: url("../images/extracted/bul_all.png") no-repeat -150px -100px;
 }
 .state_map .total > div > ul > li > em > strong {
   display: inline-block;
@@ -5211,7 +5211,7 @@ iframe {
 
 .state_map .map_detail {
   position: relative;
-  background: url("/images/ncmhp/contents/map.png") no-repeat center 50px;
+  background: url("../images/extracted/map.png") no-repeat center 50px;
 }
 .state_map .map_detail > ul {
   width: 285px;
@@ -5227,7 +5227,7 @@ iframe {
   margin-top: -10px;
   padding-left: 30px;
   font-size: 2rem;
-  background: url("/images/ncmhp/contents/map_blue.png") no-repeat 0 center;
+  background: url("../images/extracted/map_blue.png") no-repeat 0 center;
 }
 .state_map .map_detail > ul > li > ul {
   padding: 7px 10px;
@@ -5254,7 +5254,7 @@ iframe {
   width: 7px;
   height: 7px;
   vertical-align: middle;
-  background: url("/images/ncmhp/contents/bul_all.png") no-repeat 0 -150px;
+  background: url("../images/extracted/bul_all.png") no-repeat 0 -150px;
 }
 .state_map .map_detail > ul > li > ul > li:nth-child(2) > span:before {
   background-position: -10px -150px;
@@ -5283,7 +5283,7 @@ iframe {
 }
 .state_map .map_detail > ul.kangwon > li > p {
   padding: 0 30px 0 0;
-  background: url("/images/ncmhp/contents/map_red.png") no-repeat right center;
+  background: url("../images/extracted/map_red.png") no-repeat right center;
 }
 .state_map .map_detail > ul.kangwon > li > ul {
   margin-left: 55px;
@@ -5320,7 +5320,7 @@ iframe {
   margin: 0;
   padding: 0 0 30px 0;
   text-align: center;
-  background: url("/images/ncmhp/contents/map_yell.png") no-repeat center bottom;
+  background: url("../images/extracted/map_yell.png") no-repeat center bottom;
 }
 
 .state_map .map_detail > ul.kwangju > li:first-child {
@@ -5397,7 +5397,7 @@ iframe {
   font-weight: 500;
   color: #2f4c6b;
   min-height: 76px;
-  background: url("/images/ncmhp/contents/mark.png") no-repeat 0 0;
+  background: url("../images/extracted/mark.png") no-repeat 0 0;
 }
 .case_s_tit {
   margin: 0 auto 10px auto;
@@ -5437,7 +5437,7 @@ iframe {
   padding: 0 40px 0 0px;
   text-align: left;
   vertical-align: top;
-  background: url("/images/ncmhp/contents/arrow.png") no-repeat right 80px;
+  background: url("../images/extracted/arrow.png") no-repeat right 80px;
 }
 .help_step > ul > li img {
   height: 210px !important;
@@ -5550,7 +5550,7 @@ iframe {
   width: 31px;
   height: 19px;
   vertical-align: middle;
-  background: url("/images/ncmhp/contents/bul_all.png") no-repeat -50px -50px;
+  background: url("../images/extracted/bul_all.png") no-repeat -50px -50px;
 }
 .disease h4 {
   margin-bottom: 30px;
@@ -5578,7 +5578,7 @@ iframe {
   width: 18px;
   height: 18px;
   vertical-align: middle;
-  background: url("/images/ncmhp/contents/bul_all.png") no-repeat -100px -50px;
+  background: url("../images/extracted/bul_all.png") no-repeat -100px -50px;
 }
 
 .org_tit {
@@ -5627,7 +5627,7 @@ iframe {
 }
 .sleep_diagram > ul {
   padding-bottom: 60px;
-  background: url("/images/ncmhp/contents/dot.png") repeat-y 195px 0;
+  background: url("../images/extracted/dot.png") repeat-y 195px 0;
 }
 .sleep_diagram > ul > li {
   margin-bottom: 30px;
@@ -5646,7 +5646,7 @@ iframe {
 .sleep_diagram > ul > li > div {
   padding-right: 60px;
   width: 450px;
-  background: url("/images/ncmhp/contents/dot.png") repeat-x 0 center;
+  background: url("../images/extracted/dot.png") repeat-x 0 center;
 }
 .sleep_diagram > ul > li > div > p,
 .sleep_diagram > ul > li > p,
@@ -5678,7 +5678,7 @@ iframe {
 .sleep_diagram > div {
   padding: 40px 0 0 0px;
   text-align: left;
-  background: url("/images/ncmhp/contents/dot_line.png") no-repeat 60px 0;
+  background: url("../images/extracted/dot_line.png") no-repeat 60px 0;
 }
 .sleep_diagram > div > dl {
   display: inline-block;
@@ -6024,7 +6024,7 @@ iframe {
   margin: 0 auto 20px auto;
   width: 178px;
   height: 178px;
-  background: url("/images/ncmhp/contents/ico_all.png") no-repeat -400px -350px;
+  background: url("../images/downloaded/ico_all.png") no-repeat -400px -350px;
 }
 .sess_pop > span {
   display: block;
@@ -6499,7 +6499,7 @@ iframe {
     line-height: 1.5em;
     font-size: 1.8rem;
     text-align: left;
-    background: url("/images/ncmhp/contents/map_blue.png") no-repeat 0 center;
+    background: url("../images/extracted/map_blue.png") no-repeat 0 center;
   }
   .state_map .total > div {
     padding-left: 0;
@@ -7247,7 +7247,7 @@ iframe {
     width: 36px;
     height: 36px;
     font-size: 0;
-    background: url("/images/ncmhp/contents/self_btn_down.png") no-repeat 0 0;
+    background: url("../images/extracted/self_btn_down.png") no-repeat 0 0;
   }
 
   .self_list > li .on {
@@ -7258,7 +7258,7 @@ iframe {
   }
   .self_list > li .off {
     display: none;
-    background-image: url("/images/ncmhp/contents/self_btn_up.png");
+    background-image: url("../images/extracted/self_btn_up.png");
   }
   .self_list > li .off.view {
     display: block;
@@ -7520,7 +7520,7 @@ iframe {
     overflow-x: auto;
     border-right: 1px solid #bbb;
     border-left: 1px solid #bbb;
-    background: url("/images/ncmhp/contents/scroll_arrow.png") no-repeat center center;
+    background: url("../images/extracted/scroll_arrow.png") no-repeat center center;
   }
   .state_scroll table {
     margin-bottom: 0;
@@ -7811,7 +7811,7 @@ iframe {
     margin-bottom: 0px;
     padding: 10px 0px 50px 0px;
     text-align: center;
-    background: url("/images/ncmhp/contents/arrow2.png") no-repeat center bottom;
+    background: url("../images/extracted/arrow2.png") no-repeat center bottom;
   }
   .help_step > ul > li dl {
     width: 100%;

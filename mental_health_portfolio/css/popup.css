@@ -7,28 +7,38 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7); /* Dim background */
+  background: rgba(0, 0, 0, 0.5); /* Dim background, slightly lighter than previous */
   z-index: 1000; /* Ensure it's on top */
 }
+
+/* Initially hide the popup */
+.popup-overlay.hidden {
+  display: none;
+}
+
 .popup {
   background: white;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 10px; /* Slightly more rounded */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
   max-width: 80%;
-  min-width: 300px;
+  min-width: 300px; /* Ensure a minimum width */
 }
-.popup_content p {
-  margin-bottom: 10px;
+
+.popup_content_text { /* Updated class name from HTML */
+  margin-bottom: 20px; /* Increased margin */
   font-size: 16px;
   line-height: 1.5;
+  color: #333; /* Added text color */
 }
-.popup_close {
-  background: #007bff;
+
+.popup_close { /* Updated class name from HTML */
+  margin-top: 20px; /* Added margin */
+  padding: 10px 20px;
+  background-color: #007bff;
   color: white;
   border: none;
-  padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;

@@ -1,7 +1,14 @@
-function closePopup() {
-  document.getElementById('popupOverlay').style.display = 'none';
+// 포트폴리오 고지 팝업을 표시하는 함수
+function showPopup() {
+  const overlay = document.getElementById("popupOverlay");
+  overlay.classList.remove('hidden');
 }
-// Display popup on page load
-window.onload = function() {
-  document.getElementById('popupOverlay').style.display = 'flex';
-};
+
+// 포트폴리오 고지 팝업을 닫는 함수
+function closePopup() {
+  const overlay = document.getElementById("popupOverlay");
+  overlay.classList.add('hidden');
+}
+
+// 페이지 로드 시 팝업을 표시합니다.
+window.onload = showPopup;

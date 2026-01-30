@@ -216,25 +216,15 @@ main {
 @font-face {
   font-family: "NotoSans";
   font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/Noto_Sans_KR/NotoSans-DemiLight.eot");
-  src:
-    url("../fonts/Noto_Sans_KR/NotoSans-DemiLight.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/Noto_Sans_KR/NotoSans-DemiLight.woff2") format("woff2"),
-    url("../fonts/Noto_Sans_KR/NotoSans-DemiLight.woff") format("woff"),
-    url("../fonts/Noto_Sans_KR/NotoSans-DemiLight.otf") format("opentype");
+  font-weight: 300;
+  src: url("../fonts/Noto_Sans_KR/static/NotoSansKR-Light.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "NotoSans";
   font-style: normal;
-  font-weight: 500;
-  src: url("../fonts/Noto_Sans_KR/NotoSans-Regular.eot");
-  src:
-    url("../fonts/Noto_Sans_KR/NotoSans-Regular.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/Noto_Sans_KR/NotoSans-Regular.woff2") format("woff2"),
-    url("../fonts/Noto_Sans_KR/NotoSans-Regular.woff") format("woff"),
-    url("../fonts/Noto_Sans_KR/NotoSans-Regular.otf") format("opentype");
+  font-weight: 400;
+  src: url("../fonts/Noto_Sans_KR/static/NotoSansKR-Regular.ttf") format("truetype");
 }
 
 /*div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,select,textarea,th,td, input,textarea,select,button,span, strong, em{line-height:1em;}*/

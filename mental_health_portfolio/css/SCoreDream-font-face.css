@@ -4,8 +4,7 @@
   font-display: swap;
   src:
     local("SCDream9"),
-    url("./fonts/woff2/SCDream9.woff2") format("woff2"),
-    url("./fonts/woff/SCDream9.woff") format("woff");
+    url("../fonts/S-Core_Dream/SCDream9.otf") format("opentype");
 }
 
 @font-face {
@@ -14,8 +13,7 @@
   font-display: swap;
   src:
     local("SCDream8"),
-    url("./fonts/woff2/SCDream8.woff2") format("woff2"),
-    url("./fonts/woff/SCDream8.woff") format("woff");
+    url("../fonts/S-Core_Dream/SCDream8.otf") format("opentype");
 }
 
 @font-face {
@@ -24,8 +22,7 @@
   font-display: swap;
   src:
     local("SCDream7"),
-    url("./fonts/woff2/SCDream7.woff2") format("woff2"),
-    url("./fonts/woff/SCDream7.woff") format("woff");
+    url("../fonts/S-Core_Dream/SCDream7.otf") format("opentype");
 }
 
 @font-face {
@@ -44,8 +41,7 @@
   font-display: swap;
   src:
     local("SCDream5"),
-    url("./fonts/woff2/SCDream5.woff2") format("woff2"),
-    url("./fonts/woff/SCDream5.woff") format("woff");
+    url("../fonts/S-Core_Dream/SCDream5.otf") format("opentype");
 }
 
 @font-face {
@@ -54,8 +50,7 @@
   font-display: swap;
   src:
     local("SCDream4"),
-    url("./fonts/woff2/SCDream4.woff2") format("woff2"),
-    url("./fonts/woff/SCDream4.woff") format("woff");
+    url("../fonts/S-Core_Dream/SCDream4.otf") format("opentype");
 }
 
 @font-face {
@@ -64,8 +59,7 @@
   font-display: swap;
   src:
     local("SCDream3"),
-    url("./fonts/woff2/SCDream3.woff2") format("woff2"),
-    url("./fonts/woff/SCDream3.woff") format("woff");
+    url("../fonts/S-Core_Dream/SCDream3.otf") format("opentype");
 }
 
 @font-face {
@@ -74,8 +68,7 @@
   font-display: swap;
   src:
     local("SCDream2"),
-    url("./fonts/woff2/SCDream2.woff2") format("woff2"),
-    url("./fonts/woff/SCDream2.woff") format("woff");
+    url("../fonts/S-Core_Dream/SCDream2.otf") format("opentype");
 }
 
 @font-face {
@@ -84,6 +77,5 @@
   font-display: swap;
   src:
     local("SCDream1"),
-    url("./fonts/woff2/SCDream1.woff2") format("woff2"),
-    url("./fonts/woff/SCDream1.woff") format("woff");
+    url("../fonts/S-Core_Dream/SCDream1.otf") format("opentype");
 }
