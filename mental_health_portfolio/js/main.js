@@ -119,3 +119,114 @@ $(document).ready(function () {
       }
    });
 });
+
+// Custom slick slider initialization for .ban_list
+$(function(){
+
+    var VisualLength = $('.ban_list > div').length;
+	if(VisualLength>1){
+		$('.ban_btn .auto').addClass('play').text('');
+	} else{
+		$('.ban_btn .auto').addClass('pause').text('');
+	};
+	$('.ban_area .ban_list').slick({
+		swipe : true,
+		draggable : true,
+		slidesToShow : 1,
+		slidesToScroll: 1,
+		vertical : false,
+		autoplay : true,
+		infinite: true,
+		dots : true,
+		appendDots: $('.ban_btn .dotbox'),
+		prevArrow : false,
+		nextArrow : false
+	});
+
+	$('.ban_area .slick-dots button').on('click', function(){
+		$('.ban_area .ban_list').slick('slickPause');
+		$('.ban_area .ban_btn button.auto').removeClass('play').addClass('pause').text('');
+	});
+
+	$('.ban_area .ban_list').on('swipe', function(event, slick, direction){
+		$('.ban_area .ban_list').slick('slickPause');
+		$('.ban_area .ban_btn button.auto').removeClass('play').addClass('pause').text('');
+	});
+
+	$('.ban_area .ban_btn button.auto').click(function(){
+		var NowPlaying = $(this).is('.play');
+		if(NowPlaying==true){
+			$('.ban_area .ban_list').slick('slickPause');
+			$(this).removeClass('play').addClass('pause').text('');
+		} else if(NowPlaying==false){
+			$('.ban_area .ban_list').slick('slickPlay');
+			$(this).removeClass('pause').addClass('play').text('');
+		};
+	});
+
+	var $VisualPopupList = $('.ban_list .slick-slide');
+	$VisualPopupList.each(function(){
+		var $VisualPopupLink = $(this).children('a'),
+			VisualPopupHref = $VisualPopupLink.attr('href');
+		$VisualPopupLink.on('click', function(){
+			if(!VisualPopupHref){
+				return false;
+			};
+		});
+	});
+});
+
+// Custom slick slider initialization for .app_list
+$(function(){	
+	var VisualLength = $('.app_list > div').length;
+	if(VisualLength>1){
+		$('.app_btn .auto').addClass('play').text('');
+	} else{
+		$('.app_btn .auto').addClass('pause').text('');
+	};
+	$('.app_area .app_list').slick({
+		swipe : true,
+		draggable : true,
+		slidesToShow : 1,
+		slidesToScroll: 1,
+		vertical : false,
+		autoplay : true,
+		infinite: true,
+		dots : true,
+		appendDots: $('.app_btn .dotbox'),
+		prevArrow : false,
+		nextArrow : false
+	});
+
+	$('.app_area .slick-dots button').on('click', function(){
+		$('.app_area .app_list').slick('slickPause');
+		$('.app_area .app_btn button.auto').removeClass('play').addClass('pause').text(''); // Corrected typo here
+	});
+
+	$('.app_area .app_list').on('swipe', function(event, slick, direction){
+		$('.app_area .app_list').slick('slickPause');
+		$('.app_area .app_btn button.auto').removeClass('play').addClass('pause').text('');
+	});
+
+	$('.app_area .app_btn button.auto').click(function(){
+		var NowPlaying = $(this).is('.play');
+		if(NowPlaying==true){
+			$('.app_area .app_list').slick('slickPause');
+			$(this).removeClass('play').addClass('pause').text('');
+		} else if(NowPlaying==false){
+			$('.app_area .app_list').slick('slickPlay');
+			$(this).removeClass('pause').addClass('play').text('');
+		};
+	});
+
+	var $VisualPopupList = $('.app_list .slick-slide');
+	$VisualPopupList.each(function(){
+		var $VisualPopupLink = $(this).children('a'),
+			VisualPopupHref = $VisualPopupLink.attr('href');
+		$VisualPopupLink.on('click', function(){
+			if(!VisualPopupHref){
+				return false;
+			};
+		});
+	});
+});
