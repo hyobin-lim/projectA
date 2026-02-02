@@ -603,7 +603,13 @@ $(document).ready(function () {
           
           // New comprehensive link handling logic
           $(document).on('click', 'a', function(e) {
-              const href = $(this).attr('href');
+              // Exclude specific elements from the global alert
+              const $this = $(this);
+              if ($this.is('footer .ft-family > a') || $this.is('.all_menu > a') || $this.is('.top_area h1 a')) {
+                  return; // Allow default behavior or other specific handlers for these elements
+              }
+
+              const href = $this.attr('href');
               if (!href) {
                   return; // href 속성이 없으면 아무것도 하지 않음
               }
@@ -642,6 +648,23 @@ $(document).ready(function () {
               // 그 외 링크 (예: #앵커, 현재 포트폴리오 도메인 내의 유효한 상대 경로 등)는 기본 동작 허용
           });
 
+    // Add search button SVG animation on click
+    $('#searchBtn').on('click', function(e) {
+        e.preventDefault();
+
+        // Re-added SMIL trigger
+        document.getElementById('searchAnim1').beginElement();
+
+        // Keep the delayed alert, which was the key fix
+        setTimeout(() => {
+            var searchKeyword = $("#searchData").val();
+            if (searchKeyword.trim() !== "") {
+                alert("'" + searchKeyword + "' 에 대한 검색 기능은 현재 포트폴리오에서 구현되지 않았습니다.");
+            } else {
+                alert("검색어를 입력해주세요.");
+            }
+        }, 350); // Delay matches animation duration (0.3s + buffer)
+    });
 }); 
 // 로딩 팝업을 표시하는 함수
 function loadingPop() {

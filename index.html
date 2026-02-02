@@ -106,7 +106,7 @@
         <div class="top_area">
           <!-- 웹접근성 점검 2022-12-29 -->
           <!-- (1) 텍스트 아닌 콘텐츠는 그 의미나 용도를 이해할 수 있도록 대체텍스트를 제공해야 한다.-1 -->
-          <h1><a href="/portal/main/index.do" title="메인페이지로 이동">보건복지부 국립정신건강센터 국가정신건강정보포털 로고</a></h1>
+          <h1><a href="./index.html" title="메인페이지로 이동">보건복지부 국립정신건강센터 국가정신건강정보포털 로고</a></h1>
 
           <ul class="login_util">
             <li><a href="/portal/content/selfDiagnosis/selfDiagnosisList.do">자가검진</a></li>
@@ -128,7 +128,7 @@
               <ul>
                 <li class="th1">
                   <a href="/portal/content/campaign/campaignList.do">
-                    <img src="mental_health_portfolio/images/extracted/cmpn_logo.png" style="width: 85px; margin-bottom: 4px" alt="마주해요 메뉴" />
+                    <img src="mental_health_portfolio/images/extracted/cmpn_logo.png" alt="마주해요 메뉴" />
                   </a>
 
                   <ul class="th2 reset">
@@ -351,9 +351,15 @@
                 </ul>
               </li>
             </ul>
-            <p class="btn_all_clo">
-              <a href="#"><img src="mental_health_portfolio/images/downloaded/btn_all_clo.png" alt="전체메뉴 닫기" /></a>
-            </p>
+<p class="btn_all_clo">
+    <a href="#none" title="전체메뉴 닫기">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <rect x="1" y="1" width="22" height="22" fill="none" stroke="#666" stroke-width="2"/>
+            <line x1="6" y1="6" x2="18" y2="18" stroke="#666" stroke-width="2"/>
+            <line x1="18" y1="6" x2="6" y2="18" stroke="#666" stroke-width="2"/>
+        </svg>
+    </a>
+</p>
           </div>
 
           <!-- 상단검색 -->
@@ -456,8 +462,17 @@
                       <div class="input_area">
                         <label for="searchData" class="hidden_obj">검색어 입력</label>
                         <input type="text" name="searchData" id="searchData" placeholder="정신건강 정보를 찾아보세요." title="검색어 입력" />
-                        <input type="submit" value="검색" id="searchBtn" class="sch_send" />
-                      </div>
+                        <button type="submit" id="searchBtn" class="sch_send" aria-label="검색">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" transform="scale(1.2)" transform-origin="center">
+                                    <path stroke-dasharray="62" stroke-dashoffset="62" d="M13.5 3l5.5 5.5v11.5c0 0.55 -0.45 1 -1 1h-12c-0.55 0 -1 -0.45 1 -1v-16c0 -0.55 0.45 -1 1 -1Z">
+                                        <animate id="searchAnim1" begin="indefinite" attributeName="stroke-dashoffset" dur="0.3s" values="62;0" fill="freeze" />
+                                    </path>
+                                    <path stroke-dasharray="34" d="M14.83 15.83c-1.56 1.56 -4.1 1.56 -5.66 0c-1.56 -1.56 -1.56 -4.1 0 -5.66c1.56 -1.56 4.1 -1.56 5.66 0c1.56 1.56 1.56 4.1 0 5.66l4.67 4.67">
+                                    </path>
+                                </g>
+                            </svg>
+                        </button>                      </div>
                     </div>
                   </div>
                 </div>
@@ -500,41 +515,49 @@
                     <li>
                       <a href="/portal/content/improveInfo/improveCardNewsList.do" aria-label="카드뉴스 페이지로 이동">
                           <img src="mental_health_portfolio/images/extracted/main_sec02_icon01.png" alt="카드뉴스 아이콘" />
+                          <p>카드뉴스</p>
                       </a>
                     </li>
                     <li>
                       <a href="/portal/content/improveInfo/improveWebtoonList.do" aria-label="웹툰 페이지로 이동">
                           <img src="mental_health_portfolio/images/extracted/main_sec02_icon02.png" alt="웹툰 아이콘" />
+                          <p>웹툰</p>
                       </a>
                     </li>
                     <li>
                       <a href="/portal/content/improveInfo/improveVideoList.do" aria-label="동영상 페이지로 이동">
                           <img src="mental_health_portfolio/images/extracted/main_sec02_icon03.png" alt="동영상 아이콘" />
+                          <p>동영상</p>
                       </a>
                     </li>
                     <li>
                       <a href="/portal/content/statistics/statisticsList.do" aria-label="통계 페이지로 이동">
                           <img src="mental_health_portfolio/images/extracted/main_sec02_icon04.png" alt="통계 아이콘" />
+                          <p>통계</p>
                       </a>
                     </li>
                     <li>
                       <a href="/portal/content/improveInfo/improveHelpInfoList.do" aria-label="도움이 되는 정보 페이지로 이동">
                           <img src="mental_health_portfolio/images/extracted/main_sec02_icon05.png" alt="도움이 되는 정보 아이콘" />
+                          <p>도움이 되는 정보</p>
                       </a>
                     </li>
                     <li>
                       <a href="/portal/content/improveInfo/improveColumnList.do" aria-label="칼럼 페이지로 이동">
                           <img src="mental_health_portfolio/images/extracted/main_sec02_icon06.png" alt="칼럼 아이콘" />
+                          <p>칼럼</p>
                       </a>
                     </li>
                     <li>
                       <a href="/portal/content/diseaseInfo/diseaseFaqList.do" aria-label="자주 묻는 질문(FAQ) 페이지로 이동">
                           <img src="mental_health_portfolio/images/extracted/main_sec02_icon07.png" alt="FAQ 아이콘" />
+                          <p>FAQ</p>
                       </a>
                     </li>
                     <li>
                       <a href="/portal/content/diseaseInfo/medicineList.do" aria-label="약정보 페이지로 이동">
                           <img src="mental_health_portfolio/images/extracted/main_sec02_icon08.png" alt="약정보 아이콘" />
+                          <p>약정보</p>
                       </a>
                     </li>
                   </ul>
@@ -709,7 +732,7 @@
                 </ul>
             </div>
             <span>
-              <img src="mental_health_portfolio/images/downloaded/logo.png" style="width: 80px; margin-left: 20px; margin-top: 10px" />
+              <img src="mental_health_portfolio/images/extracted/WA_img_20250814.png" />
             </span>
             <address>
               <p><span>주소 : (우)04933 서울특별시 광진구 용마산로 127 </span><span>대표전화 : (02) 2204-0114 </span></p>
@@ -718,11 +741,22 @@
           </div>
         </div>
       </footer>
-            <!-- Popup Overlay -->
-            <div class="popup-overlay hidden" id="popupOverlay">
-                <div class="popup">
-                    <p class="popup_content_text">이 포트폴리오는 상업적 용도가 아닌 학습 및 포트폴리오 목적으로 제작되었으며, 국가정신건강정보포털과는 무관합니다.</p>
-                    <button class="popup_close" onclick="closePopup()">닫기</button>
+            <!-- Modern Popup -->
+            <div class="popup-overlay hidden" id="popupOverlay" role="dialog" aria-modal="true" aria-labelledby="popup-title">
+                <div class="popup-card">
+                    <div class="popup-header">
+                        <h2 class="popup-title" id="popup-title">
+                            <svg class="popup-title-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 15c-.55 0-1-.45-1-1v-4c0-.55.45-1 1-1s1 .45 1 1v4c0 .55-.45 1-1 1zm1-8h-2V7h2v2z"></path></svg>
+                            <span>알림</span>
+                        </h2>
+                        <button class="popup-close-icon" aria-label="닫기">&times;</button>
+                    </div>
+                    <div class="popup-body">
+                        <p>이 포트폴리오는 상업적 용도가 아닌 학습 및 포트폴리오 목적으로 제작되었으며, 국가정신건강정보포털과는 무관합니다.</p>
+                    </div>
+                    <div class="popup-footer">
+                        <button class="popup-confirm-btn">확인</button>
+                    </div>
                 </div>
             </div>        </div> <!-- //wrap -->
     <script src="mental_health_portfolio/js/jquery.min.js"></script>

@@ -1,4 +1,4 @@
-﻿/* ?????? height 100% */
+/* ?????? height 100% */
 function heiEvt(){
 	var $con = $("#container");
 	var $conDiv = $("#container > div");
@@ -15,77 +15,57 @@ function heiEvt(){
 	}
 }
 
-/* GNB Sticky */
-function gnbMovEvt(){
+/* GNB Sticky Refactored */
+function gnbMovEvt() {
+    var $top_sticky = $(".gnb_area");
+    var $path_top = $(".path_top");
+    var $btn_home = $(".btn_home");
+    var $path_h1 = $(".path_lnb h1");
+    var $quick = $(".quick");
+    var $top_area = $(".top_area");
 
-	var $header = $("header");
-	var $top_sticky = $(".gnb_area");
-	var $path_top = $(".path_top");
-	var $btn_home = $(".btn_home");
-	var $path_h1 = $(".path_lnb h1");
-	var $quick = $(".quick");
-	var $top_area = $(".top_area");
+    // Define the function to be executed on scroll and resize
+    var scrollAndResizeAction = function() {
+        var isDesktop = $(window).width() > 960;
+        var isScrolled = $(window).scrollTop() > 93;
 
+        if (isDesktop) {
+            if (isScrolled) {
+                $top_sticky.addClass("move");
+                $path_top.addClass("move");
+                $path_h1.addClass("move");
+                $quick.addClass("move");
+                $top_area.addClass("move");
+                $btn_home.addClass("on");
+            } else {
+                $top_sticky.removeClass("move");
+                $path_top.removeClass("move");
+                $path_h1.removeClass("move");
+                $quick.removeClass("move");
+                $top_area.removeClass("move");
+                $btn_home.removeClass("on");
+            }
+        } else {
+            // For mobile, ensure classes are always removed
+            $top_sticky.removeClass("move");
+            $path_top.removeClass("move");
+            $path_h1.removeClass("move");
+            $quick.removeClass("move");
+            $top_area.removeClass("move");
+            $btn_home.removeClass("on");
+        }
+    };
 
-	if ($(window).width() > 960){
+    // Unbind any previous handlers to prevent duplicates
+    $(window).off('scroll.gnb resize.gnb');
+    
+    // Bind the single handler to both scroll and resize events
+    $(window).on('scroll.gnb resize.gnb', scrollAndResizeAction);
 
-		if ($(window).scrollTop() > 93){
-			$top_sticky.addClass("move");
-			$path_top.addClass("move");
-			$path_h1.addClass("move");
-			$quick.addClass("move");
-			$top_area.addClass("move");
-			$btn_home.addClass("on");
-		} else {
-			$top_sticky.removeClass("move");
-			$path_top.removeClass("move");
-			$path_h1.removeClass("move");
-			$quick.removeClass("move");
-			$top_area.removeClass("move");
-			$btn_home.removeClass("on");
-		};
-
-		$(window).scroll(function(){
-			if ($(window).scrollTop() > 93){
-				$top_sticky.addClass("move");
-				$path_top.addClass("move");
-				$path_h1.addClass("move");
-				$quick.addClass("move");
-				$top_area.addClass("move");
-				$btn_home.addClass("on");
-			} else {
-				$top_sticky.removeClass("move");
-				$path_top.removeClass("move");
-				$path_h1.removeClass("move");
-				$quick.removeClass("move");
-				$top_area.removeClass("move");
-				$btn_home.removeClass("on");
-			};
-		});
-	} else{
-		$top_sticky.removeClass("move");
-		$path_top.removeClass("move");
-		$path_h1.removeClass("move");
-		$quick.removeClass("move");
-		$top_area.removeClass("move");
-		$btn_home.removeClass("on");
-
-		$(window).scroll(function(){
-			if ($(window).scrollTop() > 93){
-				$top_sticky.removeClass("move");
-				$path_top.removeClass("move");
-				$path_h1.removeClass("move");
-				$btn_home.removeClass("on");
-			} else {
-				$top_sticky.removeClass("move");
-				$path_top.removeClass("move");
-				$path_h1.removeClass("move");
-				$btn_home.removeClass("on");
-			};
-		});
-	};
-
+    // Run it once on load to set the initial state
+    scrollAndResizeAction();
 }
+
 
 /* Mobile & PC GNB */
 $(document).ready(function() {
@@ -329,13 +309,20 @@ function allMenu(){
 		e.preventDefault();
 		$all_menu_area.css({"display":"block"});
 		$(".gnb_pc").addClass("stop");
+        
+        // Add class after a short delay to ensure element is visible and animation runs
+        setTimeout(() => {
+            $btn_all_clo.addClass('animating');
+        }, 20);
 	});
 
 	$btn_all_clo.click(function(e) {
 		e.preventDefault();
 		$all_menu_area.css({"display":"none"});
 		$btn_all_menu.focus();
-		$(".gnb_pc").removeClass("stop");
+        $(".gnb_pc").removeClass("stop");
+        // Remove class to reset animation for next time
+        $btn_all_clo.removeClass('animating');
 	});
 }
 
@@ -649,7 +636,7 @@ $(window).on('load', function(){
 });
 
 $(window).resize(function(){
-	gnbMovEvt();
+	// gnbMovEvt is now handled by the function itself
 	allMenu();
 	topSchArea();
 	heiEvt();
@@ -666,5 +653,3 @@ $(window).resize(function(){
 
 
 /* === */
-
-

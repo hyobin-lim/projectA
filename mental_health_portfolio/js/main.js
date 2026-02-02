@@ -101,25 +101,13 @@ $(document).ready(function () {
     }
   });
 
-  // 검색 버튼 클릭 시 동작 (포트폴리오용)
-  $("#searchBtn").click(function() {
-      var searchKeyword = $("#searchData").val();
-      if(searchKeyword.trim() !== "") {
-        console.log("검색 실행 (키워드: " + searchKeyword + ")");
-        alert("'" + searchKeyword + "' 에 대한 검색 기능은 현재 포트폴리오에서 구현되지 않았습니다.");
-      } else {
-        alert("검색어를 입력해주세요.");
-      }
-   });
-
-   // 검색 입력창에서 Enter 키 입력 시 동작
-   $("#searchData").keypress(function (e) {
-      if (e.keyCode == 13) {
-        $("#searchBtn").click();
-      }
-   });
-});
-
+     // 검색 입력창에서 Enter 키 입력 시 동작
+     $("#searchData").keypress(function (e) {
+        if (e.keyCode == 13) {
+          $("#searchBtn").click();
+        }
+     });
+  });
 // Custom slick slider initialization for .ban_list
 $(function(){
 
