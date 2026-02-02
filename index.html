@@ -106,11 +106,11 @@
         <div class="top_area">
           <!-- 웹접근성 점검 2022-12-29 -->
           <!-- (1) 텍스트 아닌 콘텐츠는 그 의미나 용도를 이해할 수 있도록 대체텍스트를 제공해야 한다.-1 -->
-          <h1><a href="./" title="메인페이지로 이동">보건복지부 국립정신건강센터 국가정신건강정보포털 로고</a></h1>
+          <h1><a href="/portal/main/index.do" title="메인페이지로 이동">보건복지부 국립정신건강센터 국가정신건강정보포털 로고</a></h1>
 
           <ul class="login_util">
-            <li><a href="https://www.mentalhealth.go.kr/portal/mdexmn/selectMdexmnList.do" target="_blank" title="새창으로 열림">자가검진</a></li>
-            <li><a href="https://www.mentalhealth.go.kr/portal/cnts/cntsCartList.do" target="_blank" title="새창으로 열림">콘텐츠 신청</a><span class="cartCount cart-count">0</span></li>
+            <li><a href="/portal/content/selfDiagnosis/selfDiagnosisList.do">자가검진</a></li>
+            <li><a href="/portal/content/contentApply/contentApplyList.do">콘텐츠 신청</a><span class="cartCount cart-count">0</span></li>
           </ul>
         </div>
 
@@ -121,100 +121,130 @@
           <div class="gnb_nav gnb_pc" style="left: 0px">
             <nav id="gnb" aria-label="주 메뉴" style="left: 0px">
               <div class="m_top_login">
-                <span><a title="정신건겅정보신청 메뉴이동" href="https://www.mentalhealth.go.kr/portal/cnts/cntsCartList.do" target="_blank">콘텐츠 신청</a></span
+                <span><a title="정신건겅정보신청 메뉴이동" href="/portal/content/contentApply/contentApplyList.do">콘텐츠 신청</a></span
                 ><span class="cartCount cart-count">0</span>
               </div>
 
               <ul>
                 <li class="th1">
-                  <a href="#">
+                  <a href="/portal/content/campaign/campaignList.do">
                     <img src="mental_health_portfolio/images/extracted/cmpn_logo.png" style="width: 85px; margin-bottom: 4px" alt="마주해요 메뉴" />
                   </a>
 
                   <ul class="th2 reset">
-                    <li><a href="https://www.mentalhealth.go.kr/portal/bbs/bbsDetail.do?bbsId=BBSINIT_8&amp;nttId=753" target="_blank" title="새창으로 열림">마주해요 소개</a></li>
+                    <li><a href="/portal/content/campaign/campaignIntro.do">마주해요 소개</a></li>
 
-                    <li><a href="https://www.mentalhealth.go.kr/portal/bbs/bbsList.do?bbsId=BBSINIT_9" target="_blank" title="새창으로 열림">마주해요 캠페인</a></li>
+                    <li><a href="/portal/content/campaign/campaignList.do">마주해요 캠페인</a></li>
 
-                    <li><a href="https://www.mentalhealth.go.kr/portal/bbs/bbsList.do?bbsId=BBSINIT_14" target="_blank" title="새창으로 열림">연간 캘린더</a></li>
+                    <li><a href="/portal/content/campaign/campaignCalendar.do">연간 캘린더</a></li>
 
-                    <li><a href="https://www.mentalhealth.go.kr/portal/bbs/bbsList.do?bbsId=BBSINIT_10" target="_blank" title="새창으로 열림">마주해요 함께한 순간</a></li>
+                    <li><a href="/portal/content/campaign/campaignMomentList.do">마주해요 함께한 순간</a></li>
                   </ul>
                 </li>
 
-                <li class="th1">
-                  <a href="#"> 자가검진 </a>
+                                <li class="th1">
+
+                                  <a href="/portal/content/selfDiagnosis/selfDiagnosisList.do">
+
+                                    자가검진
+
+                                  </a>
 
                   <ul class="th2 reset">
-                    <li><a href="https://www.mentalhealth.go.kr/portal/mdexmn/selectMdexmnList.do" target="_blank" title="새창으로 열림">생애주기별 자가검진</a></li>
+                    <li><a href="/portal/content/selfDiagnosis/selfDiagnosisList.do?ctgryId=CTGRY000000000000021">생애주기별 자가검진</a></li>
 
-                    <li><a href="https://www.mentalhealth.go.kr/portal/mdexmnDtl/mdexmnTypeList.do" target="_blank" title="새창으로 열림">질환별 자가검진</a></li>
+                    <li><a href="/portal/content/selfDiagnosis/selfDiagnosisList.do?ctgryId=CTGRY000000000000022">질환별 자가검진</a></li>
                   </ul>
                 </li>
 
-                <li class="th1">
-                  <a href="#"> 정신건강정보 </a>
+                                <li class="th1">
+
+                                  <a href="/portal/content/diseaseInfo/diseaseList.do">
+
+                                    정신건강정보
+
+                                  </a>
 
                   <ul class="th2 reset">
-                    <li><a href="https://www.mentalhealth.go.kr/portal/disease/diseaseList.do" target="_blank" title="새창으로 열림">질환별 정보</a></li>
+                    <li><a href="/portal/content/diseaseInfo/diseaseList.do">질환별 정보</a></li>
 
-                    <li><a href="https://www.mentalhealth.go.kr/portal/faq/portalFaqList.do" target="_blank" title="새창으로 열림">질환별 FAQ</a></li>
+                    <li><a href="/portal/content/diseaseInfo/diseaseFaqList.do">질환별 FAQ</a></li>
 
-                    <li><a href="https://www.mentalhealth.go.kr/portal/rndrPage.do?jsp=portal/rndr/mediInfo&amp;path=/portal/mediInfo/" target="_blank" title="새창으로 열림">약정보</a></li>
+                    <li><a href="/portal/content/diseaseInfo/medicineList.do">약정보</a></li>
                   </ul>
                 </li>
 
-                <li class="th1">
-                  <a href="#"> 인식개선정보 </a>
+                                <li class="th1">
+
+                                  <a href="/portal/content/improveInfo/improveCardNewsList.do">
+
+                                    인식개선정보
+
+                                  </a>
 
                   <ul class="th2 reset">
-                    <li><a href="https://www.mentalhealth.go.kr/portal/bbs/bbsList.do?bbsId=BBSINIT_2" target="_blank" title="새창으로 열림">칼럼</a></li>
+                    <li><a href="/portal/content/improveInfo/improveColumnList.do">칼럼</a></li>
 
-                    <li><a href="https://www.mentalhealth.go.kr/portal/bbs/bbsList.do?bbsId=BBSINIT_3" target="_blank" title="새창으로 열림">회복 수기</a></li>
+                    <li><a href="/portal/content/improveInfo/improveStoryList.do">회복 수기</a></li>
 
-                    <li><a href="https://www.mentalhealth.go.kr/portal/bbs/bbsList.do?bbsId=BBSINIT_6" target="_blank" title="새창으로 열림">카드뉴스</a></li>
+                    <li><a href="/portal/content/improveInfo/improveCardNewsList.do">카드뉴스</a></li>
 
-                    <li><a href="https://www.mentalhealth.go.kr/portal/bbs/bbsList.do?bbsId=BBSINIT_5" target="_blank" title="새창으로 열림">동영상</a></li>
+                    <li><a href="/portal/content/improveInfo/improveVideoList.do">동영상</a></li>
 
-                    <li><a href="https://www.mentalhealth.go.kr/portal/bbs/bbsList.do?bbsId=BBSINIT_4" target="_blank" title="새창으로 열림">도움이 되는 정보</a></li>
+                    <li><a href="/portal/content/improveInfo/improveHelpInfoList.do">도움이 되는 정보</a></li>
 
-                    <li><a href="https://www.mentalhealth.go.kr/portal/bbs/bbsList.do?bbsId=BBSINIT_7" target="_blank" title="새창으로 열림">웹툰</a></li>
+                    <li><a href="/portal/content/improveInfo/improveWebtoonList.do">웹툰</a></li>
                   </ul>
                 </li>
 
-                <li class="th1">
-                  <a href="#"> 정신건강관련기관 </a>
+                                <li class="th1">
+
+                                  <a href="/portal/content/agency/agencyList.do">
+
+                                    정신건강관련기관
+
+                                  </a>
 
                   <ul class="th2 reset">
-                    <li><a href="https://www.mentalhealth.go.kr/portal/health/fac/PotalHealthFacListTab1.do" target="_blank" title="새창으로 열림">정신건강관련기관</a></li>
+                    <li><a href="/portal/content/agency/agencyList.do">정신건강관련기관</a></li>
 
-                    <li><a href="https://www.mentalhealth.go.kr/portal/rndrPage.do?jsp=portal/rndr/relatedInsInfo&amp;path=/portal/relatedInsInfo/" target="_blank" title="새창으로 열림">유관 기관</a></li>
+                    <li><a href="/portal/content/agency/reltnAgencyList.do">유관 기관</a></li>
 
-                    <li><a href="https://www.mentalhealth.go.kr/portal/rndrPage.do?jsp=portal/rndr/relatedOrganInfo&amp;path=/portal/relatedOrganInfo/" target="_blank" title="새창으로 열림">관련 단체</a></li>
+                    <li><a href="/portal/content/agency/reltnGroupList.do">관련 단체</a></li>
                   </ul>
                 </li>
 
-                <li class="th1">
-                  <a href="#"> 정신건강통계 </a>
+                                <li class="th1">
+
+                                  <a href="/portal/content/statistics/statisticsList.do">
+
+                                    정신건강통계
+
+                                  </a>
 
                   <ul class="th2 reset">
-                    <li><a href="https://www.mentalhealth.go.kr/portal/bbs/bbsList.do?bbsId=BBSSTATS" target="_blank" title="새창으로 열림">정신건강통계</a></li>
+                    <li><a href="/portal/content/statistics/statisticsList.do">정신건강통계</a></li>
                   </ul>
                 </li>
 
-                <li class="th1">
-                  <a href="#"> 소개/알림 </a>
+                                <li class="th1">
+
+                                  <a href="/portal/content/introduce/introduce.do">
+
+                                    소개/알림
+
+                                  </a>
 
                   <ul class="th2 reset">
-                    <li><a href="https://www.mentalhealth.go.kr/portal/intro4/introSalu.do" target="_blank" title="새창으로 열림">소개</a></li>
+                    <li><a href="/portal/content/introduce/introduce.do">소개</a></li>
 
-                    <li><a href="https://www.mentalhealth.go.kr/portal/intro1/introInfo.do" target="_blank" title="새창으로 열림">콘텐츠 이용안내</a></li>
+                    <li><a href="/portal/content/notice/noticeList.do">콘텐츠 이용안내</a></li>
 
-                    <li><a href="https://www.mentalhealth.go.kr/portal/bbs/bbsList.do?bbsId=BBSNOTICE" target="_blank" title="새창으로 열림">공지사항</a></li>
+                    <li><a href="/portal/content/notice/noticeList.do">공지사항</a></li>
 
-                    <li><a href="https://www.mentalhealth.go.kr/portal/svy/svyList.do" target="_blank" title="새창으로 열림">설문조사</a></li>
+                    <li><a href="/portal/content/survey/surveyList.do">설문조사</a></li>
 
-                    <li><a href="https://www.mentalhealth.go.kr/portal/evnt/evntList.do" target="_blank" title="새창으로 열림">이벤트</a></li>
+                    <li><a href="/portal/content/event/eventList.do">이벤트</a></li>
                   </ul>
                 </li>
               </ul>
@@ -225,101 +255,99 @@
           </div>
 
           <!-- Stick Home -->
-          <p class="btn_home"><a href="./">홈으로 가기</a></p>
+          <p class="btn_home"><a href="/portal/main/index.do">홈으로 가기</a></p>
 
-          <!-- PC 전체메뉴 -->
-          <div class="all_menu">
-            <a href="#"><span class="hidden_obj">전체메뉴</span><i class="xi-bars"></i></a>
-          </div>
-          <div class="all_menu_area">
+                          <!-- PC 전체메뉴 -->
+                          <div class="all_menu">
+                              <a href="/portal/main/allMenuList.do"><span class="hidden_obj">전체메뉴</span><i class="xi-bars"></i></a>
+                          </div>          <div class="all_menu_area">
             <ul>
-              <li class="th1">
-                <a href="#">마주해요</a>
-
+                                      <li class="th1">
+                                          <a href="/portal/content/campaign/campaignList.do">마주해요</a>
                 <ul class="th2">
-                  <li><a href="https://www.mentalhealth.go.kr/portal/bbs/bbsDetail.do?bbsId=BBSINIT_8&amp;nttId=753" target="_blank" title="새창으로 열림">마주해요 소개</a></li>
+                  <li><a href="/portal/content/campaign/campaignIntro.do">마주해요 소개</a></li>
 
-                  <li><a href="https://www.mentalhealth.go.kr/portal/bbs/bbsList.do?bbsId=BBSINIT_9" target="_blank" title="새창으로 열림">마주해요 캠페인</a></li>
+                  <li><a href="/portal/content/campaign/campaignList.do">마주해요 캠페인</a></li>
 
-                  <li><a href="https://www.mentalhealth.go.kr/portal/bbs/bbsList.do?bbsId=BBSINIT_14" target="_blank" title="새창으로 열림">연간 캘린더</a></li>
+                  <li><a href="/portal/content/campaign/campaignCalendar.do">연간 캘린더</a></li>
 
-                  <li><a href="https://www.mentalhealth.go.kr/portal/bbs/bbsList.do?bbsId=BBSINIT_10" target="_blank" title="새창으로 열림">마주해요 함께한 순간</a></li>
+                  <li><a href="/portal/content/campaign/campaignMomentList.do">마주해요 함께한 순간</a></li>
                 </ul>
               </li>
 
               <li class="th1">
-                <a href="#">자가검진</a>
+                <a href="/portal/content/selfDiagnosis/selfDiagnosisList.do">자가검진</a>
 
                 <ul class="th2">
-                  <li><a href="https://www.mentalhealth.go.kr/portal/mdexmn/selectMdexmnList.do" target="_blank" title="새창으로 열림">생애주기별 자가검진</a></li>
+                  <li><a href="/portal/content/selfDiagnosis/selfDiagnosisList.do?ctgryId=CTGRY000000000000021">생애주기별 자가검진</a></li>
 
-                  <li><a href="https://www.mentalhealth.go.kr/portal/mdexmnDtl/mdexmnTypeList.do" target="_blank" title="새창으로 열림">질환별 자가검진</a></li>
+                  <li><a href="/portal/content/selfDiagnosis/selfDiagnosisList.do?ctgryId=CTGRY000000000000022">질환별 자가검진</a></li>
                 </ul>
               </li>
 
               <li class="th1">
-                <a href="#">정신건강정보</a>
+                <a href="/portal/content/diseaseInfo/diseaseList.do">정신건강정보</a>
 
                 <ul class="th2">
-                  <li><a href="https://www.mentalhealth.go.kr/portal/disease/diseaseList.do" target="_blank" title="새창으로 열림">질환별 정보</a></li>
+                  <li><a href="/portal/content/diseaseInfo/diseaseList.do">질환별 정보</a></li>
 
-                  <li><a href="https://www.mentalhealth.go.kr/portal/faq/portalFaqList.do" target="_blank" title="새창으로 열림">질환별 FAQ</a></li>
+                  <li><a href="/portal/content/diseaseInfo/diseaseFaqList.do">질환별 FAQ</a></li>
 
-                  <li><a href="https://www.mentalhealth.go.kr/portal/rndrPage.do?jsp=portal/rndr/mediInfo&amp;path=/portal/mediInfo/" target="_blank" title="새창으로 열림">약정보</a></li>
+                  <li><a href="/portal/content/diseaseInfo/medicineList.do">약정보</a></li>
                 </ul>
               </li>
 
               <li class="th1">
-                <a href="#">인식개선정보</a>
+                <a href="/portal/content/improveInfo/improveCardNewsList.do">인식개선정보</a>
 
                 <ul class="th2">
-                  <li><a href="https://www.mentalhealth.go.kr/portal/bbs/bbsList.do?bbsId=BBSINIT_2" target="_blank" title="새창으로 열림">칼럼</a></li>
+                  <li><a href="/portal/content/improveInfo/improveColumnList.do">칼럼</a></li>
 
-                  <li><a href="https://www.mentalhealth.go.kr/portal/bbs/bbsList.do?bbsId=BBSINIT_3" target="_blank" title="새창으로 열림">회복 수기</a></li>
+                  <li><a href="/portal/content/improveInfo/improveStoryList.do">회복 수기</a></li>
 
-                  <li><a href="https://www.mentalhealth.go.kr/portal/bbs/bbsList.do?bbsId=BBSINIT_6" target="_blank" title="새창으로 열림">카드뉴스</a></li>
+                  <li><a href="/portal/content/improveInfo/improveCardNewsList.do">카드뉴스</a></li>
 
-                  <li><a href="https://www.mentalhealth.go.kr/portal/bbs/bbsList.do?bbsId=BBSINIT_5" target="_blank" title="새창으로 열림">동영상</a></li>
+                  <li><a href="/portal/content/improveInfo/improveVideoList.do">동영상</a></li>
 
-                  <li><a href="https://www.mentalhealth.go.kr/portal/bbs/bbsList.do?bbsId=BBSINIT_4" target="_blank" title="새창으로 열림">도움이 되는 정보</a></li>
+                  <li><a href="/portal/content/improveInfo/improveHelpInfoList.do">도움이 되는 정보</a></li>
 
-                  <li><a href="https://www.mentalhealth.go.kr/portal/bbs/bbsList.do?bbsId=BBSINIT_7" target="_blank" title="새창으로 열림">웹툰</a></li>
+                  <li><a href="/portal/content/improveInfo/improveWebtoonList.do">웹툰</a></li>
                 </ul>
               </li>
 
               <li class="th1">
-                <a href="#">정신건강관련기관</a>
+                <a href="/portal/content/agency/agencyList.do">정신건강관련기관</a>
 
                 <ul class="th2">
-                  <li><a href="https://www.mentalhealth.go.kr/portal/health/fac/PotalHealthFacListTab1.do" target="_blank" title="새창으로 열림">정신건강관련기관</a></li>
+                  <li><a href="/portal/content/agency/agencyList.do">정신건강관련기관</a></li>
 
-                  <li><a href="https://www.mentalhealth.go.kr/portal/rndrPage.do?jsp=portal/rndr/relatedInsInfo&amp;path=/portal/relatedInsInfo/" target="_blank" title="새창으로 열림">유관 기관</a></li>
+                  <li><a href="/portal/content/agency/reltnAgencyList.do">유관 기관</a></li>
 
-                  <li><a href="https://www.mentalhealth.go.kr/portal/rndrPage.do?jsp=portal/rndr/relatedOrganInfo&amp;path=/portal/relatedOrganInfo/" target="_blank" title="새창으로 열림">관련 단체</a></li>
+                  <li><a href="/portal/content/agency/reltnGroupList.do">관련 단체</a></li>
                 </ul>
               </li>
 
               <li class="th1">
-                <a href="#">정신건강통계</a>
+                <a href="/portal/content/statistics/statisticsList.do">정신건강통계</a>
 
                 <ul class="th2">
-                  <li><a href="https://www.mentalhealth.go.kr/portal/bbs/bbsList.do?bbsId=BBSSTATS" target="_blank" title="새창으로 열림">정신건강통계</a></li>
+                  <li><a href="/portal/content/statistics/statisticsList.do">정신건강통계</a></li>
                 </ul>
               </li>
 
               <li class="th1">
-                <a href="#">소개/알림</a>
+                <a href="/portal/content/introduce/introduce.do">소개/알림</a>
 
                 <ul class="th2">
-                  <li><a href="https://www.mentalhealth.go.kr/portal/intro4/introSalu.do" target="_blank" title="새창으로 열림">소개</a></li>
+                  <li><a href="/portal/content/introduce/introduce.do">소개</a></li>
 
-                  <li><a href="https://www.mentalhealth.go.kr/portal/intro1/introInfo.do" target="_blank" title="새창으로 열림">콘텐츠 이용안내</a></li>
+                  <li><a href="/portal/content/notice/noticeList.do">콘텐츠 이용안내</a></li>
 
-                  <li><a href="https://www.mentalhealth.go.kr/portal/bbs/bbsList.do?bbsId=BBSNOTICE" target="_blank" title="새창으로 열림">공지사항</a></li>
+                  <li><a href="/portal/content/notice/noticeList.do">공지사항</a></li>
 
-                  <li><a href="https://www.mentalhealth.go.kr/portal/svy/svyList.do" target="_blank" title="새창으로 열림">설문조사</a></li>
+                  <li><a href="/portal/content/survey/surveyList.do">설문조사</a></li>
 
-                  <li><a href="https://www.mentalhealth.go.kr/portal/evnt/evntList.do" target="_blank" title="새창으로 열림">이벤트</a></li>
+                  <li><a href="/portal/content/event/eventList.do">이벤트</a></li>
                 </ul>
               </li>
             </ul>
@@ -366,7 +394,7 @@
                     <div class="swiper-wrapper" style="transform: translate3d(-2196px, 0px, 0px); transition-duration: 500ms">
                       <div class="swiper-slide" style="width: 732px">
                         <div class="thumb">
-                          <a href="javascript:void(0)">
+                          <a href="/portal/content/improveInfo/improveColumnDetail.do?clmnSn=202404100001">
                             <img src="mental_health_portfolio/images/downloaded/CURE_23호_발간.png" alt="CURE 23호 발간" />
                           </a>
                         </div>
@@ -374,7 +402,7 @@
 
                       <div class="swiper-slide" style="width: 732px">
                         <div class="thumb">
-                          <a href="javascript:void(0)">
+                          <a href="/portal/content/improveInfo/improveVideoDetail.do?vidoSn=202506190001">
                             <img src="mental_health_portfolio/images/downloaded/2024년_중독_주요_지표_모음집.png" alt="2024년 중독 주요 지표 모음집" />
                           </a>
                         </div>
@@ -382,7 +410,7 @@
 
                       <div class="swiper-slide swiper-slide-prev" style="width: 732px">
                         <div class="thumb">
-                          <a href="javascript:void(0)">
+                          <a href="/portal/content/improveInfo/improveCardNewsDetail.do?cnrsSn=202506190001">
                             <img src="mental_health_portfolio/images/downloaded/MIND_2025_No_4_발간.png" alt="MIND 2025 No.4 발간" />
                           </a>
                         </div>
@@ -390,7 +418,7 @@
 
                       <div class="swiper-slide swiper-slide-active" style="width: 732px">
                         <div class="thumb">
-                          <a href="javascript:void(0)">
+                          <a href="/portal/content/improveInfo/improveWebtoonDetail.do?wbtSn=202506190001">
                             <img src="mental_health_portfolio/images/downloaded/입적심_먹는건가요_입적심사제도_홍보_웹툰.png" alt="입적심, 먹는건가요?? 입적심사제도 홍보 웹툰" />
                           </a>
                         </div>
@@ -398,7 +426,7 @@
 
                       <div class="swiper-slide swiper-slide-next" style="width: 732px">
                         <div class="thumb">
-                          <a href="javascript:void(0)">
+                          <a href="/portal/content/improveInfo/improveHelpInfoDetail.do?hpinSn=202506190001">
                             <img src="mental_health_portfolio/images/downloaded/2025년_입원제도과_치료비_지원사업.png" alt="2025년 입원제도과 치료비 지원사업" />
                           </a>
                         </div>
@@ -436,20 +464,18 @@
                 <div class="main_quick">
                   <div class="flex_box">
                     <div class="card01">
-                      <a href="https://www.mentalhealth.go.kr/portal/mdexmn/selectMdexmnList.do?mdexmnId=100" target="_blank" title="새창으로 열림"
-                        ><p class="tit">생애주기별 <br />자가검진</p></a
+                                            <a href="/portal/content/selfDiagnosis/selfDiagnosisList.do?ctgryId=CTGRY000000000000021"><p class="tit">생애주기별 <br />자가검진</p></a
                       >
                     </div>
                     <div class="card02">
-                      <a href="https://www.mentalhealth.go.kr/portal/mdexmnDtl/mdexmnTypeList.do" target="_blank" title="새창으로 열림"
-                        ><p class="tit">질환별 <br />자가검진</p></a
+                                          <a href="/portal/content/selfDiagnosis/selfDiagnosisList.do?ctgryId=CTGRY000000000000022"><p class="tit">질환별 <br />자가검진</p></a
                       >
                     </div>
                     <div class="card03">
-                      <a href="https://www.mentalhealth.go.kr/portal/disease/diseaseDetail.do?dissId=63" target="_blank" title="새창으로 열림"><p class="tit">정신건강 질환별 정보</p></a>
+                      <a href="/portal/content/diseaseInfo/diseaseList.do"><p class="tit">정신건강 질환별 정보</p></a>
                     </div>
                     <div class="card04">
-                      <a href="https://www.mentalhealth.go.kr/portal/health/fac/PotalHealthFacListTab1.do" target="_blank" title="새창으로 열림"><p class="tit">정신건강관련기관</p></a>
+                      <a href="/portal/content/agency/agencyList.do"><p class="tit">정신건강관련기관</p></a>
                     </div>
                   </div>
                 </div>
@@ -472,44 +498,44 @@
                 <div class="info_icon">
                   <ul class="flex_box">
                     <li>
-                      <a href="https://www.mentalhealth.go.kr/portal/bbs/bbsList.do?bbsId=BBSINIT_6" aria-label="카드뉴스 페이지로 이동" target="_blank" title="새창으로 열림"><img src="mental_health_portfolio/images/extracted/main_sec02_icon01.png" alt="" />
-                        <p>카드뉴스</p></a
-                      >
+                      <a href="/portal/content/improveInfo/improveCardNewsList.do" aria-label="카드뉴스 페이지로 이동">
+                          <img src="mental_health_portfolio/images/extracted/main_sec02_icon01.png" alt="카드뉴스 아이콘" />
+                      </a>
                     </li>
                     <li>
-                      <a href="https://www.mentalhealth.go.kr/portal/bbs/bbsList.do?bbsId=BBSINIT_7" aria-label="웹툰 페이지로 이동" target="_blank" title="새창으로 열림"><img src="mental_health_portfolio/images/extracted/main_sec02_icon02.png" alt="" />
-                        <p>웹툰</p></a
-                      >
+                      <a href="/portal/content/improveInfo/improveWebtoonList.do" aria-label="웹툰 페이지로 이동">
+                          <img src="mental_health_portfolio/images/extracted/main_sec02_icon02.png" alt="웹툰 아이콘" />
+                      </a>
                     </li>
                     <li>
-                      <a href="https://www.mentalhealth.go.kr/portal/bbs/bbsList.do?bbsId=BBSINIT_5" aria-label="동영상 페이지로 이동" target="_blank" title="새창으로 열림"><img src="mental_health_portfolio/images/extracted/main_sec02_icon03.png" alt="" />
-                        <p>동영상</p></a
-                      >
+                      <a href="/portal/content/improveInfo/improveVideoList.do" aria-label="동영상 페이지로 이동">
+                          <img src="mental_health_portfolio/images/extracted/main_sec02_icon03.png" alt="동영상 아이콘" />
+                      </a>
                     </li>
                     <li>
-                      <a href="https://www.mentalhealth.go.kr/portal/bbs/bbsList.do?bbsId=BBSSTATS" aria-label="통계 페이지로 이동" target="_blank" title="새창으로 열림"><img src="mental_health_portfolio/images/extracted/main_sec02_icon04.png" alt="" />
-                        <p>통계</p></a
-                      >
+                      <a href="/portal/content/statistics/statisticsList.do" aria-label="통계 페이지로 이동">
+                          <img src="mental_health_portfolio/images/extracted/main_sec02_icon04.png" alt="통계 아이콘" />
+                      </a>
                     </li>
                     <li>
-                      <a href="https://www.mentalhealth.go.kr/portal/bbs/bbsList.do?bbsId=BBSINIT_4" aria-label="도움이 되는 정보 페이지로 이동" target="_blank" title="새창으로 열림"><img src="mental_health_portfolio/images/extracted/main_sec02_icon05.png" alt="" />
-                        <p>도움이 되는 정보</p></a
-                      >
+                      <a href="/portal/content/improveInfo/improveHelpInfoList.do" aria-label="도움이 되는 정보 페이지로 이동">
+                          <img src="mental_health_portfolio/images/extracted/main_sec02_icon05.png" alt="도움이 되는 정보 아이콘" />
+                      </a>
                     </li>
                     <li>
-                      <a href="https://www.mentalhealth.go.kr/portal/bbs/bbsList.do?bbsId=BBSINIT_2" aria-label="칼럼 페이지로 이동" target="_blank" title="새창으로 열림"><img src="mental_health_portfolio/images/extracted/main_sec02_icon06.png" alt="" />
-                        <p>칼럼</p></a
-                      >
+                      <a href="/portal/content/improveInfo/improveColumnList.do" aria-label="칼럼 페이지로 이동">
+                          <img src="mental_health_portfolio/images/extracted/main_sec02_icon06.png" alt="칼럼 아이콘" />
+                      </a>
                     </li>
                     <li>
-                      <a href="https://www.mentalhealth.go.kr/portal/faq/portalFaqList.do" aria-label="자주 묻는 질문(FAQ) 페이지로 이동" target="_blank" title="새창으로 열림"><img src="mental_health_portfolio/images/extracted/main_sec02_icon07.png" alt="" />
-                        <p>FAQ</p></a
-                      >
+                      <a href="/portal/content/diseaseInfo/diseaseFaqList.do" aria-label="자주 묻는 질문(FAQ) 페이지로 이동">
+                          <img src="mental_health_portfolio/images/extracted/main_sec02_icon07.png" alt="FAQ 아이콘" />
+                      </a>
                     </li>
                     <li>
-                      <a href="https://www.mentalhealth.go.kr/portal/rndrPage.do?jsp=portal/rndr/mediInfo&amp;path=/portal/mediInfo/" aria-label="약정보 페이지로 이동" target="_blank" title="새창으로 열림"><img src="mental_health_portfolio/images/extracted/main_sec02_icon08.png" alt="" />
-                        <p>약정보</p></a
-                      >
+                      <a href="/portal/content/diseaseInfo/medicineList.do" aria-label="약정보 페이지로 이동">
+                          <img src="mental_health_portfolio/images/extracted/main_sec02_icon08.png" alt="약정보 아이콘" />
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -528,25 +554,25 @@
                     <div class="swiper-container swiper-container-initialized swiper-container-horizontal">
                       <div class="swiper-wrapper" style="transform: translate3d(-464px, 0px, 0px); transition-duration: 0ms">
                         <div class="swiper-slide swiper-slide-prev" style="width: 464px">
-                          <a href="https://www.mentalhealth.go.kr/portal/bbs/bbsDetail.do?bbsId=BBSINIT_6&amp;nttId=803" target="_blank" title="새창으로 열림">
+                          <a href="/portal/content/improveInfo/improveHelpInfoDetail.do?hpinSn=202506190001">
                             <img src="mental_health_portfolio/images/downloaded/Check!_GPT_정신질환자_치료비_지원_사업을_알려줘!.png" alt="Check! GPT 정신질환자 치료비 지원 사업을 알려줘!" />
                           </a>
                         </div>
 
                         <div class="swiper-slide swiper-slide-active" style="width: 464px">
-                          <a href="https://www.mentalhealth.go.kr/portal/bbs/bbsDetail.do?bbsId=BBSINIT_5&amp;nttId=672" target="_blank" title="새창으로 열림">
+                          <a href="/portal/content/improveInfo/improveColumnDetail.do?clmnSn=202506190001">
                             <img src="mental_health_portfolio/images/downloaded/정신건강한사람_학교폭력에_대한_정신건강_이야기_은따_처벌_받게_하는_방법은.png" alt="[정신건강한사람] 학교폭력에 대한 정신건강 이야기 '은따' 처벌 받게 하는 방법은?" />
                           </a>
                         </div>
 
                         <div class="swiper-slide swiper-slide-next" style="width: 464px">
-                          <a href="https://www.mentalhealth.go.kr/portal/bbs/bbsDetail.do?bbsId=BBSINIT_4&amp;nttId=831" target="_blank" title="새창으로 열림">
+                          <a href="/portal/content/improveInfo/improveCardNewsDetail.do?cnrsSn=202506190001">
                             <img src="mental_health_portfolio/images/downloaded/MIND_2025_No_4_영유아의_스마트폰_사용.png" alt="[MIND] 2025 No.4 영유아의 스마트폰 사용" />
                           </a>
                         </div>
 
                         <div class="swiper-slide" style="width: 464px">
-                          <a href="https://www.mentalhealth.go.kr/portal/bbs/bbsDetail.do?bbsId=BBSINIT_7&amp;nttId=703" target="_blank" title="새창으로 열림">
+                          <a href="/portal/content/improveInfo/improveWebtoonDetail.do?wbtSn=202506190001">
                             <img src="mental_health_portfolio/images/downloaded/입원적합성심사제도_홍보_웹툰_입적심_먹는_건가요.png" alt="입원적합성심사제도 홍보 웹툰 '입적심, 먹는 건가요??' #마주해요#모두가_건강해지는_그날까지_특별판" />
                           </a>
                         </div>
@@ -570,23 +596,29 @@
                     <h2>정신건강포털 <b>새소식</b></h2>
                   </div>
                   <div class="notice">
-                    <a href="https://www.mentalhealth.go.kr/portal/bbs/bbsDetail.do?bbsId=BBSNOTICE&amp;nttId=829" target="_blank" title="새창으로 열림">
+                    <a href="/portal/content/notice/noticeDetail.do?nttSn=30000">
+                      <div class="date">2025.12<strong>15</strong></div>
+                      <div class="tit">
+                        <span class="hidden_obj">새글</span>
+                        <p>2025년 중독 주요 지표 모음집</p>
+                      </div>
+                    </a>
                   </div>
                   <ul class="list">
                     <li>
-                      <a href="https://www.mentalhealth.go.kr/portal/bbs/bbsDetail.do?bbsId=BBSNOTICE&amp;nttId=822" target="_blank" title="새창으로 열림">「국가 정신건강형황 보고서 2024」, 「국가 정신건강현황 주요지표 2024」 발간 <span class="date">2025.11.13</span></a>
+                      <a href="/portal/content/notice/noticeDetail.do?nttSn=202511130001">「국가 정신건강형황 보고서 2024」, 「국가 정신건강현황 주요지표 2024」 발간 <span class="date">2025.11.13</span></a>
                     </li>
 
                     <li>
-                      <a href="https://www.mentalhealth.go.kr/portal/bbs/bbsDetail.do?bbsId=BBSNOTICE&amp;nttId=821" target="_blank" title="새창으로 열림"> 국가 정신건강현황 통계 이용자 만족도 설문조사(11.3.~11.16.) <span class="date">2025.10.31</span></a>
+                      <a href="/portal/content/survey/surveyDetail.do?srvySn=202510310001"> 국가 정신건강현황 통계 이용자 만족도 설문조사(11.3.~11.16.) <span class="date">2025.10.31</span></a>
                     </li>
 
                     <li>
-                      <a href="https://www.mentalhealth.go.kr/portal/bbs/bbsDetail.do?bbsId=BBSNOTICE&amp;nttId=818" target="_blank" title="새창으로 열림">「제7회 국립정신건강센터 중독 정신건강 심포지엄 및 중독 우수사업 경진대회」 <span class="date">2025.10.16</span></a>
+                      <a href="/portal/content/notice/noticeDetail.do?nttSn=202510160001">「제7회 국립정신건강센터 중독 정신건강 심포지엄 및 중독 우수사업 경진대회」 <span class="date">2025.10.16</span></a>
                     </li>
 
                     <li>
-                      <a href="https://www.mentalhealth.go.kr/portal/bbs/bbsDetail.do?bbsId=BBSNOTICE&amp;nttId=750" target="_blank" title="새창으로 열림">「2025년 트라우마 치유주간」 홍보 영상 <span class="date">2025.04.09</span></a>
+                      <a href="/portal/content/improveInfo/improveVideoDetail.do?vidoSn=202504090001">「2025년 트라우마 치유주간」 홍보 영상 <span class="date">2025.04.09</span></a>
                     </li>
                   </ul>
                 </div>
@@ -605,42 +637,42 @@
               <div class="right">
                 <ul class="agency flex_box">
                   <li>
-                    <a href="https://www.mentalhealth.go.kr/portal/cnts/cntsCartList.do" target="_blank" title="새창으로 열림"><div class="icon"><img src="mental_health_portfolio/images/extracted/main_sec04_icon01.png" alt="" /></div>
+                    <a href="/portal/content/contentApply/contentApplyList.do"><div class="icon"><img src="mental_health_portfolio/images/extracted/main_sec04_icon01.png" alt="" /></div>
                       <p>정신건강정보신청</p></a
                     >
                   </li>
                   <li>
-                    <a href="https://www.mentalhealth.go.kr/portal/health/fac/PotalHealthFacListTab1.do?tab1no=tab1no1" target="_blank" title="새창으로 열림"
+                    <a href="/portal/content/agency/agencyList.do?ctgryId=CTGRY000000000000001"
                       ><div class="icon"><img src="mental_health_portfolio/images/extracted/main_sec04_icon02.png" alt="" /></div>
                       <p>정신건강복지센터</p></a
                     >
                   </li>
                   <li>
-                    <a href="https://www.mentalhealth.go.kr/portal/health/fac/PotalHealthFacListTab1.do?tab1no=tab1no4" target="_blank" title="새창으로 열림"
+                    <a href="/portal/content/agency/agencyList.do?ctgryId=CTGRY000000000000002"
                       ><div class="icon"><img src="mental_health_portfolio/images/extracted/main_sec04_icon03.png" alt="" /></div>
                       <p>자살예방센터</p></a
                     >
                   </li>
                   <li>
-                    <a href="https://www.mentalhealth.go.kr/portal/health/fac/PotalHealthFacListTab1.do?tab1no=tab1no3" target="_blank" title="새창으로 열림"
+                    <a href="/portal/content/agency/agencyList.do?ctgryId=CTGRY000000000000003"
                       ><div class="icon"><img src="mental_health_portfolio/images/extracted/main_sec04_icon04.png" alt="" /></div>
                       <p>중독관리통합<br />지원센터</p></a
                     >
                   </li>
                   <li>
-                    <a href="https://www.mentalhealth.go.kr/portal/health/fac/PotalHealthFacListTab1.do?tab1no=tab1no6" target="_blank" title="새창으로 열림"
+                    <a href="/portal/content/agency/agencyList.do?ctgryId=CTGRY000000000000004"
                       ><div class="icon"><img src="mental_health_portfolio/images/extracted/main_sec04_icon05.png" alt="" /></div>
                       <p>정신요양시설</p></a
                     >
                   </li>
                   <li>
-                    <a href="https://www.mentalhealth.go.kr/portal/health/fac/PotalHealthFacListTab1.do?tab1no=tab1no7" target="_blank" title="새창으로 열림"
+                    <a href="/portal/content/agency/agencyList.do?ctgryId=CTGRY000000000000005"
                       ><div class="icon"><img src="mental_health_portfolio/images/extracted/main_sec04_icon06.png" alt="" /></div>
                       <p>정신의료기관</p></a
                     >
                   </li>
                   <li>
-                    <a href="https://www.mentalhealth.go.kr/portal/health/fac/PotalHealthFacListTab2.do?sc3=AFCS1,AFCS1_1,AFCS1_2" target="_blank" title="새창으로 열림"
+                    <a href="/portal/content/agency/agencyMap.do"
                       ><div class="icon"><img src="mental_health_portfolio/images/extracted/main_sec04_icon07.png" alt="" /></div>
                       <p>기관지도찾기</p></a
                     >
@@ -653,25 +685,28 @@
       </main>
 
       <!-- foot -->
-      <p class="m_only btn_top"><a href="#wrap" tabindex="-1">Top</a></p>
+      <p class="m_only btn_top"><a href="#wrap">Top</a></p>
       <footer class="footer">
         <div>
           <ul>
-            <li><a href="https://www.mentalhealth.go.kr/portal/board/policy/selectStplatInfo.do" target="_blank" title="새창으로 열림">이용약관</a></li>
+            <li><a href="/portal/content/introduce/agree.do">이용약관</a></li>
             <li>
-              <a href="http://www.ncmh.go.kr/ncmh/html/content.do?depth=gu&amp;menu_cd=06_02_01" target="_blank" title="새 창">개인정보처리방침</a>
+              <a href="/portal/content/introduce/privacy.do">개인정보처리방침</a>
             </li>
-            <li><a href="https://www.mentalhealth.go.kr/portal/board/policy/selectCpyrhtInfo.do" target="_blank" title="새창으로 열림">저작권정책</a></li>
-            <li><a href="https://www.mentalhealth.go.kr/portal/board/siteMap/selectMenuSiteMap.do" target="_blank" title="새창으로 열림">사이트맵</a></li>
+            <li><a href="/portal/content/introduce/copyright.do">저작권정책</a></li>
+            <li><a href="/portal/main/sitemap.do">사이트맵</a></li>
           </ul>
           <div class="address">
             <div class="ft-family">
-              <a href="#">관련 사이트<i class="xi-angle-up-min"></i></a>
-              <ul>
-                <li><a href="https://www.ncmh.go.kr/" target="_blank" title="새창으로 열림">보건복지부-국립정신건강센터</a></li>
-                <li><a href="javascript:void(0)">관련기관 2</a></li>
-                <li><a href="javascript:void(0)">관련기관 3</a></li>
-              </ul>
+                <a href="javascript:void(0)" title="관련사이트 목록 열기">관련 사이트 <i class="xi-angle-up-min"></i></a>
+                <ul>
+                    <li><a href="https://www.ncmh.go.kr/" target="_blank" title="새창으로 열림">국립정신건강센터</a></li>
+                    <li><a href="http://www.kcmh.or.kr" target="_blank" title="새창으로 열림">대한신경정신의학회</a></li>
+                    <li><a href="http://www.kcpa.or.kr/" target="_blank" title="새창으로 열림">한국정신건강전문요원협회</a></li>
+                    <li><a href="http://www.ncnrc.or.kr/" target="_blank" title="새창으로 열림">국립공주병원</a></li>
+                    <li><a href="http://www.koreamentality.org/" target="_blank" title="새창으로 열림">한국정신재활협회</a></li>
+                    <li><a href="http://www.mentalhealth.go.kr/portal/content/introduce/introduce.do" target="_blank" title="새창으로 열림">보건복지부 국립정신건강센터</a></li>
+                </ul>
             </div>
             <span>
               <img src="mental_health_portfolio/images/downloaded/logo.png" style="width: 80px; margin-left: 20px; margin-top: 10px" />

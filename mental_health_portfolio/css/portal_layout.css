@@ -534,10 +534,10 @@ body{line-height:1.5; letter-spacing:-0.2px;}
 .main_sec01 .main_quick .flex_box .card02 .tit{font-size:2.4rem; }
 .main_sec01 .main_quick .flex_box .card03{border:2px solid #fff;}
 .main_sec01 .main_quick .flex_box .card03 .tit{position:relative; font-size:2rem; text-align:center; font-weight:500;white-space: nowrap; padding-left:45px;}
-.main_sec01 .main_quick .flex_box .card03 .tit::before{content:''; width:30px; height:35px; background:url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7') no-repeat 0 0 / cover; position:absolute; left:0; top:-3px;}
+.main_sec01 .main_quick .flex_box .card03 .tit::before{content:''; width:30px; height:35px; background:url('../images/extracted/main_quick_card03.png') no-repeat 0 0 / cover; position:absolute; left:0; top:-3px;}
 .main_sec01 .main_quick .flex_box .card04{border:2px solid #fff;}
 .main_sec01 .main_quick .flex_box .card04 .tit{position:relative; font-size:2rem; text-align:center; font-weight:500;white-space: nowrap;padding-left:45px;}
-.main_sec01 .main_quick .flex_box .card04 .tit::before{content:''; width:33px; height:36px; background:url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7')no-repeat 0 0 / cover; position:absolute; left:2px; top:-4px;}
+.main_sec01 .main_quick .flex_box .card04 .tit::before{content:''; width:33px; height:36px; background:url('../images/extracted/main_quick_card04.png')no-repeat 0 0 / cover; position:absolute; left:2px; top:-4px;}
 .main_sec01 .main_quick .flex_box .card01:hover,
 .main_sec01 .main_quick .flex_box .card02:hover{background-color:#00b6bd; transform:translateY(-10px);}
 .main_sec01 .main_quick .flex_box .card01:hover a,
@@ -550,13 +550,13 @@ body{line-height:1.5; letter-spacing:-0.2px;}
 .main_sec02 .flex_box{display:flex; flex-wrap:wrap; justify-content:space-between; }
 .main_sec02 .left{width:38%; padding-top:20px;}
 .main_sec02 .right{ width:60%; max-width:920px; }
-.main_sec02 .info_icon li{width:22%; margin-bottom:4%; text-align:center; transition:all ease .3s; font-family: 'SCoreDream';  font-weight:500;}
+.main_sec02 .info_icon li{width:22%; margin-bottom:4%; text-align:center; transition:all ease .3s; font-family: 'SCoreDream';  font-weight:500; pointer-events: auto;}
 .main_sec02 .info_icon li a{ position:relative;display:block;padding:30px 10px; border:1px solid #ddd;  border-radius:20px;  background:#fff; }
 .main_sec02 .info_icon li a p{margin-top:10px; font-size:1.8rem;}
 .main_sec02 .info_icon li a:before{content:''; width:calc(100% - 4px); height:calc(100% - 4px); position:absolute; left:-1px; top:-1px; border:3px solid #228eff; border-radius:20px; opacity:0; transition:all ease .3s;}
 .main_sec02 .info_icon li:hover{transform:translateY(-10px);  }
 .main_sec02 .info_icon li:hover a{box-shadow: 8px 8px 40px rgb(34 142 255 / 15%);}
-.main_sec02 .info_icon li:hover a:before{opacity:1;}
+.main_sec02 .info_icon li:hover a:before{opacity:1; border-color: #e63c64;}
 .main_sec03{ padding:50px 0 100px; }
 .main_sec03 .main_tit h2{font-size:3.2rem;}
 .main_sec03 .flex_box{display:flex; flex-wrap:wrap; justify-content:space-between; }
@@ -590,10 +590,10 @@ body{line-height:1.5; letter-spacing:-0.2px;}
 .main_sec04 .flex_box{display:flex; flex-wrap:wrap; justify-content:space-between; }
 .main_sec04 .left{width:28%; padding-top:20px; }
 .main_sec04 .right{ width:70%; max-width:1085px; }
-.main_sec04 .agency li{width:13%;  text-align:center; transition:all ease .3s; font-family: 'SCoreDream';  font-weight:500;  }
+.main_sec04 .agency li{width:13%;  text-align:center; transition:all ease .3s; font-family: 'SCoreDream';  font-weight:500; border:2px solid #ddd; border-radius:20px; pointer-events: auto; }
 .main_sec04 .agency li .icon{ margin:0 auto;display:flex;align-items:center; justify-content:center; background:#fff;  border-radius:20px;padding: 20px; box-shadow: 8px 8px 40px rgb(0 0 0 / 5%);}
 .main_sec04 .agency li p{margin-top:15px; font-size:1.8rem;}
-.main_sec04 .agency li:hover{transform:translateY(-10px);}
+.main_sec04 .agency li:hover{transform:translateY(-10px); border-color:#e63c64; background-color: #e0f2f7;}
 
 
 

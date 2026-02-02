@@ -518,8 +518,35 @@ $(document).ready(function () {
       });
     }
 
-    // URL이 유효하면 해당 URL로 페이지를 이동시킵니다.
-    if (url != "" && url != "dir") window.location.href = url;
+    // 새로운 링크 처리 로직 적용
+    if (url) {
+        const mentalHealthDomain = 'www.mentalhealth.go.kr';
+        const isMentalHealthInternalPath = url.startsWith('https://' + mentalHealthDomain) || url.startsWith('http://' + mentalHealthDomain) || url.startsWith('/portal/');
+        const isExternalDomain = url.startsWith('http://') || url.startsWith('https://');
+
+        if (isMentalHealthInternalPath) {
+            alert("이 기능은 포트폴리오 버전에서 지원되지 않습니다.");
+        } else if (isExternalDomain) {
+            try {
+                const targetHostname = new URL(url).hostname;
+                // mentalhealth.go.kr 도메인이라면 미구현으로 처리 (수정된 로직)
+                if (targetHostname.includes(mentalHealthDomain)) {
+                     alert("이 기능은 포트폴리오 버전에서 지원되지 않습니다.");
+                } else { // mentalhealth.go.kr이 아닌 완전히 외부 도메인
+                    if (confirm("이 링크는 외부 사이트(" + url + ")로 연결됩니다. 계속하시겠습니까?")) {
+                        window.open(url, '_blank');
+                    }
+                }
+            } catch (e) {
+                // URL 파싱 오류 발생 시 (예: 유효하지 않은 URL), 미구현으로 처리
+                console.error("URL 파싱 오류:", e);
+                 alert("이 기능은 포트폴리오 버전에서 지원되지 않습니다.");
+            }
+        } else {
+            // 기타 URL (예: #앵커, 상대 경로 등), 기본 동작 유지
+            window.location.href = url;
+        }
+    }
   };
 
   /**
@@ -573,13 +600,49 @@ $(document).ready(function () {
                   fnSearchBtnTop();
               }
           });
-      
-          // Add a general click handler for 'javascript:void(0)' links
-          $(document).on('click', 'a[href="javascript:void(0)"]', function(e) {
-              e.preventDefault(); // Prevent default action (which is doing nothing in this case, but good practice)
-              alert("이 기능은 포트폴리오 버전에서 지원되지 않습니다.");
+          
+          // New comprehensive link handling logic
+          $(document).on('click', 'a', function(e) {
+              const href = $(this).attr('href');
+              if (!href) {
+                  return; // href 속성이 없으면 아무것도 하지 않음
+              }
+
+              const mentalHealthDomain = 'www.mentalhealth.go.kr';
+              const currentHostname = window.location.hostname;
+
+              const isMentalHealthInternalOrPortal = (href.startsWith('https://' + mentalHealthDomain) || href.startsWith('http://' + mentalHealthDomain) || href.startsWith('/portal/')) && !href.startsWith('javascript:void(0)');
+              const isJavascriptVoid = href === 'javascript:void(0)';
+
+              let isTrulyExternalDomain = false;
+              if (href.startsWith('http://') || href.startsWith('https://')) {
+                  try {
+                      const targetUrl = new URL(href);
+                      if (!targetUrl.hostname.includes(mentalHealthDomain) && targetUrl.hostname !== currentHostname) {
+                          isTrulyExternalDomain = true;
+                      }
+                  } catch (err) {
+                      console.error("URL 파싱 오류 (a tag click):", err);
+                      // 파싱 오류 발생 시 미구현으로 처리
+                      alert("이 기능은 포트폴리오 버전에서 지원되지 않습니다.");
+                      e.preventDefault();
+                      return;
+                  }
+              }
+
+              if (isJavascriptVoid || isMentalHealthInternalOrPortal) {
+                  e.preventDefault();
+                  alert("이 기능은 포트폴리오 버전에서 지원되지 않습니다.");
+              } else if (isTrulyExternalDomain) {
+                  e.preventDefault();
+                  if (confirm("이 링크는 외부 사이트(" + href + ")로 연결됩니다. 계속하시겠습니까?")) {
+                      window.open(href, '_blank');
+                  }
+              }
+              // 그 외 링크 (예: #앵커, 현재 포트폴리오 도메인 내의 유효한 상대 경로 등)는 기본 동작 허용
           });
-      });
+
+}); 
 // 로딩 팝업을 표시하는 함수
 function loadingPop() {
   var pop = document.getElementById("lodingPop");
@@ -696,3 +759,4 @@ function onePassLoginPop() {
 function fnAuthOnePassLoginPop() {
   return true;
 }
+
