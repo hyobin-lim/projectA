@@ -91,7 +91,7 @@ a.btn_l {
   background: #fff;
   outline: none;
   font-size: 1.8rem;
-  background: url("../images/extracted/btn_arrowLine.png") no-repeat right center;
+
 }
 .nextResult {
   position: relative;
@@ -141,7 +141,7 @@ a.btn_l {
   vertical-align: middle;
   border: 1px solid #aaa;
   border-left: none;
-  background: #f4f4f4 url("../images/extracted/btn_calen.png") no-repeat center center;
+
 }
 .btn_right {
   margin-bottom: 40px;
@@ -4102,7 +4102,7 @@ textarea {
   display: inline-block;
   margin-right: 30px;
 }
-.satis_survey > ul > li:lst-child {
+.satis_survey > ul > li:last-child {
   margin-right: 0px;
 }
 .satis_survey > div {

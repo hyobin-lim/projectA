@@ -27,17 +27,21 @@
     *   `technical_notes.md`: 경로 변환 규칙과 같은 특정 기술 지침. (제안됨)
 
 ### `mental_health_portfolio/css/`
-*   **목적**: CSS 파일을 저장하기 위한 것입니다.
-*   **현재 상태**: 비어 있습니다. 작업을 위해 하위 폴더가 필요하지 않습니다.
+*   **목적**: 프로젝트에 필요한 CSS 스타일시트를 저장하기 위한 것입니다.
+*   **현재 상태**: `aos.css`, `jqueryui.css`, `popup.css`, `portal_contents.css`, `portal_layout.css`, `portal_reset.css`, `pretendard.css`, `SCoreDream-font-face.css`, `SCoreDream-font-family.css`, `swiper.min.css`, `xeicon.min.css` 등 11개의 CSS 파일이 존재합니다.
+    *   **최근 업데이트 (2026-02-01):**
+        *   `portal_layout.css` 파일이 보이지 않는 손상으로 인해 스타일이 적용되지 않는 문제가 발생했습니다. 사용자가 라이브 사이트의 CSS 코드를 직접 덮어쓰는 방식으로 문제를 해결했습니다.
+        *   이로 인해 발생한 배경 이미지 404 오류를 해결하기 위해, `portal_layout.css` 내의 `url()` 경로들을 로컬 프로젝트에 맞게 수정했습니다.
+        *   `SCoreDream-font-face.css` 파일의 잘못된 폰트(`SCDream6`) 경로를 로컬 `.otf` 파일을 바라보도록 수정하여 폰트 로딩 404 오류를 해결했습니다.
 
 ### `mental_health_portfolio/js/`
-*   **목적**: JavaScript 파일을 저장하기 위한 것입니다.
-*   **현재 상태**: 비어 있습니다. 작업을 위해 하위 폴더가 필요하지 않습니다.
+*   **목적**: 프로젝트에 필요한 JavaScript 파일을 저장하기 위한 것입니다.
+*   **현재 상태**: `aos.js`, `common.js`, `jquery-ui.min.js`, `jquery.min.js`, `main.js`, `popup.js`, `portal_contents.js`, `slick.min.js`, `swiper.min.js` 등 9개의 JavaScript 파일이 존재합니다. jQuery Migrate 스크립트(`jquery-migrate-3.0.0.js`)는 제거되었으며, 모든 주요 스크립트 로직은 로컬 및 상대 경로를 사용합니다.
 
 ### `mental_health_portfolio/images/`
 *   **목적**: 이미지 자산을 저장하기 위한 것입니다.
     *   `extracted/`: `index-1.html`의 절대 경로에서 부분적으로 추출된 이미지(예: `cmpn_logo.png`, `main_sec02_icon01.png` 등) 및 안내 텍스트 파일을 포함합니다.
-    *   `downloaded/`: 현재 비어 있습니다. 향후 다운로드될 이미지를 위한 공간입니다.
+    *   `downloaded/`: 다양한 이미지 파일(예: 로고, 아이콘, 보고서 표지) 16개가 존재합니다. `index.html`의 모든 `<img>` 태그의 `src` 속성은 로컬 이미지 파일 또는 투명 GIF 데이터 URI로 정상적으로 연결되었습니다.
     *   `favicon/`: 다양한 파비콘 파일(`apple-icon-*.png`, `favicon-*.png`, `manifest.json`, `browserconfig.xml` 등)을 포함합니다.
 
 ### `mental_health_portfolio/fonts/`
@@ -45,9 +49,8 @@
 *   **현재 상태**: 여러 폰트 계열(`에이투지체`, `AstaSans`, `nanum` 등)의 하위 디렉토리를 포함합니다.
 
 ## 루트 `index.html`의 핵심 경로 참조
-현재 `index.html` (루트)는 `mental_health_portfolio/index-1.html`의 절대 경로를 변환하기 위한 가이드로 다음과 같은 상대 경로 구조를 제공합니다.
-*   `images/favicon/...`
-*   `css/style.css`
-*   `js/script.js`
-*   `./images/ncmhp/contents/...` (`./`는 직접적인 형제 또는 상대 경로를 나타냅니다.)
-*   `./images/sampleX.jpg`
+현재 `index.html` (루트)는 모든 자산을 `mental_health_portfolio/`를 기준으로 하는 상대 경로로 참조하고 있으며, 다음과 같은 구조를 가집니다:
+*   `mental_health_portfolio/images/favicon/...`
+*   `mental_health_portfolio/css/...`
+*   `mental_health_portfolio/js/...`
+*   `mental_health_portfolio/images/...`

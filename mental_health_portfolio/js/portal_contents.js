@@ -632,7 +632,8 @@ function modalPop(){
 };
 */
 
-$(window).load(function(){
+$(window).on('load', function(){
+	showPopup();
 	gnbMovEvt();
 	allMenu();
 	topSchArea();

@@ -2,12 +2,29 @@
   "name": "my-project",
   "version": "1.0.0",
   "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html",
     "lint": "eslint .",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "mcp:puppeteer": "node node_modules/@modelcontextprotocol/server-puppeteer/dist/index.js"
   },
   "devDependencies": {
+    "@modelcontextprotocol/server-puppeteer": "^2025.5.12",
+    "@parcel/transformer-webmanifest": "^2.16.3",
+    "@parcel/transformer-xml": "^2.16.3",
+    "cross-env": "^10.1.0",
     "eslint": "^8.56.0",
     "husky": "^9.1.7",
+    "parcel": "^2.16.3",
     "prettier": "^3.2.5"
+  },
+  "mcpServers": {
+    "puppeteer": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-puppeteer"
+      ]
+    }
   }
 }

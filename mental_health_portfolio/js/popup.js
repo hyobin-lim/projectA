@@ -10,5 +10,3 @@ function closePopup() {
   overlay.classList.add('hidden');
 }
 
-// 페이지 로드 시 팝업을 표시합니다.
-window.onload = showPopup;

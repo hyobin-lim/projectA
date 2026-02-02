@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "projecta": {
+      "url": "http://localhost:6277",
+      "type": "http",
+      "headers": {
+        "Authorization": "Bearer 10f7cad182a1ed099086268888f22fa50d5152a58d9312d0be8e6e38a9158a4f"
+      }
+    }
+  }
+}
