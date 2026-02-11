@@ -1,22 +1,7 @@
-<!--
-  이 문서는 HTML5 표준에 따라 작성되었음을 선언합니다.
-  웹 브라우저는 이 선언을 보고 HTML5 문법에 맞춰 페이지를 렌더링합니다.
--->
 <!doctype html>
 
-<!--
-  html 태그는 HTML 문서의 최상위 요소(Root Element)입니다.
-  lang="ko" 속성은 이 문서의 주 사용 언어가 한국어임을 명시하여,
-  검색 엔진이나 스크린 리더 등이 문서의 언어를 올바르게 인식하고 처리하도록 돕습니다.
--->
 <html lang="ko">
-  <!--
-    head 태그는 문서의 메타데이터(metadata)를 포함하는 영역입니다.
-    메타데이터는 문서 자체에 대한 정보로, 웹 브라우저나 검색 엔진에게 정보를 제공하지만
-    실제 페이지 화면에는 직접적으로 표시되지 않습니다.
-  -->
   <head>
-    <!-- Basic Page Needs -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>국가정신건강정보포털</title>
@@ -56,14 +41,15 @@
     <link rel="icon" type="image/png" sizes="16x16" href="mental_health_portfolio/images/favicon/favicon-16x16.png" />
     <link rel="shortcut icon" href="mental_health_portfolio/images/favicon/favicon.ico" />
 
-    <!-- Manifest and MS-Tile -->
+    <!-- 매니페스트 및 MS-타일 -->
     <link rel="manifest" href="mental_health_portfolio/images/favicon/manifest.json" />
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="msapplication-TileImage" content="mental_health_portfolio/images/favicon/ms-icon-144x144.png" />
     <meta name="msapplication-config" content="mental_health_portfolio/images/favicon/browserconfig.xml" />
 
-    <!-- Local CSS Stylesheets -->
+    <!-- 로컬 CSS 스타일시트 -->
     <link rel="stylesheet" href="mental_health_portfolio/css/popup.css" />
+
     <link rel="stylesheet" href="mental_health_portfolio/css/xeicon.min.css" type="text/css" />
     <link rel="stylesheet" href="mental_health_portfolio/css/swiper.min.css" />
     <link rel="stylesheet" href="mental_health_portfolio/css/SCoreDream-font-face.css" />
@@ -75,37 +61,17 @@
     <link rel="stylesheet" href="mental_health_portfolio/css/portal_layout.css" type="text/css" />
     <link rel="stylesheet" href="mental_health_portfolio/css/portal_contents.css" type="text/css" />
   </head>
-  <!--
-    body 태그는 문서의 실제 내용을 담는 영역입니다.
-    AOS 관련 속성들이 적용되어 있어, 스크롤 시 애니메이션 효과가 발생합니다.
-    - data-aos-easing: 애니메이션의 가속/감속 효과 (ease)
-    - data-aos-duration: 애니메이션 지속 시간 (800ms)
-    - data-aos-delay: 애니메이션 지연 시간 (0ms)
-  -->
   <body data-aos-easing="ease" data-aos-duration="800" data-aos-delay="0">
-    <!--
-      skip_menu (스킵 네비게이션)
-      웹 접근성 지침에 따라, 키보드 사용자가 페이지의 주요 영역(주메뉴, 본문)으로
-      빠르게 이동할 수 있도록 돕는 링크입니다. 화면에는 보이지 않지만 스크린 리더나
-      키보드 탭 이동 시 나타납니다.
-    -->
     <div id="skip_menu">
       <ul>
         <li><a href="#gnb">주메뉴 바로가기</a></li>
         <li><a href="#con_wrap">본문 바로가기</a></li>
       </ul>
     </div>
-    <!--
-      wrap (전체 래퍼)
-      웹사이트의 모든 콘텐츠를 감싸는 최상위 컨테이너입니다.
-      페이지의 전체적인 폭이나 정렬을 제어하는 역할을 합니다.
-    -->
     <div id="wrap">
       <!-- header (상단 영역) -->
       <header id="top">
         <div class="top_area">
-          <!-- 웹접근성 점검 2022-12-29 -->
-          <!-- (1) 텍스트 아닌 콘텐츠는 그 의미나 용도를 이해할 수 있도록 대체텍스트를 제공해야 한다.-1 -->
           <h1><a href="./index.html" title="메인페이지로 이동">보건복지부 국립정신건강센터 국가정신건강정보포털 로고</a></h1>
 
           <ul class="login_util">
@@ -142,13 +108,13 @@
                   </ul>
                 </li>
 
-                                <li class="th1">
+                <li class="th1">
 
-                                  <a href="/portal/content/selfDiagnosis/selfDiagnosisList.do">
+                  <a href="/portal/content/selfDiagnosis/selfDiagnosisList.do">
 
-                                    자가검진
+                    자가검진
 
-                                  </a>
+                  </a>
 
                   <ul class="th2 reset">
                     <li><a href="/portal/content/selfDiagnosis/selfDiagnosisList.do?ctgryId=CTGRY000000000000021">생애주기별 자가검진</a></li>
@@ -157,13 +123,13 @@
                   </ul>
                 </li>
 
-                                <li class="th1">
+                <li class="th1">
 
-                                  <a href="/portal/content/diseaseInfo/diseaseList.do">
+                  <a href="/portal/content/diseaseInfo/diseaseList.do">
 
-                                    정신건강정보
+                    정신건강정보
 
-                                  </a>
+                  </a>
 
                   <ul class="th2 reset">
                     <li><a href="/portal/content/diseaseInfo/diseaseList.do">질환별 정보</a></li>
@@ -174,13 +140,13 @@
                   </ul>
                 </li>
 
-                                <li class="th1">
+                <li class="th1">
 
-                                  <a href="/portal/content/improveInfo/improveCardNewsList.do">
+                  <a href="/portal/content/improveInfo/improveCardNewsList.do">
 
-                                    인식개선정보
+                    인식개선정보
 
-                                  </a>
+                  </a>
 
                   <ul class="th2 reset">
                     <li><a href="/portal/content/improveInfo/improveColumnList.do">칼럼</a></li>
@@ -197,13 +163,13 @@
                   </ul>
                 </li>
 
-                                <li class="th1">
+                <li class="th1">
 
-                                  <a href="/portal/content/agency/agencyList.do">
+                  <a href="/portal/content/agency/agencyList.do">
 
-                                    정신건강관련기관
+                    정신건강관련기관
 
-                                  </a>
+                  </a>
 
                   <ul class="th2 reset">
                     <li><a href="/portal/content/agency/agencyList.do">정신건강관련기관</a></li>
@@ -214,26 +180,26 @@
                   </ul>
                 </li>
 
-                                <li class="th1">
+                <li class="th1">
 
-                                  <a href="/portal/content/statistics/statisticsList.do">
+                  <a href="/portal/content/statistics/statisticsList.do">
 
-                                    정신건강통계
+                    정신건강통계
 
-                                  </a>
+                  </a>
 
                   <ul class="th2 reset">
                     <li><a href="/portal/content/statistics/statisticsList.do">정신건강통계</a></li>
                   </ul>
                 </li>
 
-                                <li class="th1">
+                <li class="th1">
 
-                                  <a href="/portal/content/introduce/introduce.do">
+                  <a href="/portal/content/introduce/introduce.do">
 
-                                    소개/알림
+                    소개/알림
 
-                                  </a>
+                  </a>
 
                   <ul class="th2 reset">
                     <li><a href="/portal/content/introduce/introduce.do">소개</a></li>
@@ -257,7 +223,6 @@
           <!-- Stick Home -->
           <p class="btn_home"><a href="/portal/main/index.do">홈으로 가기</a></p>
 
-                          <!-- PC 전체메뉴 -->
                           <div class="all_menu">
                               <a href="/portal/main/allMenuList.do"><span class="hidden_obj">전체메뉴</span><i class="xi-bars"></i></a>
                           </div>          <div class="all_menu_area">
@@ -390,8 +355,7 @@
       <main id="container" class="main">
         <!-- main만 class="main" 추가 -->
         <div>
-          <!-- section 과 바로 아래 div 사이에 어떠한 태그도 넣지 마세요 -->
-          <!-- main sec01 -->
+          <!-- Main Section 01 (메인 비주얼 및 퀵 링크) -->
           <div class="main_sec01">
             <div class="flex_box wr">
               <div class="left">
@@ -497,7 +461,7 @@
               </div>
             </div>
           </div>
-          <!-- main sec02 -->
+          <!-- Main Section 02 (실생활 정신건강 정보) -->
           <div class="main_sec02">
             <div class="flex_box wr aos-init" data-aos="fade-up">
               <div class="left">
@@ -565,7 +529,7 @@
               </div>
             </div>
           </div>
-          <!-- main sec03 -->
+          <!-- Main Section 03 (인식개선 정보 및 새소식) -->
           <div class="main_sec03">
             <div class="flex_box wr aos-init" data-aos="fade-up">
               <div class="left">
@@ -648,7 +612,7 @@
               </div>
             </div>
           </div>
-          <!-- main sec04 -->
+          <!-- Main Section 04 (정신건강관련 기관) -->
           <div class="main_sec04">
             <div class="flex_box wr aos-init" data-aos="fade-up">
               <div class="left">
@@ -707,7 +671,7 @@
         </div>
       </main>
 
-      <!-- foot -->
+      <!-- Footer -->
       <p class="m_only btn_top"><a href="#wrap">Top</a></p>
       <footer class="footer">
         <div>
@@ -741,7 +705,7 @@
           </div>
         </div>
       </footer>
-            <!-- Modern Popup -->
+            <!-- Modern Popup (모달 팝업) -->
             <div class="popup-overlay hidden" id="popupOverlay" role="dialog" aria-modal="true" aria-labelledby="popup-title">
                 <div class="popup-card">
                     <div class="popup-header">
@@ -758,7 +722,8 @@
                         <button class="popup-confirm-btn">확인</button>
                     </div>
                 </div>
-            </div>        </div> <!-- //wrap -->
+            </div>        </div> <!-- // Wrap -->
+    <!-- Local JavaScript Files -->
     <script src="mental_health_portfolio/js/jquery.min.js"></script>
     <script src="mental_health_portfolio/js/jquery-ui.min.js"></script>
 
