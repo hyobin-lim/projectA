@@ -9,3 +9,8 @@
 - **계획**: `cmpn_logo.png` 모바일 GNB 로고 이미지의 여백 문제 해결. `portal_contents.css`에 추가된 미디어 쿼리(`@media screen and (max-width:960px)`)로 로고 이미지 자체의 크기 문제는 해결되었으나, GNB 내에서 이미지 위아래로 불필요한 여백이 발생하고 있음.
 - **상태**: 진행 중.
 - **세부사항**: GNB 레이아웃에 영향을 주지 않으면서 로고 이미지 주변의 여백을 제거하고 다른 섹션들과 시각적 일관성을 확보하는 새로운 CSS 규칙을 분석 및 적용할 예정.
+
+## 2026-02-12 12:10:00
+- **계획**: `cmpn_logo.png` 모바일 GNB 로고 이미지의 여백 문제 해결을 위해 `portal_contents.css`에 적용했던 모든 CSS 수정사항을 원상 복구함. 문제의 원인이 이미지 자체의 여백 때문으로 확인되었으며, 사용자가 직접 이미지를 수정하여 해결함.
+- **상태**: 복구 완료.
+- **세부사항**: `portal_contents.css`의 `@media screen and (max-width:960px)` 미디어 쿼리 내의 `cmpn_logo.png` 관련 모든 CSS 규칙이 초기 상태로 되돌려짐. 상세 내용은 `development_log.md` 참조.
