@@ -1,0 +1,103 @@
+# Missing Assets Report
+
+**Generated on:** 2026-02-25 13:37:52
+**Total Missing:** 94
+
+The following files are referenced in the code but are missing from the project directory. Please download them and place them in the specified paths.
+
+| Filename | Target Path | Suggested Download URL |
+|---|---|---|
+| `adhd.png` | `mental_health_portfolio\images\contents\adhd.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/adhd.png) |
+| `aged.png` | `mental_health_portfolio\images\contents\aged.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/aged.png) |
+| `alcohol.png` | `mental_health_portfolio\images\contents\alcohol.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/alcohol.png) |
+| `arrow.png` | `mental_health_portfolio\images\contents\arrow.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/arrow.png) |
+| `arrow2.png` | `mental_health_portfolio\images\contents\arrow2.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/arrow2.png) |
+| `bg_portal_arrow_top.png` | `mental_health_portfolio\images\contents\bg_portal_arrow_top.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/bg_portal_arrow_top.png) |
+| `bipolar.png` | `mental_health_portfolio\images\contents\bipolar.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/bipolar.png) |
+| `btn_down.png` | `mental_health_portfolio\images\contents\btn_down.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/btn_down.png) |
+| `btn_sch.png` | `mental_health_portfolio\images\contents\btn_sch.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/btn_sch.png) |
+| `btn_sel.png` | `mental_health_portfolio\images\contents\btn_sel.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/btn_sel.png) |
+| `btn_sel_up.png` | `mental_health_portfolio\images\contents\btn_sel_up.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/btn_sel_up.png) |
+| `btn_up.png` | `mental_health_portfolio\images\contents\btn_up.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/btn_up.png) |
+| `bul_posi.png` | `mental_health_portfolio\images\contents\bul_posi.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/bul_posi.png) |
+| `cognitive.png` | `mental_health_portfolio\images\contents\cognitive.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/cognitive.png) |
+| `defect.png` | `mental_health_portfolio\images\contents\defect.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/defect.png) |
+| `disease_dot.png` | `mental_health_portfolio\images\contents\disease_dot.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/disease_dot.png) |
+| `disease_img_inverse.png` | `mental_health_portfolio\images\contents\disease_img_inverse.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/disease_img_inverse.png) |
+| `disorder.png` | `mental_health_portfolio\images\contents\disorder.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/disorder.png) |
+| `dot.png` | `mental_health_portfolio\images\contents\dot.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/dot.png) |
+| `dot_line.png` | `mental_health_portfolio\images\contents\dot_line.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/dot_line.png) |
+| `drug_icon01.png` | `mental_health_portfolio\images\contents\drug_icon01.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/drug_icon01.png) |
+| `error.png` | `mental_health_portfolio\images\contents\error.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/error.png) |
+| `game.png` | `mental_health_portfolio\images\contents\game.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/game.png) |
+| `gloom.png` | `mental_health_portfolio\images\contents\gloom.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/gloom.png) |
+| `greeting_bg.png` | `mental_health_portfolio\images\contents\greeting_bg.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/greeting_bg.png) |
+| `ico_info.png` | `mental_health_portfolio\images\contents\ico_info.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/ico_info.png) |
+| `icon_prosess_typeA.png` | `mental_health_portfolio\images\contents\icon_prosess_typeA.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/icon_prosess_typeA.png) |
+| `icon_prosess_typeB.png` | `mental_health_portfolio\images\contents\icon_prosess_typeB.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/icon_prosess_typeB.png) |
+| `icon_prosess_typeC.png` | `mental_health_portfolio\images\contents\icon_prosess_typeC.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/icon_prosess_typeC.png) |
+| `icon_prosess_typeD.png` | `mental_health_portfolio\images\contents\icon_prosess_typeD.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/icon_prosess_typeD.png) |
+| `icon_prosess_typeE.png` | `mental_health_portfolio\images\contents\icon_prosess_typeE.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/icon_prosess_typeE.png) |
+| `icon_prosess_typeF.png` | `mental_health_portfolio\images\contents\icon_prosess_typeF.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/icon_prosess_typeF.png) |
+| `icon_prosess_typeG.png` | `mental_health_portfolio\images\contents\icon_prosess_typeG.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/icon_prosess_typeG.png) |
+| `icon_prosess_typeH.png` | `mental_health_portfolio\images\contents\icon_prosess_typeH.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/icon_prosess_typeH.png) |
+| `icon_prosess_typeI.png` | `mental_health_portfolio\images\contents\icon_prosess_typeI.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/icon_prosess_typeI.png) |
+| `icon_prosess_typeJ.png` | `mental_health_portfolio\images\contents\icon_prosess_typeJ.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/icon_prosess_typeJ.png) |
+| `icon_prosess_typeK.png` | `mental_health_portfolio\images\contents\icon_prosess_typeK.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/icon_prosess_typeK.png) |
+| `icon_prosess_typeL.png` | `mental_health_portfolio\images\contents\icon_prosess_typeL.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/icon_prosess_typeL.png) |
+| `insomnia.png` | `mental_health_portfolio\images\contents\insomnia.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/insomnia.png) |
+| `internet.png` | `mental_health_portfolio\images\contents\internet.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/internet.png) |
+| `join_bg.png` | `mental_health_portfolio\images\contents\join_bg.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/join_bg.png) |
+| `join_bg_on.png` | `mental_health_portfolio\images\contents\join_bg_on.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/join_bg_on.png) |
+| `life_cycle_card01.png` | `mental_health_portfolio\images\contents\life_cycle_card01.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/life_cycle_card01.png) |
+| `life_cycle_card02.png` | `mental_health_portfolio\images\contents\life_cycle_card02.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/life_cycle_card02.png) |
+| `life_cycle_card03.png` | `mental_health_portfolio\images\contents\life_cycle_card03.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/life_cycle_card03.png) |
+| `m_gnb_clo.png` | `mental_health_portfolio\images\contents\m_gnb_clo.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/m_gnb_clo.png) |
+| `map.png` | `mental_health_portfolio\images\contents\map.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/map.png) |
+| `map_blue.png` | `mental_health_portfolio\images\contents\map_blue.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/map_blue.png) |
+| `map_red.png` | `mental_health_portfolio\images\contents\map_red.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/map_red.png) |
+| `map_total.png` | `mental_health_portfolio\images\contents\map_total.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/map_total.png) |
+| `map_yell.png` | `mental_health_portfolio\images\contents\map_yell.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/map_yell.png) |
+| `mark.png` | `mental_health_portfolio\images\contents\mark.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/mark.png) |
+| `obessive.png` | `mental_health_portfolio\images\contents\obessive.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/obessive.png) |
+| `online.png` | `mental_health_portfolio\images\contents\online.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/online.png) |
+| `panic.png` | `mental_health_portfolio\images\contents\panic.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/panic.png) |
+| `phone.png` | `mental_health_portfolio\images\contents\phone.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/phone.png) |
+| `process_icon01.png` | `mental_health_portfolio\images\contents\process_icon01.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/process_icon01.png) |
+| `recover_icon01.png` | `mental_health_portfolio\images\contents\recover_icon01.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/recover_icon01.png) |
+| `scroll_arrow.png` | `mental_health_portfolio\images\contents\scroll_arrow.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/scroll_arrow.png) |
+| `self_adult.png` | `mental_health_portfolio\images\contents\self_adult.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/self_adult.png) |
+| `self_boxTop_faq.png` | `mental_health_portfolio\images\contents\self_boxTop_faq.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/self_boxTop_faq.png) |
+| `self_btn_down.png` | `mental_health_portfolio\images\contents\self_btn_down.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/self_btn_down.png) |
+| `self_btn_up.png` | `mental_health_portfolio\images\contents\self_btn_up.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/self_btn_up.png) |
+| `self_child.png` | `mental_health_portfolio\images\contents\self_child.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/self_child.png) |
+| `self_icon01.png` | `mental_health_portfolio\images\contents\self_icon01.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/self_icon01.png) |
+| `self_icon02.png` | `mental_health_portfolio\images\contents\self_icon02.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/self_icon02.png) |
+| `self_icon03.png` | `mental_health_portfolio\images\contents\self_icon03.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/self_icon03.png) |
+| `self_mail.png` | `mental_health_portfolio\images\contents\self_mail.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/self_mail.png) |
+| `self_teen.png` | `mental_health_portfolio\images\contents\self_teen.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/self_teen.png) |
+| `self_thumb01.jpg` | `mental_health_portfolio\images\contents\self_thumb01.jpg` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/self_thumb01.jpg) |
+| `self_thumb02.jpg` | `mental_health_portfolio\images\contents\self_thumb02.jpg` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/self_thumb02.jpg) |
+| `self_thumb03.jpg` | `mental_health_portfolio\images\contents\self_thumb03.jpg` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/self_thumb03.jpg) |
+| `self_thumb04.jpg` | `mental_health_portfolio\images\contents\self_thumb04.jpg` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/self_thumb04.jpg) |
+| `self_thumb05.jpg` | `mental_health_portfolio\images\contents\self_thumb05.jpg` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/self_thumb05.jpg) |
+| `self_thumb06.jpg` | `mental_health_portfolio\images\contents\self_thumb06.jpg` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/self_thumb06.jpg) |
+| `self_thumb07.jpg` | `mental_health_portfolio\images\contents\self_thumb07.jpg` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/self_thumb07.jpg) |
+| `self_thumb08.jpg` | `mental_health_portfolio\images\contents\self_thumb08.jpg` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/self_thumb08.jpg) |
+| `self_thumb09.jpg` | `mental_health_portfolio\images\contents\self_thumb09.jpg` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/self_thumb09.jpg) |
+| `self_thumb10.jpg` | `mental_health_portfolio\images\contents\self_thumb10.jpg` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/self_thumb10.jpg) |
+| `self_thumb11.jpg` | `mental_health_portfolio\images\contents\self_thumb11.jpg` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/self_thumb11.jpg) |
+| `self_thumb12.jpg` | `mental_health_portfolio\images\contents\self_thumb12.jpg` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/self_thumb12.jpg) |
+| `self_thumb13.jpg` | `mental_health_portfolio\images\contents\self_thumb13.jpg` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/self_thumb13.jpg) |
+| `self_thumb14.jpg` | `mental_health_portfolio\images\contents\self_thumb14.jpg` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/self_thumb14.jpg) |
+| `self_thumb15.jpg` | `mental_health_portfolio\images\contents\self_thumb15.jpg` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/self_thumb15.jpg) |
+| `self_thumb16.jpg` | `mental_health_portfolio\images\contents\self_thumb16.jpg` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/self_thumb16.jpg) |
+| `self_thumb17.jpg` | `mental_health_portfolio\images\contents\self_thumb17.jpg` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/self_thumb17.jpg) |
+| `self_thumb18.jpg` | `mental_health_portfolio\images\contents\self_thumb18.jpg` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/self_thumb18.jpg) |
+| `self_thumb19.jpg` | `mental_health_portfolio\images\contents\self_thumb19.jpg` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/self_thumb19.jpg) |
+| `stress.png` | `mental_health_portfolio\images\contents\stress.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/stress.png) |
+| `suicide.png` | `mental_health_portfolio\images\contents\suicide.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/suicide.png) |
+| `ui-icons_777620_256x240.png` | `mental_health_portfolio\images\downloaded\ui-icons_777620_256x240.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/ui-icons_777620_256x240.png) |
+| `ui-icons_777777_256x240.png` | `mental_health_portfolio\images\downloaded\ui-icons_777777_256x240.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/ui-icons_777777_256x240.png) |
+| `ui-icons_cc0000_256x240.png` | `mental_health_portfolio\images\downloaded\ui-icons_cc0000_256x240.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/ui-icons_cc0000_256x240.png) |
+| `ui-icons_ffffff_256x240.png` | `mental_health_portfolio\images\downloaded\ui-icons_ffffff_256x240.png` | [Download](https://www.mentalhealth.go.kr/images/ncmhp/contents/ui-icons_ffffff_256x240.png) |
