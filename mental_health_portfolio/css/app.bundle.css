@@ -10255,7 +10255,7 @@ iframe {
 
 /* 뉴스 슬라이더 재생 버튼 초기 상태 */
 #playNews {
-    display: none !important;
+    display: none;
 }
 
 

@@ -71,22 +71,23 @@ $(document).ready(function () {
   });
 
   var puaseNewsButton = document.getElementById("puaseNews");
+  var playNewsButton = document.getElementById("playNews");
+
   if(puaseNewsButton) {
     puaseNewsButton.addEventListener("click", (event) => {
       newsSwiper.autoplay.stop();
-      puaseNewsButton.style.display = "none";
-      playNewsButton.style.display = "flex";
+      puaseNewsButton.style.setProperty("display", "none", "important");
+      if(playNewsButton) playNewsButton.style.setProperty("display", "flex", "important");
     });
   }
 
-  var playNewsButton = document.getElementById("playNews");
   if(playNewsButton) {
     playNewsButton.addEventListener("click", (event) => {
       newsSwiper.autoplay.start();
-      playNewsButton.style.display = "none";
-      puaseNewsButton.style.display = "flex";
+      playNewsButton.style.setProperty("display", "none", "important");
+      if(puaseNewsButton) puaseNewsButton.style.setProperty("display", "flex", "important");
     });
-    playNewsButton.style.display = "none";
+    playNewsButton.style.setProperty("display", "none", "important");
   }
 
   $(".ft-family > a").click(function (event) {
