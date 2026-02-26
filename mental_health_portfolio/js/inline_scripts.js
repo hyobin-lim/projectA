@@ -410,5 +410,13 @@ function closePopup() { const o = document.getElementById('popupOverlay'); if(o)
 window.addEventListener('DOMContentLoaded', () => {
   const c = document.querySelector('.popup-close-icon'); if(c) c.addEventListener('click', closePopup);
   const b = document.querySelector('.popup-confirm-btn'); if(b) b.addEventListener('click', closePopup);
+  
+  // Normalize placeholder links
+  document.querySelectorAll('a[href="#"], a[href^="javascript:void(0)"]').forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+    });
+  });
+
   setTimeout(showPopup, 500);
 });

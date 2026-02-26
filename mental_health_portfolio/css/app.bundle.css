@@ -1,1177 +1,1240 @@
 @charset "utf-8";
 
-/* reset
-------------------------------------------------------------------------------------------------- */
-html,
-body {
-  margin: 0;
-  padding: 0;
-  font-size: 10px;
-  font-weight: 400;
-  color: #222;
-  font-family: "NotoSans", "본고??, Dotum, "?��?", Gulim, "굴림", Tahoma, Verdana, AppleGothic, UnDotum, Arial;
-  -webkit-text-size-adjust: none;
-}
-#wrap {
-  font-size: 1.6rem;
-}
-div,
-dl,
-dt,
-dd,
-ul,
-ol,
-li,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-pre,
-form,
-fieldset,
-input,
-textarea,
-p,
-blockquote,
-select,
-textarea,
-span,
-em,
-strong {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  -webkit-text-size-adjust: none;
-}
-th,
-td,
-input,
-textarea,
-select,
-button {
-  box-sizing: border-box;
-  font-size: 1em;
-  font-family: "NotoSans", "본고??, Dotum, "?��?", Gulim, "굴림", Tahoma, Verdana, AppleGothic, UnDotum, Arial;
-  -webkit-text-size-adjust: none;
-}
-th,
-td {
-  word-break: break-all;
-  word-wrap: break-word;
-  -webkit-text-size-adjust: none;
-}
-table {
-  border-spacing: 0;
-  border-collapse: collapse;
-  -webkit-text-size-adjust: none;
-  border: 0;
-  table-layout: fixed;
-}
-address,
-caption,
-cite,
-code,
-dfn,
-em,
-var {
-  font-style: normal;
-  font-weight: normal;
-  -webkit-text-size-adjust: none;
-}
-em {
-  font-weight: inherit;
-}
-ol,
-ul,
-li {
-  list-style: none;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: 100%;
-}
-abbr,
-acronym {
-  border: 0;
-}
-legend,
-caption {
-  line-height: 0;
-  width: 0;
-  height: 0;
-  margin: 0;
-  padding: 0;
-  text-indent: -99999px;
-  overflow: hidden;
-  font-size: 0;
-}
-img,
-fieldset {
-  border: 0 none;
-}
+/* Source: portal_reset.css */
+
+
+/* reset
+------------------------------------------------------------------------------------------------- */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  font-weight: 400;
+  color: #222;
+  font-family: "NotoSans", "본고딕", Dotum, "돋움", Gulim, "굴림", Tahoma, Verdana, AppleGothic, UnDotum, Arial;
+  -webkit-text-size-adjust: none;
+}
+#wrap {
+  font-size: 1.6rem;
+}
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+select,
+textarea,
+span,
+em,
+strong {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-text-size-adjust: none;
+}
+th,
+td,
+input,
+textarea,
+select,
+button {
+  box-sizing: border-box;
+  font-size: 1em;
+  font-family: "NotoSans", "본고딕", Dotum, "돋움", Gulim, "굴림", Tahoma, Verdana, AppleGothic, UnDotum, Arial;
+  -webkit-text-size-adjust: none;
+}
+th,
+td {
+  word-break: break-all;
+  word-wrap: break-word;
+  -webkit-text-size-adjust: none;
+}
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  -webkit-text-size-adjust: none;
+  border: 0;
+  table-layout: fixed;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+var {
+  font-style: normal;
+  font-weight: normal;
+  -webkit-text-size-adjust: none;
+}
+em {
+  font-weight: inherit;
+}
+ol,
+ul,
+li {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+}
+abbr,
+acronym {
+  border: 0;
+}
+legend,
+caption {
+  line-height: 0;
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  text-indent: -99999px;
+  overflow: hidden;
+  font-size: 0;
+}
+img,
+fieldset {
+  border: 0 none;
+}
+
+.sr-only {
+  display: inline !important;
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip-path: inset(50%);
+  border: 0 !important;
+  clip: rect(0 0 0 0);
+}
+
+a {
+  color: #222;
+  box-sizing: border-box;
+}
+a:link,
+a:visited,
+a:hover {
+  color: #222;
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
+input,
+img {
+  vertical-align: middle;
+}
+.hidden_obj {
+  position: absolute;
+  visibility: hidden !important;
+  overflow: hidden !important;
+  height: 0 !important;
+  line-height: 0 !important;
+  width: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 0 !important;
+}
+
+input,
+button {
+  border-radius: 0; /* -webkit-appearance:none; */
+  border: 0;
+}
+button {
+  border: 0;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+input[type="submit"] {
+  border: 0;
+  width: 100%;
+  padding: 0;
+  cursor: pointer;
+}
+textarea {
+  resize: none;
+  border: 0;
+}
+label {
+  vertical-align: middle;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="text"],
+input[type="password"],
+input[type="text"],
+textarea {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+}
+
+/* html5 */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+/* font */
+@font-face {
+  font-family: "NotoSans";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/Noto_Sans_KR/static/NotoSansKR-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "NotoSans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Noto_Sans_KR/static/NotoSansKR-Regular.ttf") format("truetype");
+}
+
+/*div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,select,textarea,th,td, input,textarea,select,button,span, strong, em{line-height:1em;}*/
+table,
+table th,
+table td {
+  box-sizing: border-box;
+  font-weight: 400;
+}
+
+/* skip_menu */
+#skip_menu {
+  position: fixed;
+  top: -1px;
+  left: 0;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  z-index: 9999;
+}
+#skip_menu a {
+  display: block;
+  position: absolute;
+  top: -30px;
+  width: 100%;
+  height: 1px;
+  line-height: 1px;
+  background: #000;
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: center;
+}
+#skip_menu a:focus {
+  top: 0px;
+  height: 30px;
+  line-height: 2.1;
+  z-index: 9999;
+}
+
+
+/* Source: portal_layout.css */
+
+
+/* Animation
+.gnb_pc,  .gnb_pc > nav, .gnb_pc > nav > ul,  .gnb_pc > nav > ul > li
+{
+	transition:all ease 0.8s ;
+    -webkit-transition:all ease 0.8s;
+}*/
+.gnb_pc .th2, .quick
+{
+  transition:all ease 0.3s ;
+  -webkit-transition:all ease 0.3s;
+}
+
+.group .state .in_box
+{
+  transition:all ease 0.5s ;
+  -webkit-transition:all ease 0.5s;
+}
+
+
+html, body, #wrap{height:100%;}
+#wrap{width:100%;min-width:320px;}
+header{z-index:9;background-color:#fff;}
+#container{margin: 0 ; padding-bottom:150px; width:100%;min-height:100%; overflow:hidden;}
+#container.main{padding-bottom:0;}
+#container > div{padding:100px 0 0; }
+
+#container.main{width:100%;max-width:100%;margin:0 auto ;}
+#container.main .wr{width:90%;max-width:1520px;margin:0 auto ;}
+
+/* 공통 */
+.posiY{position:relative;top:50%;transform:translateY(-50%);}
+.posiXY{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);}
+
+/* Header */
+.top_area{width:100%;max-width:1520px;height:50px;margin:0 auto;}
+.top_area:after{content:'';display:block;clear:both;}
+.top_area > ul{float:right;margin-top:10px;}
+.top_area > ul > li{display:inline-block;position:relative;}
+.top_area > ul > li:last-child {margin-left:11px;padding-left:15px;}
+.top_area > ul > li:last-child:before{content:'';position:absolute;left:0;top:7px;width:1px;height:12px;background-color:#cbcbcb;}
+.top_area > ul > li > a, .top_area > ul > li > a:before{display:inline-block;vertical-align:middle;}
+.top_area > ul > li > a{line-height:22px;font-size:1.4rem;color:#555;}
+.top_area > ul > li:nth-child(1) > a {width:176px;height:auto;padding:4px 6px 2px 4px;margin-right:20px;text-align:left;color:#23246c;border:1px solid #23246c;border-radius:5px;box-sizing:border-box;}
+.top_area > ul > li:nth-child(1) > a:before{margin-right:8px;width:22px;vertical-align:middle;background-position:-400px 0;}
+.top_area > ul > li:nth-child(2) > a:before{margin-right:7px;background-position:-432px 3px;}
+.top_area > ul > li:nth-child(3) > a:before{margin-right:7px;background-position:-456px 4px;}
+.top_area > ul > li:nth-child(4) > a:before{width:0;margin-right:0;background:none;}
+
+.top_area > ul.login_util > li{margin-left:11px;padding-left:15px;}
+.top_area > ul.login_util > li:first-child{margin-left:0;padding-left:0;}
+.top_area > ul.login_util > li:first-child > a {width:auto;height:auto;padding:4px 6px ;margin-right:0;text-align:left;color:#555;border:0;border-radius:0;box-sizing:border-box;} /*2022-12 자가검진 ...*/
+.top_area > ul.login_util > li:first-child > a > strong {color:#008dc9;}
+.top_area > ul.login_util > li:nth-child(3) > a:before{background-position:-504px 3px;}
+.top_area > ul > li strong{color:#007baf;}
+.top_area > ul.login_util > li .cartCount {display:inline-block;width:20px;height:20px;line-height:20px;margin-left:8px;text-align:center;font-size:1.2rem;color:#fff;background-color:#333;border-radius:50%; vertical-align:middle;}
+
+
+/* logo */
+.top_area {position:relative;}
+.top_area h1{position:absolute; left:0; top:68px; width:459px;height:64px; z-index:12;}
+.top_area h1 a{display:block;width:100%;height:100%;font-size:0;line-height:0;background:url('../images/contents/logo.png') no-repeat center center / contain;}
+.top_area.move h1{position: fixed;  top: 18px; left:calc(50% - 760px);}
+
+/* GNB */
+.gnb_area{z-index:11;position:relative;width:100%;}
+.gnb_area.move{position:fixed;top:0px;}
+.gnb_area.move .gnb_pc{border-top:0;}
+
+.gnb_nav{font-size:0;}
+.gnb_pc{position:absolute;top:0;left:0;width:100%;background:#fff ; border-top:1px solid #e8e8e8; border-bottom:1px solid #e8e8e8;}
+.gnb_pc.on {border-bottom:0;box-shadow: 3px 30px 30px rgba(0,0,0,0.05);}
+.gnb_pc.stop{box-shadow:none !important;}
+.gnb_pc > nav{width:100%;max-width:1520px;margin:0 auto; padding-left:550px; box-sizing: border-box; height:100px;}
+.gnb_pc > nav > ul{width:calc(100% - 70px); margin-right: 60px;padding-top:25px;}
+/*.gnb_pc > nav > ul:after{content:'';display:block;clear:both;}*/
+.gnb_pc > nav > ul > li{float:left;  max-width:12%; vertical-align:top; width:100%;}
+.gnb_pc > nav > ul > li:nth-child(2){max-width:12%;}
+.gnb_pc > nav > ul > li:nth-child(3){max-width:16%;}
+.gnb_pc > nav > ul > li:nth-child(4){max-width:15%;}
+.gnb_pc > nav > ul > li:nth-child(5){max-width:18%;}
+.gnb_pc > nav > ul > li:nth-child(6){max-width:14%;}
+.gnb_pc > nav > ul > li a{display:block;}
+.gnb_pc .th1>a{display:block;padding-right:0px;     white-space: nowrap; height:50px;line-height:50px;font-size:2.0rem;font-weight:600; }
+.gnb_pc .th1 > a > img {
+    width: 85px;
+    margin-bottom: 4px;
+}
+.gnb_pc .th1.on>a{ }
+
+.gnb_pc .th2 {padding:0;width:100%;height:0;text-align:left;}
+.gnb_pc .th2>li>a{visiblity:hidden; word-break:break-all; margin-bottom:10px; padding-right:10px; }
+.gnb_pc .th2.on>li>a{visiblity:visible;}
+.gnb_pc .th2.on{padding:20px 0 30px 0px;height:auto;}
+.gnb_pc .th2.on>li{margin-bottom:5px;}
+.gnb_pc .th2.on>li>a{color:#222;font-size:1.7rem;  }
+.gnb_pc .th2>li>a:hover, .gnb_pc .th3>li>a:hover{color:#1f619f;font-weight:500;}
+
+.gnb_pc .th2.on .th3{margin:0px 0 10px 5px;}
+.gnb_pc .th2.on .th3 li{line-height:1.5em;font-size:1.5rem;}
+.gnb_pc .th2.on .th3>li>a:before{display:inline-block;margin-right:5px;content:"-";vertical-align:3px;}
+.gnb_pc .th2.reset, .gnb_pc .th3.reset{display:block !important;}
+.gnb_pc .th2 .th3>li>a{text-indent:-5px;padding-left:15px;}
+
+.gnb_pc.stop .th2{display:none !important;}
+
+.btn_home{display:none;}
+.btn_home.on{display:block;position:absolute;top:0px;right:50%;width:50px;height:50px;margin-right:-600px;text-align:center;}
+.btn_home.on > a{display:inline-block;width:33px;height:28px;font-size:0;line-height:0;vertical-align:5px;background:url('../images/contents/ico_all.png') no-repeat -250px 0;}
+
+/* 전체메뉴 */
+.all_menu{display:block;position:absolute;top:25px;right: calc(50% - 720px);}
+.all_menu > a{display: flex;align-items: center;justify-content: center;  height:50px;    font-size:2.4rem; text-align:center;}
+.all_menu_area{z-index:99;display:none;position:absolute;top:101px;left:0;width:100%; max-width:1520px;right:0; margin:0 auto; text-align:center;}
+.all_menu_area.on{display:block;}
+
+.all_menu_area ul a{display:block;}
+.all_menu_area > ul{display:table;table-layout:fixed;width:calc(100% - 41px);border:1px solid #e8e8e8; background-color:#fff;box-shadow:3px 30px 30px rgba(0,0,0,0.05);}
+.all_menu_area > ul > li{display:table-cell;table-layout:fixed;width:calc(100% / 6); }
+.all_menu_area > ul > li:last-child{border-right:none;}
+.all_menu_area > ul > li > a{height:60px;line-height:60px; padding:0 30px; font-size:2.0rem;background-color:#f8f8f8; font-weight:bold;}
+.all_menu_area > ul > li > ul{padding:20px 30px ;}
+.all_menu_area > ul > li > ul > li > a{margin-bottom:10px;font-size:1.7rem;padding-left: 10px;text-indent: -10px;}
+
+/*.all_menu_area > ul > li > ul > li > a:before{content:'';display:inline-block;vertical-align:5px;margin-right:5px;width:5px;height:5px;background:url('../images/contents/bul_all.png') no-repeat 0 0;}*/
+.all_menu_area > ul > li > ul > li > a:hover, .all_menu_area > ul > li > ul > li > ul > li > a:hover{color:#0e3799;font-weight:500;}
+.all_menu_area > ul > li > ul > li > a:hover:before{background-position:0 -50px;}
+.all_menu_area > ul > li > ul > li > ul{padding:0px 0 20px 10px;}
+.all_menu_area > ul > li > ul > li > ul > li > a{padding-left:5px;text-indent:-5px;}
+.all_menu_area > ul > li > ul > li > ul > li > a:before{content:'-';display:inline-block;vertical-align:5px;margin-right:5px;}
+
+.all_menu_area .btn_all_clo{position:absolute;top:0;right:0px;}
+.all_menu_area .btn_all_clo a{position:absolute;right:25px;top:25px;width:30px;height:30px;font-size:0;display:flex;align-items:center;justify-content:center;}
+
+/* 상단검색 */
+.btn_sch{position:absolute;top:25px;right:calc(50% - 760px);  }
+.btn_sch > a{display: flex;align-items: center;justify-content: center; height:50px;  font-size:2.4rem;}
+.btn_sch.off{display:none;}
+.btn_sch_clo{display:none;position:absolute;top:25px;right:calc(50% - 760px);  }
+.btn_sch_clo > a{display: flex;align-items: center;justify-content: center;height:50px; line-height:50px; font-size:2.4rem;}
+.btn_sch_clo.on{display:block;}
+
+.sch_area{display:none;position:absolute;top:100px;left:0;padding:50px 0;width:100%;background-color:#fff;box-shadow: 3px 30px 30px rgba(0,0,0,0.05);}
+.sch_area.on{display:block;}
+.sch_area .sch_box{position:relative;margin:0 auto;width:90%; max-width:700px;height:54px;border:none; border-bottom:2px solid #000; background-color:#fff;}
+.sch_area .sch_box input[type="text"]{border:none;width:calc(100% - 50px);height:50px;line-height:50px;background-color:#fff; font-size:2rem;}
+.sch_area .sch_box input::placeholder{ color:#666; }
+.sch_area .sch_box .sch_send{position:absolute;top:0;right:0;width:50px;height:50px;font-size:0;background:url('../images/contents/btn_sch_w.png') no-repeat center center;}
+.sch_area .recommend{max-width:1000px; margin:30px auto; text-align:center;}
+.sch_area .recommend > a{display:inline-block; color:#666; margin-left:30px;}
+.sch_area .recommend .keyword_tit{background:#228eff; color:#fff; display:inline-block; padding:5px 15px; border-radius:50px; font-size:1.4rem;}
+
+
+/* 메인 custom */
+#wrap:has(.main) .btn_sch{display:none}
+#wrap:has(.main) .all_menu{right:calc(50% - 760px);}
+#wrap:has(.main) .all_menu > a{ width:50px; background:#228eff; color:#fff; border-radius:50%;  }
+
+/* 메인-검색 */
+.sch_wrap{ width:100%;}
+.sch_wrap > p{padding-bottom:15px;font-size:2.2rem;font-weight:500;text-align:center;}
+/* 2020-12-10 추가 */
+.sch_wrap > p.sch_tit {width:450px;margin:0 auto;text-align:left;}
+.sch_wrap > p.sch_tit > span {display:block;width:450px;text-align:center;}
+
+.sch_wrap .sch_all{position:relative;margin:0 auto;width:100%;}
+.sch_wrap .sch_all:after{content:'';display:block;clear:both;}
+.sch_all .sch_box, .sch_all .all_view{float:left;}
+
+.sch_all .sch_box{position:relative;width:100%;border:3px solid #00349d; border-radius:16px;     overflow: hidden;}
+.sch_all .sch_box .input_area{display:inline-block;width:100%;}
+.sch_all .sch_box select {padding:0 45px 0 10px;height:50px;border:none;background:#fff url('../images/contents/btn_selMain.png') no-repeat right center;}
+.sch_all .sch_box input[type="text"]{border:none;width:100%;;height:64px;line-height:64px; padding:0 20px; font-size:18px;}
+.sch_all .sch_box .sch_send{position:absolute;top:0;right:0;width:64px;height:64px;font-size:0;display:flex;align-items:center;justify-content:center;background-color:#00349d;border:none;cursor:pointer;}
+.sch_all .sch_box .sch_send svg {
+    width: 36px;
+    height: 36px;
+}
+
+.sch_all .all_view{width:190px;height:54px;border:2px solid #008dc9;border-left:1px solid #008dc9;background-color:#f2f2f2;}
+.sch_all .all_view > a{display:block;padding-left:20px;line-height:48px;}
+.sch_all .all_view > a:after{content:'';display:inline-block;margin-left:10px;width:15px;height:13px;vertical-align:middle;background:url('../images/contents/bul_all.png') no-repeat -250px -150px;}
+.sch_all .all_view:hover{border-color:#f28300;}
+.sch_all .all_view:hover > a:after{background-position:-250px -170px;}
+/* 2020-12-10 추가 */
+.sch_all .sch_q {position:absolute;right:-190px;top:2px;width:190px;}
+.sch_all .sch_q > a.q_title{padding-left:15px;line-height:48px;text-decoration:underline;}
+.sch_all .sch_q > a.q_title:before{content:'';display:inline-block;margin-right:3px;width:19px;height:19px;vertical-align:middle;background:url('../images/contents/bul_all.png') no-repeat -267px -100px;}
+.sch_all .sch_q .question_box {display:none;position:absolute;left:16px;top:46px;width:320px;height:auto;padding:16px 20px;background-color:#fff;border:1px solid #bbb;box-sizing:border-box;z-index:9;}
+.sch_all .sch_q .question_box > a {display:block;padding:2px 0;text-align:left;font-size:1.5rem;color:#54575f;}
+.sch_all .sch_q .question_box > a:hover {color:#222;text-decoration:underline;}
+.sch_all .sch_q .question_box > a.close_q {position:absolute;right:5px;top:5px;width:40px;height:20px;background:url('../images/contents/bul_all.png') no-repeat -100px 0px;}
+.sch_all .sch_q .question_box > a.close_q > span {display:block;width:40px;text-align:center;}
+
+/* 메인 */
+.group:after{content:'';display:block;clear:both;}
+.group > article{float:left;position:relative;margin-bottom:50px;width:446px;}
+.group > article:nth-of-type(2), .group > article:nth-of-type(5){margin:0 31px;}
+.group h2{margin-bottom:20px;padding-bottom:12px;font-size:2.2rem;color:#000;font-weight:500;border-bottom:1px solid #e8e8e8;}
+
+.group > article .box{height:310px;}
+.group > article .in_box{position:relative;width:100%;height:100%;text-align:center;vertical-align:middle;}
+.group > article .in_box img{max-width:100%;/*max-height:100%*/;width:100%;height:auto;}
+.group .self_check .box{background:url('../images/contents/self_check_img.jpg') no-repeat center center;background-size:cover;}
+.group .tit{margin-bottom:30px;text-align:center;color:#fff;font-size:2.4rem;font-weight:500;}
+.group .check{width:346px;margin:0 auto;}
+.group .check li{margin-bottom:20px;}
+.group .check li a{position:relative;display:block;padding-left:30px;height:50px;line-height:48px;text-align:left;font-size:1.7rem;font-weight:500;border:2px solid #fff;background-color:#fff}
+.group .check li a:hover{color:#1664ad;font-weight:500;border:2px solid #68d2ff;}
+.group .check li a:after{content:'';position:absolute;top:17px;right:35px;display:inline-block;width:41px;height:10px;background:url('../images/contents/m_bul_all.png') no-repeat 0 0;}
+
+.group .symp_info .in_box a{display:block;position:relative;height:100%;}
+.group .txt_bg > span{display:inline-block;padding:10px 20px;line-height:1em;font-size:2.4rem;color:#fff;font-weight:500;background-color:#007db3;}/* 웹접근성 webaccess_pub 명도 대비 */
+.group .txt_bg > span:nth-of-type(1){padding-top:15px;}
+.group .txt_bg > span:nth-of-type(2){padding-bottom:15px;}
+.group .symp_info .txt_bg > span:nth-of-type(1){padding-bottom:15px;}
+.group .btn_more{position:absolute;top:5px;right:0;}
+.group .btn_more a:before{content:'+';display:inline-block;margin-right:3px;}
+.group .in_box a:hover .txt_bg > span{color:#1664ad;background-color:rgba(255,255,255,0.8);}
+
+.group .box_grey .box{background-color:#f0f0f0;}
+.group .mental_list{padding-left:40px;}
+.group .mental_list:after{content:'';display:block;clear:both;}
+.group .mental_list li{float:left;width:45%;padding:20px 0}
+.group .mental_list li:nth-child(odd){width:55%;}
+.group .mental_list li > a{display:table-cell;table-layout:fixed;padding-left:45px;vertical-align:middle;line-height:1.5em;text-align:left;height:50px;}
+.group .mental_list li > a:hover{text-decoration:underline;}
+
+.group .mental_list li:nth-child(1) > a{background:url('../images/contents/main_sec02_icon01.png') no-repeat 0 center;}
+.group .mental_list li:nth-child(2) > a{background:url('../images/contents/main_sec02_icon02.png') no-repeat 0 center;}
+.group .mental_list li:nth-child(3) > a{background:url('../images/contents/main_sec02_icon03.png') no-repeat 0 center;}
+.group .mental_list li:nth-child(4) > a{background:url('../images/contents/main_sec02_icon04.png') no-repeat 0 center;}
+.group .mental_list li:nth-child(5) > a{background:url('../images/contents/main_sec02_icon05.png') no-repeat 0 center;}
+.group .mental_list li:nth-child(6) > a{background:url('../images/contents/main_sec02_icon06.png') no-repeat 0 center;}
+
+.group .state .in_box{background:url('../images/contents/img_statics.png') no-repeat center center;}
+.group .state .in_box:hover{background-size:100%;}
+.group .state .in_box > a, .group .medi .in_box > a{display:block;position:relative;width:100%;height:100%;font-size:0;}
+.group .in_box .news{display:block;position:relative;height:100%;}
+.group .in_box .news p{position:absolute;bottom:0;left:0;padding:18px;width:100%;text-align:center;font-size:1.8rem;color:#fff;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap;background-color:#686868;}
+.group .in_box .news:hover p{background-color:#333;}
+
+.group .medi .in_box{background:url('../images/contents/img_medi.jpg') no-repeat center center;}
+.group .medi .txt_bg.posiXY{width:275px;text-align:center;left:50%;transform:translate(-50%, -50%);}
+.group .medi.faq .in_box{background:url('../images/contents/img_faq.jpg') no-repeat center center;}
+.group .medi.faq .txt_bg.posiXY{width:200px;}
+
+.group .symp_info .in_box, .group .medi .in_box, .group .medi.faq .in_box{background-size:cover !important;}
+.group .state .in_box{background-size:95%;}
+
+.group .movie .box{background-color:#333;}
+.group .movie .box .in_box .news{text-align:center;}
+.group .movie .box .in_box img{width:100%;height:100%;max-width:100%;/*max-height:100%*/;}
+
+
+/* 메인 - 팝업존 */
+.ban_area{position:relative;height:100%;}
+.ban_area .ban_list{width:100%;height:100%;}
+.ban_btn{position:absolute;bottom:10px;left:15px;}
+.ban_btn button{width:21px;height:21px;font-size:0;line-height:0;}
+.ban_btn button.play{background:url('../images/contents/btn_visual_control.png') no-repeat 0px 0;}
+.ban_btn button.pause{background:url('../images/contents/btn_visual_control.png') no-repeat -21px 0;}
+
+.ban_btn .dotbox{display:inline-block;}
+.ban_btn ul.slick-dots{display:inline-block;}
+.ban_btn ul.slick-dots li{display:inline-block;margin-right:15px;}
+.ban_btn ul.slick-dots li:last-child{margin-right:4px;}
+.ban_btn ul.slick-dots li button{position:relative;display:inline-block;width:12px;height:12px;border-radius:50%;background-color:#fff;}
+
+.ban_btn ul.slick-dots li.slick-active button{background-color:#fff;}
+.ban_btn ul.slick-dots li.slick-active button:after{content:'';position:absolute;left:-8px;top:-8px;width:28px;height:28px;border:1px solid #fff;border-radius:50%;box-sizing:border-box;}
+.ban_list .slick-slide a{display:block;text-align:center;height:100%;}
+
+/* 메인 - 앱팝업존 */
+.app_area{position:relative;height:100%;}
+.app_area .app_list{width:100%;height:100%;}
+.app_btn{position:absolute;bottom:10px;left:15px;}
+.app_btn button{width:21px;height:21px;font-size:0;line-height:0;}
+.app_btn button.play{background:url('../images/contents/btn_visual_control.png') no-repeat 0px 0;}
+.app_btn button.pause{background:url('../images/contents/btn_visual_control.png') no-repeat -21px 0;}
+
+.app_area .app_btn .dotbox{display:inline-block;}
+.app_area .app_btn ul.slick-dots{display:inline-block;}
+.app_area .app_btn ul.slick-dots li{display:inline-block;margin-right:15px;}
+.app_area .app_btn ul.slick-dots li:last-child{margin-right:4px;}
+.app_area .app_btn ul.slick-dots li button{position:relative;display:inline-block;width:12px;height:12px;border-radius:50%;background-color:#fff;}
+
+.app_area .app_btn ul.slick-dots li.slick-active button{background-color:#fff;}
+.app_area .app_btn ul.slick-dots li.slick-active button:after{content:'';position:absolute;left:-8px;top:-8px;width:28px;height:28px;border:1px solid #fff;border-radius:50%;box-sizing:border-box;}
+.app_area .app_list .slick-slide a{display:block;text-align:center;height:100%;}
+
+/* Slider */
+.slick-slider{position:relative;display: block;box-sizing:border-box;}
+.slick-list{position:relative;display:block;overflow:hidden;height:100%;}
+.slick-list.dragging{cursor:pointer;}
+.slick-track{position:relative;top:0;left:0;display:block;height:100%;}
+.slick-track:before,.slick-track:after{display:table;content:'';}
+.slick-track:after{clear:both;}
+.slick-loading .slick-track{visibility:hidden;}
+.slick-slide{display:none;float:left;height:100%;min-height:1px;text-align:center;}
+.slick-slide img{display:block;width:100%;}
+.slick-slide.slick-loading img{display:none;}
+.slick-initialized .slick-slide{display:block;}
+.slick-loading .slick-slide{visibility:hidden;}
+.slick-vertical .slick-slide{display:block;height:auto;border:1px solid transparent;}
+.slick-arrow.slick-hidden{display:none;}
+/* // */
+
+.group{position:relative;}
+.group.column > article{margin:0 2% 0 0;width:49%;}
+.group.column > article.list{margin:0px;}
+.group.column > article.list img{width:100%;height:auto;max-width:100%;/*max-height:100%*/;}
+.group.column > article.list li:nth-child(2){margin:4.373177% 0;}
+.group.column > article.list .in_box{text-align:left !important;}
+
+/*
+.group.column > article.list li > a{display:table;table-layout:fixed;width:100%;}
+.group.column > article.list li > a > p, .group.column > article.list li > a > dl{display:table-cell;table-layout:fixed;vertical-align:middle;}
+*/
+
+.group.column > article.list li > a:after{content:'';display:block;clear:both;}
+.group.column > article.list li > a > p, .group.column > article.list li > a > dl{float:left;}
+
+.group.column > article .box:after{content:'';display:block;padding-bottom:63.06569%;}
+.group.column > article.list li{overflow:hidden;height:28.7037037%;}
+.group.column > article.list li > a {display:block;height:100%;}
+.group.column > article.list li > a > p{width:28.71720117%;height:100%;}
+.group.column > article.list li > a > dl{padding:4.5% 0 0 4.44927%;width:calc(100% - 28.71720117%);}
+.group.column > article.list li > a > dl dt{margin-bottom:10px;font-size:1.8rem;font-weight:500;
+  text-overflow:ellipsis;overflow:hidden;width:99%;white-space:nowrap;
+}
+.group.column > article.list li > a:hover > dl dt{text-decoration:underline;}
+.group.column > article .box{height:432px;}
+
+/* footer */
+.footer{ background-color:#333;}
+.footer > div{position:relative;margin:0 auto;padding:30px 0 40px 0;width:90%;max-width:1520px;}
+
+.footer > div > ul{padding-bottom:30px; border-bottom:1px solid #444; margin-bottom:30px; }
+.footer > div > ul > li{display:inline-block;vertical-align:middle; }
+.footer > div > ul > li > a{display:block;margin-right:30px; color:#fff; position:relative;}
+.footer > div > ul > li + li > a::before{content:''; width:4px; height:4px; border-radius:50%; background:#555; position:absolute; left:-18px; top:9px;}
+
+.footer .address:after{content:'';display:block;clear:both;}
+.footer .address > p, footer .address > address{float:left;}
+.footer .address > p{float:left;padding:5px 20px 0 0;}
+.footer .address > address{padding:5px 0; color:#fff;}
+.footer .address span img {
+    width: 80px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.footer .address > address a{color:#fff; }
+.footer .address > address > p{display:block; margin-bottom:10px;}
+.footer .address > address > p span{display:inline-block; }
+.footer .address > address > p span + span {margin-left:30px}
+.footer .address > address > p .copy{color:#999;}
+
+.footer > div .bot_sns{position:absolute;top:35px;;right:0;}
+/*footer > div .bot_sns > p{text-align:right;}*/
+.footer > div .bot_sns > ul{margin-bottom:20px;text-align: right;}
+.footer > div .bot_sns > li{font-size:12px;}
+.footer > div .bot_sns > ul > li{display:inline-block;}
+.footer > div .bot_sns a{display:inline-block;}
+
+.footer .ft-family{ position: absolute; right:0; z-index:2; width:100%; max-width:220px;}
+.footer .ft-family > a{ display: block; width:100%; padding:0 20px; height:50px; line-height:50px; border:1px solid #555; color:#fff;  font-size:15px;}
+.footer .ft-family > a i{position:absolute; right:15px; top:13px; font-size:22px;}
+.footer .ft-family.on > a i{transform:rotate(180deg);}
+.footer .ft-family a:hover{color:#fff;}
+.footer .ft-family ul{position:absolute; width:100%; bottom:50px; padding:10px 0; background: #000; border-bottom:1px solid #333; display:none;}
+.footer .ft-family ul li a{display:block;padding:10px 20px; color:#999; font-size:15px;}
+.footer .ft-to-top {position: absolute;top: -100px;right: -100px;width: 70px;height: 70px;   line-height: 1; opacity:.8; transition:all ease .3s; }
+.footer .ft-to-top a {  display: flex;align-items: center;justify-content: center;width: 100%;height: 100%; color: #fff;background: #00349d;border-radius: 50%;font-size: 1.6rem; text-align:center; box-shadow: 4px 4px 20px rgb(0 0 0 / 30%);}
+.footer .ft-to-top:hover{opacity:1;}
+
+
+
+.ico_img{display:inline-block !important;font-size:0 !important;line-height:0 !important;vertical-align:middle;background:url('../images/contents/ico_all.png') no-repeat;}
+.face{width:26px;height:26px;background-position:0 -100px;}
+.blog{width:26px;height:26px;background-position:-50px -100px;}
+
+.android{width:22px;height:28px;background-position:-100px -100px;}
+.apple{width:29px;height:28px;background-position:-150px -100px;}
+
+/* path_top */
+.path_top{z-index:10;height:60px;border-bottom:1px solid #e8e8e8;background-color:#f8f8f8;}
+.path_top.move{position:fixed;top:101px;width:100%;}
+.path_top.move .sns {z-index:3; margin-top: -62px; position:relative;}
+.path_top > div{width:100%;max-width:1520px;margin:0 auto;}
+.path_top > div:after{content:'';display:block;clear:both;}
+.path_top > div .lnb_area{ position:relative;}
+.path_top > div .sns{float:right;padding-top:12px;}
+.path_top > div span{display:inline-block;vertical-align:top;}
+.path_top > div span h2, .path_top > div span h3, .path_top > div span h4{display:inline-block;font-size:1.5rem;font-weight:400;}
+
+.path_top > div .path { }
+.path_top > div .path > ul{width:100%; display:flex;}
+.path_top > div .path > ul > li{ vertical-align:top; position:relative; border-right:1px solid #e8e8e8;}
+.path_top > div .path > ul > li.home > a{display:block; width:60px; height:60px; line-height:60px; text-align:center; font-size:2.2rem; border-left:1px solid #e8e8e8;}
+.path_top > div .path > ul > li:not(.home){width:calc(50% - 60px); max-width:240px; line-height:60px;}
+.path_top > div .path > ul > li > a{ display:block; padding:0 20px;   color:#666; font-weight:500; font-size:1.6rem; position:relative;}
+.path_top > div .path > ul > li:has(ul) > a{cursor:pointer;}
+.path_top > div .path > ul > li:has(ul) > a:after{content:"\e942";     font-family: xeicon!important; position:absolute; top:50%; right:20px;  transform:translateY(-50%); font-size:2rem; font-weight:500; color:#000;}
+.path_top > div .path > ul > li:has(ul) > a.on:after{content:"\e945";}
+.path_top > div .path > ul > li > ul{position:absolute; left:0; padding:20px; background:#fff; border:1px solid #e8e8e8; width:100%; border-top:0; z-index:2;display:none;}
+.path_top > div .path > ul > li > ul > li{line-height:1;}
+.path_top > div .path > ul > li > ul > li > a{display:block; line-height:auto; padding:10px 0;}
+
+.path_top > div .path span{height:49px;line-height:49px;}
+.path_top > div .path span:after{margin:0 10px;content:'>';display:inline-block;}
+.path_top > div .path span:nth-last-child(1):after{content:'';}
+
+.path_top > div .path span:nth-of-type(1){/*margin-right:10px;*/font-size:0;width:50px;text-align:center;/*border-left:1px solid #ccc;border-right:1px solid #ccc;*/}
+.path_top > div .path span:nth-of-type(1):after{content:'';display:inline-block;margin-top:15px;width:21px;height:18px;background:url('../images/contents/ico_all.png') no-repeat -200px -100px;}
+
+/* 2020-12-10 수정 & 추가 */
+.path_top > div .sns li{display:inline-block;margin-left:3px;vertical-align:top;}
+.path_top > div .sns li a{display:block;font-size:0;width:40px;height:40px; border:1px solid #ddd;border-radius:50%; background:url('../images/contents/ico_all.png') no-repeat 0 0; overflow:hidden; background-color:#fff !important;}
+.path_top > div .sns li a.kakaoTalk{background-position:-350px -52px;}
+.path_top > div .sns li a.daumBlog{background-position:-382px -52px;}
+.path_top > div .sns li a.twitter{background-position:-414px -52px;}
+.path_top > div .sns li a.faceBook{background-position:-446px -52px;}
+.path_top > div .sns li a.naverBlog{background-position:-478px -52px;}
+.path_top > div .sns li a.print{background:url('../images/contents/ico_print.png') no-repeat center center;}
+.path_top > div .sns li a.linkUrl{ background:url('../images/contents/ico_link.png') no-repeat center center;}
+.path_top > div .sns li a.scrap{width:62px;background-position:-572px -52px;}
+
+/* Lnb */
+.btn_m_lnb{display:none;font-size:0;line-height:0;}
+.lnb{display:none;}
+/*
+.btn_m_lnb:after{content:'';display:none;width:30px;height:26px;background:url('../images/contents/ico_all.png') no-repeat -450px -550px;}
+
+.lnb{z-index:9;display:none;position:absolute;top:46px;right:0;width:100%;box-shadow: 3px 3px 3px #aaa;}
+.lnb > p{display:block;padding:7px 0 10px 10px;font-size:2.0rem;color:#fff;font-weight:500;border-bottom:1px solid #c1c1c1;background-color:#3e526a;}
+.lnb .lnb_th2{border:1px solid #bbb;border-top:none;border-bottom:none;background-color:#fff;}
+.lnb .lnb_th2>li{position:relative;border-bottom:1px solid #bbb;}
+.lnb .lnb_th2>li.current, .lnb .lnb_th2>li.current > a{color:#00498e;background-color:#deedf3;}
+
+.lnb .lnb_th2>li>a{display:block;padding:7px 0 7px 10px;font-size:1.7rem;font-weight:500;}
+.lnb .lnb_th2>li.up_over > a:after{content:"";position:absolute;top:16px;right:15px;width:18px;height:11px;background:url('../images/contents/ico_all.png') no-repeat -550px -550px;}
+.lnb .lnb_th2>li.up_over.up > a:after{content:"";position:absolute;top:16px;right:15px;width:18px;height:11px;background:url('../images/contents/ico_all.png') no-repeat -500px -550px;}
+.lnb .lnb_th2>li.current > a:after{content:"";position:absolute;top:16px;right:15px;width:18px;height:11px;background:url('../images/contents/ico_all.png') no-repeat -500px -550px;}
+.lnb .lnb_th2>li.current.up > a:after{content:"";position:absolute;top:16px;right:15px;width:18px;height:11px;background:url('../images/contents/m_bul_all.png') no-repeat -50px -50px;}
+
+.lnb .lnb_th2>li.current .lnb_th3{border:none;background-color:#deedf3;}
+.lnb .lnb_th3{display:none;padding-left:10px;background-color:#fff;}
+.lnb .lnb_th3>li{position:relative;}
+.lnb .lnb_th3>li>a{display:block;padding:3px 0 3px 10px;}
+.lnb .lnb_th2 > li:last-child > .lnb_th3 > li:last-child > a{padding-bottom:10px;;}
+/*.lnb .lnb_th3>li>a:before{content:"";position:absolute;top:13px;left:0px;width:3px;height:3px;background:url('../images/contents/m_bul_all.png') no-repeat -200px 0;}
+.lnb .lnb_th3>li.current>a,.lnb .lnb_th3>li>a:hover,.lnb .lnb_th3>li>a:focus,.lnb .lnb_th3>li>a:active{text-decoration:underline;}
+*/
+/* contents */
+.con_area{position:relative;width:90%;max-width:1520px;margin:0 auto;}
+.path_lnb h1{width:100%;max-width:1520px;margin:0 auto;margin-top:80px;padding-bottom:50px;font-size:4rem;color:#000; text-align:center;}
+.con_area h2, .con_area .h2{margin-bottom:30px;padding-bottom:20px;font-size:2.5rem;font-weight:bold;border-bottom:1px solid #e8e8e8;}
+.con_area .no_line{margin-bottom:20px;padding-bottom:0;border-bottom:none;}
+
+/* 2020-12-07 추가 */
+.lnb_subTitle {position:relative; width:100%;max-width:1520px;margin:-30px auto 0;padding-bottom:40px;font-size:2.2rem;color:#54575f;text-align:center; border:6px solid #f6f6f6; padding:50px 20px; margin:0 auto 50px; font-weight:500}
+.lnb_subTitle b{color:#0e3799;}
+.lnb_subTitle:before{content:''; width:60px; height:60px; position:absolute; left:-6px; top:-6px; background: url('../images/contents/subTitl_line_left.png') no-repeat left top ;}
+.lnb_subTitle:after{content:''; width:60px; height:60px; position:absolute; right:-6px; bottom:-6px; background: url('../images/contents/subTitl_line_right.png') no-repeat right bottom ;}
+
+
+.path_lnb h1.move{margin-top:96px;}
+
+/* 모바일 Top */
+.btn_top{height:0;}
+.btn_top > a{font-size:0;}
+
+/* 모바일 전용 */
+.m_nav_btn, .gnb_pc .close, .m_top_login, .m_only, .btn_top{display:none;}
+
+/* 메인팝업 */
+.noti_pop{z-index:99;position:absolute;top:93px;left:100px;width:650px;padding:0 0 60px;border:1px solid #333;background-color:#fff;}
+.noti_pop > div > a{display:block;text-align:center;}
+.noti_pop > div > a > img{max-width:100%;width:auto;}
+.noti_pop > p{margin-top:10px;}
+.noti_pop > p > label{display:inline-block;margin-left:10px;}
+.noti_pop > span{position:absolute;right:20px;bottom:20px;}
+.noti_pop .pop_bottom{width:100%; height:60px; position:absolute; left:0; bottom:0; text-align:center; border-top:1px solid #ddd;}
+.noti_pop .pop_bottom > p{width:50%; float:left; display: flex;height: 100%;align-items: center;justify-content: center;}
+.noti_pop .pop_bottom > span{width:50%; float:left; display: flex;height:  100%;align-items: center;justify-content: center;}
+.noti_pop .pop_bottom > p > label{display:inline-block;margin-left:10px;}
+.noti_pop .pop_bottom > span .btn{display:block;   background:#fff;  width: 100%;    border-left:1px solid #ddd;}
+
+/* 로딩팝 */
+.loading_pop{z-index:99;position:fixed;top:50%;left:50%;margin:-100px 0 0-150px;width:300px;height:200px;padding:20px 20px 30px 20px;border:1px solid #aaa;background-color:#fff;box-shadow:0px 0px 7px 7px #ccc;}
+.loading_pop > p{margin-bottom:20px;text-align:center;}
+
+
+
+
+
+/******************************************************* renewal *******************************************************/
+/* setting */
+th, td, input, textarea, select, button,
+html,body{font-family: 'Pretendard','Noto Sans KR', '본고딕', Dotum, '돋움', Gulim, '굴림', Tahoma, Verdana, AppleGothic, UnDotum, Arial;}
+img{max-width:100%;}
+body{line-height:1.5; letter-spacing:-0.2px;}
+
+/* swiper */
+.swiper-control-box{width:100%; max-width:300px; background:#0e3799; color:#fff;padding:20px 30px; border-radius:0 20px 0 0; position:absolute; left:0; bottom:0; z-index:2; display:flex; align-items:center;     justify-content: space-between;}
+.swiper-control-box p{font-size:1.8rem; font-weight:500; }
+.swiper-control-box .swiper-pagination{position:relative; bottom:auto; left:auto;  width:auto;}
+.swiper-control-box .swiper-pagination .line{margin:0 10px;}
+.swiper-control-box .swiper-pagination .swiper-pagination-total{opacity:.5;}
+.swiper-button-wr{position:relative; width:80px; height:30px;  text-align:center;}
+.swiper-button-wr .swiper-button-next,
+.swiper-button-wr .swiper-button-prev{ background:none; width:30px; height:30px; margin-top:0;  font-size:2.4rem;top:auto; display: flex;align-items: center;justify-content: center; top:0; }
+.swiper-button-wr .swiper-button-next{right:0;}
+.swiper-button-wr .swiper-button-prev{left:0;}
+.swiper-button-wr .swiper-button-next::after{content:"\e93f"; font-family: xeicon!important; }
+.swiper-button-wr .swiper-button-prev::after{content:"\e93c"; font-family: xeicon!important;}
+.swiper-button-wr .swiper-pause-wr{position:relative; width:30px; height:30px; display:inline-block;}
+.swiper-button-wr .swiper-pause-wr > div{position:absolute; left:0 ;top:0; display:flex; align-items:center;     justify-content: center; width:100%; height:100%; cursor:pointer;}
+.swiper-button-wr .swiper-pause-wr #play{display:none;}
+
+
+/* main */
+.main_tit h2{font-size:4.2rem; margin-bottom:20px; font-family: 'SCoreDream';}
+.main_tit h2 b{color:#228eff;}
+.main_tit p{font-size:1.8rem}
+.main_tit p b{color:#0d3699; position:relative;}
+.main_tit p b::before{content:''; width:100%; height:10px; background:#228eff; opacity:.12; position:absolute; left:0; bottom:-3px;}
+.main_sec01{ padding:70px 0 200px; background:url('../images/contents/main_sec01_bg.png') no-repeat right bottom / auto 100%;}
+.main_sec01 .flex_box{display:flex; flex-wrap:wrap; justify-content:space-between; }
+.main_sec01 .left{width:60%; max-width:890px; }
+.main_sec01 .right{width:38%;}
+.main_sec01 .main_visual{position:relative; overflow:hidden;  border-radius:20px;  }
+.swiper-slide a:focus,
+.swiper-slide a:focus-visible,
+.swiper-slide a:active{ display:block; border: 2px solid #222;}
+.main_sec01 .main_visual .thumb{width:100% ; }
+.main_sec01 .main_visual .thumb a{display:block; width:100%; height:100%;  padding-bottom:70%; position:relative; background:#f7f8f9;}
+.main_sec01 .main_visual .thumb a img{width:100%; position:absolute; left:0; top:0; height:100%; object-fit: cover}
+.main_sec01 .main_quick .flex_box > div{width:48%; background-color:#fff; background-repeat:no-repeat; background-position:center bottom; background-size:100% auto; border-radius:20px; margin-top:4%; transition:all ease .3s; font-family: 'SCoreDream'; font-weight:600;}
+.main_sec01 .main_quick .flex_box > div a{display:block; padding:20px; transition:all ease .3s; width:100%; height:100%;}
+.main_sec01 .main_quick .flex_box > div img{margin-right:10px; display:none;}
+.main_sec01 .main_quick .flex_box .card01 { background-color: #ffffff; background-image:url('../images/contents/main_quick_card01.png'); min-height:426px; padding:10px;}
+.main_sec01 .main_quick .flex_box .card01 .tit{font-size:2.4rem; }
+.main_sec01 .main_quick .flex_box .card02 { background-image:url('../images/contents/main_quick_card02.png'); min-height:426px; padding:10px;}
+.main_sec01 .main_quick .flex_box .card02 .tit{font-size:2.4rem; }
+.main_sec01 .main_quick .flex_box .card03{border:2px solid #fff;}
+.main_sec01 .main_quick .flex_box .card03 .tit{position:relative; font-size:2rem; text-align:center; font-weight:500;white-space: nowrap; padding-left:45px;}
+.main_sec01 .main_quick .flex_box .card03 .tit::before{content:''; width:30px; height:35px; background:url('../images/contents/main_quick_card03.png') no-repeat 0 0 / cover; position:absolute; left:0; top:-3px;}
+.main_sec01 .main_quick .flex_box .card04{border:2px solid #fff;}
+.main_sec01 .main_quick .flex_box .card04 .tit{position:relative; font-size:2rem; text-align:center; font-weight:500;white-space: nowrap;padding-left:45px;}
+.main_sec01 .main_quick .flex_box .card04 .tit::before{content:''; width:33px; height:36px; background:url('../images/contents/main_quick_card04.png')no-repeat 0 0 / cover; position:absolute; left:2px; top:-4px;}
+.main_sec01 .main_quick .flex_box .card01:hover,
+.main_sec01 .main_quick .flex_box .card02:hover{background-color:#00b6bd; transform:translateY(-10px);}
+.main_sec01 .main_quick .flex_box .card01:hover a,
+.main_sec01 .main_quick .flex_box .card02:hover a{ color:#fff;}
+.main_sec01 .main_quick .flex_box .card03:hover,
+.main_sec01 .main_quick .flex_box .card04:hover{border-color:#e63c64;}
+.main_sec01 .main_quick .flex_box .card03:hover a,
+.main_sec01 .main_quick .flex_box .card04:hover a{text-decoration:underline;}
+.main_sec02{ padding:70px 0 100px; background:url('../images/contents/main_sec02_bg.png') no-repeat left bottom / auto 100%;}
+.main_sec02 .flex_box{display:flex; flex-wrap:wrap; justify-content:space-between; }
+.main_sec02 .left{width:38%; padding-top:20px;}
+.main_sec02 .right{ width:60%; max-width:920px; }
+.main_sec02 .info_icon li{width:22%; margin-bottom:4%; text-align:center; transition:all ease .3s; font-family: 'SCoreDream';  font-weight:500; pointer-events: auto;}
+.main_sec02 .info_icon li a{ position:relative;display:block;padding:15px 10px; border:1px solid #ddd;  border-radius:20px;  background:#fff; }
+.main_sec02 .info_icon li a p{margin-top:5px; font-size:1.8rem;}
+.main_sec02 .info_icon li a:before{content:''; width:calc(100% - 4px); height:calc(100% - 4px); position:absolute; left:-1px; top:-1px; border:3px solid #228eff; border-radius:20px; opacity:0; transition:all ease .3s;}
+.main_sec02 .info_icon li:hover{transform:translateY(-10px);  }
+.main_sec02 .info_icon li:hover a{box-shadow: 8px 8px 40px rgb(34 142 255 / 15%);}
+.main_sec02 .info_icon li:hover a:before{opacity:1; border-color: #e63c64;}
+.main_sec03{ padding:50px 0 100px; }
+.main_sec03 .main_tit h2{font-size:3.2rem;}
+.main_sec03 .flex_box{display:flex; flex-wrap:wrap; justify-content:space-between; }
+.main_sec03 .left{width:38%; padding-top:56px; }
+.main_sec03 .right{ width:60%; max-width:870px; }
+.main_sec03 .news_slider{position:relative;  }
+.main_sec03 .news_slider .swiper-wr{  padding-top: 60px; margin-top:-60px; }
+.main_sec03 .news_slider .swiper-container{ position: inherit;  border-radius:20px;  overflow:hidden;  }
+.main_sec03 .news_slider .thumb{width:100% ; padding-bottom:70%; position:relative; background:#f7f8f9}
+.main_sec03 .news_slider .thumb > img{width:100%; position:absolute; left:0; top:0; height:100%; object-fit: cover}
+.main_sec03 .swiper-button-wr{width:130px; height:40px; position:absolute; right:0; top:0;}
+.main_sec03 .swiper-button-wr > div{border:1px solid #eee; border-radius:50%; width:40px; height:40px;}
+.main_sec03 .main_news{border:16px solid #fff1f3; border-radius:30px; padding:40px 50px 50px;}
+.main_sec03 .main_news .main_tit h2 b{color:#f25f82;}
+.main_sec03 .main_news .notice{border-top:2px solid #000; border-bottom:1px solid #eee; overflow:hidden; padding:30px 0; }
+.main_sec03 .main_news .notice > a{display:flex; flex-wrap:wrap; justify-content: space-between; align-items:center;}
+.main_sec03 .main_news .notice .date{width:100px; height:100px; float:left; padding:12px 0; border-radius:10px; border:6px solid #f25f82; text-align:center;}
+.main_sec03 .main_news .notice .date strong{display:block; font-size:3.8rem; line-height:1;}
+.main_sec03 .main_news .notice .tit{float:right; width:calc(100% - 120px);}
+.main_sec03 .main_news .notice .tit p::before{content:'N'; display:inline-block; width:24px; height:24px; margin-right:5px; background:#f25f82; border-radius:50%; font-size:11px; line-height:24px; text-align:center; color:#fff; vertical-align:middle; position:absolute; left:0; top:5px;}
+.main_sec03 .main_news .notice .tit p{position:relative; padding-left:30px;font-size:2.2rem; white-space: nowrap; overflow:hidden; text-overflow:ellipsis; -o-text-overflow: ellipsis; -ms-text-overflow: ellipsis; font-weight:600;}
+/*.main_sec03 .main_news .notice .tit p{font-size:1.7rem; overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;word-wrap:break-word; }*/
+.main_sec03 .main_news .list {padding:15px 15px ; border-bottom:1px solid #000;}
+.main_sec03 .main_news .list > li{margin:10px 0; }
+.main_sec03 .main_news .list > li > a{display:block; position:relative; font-size:1.7rem; padding-left:20px;  padding-right:120px;white-space: nowrap; overflow:hidden; text-overflow:ellipsis; -o-text-overflow: ellipsis; }
+.main_sec03 .main_news .list > li > a:before{content:''; width:5px; height:5px; border-radius:50%; background:#ddd; position:absolute; left:0; top:10px;}
+.main_sec03 .main_news .list > li .date{color:#666; font-size:.9em; position:absolute; right:0; top:0;}
+.main_sec04{ padding:110px 0 70px; background:url('../images/contents/main_sec04_bg.png') no-repeat right top / cover; }
+.main_sec04 .main_tit h2{font-size:3.8rem;}
+.main_sec04 .main_tit h2 b{color:#C54E07;}
+.main_sec04 .flex_box{display:flex; flex-wrap:wrap; justify-content:space-between; }
+.main_sec04 .left{width:28%; padding-top:20px; }
+.main_sec04 .right{ width:70%; max-width:1085px; }
+.main_sec04 .agency li{width:13%;  text-align:center; transition:all ease .3s; font-family: 'SCoreDream';  font-weight:500; border-radius:20px; pointer-events: auto; } /* Removed border from li */
+.main_sec03 .swiper-button-prev,
+.main_sec03 .swiper-button-next,
+.main_sec03 .swiper-pause-wr {
+    pointer-events: auto;
+}
+.main_sec03 .main_news .notice > a,
+.main_sec03 .main_news .list > li > a {
+    pointer-events: auto;
+}
+.main_sec03 .swiper-slide a {
+    pointer-events: auto;
+}
+.main_sec04 .agency li .icon{ margin:0 auto;display:flex;align-items:center; justify-content:center; background:#fff;  border:1px solid #ddd; border-radius:50%; /* padding: 20px; */ box-shadow: 8px 8px 40px rgb(0 0 0 / 5%); transition:all ease .3s; overflow:hidden;}
+.main_sec04 .agency li .icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} /* Added border to icon, made it circular, added transition */
+.main_sec04 .agency li p{margin-top:15px; font-size:1.8rem;}
+.main_sec04 .agency li:hover{transform:translateY(-10px); background-color: transparent;} /* Keep li hover transform, make background transparent */
+.main_sec04 .agency li:hover .icon{border-color:#e63c64;} /* Change icon border color on li hover */
+
+
+
+
+
+
+
+
+/* === PC - width 100% === */
+
+@media screen and (min-width:961px) and (max-width:1540px){
+  .top_area{padding:0 10px; height:150px;}
+  .top_area:before{content:''; width:100%;  height:1px; background:#e8e8e8; position:absolute; left:0; top:50px;}
+  .top_area h1{left:50% ; margin-left: -230px;}
+  .top_area.move h1{display:none;}
+
+  .gnb_pc > nav{padding-left:0; }
+  .gnb_pc > nav > ul{  background:#fff; width: calc(100% - 90px); }
+  .gnb_pc .th1>a{ padding : 0 15px;}
+  .gnb_pc .th2.on{padding: 20px 0 30px ;}
+  .gnb_pc .th2>li>a{padding-left:15px;}
+
+  .btn_sch{right:20px; }
+  .btn_sch_clo{right:20px; }
+  #wrap:has(.main) .all_menu{right:20px; }
+  .all_menu{right:60px; }
+  .all_menu_area{width:100%;left:0;margin-left:0;}
+  .all_menu_area > ul{width:calc(100% - 41px);}
+  .all_menu_area .btn_all_clo{right:0;}
+
+
+  /* 메인팝업 */
+  .noti_pop{max-width:960px !important;}
+
+
+
+
+  /* main */
+  .path_top > div .sns{padding-right:5%;}
+  .main_sec01 .main_quick .flex_box .card01 .tit{font-size:2rem;}
+  .main_sec01 .main_quick .flex_box .card02 .tit{font-size:2rem;}
+  .main_sec01 .main_quick .flex_box .card01{min-height:26vw;}
+  .main_sec01 .main_quick .flex_box .card02{min-height:26vw;}
+  .main_sec01 .main_quick .flex_box > div img{width:20px;}
+  .main_sec01 .main_quick .flex_box > div a{padding:15px;}
+  .main_sec01 .main_quick .flex_box .card03 .tit{font-size:1.4rem;}
+  .main_sec01 .main_quick .flex_box .card04 .tit{font-size:1.4rem;}
+  .main_tit h2{font-size:3.2rem;}
+  .main_sec02 .info_icon li a p{font-size:1.4rem;}
+  .main_sec04 .main_tit h2{font-size:3rem;}
+  .main_sec04 .agency li p{font-size:1.4rem;}
+}
+
+
+/* === Tablet === */
+@media screen and (max-width:960px){
+
+
+
+  #container > div{padding-top:50px;}
+  #container{    padding-bottom: 70px;}
+  .path_top > div .sns{padding-right:5%;}
+
+  /* PC 전용 */
+  .top_area > ul, .all_menu, .sch_area > p, .sch_area .sch_box select, .btn_home, .footer .address > p, .path_top > div .path{display:none;}
+  .footer > div .bot_sns > ul > li.pc_only,  .pc_only{display:none !important;}
+
+  /*.top_area, #footer, .path_top > div{max-width:100%;}
+ #container.main{max-width:calc(100% - 20px);} */
+  .m_nav_btn, .m_nav .close, .m_top_login, .m_only{display:block;}
+
+  .footer{font-size:1.4rem;}
+  .footer > div > ul > li > a{margin-right:10px;}
+  .footer > div > ul > li + li > a::before{display:none;}
+  .footer .address > address > p span{display:block; }
+  .footer .address > address > p span + span {margin-left:0}
+  .footer .ft-family{position:relative; width:100%; margin-bottom:20px; top:auto; right:auto;}
+
+  /* top */
+  header{z-index:995;position:fixed;top:0;left:0;width:100%;height:51px; border-bottom:1px solid #e8e8e8; box-sizing:border-box;}
+  .top_area{padding-top:8px;height:50px;}
+  .top_area h1{float:none;position:absolute;top:10px;left:50%;     transform: translateX(-50%); width:223px;height:31px;}
+  .top_area.move h1{ }
+  .gnb_area{position:static;}
+
+  /* 상단검색 */
+  .btn_sch{position:absolute;top:0;right:0;margin:0;padding-top:12px;text-align:center;width:50px;height:47px;font-size:0;line-height:0;}
+  .btn_sch > a{display:inline-block;width:32px;height:31px; }
+  .btn_sch_clo{position:absolute;top:0;right:0;margin:0; text-align:center;width:50px;height:47px;font-size:0;line-height:0;}
+  .btn_sch_clo > a{display:inline-block;width:26px;height:24px; }
+
+  .sch_area{top:0;left:50px;padding:0;width:calc(100% - 100px);height:50px;box-shadow:none;     z-index: 99;}
+  .sch_area .sch_box{margin:0;width:100%;height:50px;border:none; border-left:1px solid #e8e8e8;border-right:1px solid #e8e8e8;background-color:#fff;}
+  .sch_area .sch_box input[type="text"]{width:100%;height:50px;line-height:50px;background-color:#fff; font-size:1.6rem;}
+  .sch_area .sch_box input::placeholder{text-align:left;}
+  .sch_area .sch_box .sch_send{background-size: 20px; }
+  .sch_area .recommend{display:none;}
+
+
+
+
+
+  /* main */
+  .main_sec01{padding:30px 0 50px;     background-image: linear-gradient(45deg, #e7f9f6, #e3f5fe);}
+  .main_sec01 .left{width:100%; max-width:100%;}
+  .main_sec01 .right{width:100%; margin-top:20px;}
+  .swiper-control-box{position:relative; width:100%; max-width:100%; border-radius: 0 0 20px 20px;     padding: 10px 20px;}
+  .sch_all .sch_box input[type="text"]{height:50px; line-height:50px;font-size:16px;}
+  .sch_all .sch_box .sch_send{width:50px; height:50px;  background-size:20px}
+
+  .main_sec01 .main_quick .flex_box > div{width:100%;   background-size:150px; background-position: bottom right;}
+  .main_sec01 .main_quick .flex_box .card01{min-height:200px;}
+  .main_sec01 .main_quick .flex_box .card02{min-height:200px;}
+  .main_sec01 .main_quick .flex_box .card01 .tit{font-size:2.2rem;}
+  .main_sec01 .main_quick .flex_box .card02 .tit{font-size:2.2rem;}
+  .main_sec01 .main_quick .flex_box .card03 .tit{font-size:1.8rem; text-align:left;}
+  .main_sec01 .main_quick .flex_box .card04 .tit{font-size:1.8rem; text-align:left;}
+  .main_sec02{padding:50px 0 ;}
+  .main_sec02 .left{width:100%; padding-top:0;}
+  .main_sec02 .right{width:100%;margin-top:40px;}
+  .main_sec02 .info_icon li{width:48%;}
+  .main_sec02 .info_icon li a{padding:20px;}
+  .main_sec02 .info_icon li img{max-width:40%;}
+  .main_tit h2{font-size:3rem; margin-bottom:10px;}
+  .main_sec02 .info_icon li a p{font-size:1.4rem;}
+
+  .main_sec03{padding:50px 0;}
+  .main_sec03 .main_tit h2{font-size:2.4rem; margin-bottom:20px;}
+  .main_sec03 .left{width:100%;  padding-top:0;}
+  .main_sec03 .right{width:100%;margin-top:30px;}
+  .main_sec03 .main_news{padding:30px;     border: 8px solid #fff1f3;}
+  .main_sec03 .main_news .notice{padding:20px 0;}
+  .main_sec03 .main_news .notice .tit{width: calc(100% - 70px);}
+  .main_sec03 .main_news .notice .date{width:50px; height:50px; border: 2px solid #f25f82; padding: 5px 0; font-size: 10px;}
+  .main_sec03 .main_news .notice .date strong{font-size:2rem;}
+  .main_sec03 .main_news .notice .tit p::before{top:2px;}
+  .main_sec03 .main_news .notice .tit p{font-size:1.8rem;}
+  /*.main_sec03 .main_news .notice .tit p{font-size:1.4rem;}*/
+  .main_sec03 .main_news .list{padding: 10px 0;}
+  .main_sec03 .main_news .list > li > a{padding-right:0;     font-size: 1.5rem;}
+  .main_sec03 .main_news .list > li .date{position:relative; top:0; display:block; margin-top:5px;}
+
+
+  .main_sec04{padding:50px 0;}
+  .main_sec04 .left{width:100%;  paddding-top:0;}
+  .main_sec04 .right{width:100%;margin-top:30px;}
+  .main_sec04 .main_tit h2{font-size:2.6rem;}
+  .main_sec04 .agency li{width:30%; }
+  .main_sec04 .agency li p{font-size:1.4rem; white-space: nowrap; margin-bottom:20px;}
+
+
+
+
+
+  /* 서브 레이아웃 */
+  .path_top > div .lnb_area{float:none;}
+  .path_lnb{
+    display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex; display:flex;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column
+  }
+  .path_top{order:2;width:100%;height:auto;border-bottom:1px solid #e8e8e8;;background-color:#fff;}
+  .path_top > div .sns{float:none;padding:7px 0 7px 10px;}
+
+  .path_lnb h1{margin:0;padding:10px 50px 10px 10px;line-height:1.5em;font-size:2rem;text-align:left;border-bottom:1px solid #e8e8e8;background-color:#f7f7f7;}
+  .btn_m_lnb{display:block;position:absolute;top:-50px;right:10px;width:40px;height:30px;text-align:center;font-size:0;line-height:0;}
+  .path_top > div .lnb_area:has(.lnb_th2) .btn_m_lnb:after {
+    content: "\e942";
+    font-family: xeicon!important;display:inline-block;margin-top:24px;width:23px;height:11px;
+    font-size: 3rem;
+    font-weight: 500;
+    color: #000;
+  }
+
+  /* 2020-12-07 추가 */
+  .lnb_subTitle {font-size:1.6rem; padding:30px 5%;     margin: 0 auto 30px;}
+  .lnb_subTitle:after,
+  .lnb_subTitle:before{width:30px; height:30px;}
+
+  .con_area{padding:30px 10px 0 10px;max-width:calc(100% - 20px);}
+
+  /* lnb */
+  .lnb{display:none;top:0;}
+  .lnb > a{display:block;padding:10px 0 15px 10px;font-size:1.8rem; font-weight:600;border-bottom:1px solid #e8e8e8; }
+  .lnb .lnb_th2{padding:10px 0; border-bottom:1px solid #e8e8e8; }
+  .lnb .lnb_th2>li{position:relative;border-bottom:none;}
+  .lnb .lnb_th2>li.current, .lnb .lnb_th2>li.current > a{ }
+
+  .lnb .lnb_th2>li>a{display:block;padding:5px 0 5px 25px;font-size:1.6rem;font-weight:500; }
+  .lnb .lnb_th2>li.up_over > a:after{content:"";position:absolute;top:19px;right:25px;width:18px;height:11px;background:url('../images/contents/m_bul_all.png') no-repeat -150px 0;}
+  .lnb .lnb_th2>li.up_over.up > a:after{content:"";position:absolute;top:19px;right:25px;width:18px;height:11px;background:url('../images/contents/m_bul_all.png') no-repeat -100px 0;}
+  /*
+  .lnb .lnb_th2>li.current.up_over > a:after{content:"";position:absolute;top:19px;right:25px;width:18px;height:11px;background:url('../images/contents/m_bul_all.png') no-repeat 0px -50px;}
+  .lnb .lnb_th2>li.current.up_over.up > a:after{content:"";position:absolute;top:19px;right:25px;width:18px;height:11px;background:url('../images/contents/m_bul_all.png') no-repeat -50px -50px;}
+   */
+
+  .lnb .lnb_th3{display:none; }
+  .lnb .lnb_th2 .current .lnb_th3{ }
+  .lnb .lnb_th3>li{position:relative;}
+  .lnb .lnb_th3>li>a{display:block;padding:5px 0 5px 10px;color:#fff;}
+  .lnb .lnb_th3>li>a:before{content:"";position:absolute;top:13px;left:0px;width:3px;height:3px;background:url('../images/contents/m_bul_all.png') no-repeat -200px 0;}
+  .lnb .lnb_th3>li.current>a,.lnb .lnb_th3>li>a:hover,.lnb .lnb_th3>li>a:focus,.lnb .lnb_th3>li>a:active{text-decoration:underline;}
+
+  .lnb .lnb_th2 > li:last-child > .lnb_th3{padding-bottom:20px;}
+  /* .lnb .lnb_th2 > li:last-child > a{padding-bottom:20px;}*/
+  .lnb .lnb_th2 > li.current:last-child > a{padding-bottom:10px;}
+
+  /* Nav */
+  .m_nav_btn{position:absolute;top:13px;left:10px;font-size:0;width:29px;height:21px; color:#000;}
+  .m_nav_btn:after{ content: "\e91c"; font-family: xeicon!important;     font-size: 2.4rem;}
+  .m_nav{z-index:991;position:fixed;top:0px;left:-1000px;width:100%;height:100%;font-size:1.5rem;}
+  .m_nav #gnb{z-index:991;position:fixed;left:-1000px;overflow:auto;width:70%;height:100%;background-color:#fff;}
+  .m_nav #gnb.in{display:block;left:0px}
+  .m_nav .backdrop{display:none;z-index:900;position:fixed;top:0;left:0;width:100%;height:100%;background-color: #000;transition: 0.2s opacity ease;opacity: 0.7;}
+  .m_nav .backdrop.in{display:block;}
+  .m_nav .close{z-index:999;display:block;position:absolute;top:0px;left:calc(70% - 50px);padding-top:17px;width:50px;height:50px;text-align:center;font-size:0;line-height:0;}
+  .m_nav .close:before{content:'';display:inline-block;width:18px;height:18px;background:url('../images/contents/m_ico_all.png') no-repeat -150px 0;}
+
+  /* 모바일 드롭다운 */
+  .m_nav .m_top_login{height:52px; background:#f8f8f8; font-size:1.8rem;}
+  .m_nav .m_top_login span{display:inline-block;padding-left:5px; }
+  .m_nav .m_top_login span a{display:inline-block;padding:15px 5px 0px 5px;}
+  .m_nav .m_top_login span.cartCount {display:inline-block;width:20px;height:20px;line-height:20px; text-align:center;font-size:1.2rem;color:#fff;background-color:#333;border-radius:50%; vertical-align:middle; padding-left:0;}
+
+
+  .m_nav a{display:block;position:relative;}
+  .m_nav #gnb > ul>li{border-bottom:1px solid #e8e8e8;background-color:#fff;}
+  .m_nav #gnb > ul>li>a{padding:12px 0 15px 10px;font-size:2.0rem;font-weight:600;}
+  .m_nav #gnb > ul>li>a:after{ position:absolute; right:20px; top:460;
+    content: "\e942";
+    font-family: xeicon!important;
+    display: inline-block;
+    width: 23px;
+    height: 11px;
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: #000;}
+  .m_nav #gnb > ul>li>a.active{ }
+  .m_nav #gnb > ul>li>a.active:after{content:"";top:20px;background-position:-100px 0;}
+  .m_nav .th2{display:none;padding:15px 0; background-color:#f8f8f8;}
+  .m_nav .th2>li>a{padding:7px 0 7px 25px;font-size:1.8rem;font-weight:500; }
+  .m_nav .th2>li:last-child>a{border-bottom:none;}
+
+  .m_nav .th2>li.under>a:after{content:"";position:absolute;top:19px;right:16px;width:18px;height:11px;background:url('../images/contents/m_bul_all.png') no-repeat -150px 0;}
+  .m_nav .th2>li.under>a.active:after{background-position:-100px 0;}
+  .m_nav .th3{display:none;padding:0 0 0px 30px;background-color:#545760;}
+  .m_nav .th3>li>a{padding:8px 0 8px 10px;color:#fff;}
+  .m_nav .th3>li>a:before{content:"";position:absolute;top:18px;left:0px;width:3px;height:3px;background:url('../images/contents/m_bul_all.png') no-repeat -200px 0;}
+
+  #shadow_device{z-index:997;display:none;position:fixed;top:0;left:0;width:100%;height:100%;background: rgba(0, 0, 0, 0.7);}
+  .m_nav_clo{z-index:999;display:block;position:fixed;content:"";width:50px; height:51px;top:0px; left:250px;background:#c8c8c8 url('../images/contents/m_gnb_clo.png') no-repeat center center;}
+
+  /* 모바일 Top */
+  .btn_top{display:block;position:fixed;z-index:990;right:20px;bottom:80px;padding-top:25px;}
+  .btn_top > a{display:block;padding-top:10px;width:56px;height:56px;text-align:center;font-size:1.2rem;color:#fff !important;border-radius:50%;background-color:rgba(0,0,0,.7);}
+  .btn_top > a:before{content:'';display:block;margin:0 auto 5px auto;width:15px;height:14px;background:url('../images/contents/m_ico_all.png') no-repeat -300px 0px;}
+
+
+
+  /* 메인팝업 */
+  .noti_pop{left:10% !important;width:80% !important; height:auto !important; padding-bottom:50px;}
+  .noti_pop .pop_bottom{height:50px;}
+
+}
+
+
+@media screen and (max-width:720px){
+}
+
+@media screen and (max-width:650px){
+}
+
+@media screen and (max-width:600px){
+
+  /* 메인팝업 */
+  .noti_pop{left:5% !important;width:90% !important;}
+
+}
+
+/* === Mobile === */
+@media screen and (max-width:480px){
+
+  /* Nav */
+  .m_nav #gnb{width:calc(100% - 50px)}
+  .m_nav .close{left:calc(100% - 100px);}
+
+}
+
+.gnb_area a {
+	word-break: keep-all !important;
+}
+
+/* Close Button Animation */
+.all_menu_area .btn_all_clo a svg {
+    width: 32px;
+    height: 32px;
+}
+
+.all_menu_area .btn_all_clo svg rect,
+.all_menu_area .btn_all_clo svg line {
+    transition: all 0.1s; /* Add a small transition for reset */
+}
+
+.all_menu_area .btn_all_clo svg rect {
+    stroke-dasharray: 88;
+    stroke-dashoffset: 88;
+}
+.all_menu_area .btn_all_clo svg line {
+    stroke-dasharray: 17;
+    stroke-dashoffset: 17;
+}
+
+@keyframes draw-border {
+    to { stroke-dashoffset: 0; }
+}
+@keyframes draw-x {
+    to { stroke-dashoffset: 0; }
+}
+
+.all_menu_area .btn_all_clo.animating svg rect {
+    animation: draw-border 0.5s forwards;
+}
+.all_menu_area .btn_all_clo.animating svg line {
+    animation: draw-x 0.5s forwards 0.3s;
+}
+
+
+/* Source: portal_contents.css */
 
-.sr-only {
-  display: inline !important;
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  padding: 0 !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  clip-path: inset(50%);
-  border: 0 !important;
-  clip: rect(0 0 0 0);
-}
-
-a {
-  color: #222;
-  box-sizing: border-box;
-}
-a:link,
-a:visited,
-a:hover {
-  color: #222;
-  text-decoration: none;
-}
-a:active {
-  text-decoration: none;
-}
-input,
-img {
-  vertical-align: middle;
-}
-.hidden_obj {
-  position: absolute;
-  visibility: hidden !important;
-  overflow: hidden !important;
-  height: 0 !important;
-  line-height: 0 !important;
-  width: 0 !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  font-size: 0 !important;
-}
-
-input,
-button {
-  border-radius: 0; /* -webkit-appearance:none; */
-  border: 0;
-}
-button {
-  border: 0;
-  background-color: transparent;
-  padding: 0;
-  margin: 0;
-  cursor: pointer;
-}
-input[type="submit"] {
-  border: 0;
-  width: 100%;
-  padding: 0;
-  cursor: pointer;
-}
-textarea {
-  resize: none;
-  border: 0;
-}
-label {
-  vertical-align: middle;
-}
-
-input[type="button"],
-input[type="submit"],
-input[type="text"],
-input[type="password"],
-input[type="text"],
-textarea {
-  -webkit-appearance: none;
-  -webkit-border-radius: 0;
-}
-
-/* html5 */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section,
-main {
-  display: block;
-  margin: 0;
-  padding: 0;
-}
-
-/* font */
-
-/*div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,select,textarea,th,td, input,textarea,select,button,span, strong, em{line-height:1em;}*/
-table,
-table th,
-table td {
-  box-sizing: border-box;
-  font-weight: 400;
-}
-
-/* skip_menu */
-#skip_menu {
-  position: fixed;
-  top: -1px;
-  left: 0;
-  width: 100%;
-  height: auto;
-  text-align: center;
-  z-index: 9999;
-}
-#skip_menu a {
-  display: block;
-  position: absolute;
-  top: -30px;
-  width: 100%;
-  height: 1px;
-  line-height: 1px;
-  background: #000;
-  color: #fff;
-  font-size: 1.5rem;
-  text-align: center;
-}
-#skip_menu a:focus {
-  top: 0px;
-  height: 30px;
-  line-height: 2.1;
-  z-index: 9999;
-}
-
-/* Animation
-.gnb_pc,  .gnb_pc > nav, .gnb_pc > nav > ul,  .gnb_pc > nav > ul > li
-{
-	transition:all ease 0.8s ;
-    -webkit-transition:all ease 0.8s;
-}*/
-.gnb_pc .th2, .quick
-{
-  transition:all ease 0.3s ;
-  -webkit-transition:all ease 0.3s;
-}
-
-.group .state .in_box
-{
-  transition:all ease 0.5s ;
-  -webkit-transition:all ease 0.5s;
-}
-
-html, body, #wrap{height:100%;}
-#wrap{width:100%;min-width:320px;}
-header{z-index:9;background-color:#fff;}
-#container{margin: 0 ; padding-bottom:150px; width:100%;min-height:100%; overflow:hidden;}
-#container.main{padding-bottom:0;}
-#container > div{padding:100px 0 0; }
-
-#container.main{width:100%;max-width:100%;margin:0 auto ;}
-#container.main .wr{width:90%;max-width:1520px;margin:0 auto ;}
-
-/* 공통 */
-.posiY{position:relative;top:50%;transform:translateY(-50%);}
-.posiXY{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);}
-
-/* Header */
-.top_area{width:100%;max-width:1520px;height:50px;margin:0 auto;}
-.top_area:after{content:'';display:block;clear:both;}
-.top_area > ul{float:right;margin-top:10px;}
-.top_area > ul > li{display:inline-block;position:relative;}
-.top_area > ul > li:last-child {margin-left:11px;padding-left:15px;}
-.top_area > ul > li:last-child:before{content:'';position:absolute;left:0;top:7px;width:1px;height:12px;background-color:#cbcbcb;}
-.top_area > ul > li > a, .top_area > ul > li > a:before{display:inline-block;vertical-align:middle;}
-.top_area > ul > li > a{line-height:22px;font-size:1.4rem;color:#555;}
-.top_area > ul > li:nth-child(1) > a {width:176px;height:auto;padding:4px 6px 2px 4px;margin-right:20px;text-align:left;color:#23246c;border:1px solid #23246c;border-radius:5px;box-sizing:border-box;}
-.top_area > ul > li:nth-child(1) > a:before{margin-right:8px;width:22px;vertical-align:middle;background-position:-400px 0;}
-.top_area > ul > li:nth-child(2) > a:before{margin-right:7px;background-position:-432px 3px;}
-.top_area > ul > li:nth-child(3) > a:before{margin-right:7px;background-position:-456px 4px;}
-.top_area > ul > li:nth-child(4) > a:before{width:0;margin-right:0;background:none;}
-
-.top_area > ul.login_util > li{margin-left:11px;padding-left:15px;}
-.top_area > ul.login_util > li:first-child{margin-left:0;padding-left:0;}
-.top_area > ul.login_util > li:first-child > a {width:auto;height:auto;padding:4px 6px ;margin-right:0;text-align:left;color:#555;border:0;border-radius:0;box-sizing:border-box;} /*2022-12 ?��?검�?...*/
-.top_area > ul.login_util > li:first-child > a > strong {color:#008dc9;}
-.top_area > ul.login_util > li:nth-child(3) > a:before{background-position:-504px 3px;}
-.top_area > ul > li strong{color:#007baf;}
-.top_area > ul.login_util > li .cartCount {display:inline-block;width:20px;height:20px;line-height:20px;margin-left:8px;text-align:center;font-size:1.2rem;color:#fff;background-color:#333;border-radius:50%; vertical-align:middle;}
-
-/* logo */
-.top_area {position:relative;}
-.top_area h1{position:absolute; left:0; top:68px; width:459px;height:64px; z-index:12;}
-.top_area h1 a{display:block;width:100%;height:100%;font-size:0;line-height:0;background:url('/mental_health_portfolio/images/contents/logo.png') no-repeat center center / contain;}
-.top_area.move h1{position: fixed;  top: 18px; left:calc(50% - 760px);}
-
-/* GNB */
-.gnb_area{z-index:11;position:relative;width:100%;}
-.gnb_area.move{position:fixed;top:0px;}
-.gnb_area.move .gnb_pc{border-top:0;}
-
-.gnb_nav{font-size:0;}
-.gnb_pc{position:absolute;top:0;left:0;width:100%;background:#fff ; border-top:1px solid #e8e8e8; border-bottom:1px solid #e8e8e8;}
-.gnb_pc.on {border-bottom:0;box-shadow: 3px 30px 30px rgba(0,0,0,0.05);}
-.gnb_pc.stop{box-shadow:none !important;}
-.gnb_pc > nav{width:100%;max-width:1520px;margin:0 auto; padding-left:550px; box-sizing: border-box; height:100px;}
-.gnb_pc > nav > ul{width:calc(100% - 70px); margin-right: 60px;padding-top:25px;}
-/*.gnb_pc > nav > ul:after{content:'';display:block;clear:both;}*/
-.gnb_pc > nav > ul > li{float:left;  max-width:12%; vertical-align:top; width:100%;}
-.gnb_pc > nav > ul > li:nth-child(2){max-width:12%;}
-.gnb_pc > nav > ul > li:nth-child(3){max-width:16%;}
-.gnb_pc > nav > ul > li:nth-child(4){max-width:15%;}
-.gnb_pc > nav > ul > li:nth-child(5){max-width:18%;}
-.gnb_pc > nav > ul > li:nth-child(6){max-width:14%;}
-.gnb_pc > nav > ul > li a{display:block;}
-.gnb_pc .th1>a{display:block;padding-right:0px;     white-space: nowrap; height:50px;line-height:50px;font-size:2.0rem;font-weight:600; }
-.gnb_pc .th1 > a > img {
-    width: 85px;
-    margin-bottom: 4px;
-}
-.gnb_pc .th1.on>a{ }
-
-.gnb_pc .th2 {padding:0;width:100%;height:0;text-align:left;}
-.gnb_pc .th2>li>a{visiblity:hidden; word-break:break-all; margin-bottom:10px; padding-right:10px; }
-.gnb_pc .th2.on>li>a{visiblity:visible;}
-.gnb_pc .th2.on{padding:20px 0 30px 0px;height:auto;}
-.gnb_pc .th2.on>li{margin-bottom:5px;}
-.gnb_pc .th2.on>li>a{color:#222;font-size:1.7rem;  }
-.gnb_pc .th2>li>a:hover, .gnb_pc .th3>li>a:hover{color:#1f619f;font-weight:500;}
-
-.gnb_pc .th2.on .th3{margin:0px 0 10px 5px;}
-.gnb_pc .th2.on .th3 li{line-height:1.5em;font-size:1.5rem;}
-.gnb_pc .th2.on .th3>li>a:before{display:inline-block;margin-right:5px;content:"-";vertical-align:3px;}
-.gnb_pc .th2.reset, .gnb_pc .th3.reset{display:block !important;}
-.gnb_pc .th2 .th3>li>a{text-indent:-5px;padding-left:15px;}
-
-.gnb_pc.stop .th2{display:none !important;}
-
-.btn_home{display:none;}
-.btn_home.on{display:block;position:absolute;top:0px;right:50%;width:50px;height:50px;margin-right:-600px;text-align:center;}
-.btn_home.on > a{display:inline-block;width:33px;height:28px;font-size:0;line-height:0;vertical-align:5px;background:url('/mental_health_portfolio/images/contents/ico_all.png') no-repeat -250px 0;}
-
-/* ?�체메뉴 */
-.all_menu{display:block;position:absolute;top:25px;right: calc(50% - 720px);}
-.all_menu > a{display: flex;align-items: center;justify-content: center;  height:50px;    font-size:2.4rem; text-align:center;}
-.all_menu_area{z-index:99;display:none;position:absolute;top:101px;left:0;width:100%; max-width:1520px;right:0; margin:0 auto; text-align:center;}
-.all_menu_area.on{display:block;}
-
-.all_menu_area ul a{display:block;}
-.all_menu_area > ul{display:table;table-layout:fixed;width:calc(100% - 41px);border:1px solid #e8e8e8; background-color:#fff;box-shadow:3px 30px 30px rgba(0,0,0,0.05);}
-.all_menu_area > ul > li{display:table-cell;table-layout:fixed;width:calc(100% / 6); }
-.all_menu_area > ul > li:last-child{border-right:none;}
-.all_menu_area > ul > li > a{height:60px;line-height:60px; padding:0 30px; font-size:2.0rem;background-color:#f8f8f8; font-weight:bold;}
-.all_menu_area > ul > li > ul{padding:20px 30px ;}
-.all_menu_area > ul > li > ul > li > a{margin-bottom:10px;font-size:1.7rem;padding-left: 10px;text-indent: -10px;}
-
-/*.all_menu_area > ul > li > ul > li > a:before{content:'';display:inline-block;vertical-align:5px;margin-right:5px;width:5px;height:5px;background:url('/mental_health_portfolio/images/contents/bul_all.png') no-repeat 0 0;}*/
-.all_menu_area > ul > li > ul > li > a:hover, .all_menu_area > ul > li > ul > li > ul > li > a:hover{color:#0e3799;font-weight:500;}
-.all_menu_area > ul > li > ul > li > a:hover:before{background-position:0 -50px;}
-.all_menu_area > ul > li > ul > li > ul{padding:0px 0 20px 10px;}
-.all_menu_area > ul > li > ul > li > ul > li > a{padding-left:5px;text-indent:-5px;}
-.all_menu_area > ul > li > ul > li > ul > li > a:before{content:'-';display:inline-block;vertical-align:5px;margin-right:5px;}
-
-.all_menu_area .btn_all_clo{position:absolute;top:0;right:0px;}
-.all_menu_area .btn_all_clo a{position:absolute;right:25px;top:25px;width:30px;height:30px;font-size:0;display:flex;align-items:center;justify-content:center;}
-
-/* ?�단검??*/
-.btn_sch{position:absolute;top:25px;right:calc(50% - 760px);  }
-.btn_sch > a{display: flex;align-items: center;justify-content: center; height:50px;  font-size:2.4rem;}
-.btn_sch.off{display:none;}
-.btn_sch_clo{display:none;position:absolute;top:25px;right:calc(50% - 760px);  }
-.btn_sch_clo > a{display: flex;align-items: center;justify-content: center;height:50px; line-height:50px; font-size:2.4rem;}
-.btn_sch_clo.on{display:block;}
-
-.sch_area{display:none;position:absolute;top:100px;left:0;padding:50px 0;width:100%;background-color:#fff;box-shadow: 3px 30px 30px rgba(0,0,0,0.05);}
-.sch_area.on{display:block;}
-.sch_area .sch_box{position:relative;margin:0 auto;width:90%; max-width:700px;height:54px;border:none; border-bottom:2px solid #000; background-color:#fff;}
-.sch_area .sch_box input[type="text"]{border:none;width:calc(100% - 50px);height:50px;line-height:50px;background-color:#fff; font-size:2rem;}
-.sch_area .sch_box input::placeholder{ color:#666; }
-.sch_area .sch_box .sch_send{position:absolute;top:0;right:0;width:50px;height:50px;font-size:0;background:url('/mental_health_portfolio/images/contents/btn_sch_w.png') no-repeat center center;}
-.sch_area .recommend{max-width:1000px; margin:30px auto; text-align:center;}
-.sch_area .recommend > a{display:inline-block; color:#666; margin-left:30px;}
-.sch_area .recommend .keyword_tit{background:#228eff; color:#fff; display:inline-block; padding:5px 15px; border-radius:50px; font-size:1.4rem;}
-
-/* 메인 custom */
-#wrap:has(.main) .btn_sch{display:none}
-#wrap:has(.main) .all_menu{right:calc(50% - 760px);}
-#wrap:has(.main) .all_menu > a{ width:50px; background:#228eff; color:#fff; border-radius:50%;  }
-
-/* 메인-검??*/
-.sch_wrap{ width:100%;}
-.sch_wrap > p{padding-bottom:15px;font-size:2.2rem;font-weight:500;text-align:center;}
-/* 2020-12-10 추�? */
-.sch_wrap > p.sch_tit {width:450px;margin:0 auto;text-align:left;}
-.sch_wrap > p.sch_tit > span {display:block;width:450px;text-align:center;}
-
-.sch_wrap .sch_all{position:relative;margin:0 auto;width:100%;}
-.sch_wrap .sch_all:after{content:'';display:block;clear:both;}
-.sch_all .sch_box, .sch_all .all_view{float:left;}
-
-.sch_all .sch_box{position:relative;width:100%;border:3px solid #00349d; border-radius:16px;     overflow: hidden;}
-.sch_all .sch_box .input_area{display:inline-block;width:100%;}
-.sch_all .sch_box select {padding:0 45px 0 10px;height:50px;border:none;background:#fff url('/mental_health_portfolio/images/contents/btn_selMain.png') no-repeat right center;}
-.sch_all .sch_box input[type="text"]{border:none;width:100%;;height:64px;line-height:64px; padding:0 20px; font-size:18px;}
-.sch_all .sch_box .sch_send{position:absolute;top:0;right:0;width:64px;height:64px;font-size:0;display:flex;align-items:center;justify-content:center;background-color:#00349d;border:none;cursor:pointer;}
-.sch_all .sch_box .sch_send svg {
-    width: 36px;
-    height: 36px;
-}
-
-.sch_all .all_view{width:190px;height:54px;border:2px solid #008dc9;border-left:1px solid #008dc9;background-color:#f2f2f2;}
-.sch_all .all_view > a{display:block;padding-left:20px;line-height:48px;}
-.sch_all .all_view > a:after{content:'';display:inline-block;margin-left:10px;width:15px;height:13px;vertical-align:middle;background:url('/mental_health_portfolio/images/contents/bul_all.png') no-repeat -250px -150px;}
-.sch_all .all_view:hover{border-color:#f28300;}
-.sch_all .all_view:hover > a:after{background-position:-250px -170px;}
-/* 2020-12-10 추�? */
-.sch_all .sch_q {position:absolute;right:-190px;top:2px;width:190px;}
-.sch_all .sch_q > a.q_title{padding-left:15px;line-height:48px;text-decoration:underline;}
-.sch_all .sch_q > a.q_title:before{content:'';display:inline-block;margin-right:3px;width:19px;height:19px;vertical-align:middle;background:url('/mental_health_portfolio/images/contents/bul_all.png') no-repeat -267px -100px;}
-.sch_all .sch_q .question_box {display:none;position:absolute;left:16px;top:46px;width:320px;height:auto;padding:16px 20px;background-color:#fff;border:1px solid #bbb;box-sizing:border-box;z-index:9;}
-.sch_all .sch_q .question_box > a {display:block;padding:2px 0;text-align:left;font-size:1.5rem;color:#54575f;}
-.sch_all .sch_q .question_box > a:hover {color:#222;text-decoration:underline;}
-.sch_all .sch_q .question_box > a.close_q {position:absolute;right:5px;top:5px;width:40px;height:20px;background:url('/mental_health_portfolio/images/contents/bul_all.png') no-repeat -100px 0px;}
-.sch_all .sch_q .question_box > a.close_q > span {display:block;width:40px;text-align:center;}
-
-/* 메인 */
-.group:after{content:'';display:block;clear:both;}
-.group > article{float:left;position:relative;margin-bottom:50px;width:446px;}
-.group > article:nth-of-type(2), .group > article:nth-of-type(5){margin:0 31px;}
-.group h2{margin-bottom:20px;padding-bottom:12px;font-size:2.2rem;color:#000;font-weight:500;border-bottom:1px solid #e8e8e8;}
-
-.group > article .box{height:310px;}
-.group > article .in_box{position:relative;width:100%;height:100%;text-align:center;vertical-align:middle;}
-.group > article .in_box img{max-width:100%;/*max-height:100%*/;width:100%;height:auto;}
-.group .self_check .box{background:url('/mental_health_portfolio/images/contents/self_check_img.jpg') no-repeat center center;background-size:cover;}
-.group .tit{margin-bottom:30px;text-align:center;color:#fff;font-size:2.4rem;font-weight:500;}
-.group .check{width:346px;margin:0 auto;}
-.group .check li{margin-bottom:20px;}
-.group .check li a{position:relative;display:block;padding-left:30px;height:50px;line-height:48px;text-align:left;font-size:1.7rem;font-weight:500;border:2px solid #fff;background-color:#fff}
-.group .check li a:hover{color:#1664ad;font-weight:500;border:2px solid #68d2ff;}
-.group .check li a:after{content:'';position:absolute;top:17px;right:35px;display:inline-block;width:41px;height:10px;background:url('/mental_health_portfolio/images/contents/m_bul_all.png') no-repeat 0 0;}
-
-.group .symp_info .in_box a{display:block;position:relative;height:100%;}
-.group .txt_bg > span{display:inline-block;padding:10px 20px;line-height:1em;font-size:2.4rem;color:#fff;font-weight:500;background-color:#007db3;}/* ?�접근성 webaccess_pub 명도 ?��?*/
-.group .txt_bg > span:nth-of-type(1){padding-top:15px;}
-.group .txt_bg > span:nth-of-type(2){padding-bottom:15px;}
-.group .symp_info .txt_bg > span:nth-of-type(1){padding-bottom:15px;}
-.group .btn_more{position:absolute;top:5px;right:0;}
-.group .btn_more a:before{content:'+';display:inline-block;margin-right:3px;}
-.group .in_box a:hover .txt_bg > span{color:#1664ad;background-color:rgba(255,255,255,0.8);}
-
-.group .box_grey .box{background-color:#f0f0f0;}
-.group .mental_list{padding-left:40px;}
-.group .mental_list:after{content:'';display:block;clear:both;}
-.group .mental_list li{float:left;width:45%;padding:20px 0}
-.group .mental_list li:nth-child(odd){width:55%;}
-.group .mental_list li > a{display:table-cell;table-layout:fixed;padding-left:45px;vertical-align:middle;line-height:1.5em;text-align:left;height:50px;}
-.group .mental_list li > a:hover{text-decoration:underline;}
-
-.group .mental_list li:nth-child(1) > a{background:url('/mental_health_portfolio/images/contents/main_sec02_icon01.png') no-repeat 0 center;}
-.group .mental_list li:nth-child(2) > a{background:url('/mental_health_portfolio/images/contents/main_sec02_icon02.png') no-repeat 0 center;}
-.group .mental_list li:nth-child(3) > a{background:url('/mental_health_portfolio/images/contents/main_sec02_icon03.png') no-repeat 0 center;}
-.group .mental_list li:nth-child(4) > a{background:url('/mental_health_portfolio/images/contents/main_sec02_icon04.png') no-repeat 0 center;}
-.group .mental_list li:nth-child(5) > a{background:url('/mental_health_portfolio/images/contents/main_sec02_icon05.png') no-repeat 0 center;}
-.group .mental_list li:nth-child(6) > a{background:url('/mental_health_portfolio/images/contents/main_sec02_icon06.png') no-repeat 0 center;}
-
-.group .state .in_box{background:url('/mental_health_portfolio/images/contents/img_statics.png') no-repeat center center;}
-.group .state .in_box:hover{background-size:100%;}
-.group .state .in_box > a, .group .medi .in_box > a{display:block;position:relative;width:100%;height:100%;font-size:0;}
-.group .in_box .news{display:block;position:relative;height:100%;}
-.group .in_box .news p{position:absolute;bottom:0;left:0;padding:18px;width:100%;text-align:center;font-size:1.8rem;color:#fff;
-  overflow:hidden;text-overflow:ellipsis;white-space:nowrap;background-color:#686868;}
-.group .in_box .news:hover p{background-color:#333;}
-
-.group .medi .in_box{background:url('/mental_health_portfolio/images/contents/img_medi.jpg') no-repeat center center;}
-.group .medi .txt_bg.posiXY{width:275px;text-align:center;left:50%;transform:translate(-50%, -50%);}
-.group .medi.faq .in_box{background:url('/mental_health_portfolio/images/contents/img_faq.jpg') no-repeat center center;}
-.group .medi.faq .txt_bg.posiXY{width:200px;}
-
-.group .symp_info .in_box, .group .medi .in_box, .group .medi.faq .in_box{background-size:cover !important;}
-.group .state .in_box{background-size:95%;}
-
-.group .movie .box{background-color:#333;}
-.group .movie .box .in_box .news{text-align:center;}
-.group .movie .box .in_box img{width:100%;height:100%;max-width:100%;/*max-height:100%*/;}
-
-/* 메인 - ?�업�?*/
-.ban_area{position:relative;height:100%;}
-.ban_area .ban_list{width:100%;height:100%;}
-.ban_btn{position:absolute;bottom:10px;left:15px;}
-.ban_btn button{width:21px;height:21px;font-size:0;line-height:0;}
-.ban_btn button.play{background:url('/mental_health_portfolio/images/contents/btn_visual_control.png') no-repeat 0px 0;}
-.ban_btn button.pause{background:url('/mental_health_portfolio/images/contents/btn_visual_control.png') no-repeat -21px 0;}
-
-.ban_btn .dotbox{display:inline-block;}
-.ban_btn ul.slick-dots{display:inline-block;}
-.ban_btn ul.slick-dots li{display:inline-block;margin-right:15px;}
-.ban_btn ul.slick-dots li:last-child{margin-right:4px;}
-.ban_btn ul.slick-dots li button{position:relative;display:inline-block;width:12px;height:12px;border-radius:50%;background-color:#fff;}
-
-.ban_btn ul.slick-dots li.slick-active button{background-color:#fff;}
-.ban_btn ul.slick-dots li.slick-active button:after{content:'';position:absolute;left:-8px;top:-8px;width:28px;height:28px;border:1px solid #fff;border-radius:50%;box-sizing:border-box;}
-.ban_list .slick-slide a{display:block;text-align:center;height:100%;}
-
-/* 메인 - ?�팝?�존 */
-.app_area{position:relative;height:100%;}
-.app_area .app_list{width:100%;height:100%;}
-.app_btn{position:absolute;bottom:10px;left:15px;}
-.app_btn button{width:21px;height:21px;font-size:0;line-height:0;}
-.app_btn button.play{background:url('/mental_health_portfolio/images/contents/btn_visual_control.png') no-repeat 0px 0;}
-.app_btn button.pause{background:url('/mental_health_portfolio/images/contents/btn_visual_control.png') no-repeat -21px 0;}
-
-.app_area .app_btn .dotbox{display:inline-block;}
-.app_area .app_btn ul.slick-dots{display:inline-block;}
-.app_area .app_btn ul.slick-dots li{display:inline-block;margin-right:15px;}
-.app_area .app_btn ul.slick-dots li:last-child{margin-right:4px;}
-.app_area .app_btn ul.slick-dots li button{position:relative;display:inline-block;width:12px;height:12px;border-radius:50%;background-color:#fff;}
-
-.app_area .app_btn ul.slick-dots li.slick-active button{background-color:#fff;}
-.app_area .app_btn ul.slick-dots li.slick-active button:after{content:'';position:absolute;left:-8px;top:-8px;width:28px;height:28px;border:1px solid #fff;border-radius:50%;box-sizing:border-box;}
-.app_area .app_list .slick-slide a{display:block;text-align:center;height:100%;}
-
-/* Slider */
-.slick-slider{position:relative;display: block;box-sizing:border-box;}
-.slick-list{position:relative;display:block;overflow:hidden;height:100%;}
-.slick-list.dragging{cursor:pointer;}
-.slick-track{position:relative;top:0;left:0;display:block;height:100%;}
-.slick-track:before,.slick-track:after{display:table;content:'';}
-.slick-track:after{clear:both;}
-.slick-loading .slick-track{visibility:hidden;}
-.slick-slide{display:none;float:left;height:100%;min-height:1px;text-align:center;}
-.slick-slide img{display:block;width:100%;}
-.slick-slide.slick-loading img{display:none;}
-.slick-initialized .slick-slide{display:block;}
-.slick-loading .slick-slide{visibility:hidden;}
-.slick-vertical .slick-slide{display:block;height:auto;border:1px solid transparent;}
-.slick-arrow.slick-hidden{display:none;}
-/* // */
-
-.group{position:relative;}
-.group.column > article{margin:0 2% 0 0;width:49%;}
-.group.column > article.list{margin:0px;}
-.group.column > article.list img{width:100%;height:auto;max-width:100%;/*max-height:100%*/;}
-.group.column > article.list li:nth-child(2){margin:4.373177% 0;}
-.group.column > article.list .in_box{text-align:left !important;}
-
-/*
-.group.column > article.list li > a{display:table;table-layout:fixed;width:100%;}
-.group.column > article.list li > a > p, .group.column > article.list li > a > dl{display:table-cell;table-layout:fixed;vertical-align:middle;}
-*/
-
-.group.column > article.list li > a:after{content:'';display:block;clear:both;}
-.group.column > article.list li > a > p, .group.column > article.list li > a > dl{float:left;}
-
-.group.column > article .box:after{content:'';display:block;padding-bottom:63.06569%;}
-.group.column > article.list li{overflow:hidden;height:28.7037037%;}
-.group.column > article.list li > a {display:block;height:100%;}
-.group.column > article.list li > a > p{width:28.71720117%;height:100%;}
-.group.column > article.list li > a > dl{padding:4.5% 0 0 4.44927%;width:calc(100% - 28.71720117%);}
-.group.column > article.list li > a > dl dt{margin-bottom:10px;font-size:1.8rem;font-weight:500;
-  text-overflow:ellipsis;overflow:hidden;width:99%;white-space:nowrap;
-}
-.group.column > article.list li > a:hover > dl dt{text-decoration:underline;}
-.group.column > article .box{height:432px;}
-
-/* footer */
-.footer{ background-color:#333;}
-.footer > div{position:relative;margin:0 auto;padding:30px 0 40px 0;width:90%;max-width:1520px;}
-
-.footer > div > ul{padding-bottom:30px; border-bottom:1px solid #444; margin-bottom:30px; }
-.footer > div > ul > li{display:inline-block;vertical-align:middle; }
-.footer > div > ul > li > a{display:block;margin-right:30px; color:#fff; position:relative;}
-.footer > div > ul > li + li > a::before{content:''; width:4px; height:4px; border-radius:50%; background:#555; position:absolute; left:-18px; top:9px;}
-
-.footer .address:after{content:'';display:block;clear:both;}
-.footer .address > p, footer .address > address{float:left;}
-.footer .address > p{float:left;padding:5px 20px 0 0;}
-.footer .address > address{padding:5px 0; color:#fff;}
-.footer .address span img {
-    width: 80px;
-    margin-left: 20px;
-    margin-top: 10px;
-}
-.footer .address > address a{color:#fff; }
-.footer .address > address > p{display:block; margin-bottom:10px;}
-.footer .address > address > p span{display:inline-block; }
-.footer .address > address > p span + span {margin-left:30px}
-.footer .address > address > p .copy{color:#999;}
-
-.footer > div .bot_sns{position:absolute;top:35px;;right:0;}
-/*footer > div .bot_sns > p{text-align:right;}*/
-.footer > div .bot_sns > ul{margin-bottom:20px;text-align: right;}
-.footer > div .bot_sns > li{font-size:12px;}
-.footer > div .bot_sns > ul > li{display:inline-block;}
-.footer > div .bot_sns a{display:inline-block;}
-
-.footer .ft-family{ position: absolute; right:0; z-index:2; width:100%; max-width:220px;}
-.footer .ft-family > a{ display: block; width:100%; padding:0 20px; height:50px; line-height:50px; border:1px solid #555; color:#fff;  font-size:15px;}
-.footer .ft-family > a i{position:absolute; right:15px; top:13px; font-size:22px;}
-.footer .ft-family.on > a i{transform:rotate(180deg);}
-.footer .ft-family a:hover{color:#fff;}
-.footer .ft-family ul{position:absolute; width:100%; bottom:50px; padding:10px 0; background: #000; border-bottom:1px solid #333; display:none;}
-.footer .ft-family ul li a{display:block;padding:10px 20px; color:#999; font-size:15px;}
-.footer .ft-to-top {position: absolute;top: -100px;right: -100px;width: 70px;height: 70px;   line-height: 1; opacity:.8; transition:all ease .3s; }
-.footer .ft-to-top a {  display: flex;align-items: center;justify-content: center;width: 100%;height: 100%; color: #fff;background: #00349d;border-radius: 50%;font-size: 1.6rem; text-align:center; box-shadow: 4px 4px 20px rgb(0 0 0 / 30%);}
-.footer .ft-to-top:hover{opacity:1;}
-
-.ico_img{display:inline-block !important;font-size:0 !important;line-height:0 !important;vertical-align:middle;background:url('/mental_health_portfolio/images/contents/ico_all.png') no-repeat;}
-.face{width:26px;height:26px;background-position:0 -100px;}
-.blog{width:26px;height:26px;background-position:-50px -100px;}
-
-.android{width:22px;height:28px;background-position:-100px -100px;}
-.apple{width:29px;height:28px;background-position:-150px -100px;}
-
-/* path_top */
-.path_top{z-index:10;height:60px;border-bottom:1px solid #e8e8e8;background-color:#f8f8f8;}
-.path_top.move{position:fixed;top:101px;width:100%;}
-.path_top.move .sns {z-index:3; margin-top: -62px; position:relative;}
-.path_top > div{width:100%;max-width:1520px;margin:0 auto;}
-.path_top > div:after{content:'';display:block;clear:both;}
-.path_top > div .lnb_area{ position:relative;}
-.path_top > div .sns{float:right;padding-top:12px;}
-.path_top > div span{display:inline-block;vertical-align:top;}
-.path_top > div span h2, .path_top > div span h3, .path_top > div span h4{display:inline-block;font-size:1.5rem;font-weight:400;}
-
-.path_top > div .path { }
-.path_top > div .path > ul{width:100%; display:flex;}
-.path_top > div .path > ul > li{ vertical-align:top; position:relative; border-right:1px solid #e8e8e8;}
-.path_top > div .path > ul > li.home > a{display:block; width:60px; height:60px; line-height:60px; text-align:center; font-size:2.2rem; border-left:1px solid #e8e8e8;}
-.path_top > div .path > ul > li:not(.home){width:calc(50% - 60px); max-width:240px; line-height:60px;}
-.path_top > div .path > ul > li > a{ display:block; padding:0 20px;   color:#666; font-weight:500; font-size:1.6rem; position:relative;}
-.path_top > div .path > ul > li:has(ul) > a{cursor:pointer;}
-.path_top > div .path > ul > li:has(ul) > a:after{content:"\e942";     font-family: xeicon!important; position:absolute; top:50%; right:20px;  transform:translateY(-50%); font-size:2rem; font-weight:500; color:#000;}
-.path_top > div .path > ul > li:has(ul) > a.on:after{content:"\e945";}
-.path_top > div .path > ul > li > ul{position:absolute; left:0; padding:20px; background:#fff; border:1px solid #e8e8e8; width:100%; border-top:0; z-index:2;display:none;}
-.path_top > div .path > ul > li > ul > li{line-height:1;}
-.path_top > div .path > ul > li > ul > li > a{display:block; line-height:auto; padding:10px 0;}
-
-.path_top > div .path span{height:49px;line-height:49px;}
-.path_top > div .path span:after{margin:0 10px;content:'>';display:inline-block;}
-.path_top > div .path span:nth-last-child(1):after{content:'';}
-
-.path_top > div .path span:nth-of-type(1){/*margin-right:10px;*/font-size:0;width:50px;text-align:center;/*border-left:1px solid #ccc;border-right:1px solid #ccc;*/}
-.path_top > div .path span:nth-of-type(1):after{content:'';display:inline-block;margin-top:15px;width:21px;height:18px;background:url('/mental_health_portfolio/images/contents/ico_all.png') no-repeat -200px -100px;}
-
-/* 2020-12-10 ?�정 & 추�? */
-.path_top > div .sns li{display:inline-block;margin-left:3px;vertical-align:top;}
-.path_top > div .sns li a{display:block;font-size:0;width:40px;height:40px; border:1px solid #ddd;border-radius:50%; background:url('/mental_health_portfolio/images/contents/ico_all.png') no-repeat 0 0; overflow:hidden; background-color:#fff !important;}
-.path_top > div .sns li a.kakaoTalk{background-position:-350px -52px;}
-.path_top > div .sns li a.daumBlog{background-position:-382px -52px;}
-.path_top > div .sns li a.twitter{background-position:-414px -52px;}
-.path_top > div .sns li a.faceBook{background-position:-446px -52px;}
-.path_top > div .sns li a.naverBlog{background-position:-478px -52px;}
-.path_top > div .sns li a.print{background:url('/mental_health_portfolio/images/contents/ico_print.png') no-repeat center center;}
-.path_top > div .sns li a.linkUrl{ background:url('/mental_health_portfolio/images/contents/ico_link.png') no-repeat center center;}
-.path_top > div .sns li a.scrap{width:62px;background-position:-572px -52px;}
-
-/* Lnb */
-.btn_m_lnb{display:none;font-size:0;line-height:0;}
-.lnb{display:none;}
-/*
-.btn_m_lnb:after{content:'';display:none;width:30px;height:26px;background:url('/mental_health_portfolio/images/contents/ico_all.png') no-repeat -450px -550px;}
-
-.lnb{z-index:9;display:none;position:absolute;top:46px;right:0;width:100%;box-shadow: 3px 3px 3px #aaa;}
-.lnb > p{display:block;padding:7px 0 10px 10px;font-size:2.0rem;color:#fff;font-weight:500;border-bottom:1px solid #c1c1c1;background-color:#3e526a;}
-.lnb .lnb_th2{border:1px solid #bbb;border-top:none;border-bottom:none;background-color:#fff;}
-.lnb .lnb_th2>li{position:relative;border-bottom:1px solid #bbb;}
-.lnb .lnb_th2>li.current, .lnb .lnb_th2>li.current > a{color:#00498e;background-color:#deedf3;}
-
-.lnb .lnb_th2>li>a{display:block;padding:7px 0 7px 10px;font-size:1.7rem;font-weight:500;}
-.lnb .lnb_th2>li.up_over > a:after{content:"";position:absolute;top:16px;right:15px;width:18px;height:11px;background:url('/mental_health_portfolio/images/contents/ico_all.png') no-repeat -550px -550px;}
-.lnb .lnb_th2>li.up_over.up > a:after{content:"";position:absolute;top:16px;right:15px;width:18px;height:11px;background:url('/mental_health_portfolio/images/contents/ico_all.png') no-repeat -500px -550px;}
-.lnb .lnb_th2>li.current > a:after{content:"";position:absolute;top:16px;right:15px;width:18px;height:11px;background:url('/mental_health_portfolio/images/contents/ico_all.png') no-repeat -500px -550px;}
-.lnb .lnb_th2>li.current.up > a:after{content:"";position:absolute;top:16px;right:15px;width:18px;height:11px;background:url('/mental_health_portfolio/images/contents/m_bul_all.png') no-repeat -50px -50px;}
-
-.lnb .lnb_th2>li.current .lnb_th3{border:none;background-color:#deedf3;}
-.lnb .lnb_th3{display:none;padding-left:10px;background-color:#fff;}
-.lnb .lnb_th3>li{position:relative;}
-.lnb .lnb_th3>li>a{display:block;padding:3px 0 3px 10px;}
-.lnb .lnb_th2 > li:last-child > .lnb_th3 > li:last-child > a{padding-bottom:10px;;}
-/*.lnb .lnb_th3>li>a:before{content:"";position:absolute;top:13px;left:0px;width:3px;height:3px;background:url('/mental_health_portfolio/images/contents/m_bul_all.png') no-repeat -200px 0;}
-.lnb .lnb_th3>li.current>a,.lnb .lnb_th3>li>a:hover,.lnb .lnb_th3>li>a:focus,.lnb .lnb_th3>li>a:active{text-decoration:underline;}
-*/
-/* contents */
-.con_area{position:relative;width:90%;max-width:1520px;margin:0 auto;}
-.path_lnb h1{width:100%;max-width:1520px;margin:0 auto;margin-top:80px;padding-bottom:50px;font-size:4rem;color:#000; text-align:center;}
-.con_area h2, .con_area .h2{margin-bottom:30px;padding-bottom:20px;font-size:2.5rem;font-weight:bold;border-bottom:1px solid #e8e8e8;}
-.con_area .no_line{margin-bottom:20px;padding-bottom:0;border-bottom:none;}
-
-/* 2020-12-07 추�? */
-.lnb_subTitle {position:relative; width:100%;max-width:1520px;margin:-30px auto 0;padding-bottom:40px;font-size:2.2rem;color:#54575f;text-align:center; border:6px solid #f6f6f6; padding:50px 20px; margin:0 auto 50px; font-weight:500}
-.lnb_subTitle b{color:#0e3799;}
-.lnb_subTitle:before{content:''; width:60px; height:60px; position:absolute; left:-6px; top:-6px; background: url('/mental_health_portfolio/images/contents/subTitl_line_left.png') no-repeat left top ;}
-.lnb_subTitle:after{content:''; width:60px; height:60px; position:absolute; right:-6px; bottom:-6px; background: url('/mental_health_portfolio/images/contents/subTitl_line_right.png') no-repeat right bottom ;}
-
-.path_lnb h1.move{margin-top:96px;}
-
-/* 모바??Top */
-.btn_top{height:0;}
-.btn_top > a{font-size:0;}
-
-/* 모바???�용 */
-.m_nav_btn, .gnb_pc .close, .m_top_login, .m_only, .btn_top{display:none;}
-
-/* 메인?�업 */
-.noti_pop{z-index:99;position:absolute;top:93px;left:100px;width:650px;padding:0 0 60px;border:1px solid #333;background-color:#fff;}
-.noti_pop > div > a{display:block;text-align:center;}
-.noti_pop > div > a > img{max-width:100%;width:auto;}
-.noti_pop > p{margin-top:10px;}
-.noti_pop > p > label{display:inline-block;margin-left:10px;}
-.noti_pop > span{position:absolute;right:20px;bottom:20px;}
-.noti_pop .pop_bottom{width:100%; height:60px; position:absolute; left:0; bottom:0; text-align:center; border-top:1px solid #ddd;}
-.noti_pop .pop_bottom > p{width:50%; float:left; display: flex;height: 100%;align-items: center;justify-content: center;}
-.noti_pop .pop_bottom > span{width:50%; float:left; display: flex;height:  100%;align-items: center;justify-content: center;}
-.noti_pop .pop_bottom > p > label{display:inline-block;margin-left:10px;}
-.noti_pop .pop_bottom > span .btn{display:block;   background:#fff;  width: 100%;    border-left:1px solid #ddd;}
-
-/* 로딩??*/
-.loading_pop{z-index:99;position:fixed;top:50%;left:50%;margin:-100px 0 0-150px;width:300px;height:200px;padding:20px 20px 30px 20px;border:1px solid #aaa;background-color:#fff;box-shadow:0px 0px 7px 7px #ccc;}
-.loading_pop > p{margin-bottom:20px;text-align:center;}
-
-/******************************************************* renewal *******************************************************/
-/* setting */
-th, td, input, textarea, select, button,
-html,body{font-family: 'Pretendard','Noto Sans KR', '본고??, Dotum, '?��?', Gulim, '굴림', Tahoma, Verdana, AppleGothic, UnDotum, Arial;}
-img{max-width:100%;}
-body{line-height:1.5; letter-spacing:-0.2px;}
-
-/* swiper */
-.swiper-control-box{width:100%; max-width:300px; background:#0e3799; color:#fff;padding:20px 30px; border-radius:0 20px 0 0; position:absolute; left:0; bottom:0; z-index:2; display:flex; align-items:center;     justify-content: space-between;}
-.swiper-control-box p{font-size:1.8rem; font-weight:500; }
-.swiper-control-box .swiper-pagination{position:relative; bottom:auto; left:auto;  width:auto;}
-.swiper-control-box .swiper-pagination .line{margin:0 10px;}
-.swiper-control-box .swiper-pagination .swiper-pagination-total{opacity:.5;}
-.swiper-button-wr{position:relative; width:80px; height:30px;  text-align:center;}
-.swiper-button-wr .swiper-button-next,
-.swiper-button-wr .swiper-button-prev{ background:none; width:30px; height:30px; margin-top:0;  font-size:2.4rem;top:auto; display: flex;align-items: center;justify-content: center; top:0; }
-.swiper-button-wr .swiper-button-next{right:0;}
-.swiper-button-wr .swiper-button-prev{left:0;}
-.swiper-button-wr .swiper-button-next::after{content:"\e93f"; font-family: xeicon!important; }
-.swiper-button-wr .swiper-button-prev::after{content:"\e93c"; font-family: xeicon!important;}
-.swiper-button-wr .swiper-pause-wr{position:relative; width:30px; height:30px; display:inline-block;}
-.swiper-button-wr .swiper-pause-wr > div{position:absolute; left:0 ;top:0; display:flex; align-items:center;     justify-content: center; width:100%; height:100%; cursor:pointer;}
-.swiper-button-wr .swiper-pause-wr #play{display:none;}
-
-/* main */
-.main_tit h2{font-size:4.2rem; margin-bottom:20px; font-family: 'SCoreDream';}
-.main_tit h2 b{color:#228eff;}
-.main_tit p{font-size:1.8rem}
-.main_tit p b{color:#0d3699; position:relative;}
-.main_tit p b::before{content:''; width:100%; height:10px; background:#228eff; opacity:.12; position:absolute; left:0; bottom:-3px;}
-.main_sec01{ padding:70px 0 200px; background:url('/mental_health_portfolio/images/contents/main_sec01_bg.png') no-repeat right bottom / auto 100%;}
-.main_sec01 .flex_box{display:flex; flex-wrap:wrap; justify-content:space-between; }
-.main_sec01 .left{width:60%; max-width:890px; }
-.main_sec01 .right{width:38%;}
-.main_sec01 .main_visual{position:relative; overflow:hidden;  border-radius:20px;  }
-.swiper-slide a:focus,
-.swiper-slide a:focus-visible,
-.swiper-slide a:active{ display:block; border: 2px solid #222;}
-.main_sec01 .main_visual .thumb{width:100% ; }
-.main_sec01 .main_visual .thumb a{display:block; width:100%; height:100%;  padding-bottom:70%; position:relative; background:#f7f8f9;}
-.main_sec01 .main_visual .thumb a img{width:100%; position:absolute; left:0; top:0; height:100%; object-fit: cover}
-.main_sec01 .main_quick .flex_box > div{width:48%; background-color:#fff; background-repeat:no-repeat; background-position:center bottom; background-size:100% auto; border-radius:20px; margin-top:4%; transition:all ease .3s; font-family: 'SCoreDream'; font-weight:600;}
-.main_sec01 .main_quick .flex_box > div a{display:block; padding:20px; transition:all ease .3s; width:100%; height:100%;}
-.main_sec01 .main_quick .flex_box > div img{margin-right:10px; display:none;}
-.main_sec01 .main_quick .flex_box .card01 { background-color: #ffffff; background-image:url('/mental_health_portfolio/images/contents/main_quick_card01.png'); min-height:426px; padding:10px;}
-.main_sec01 .main_quick .flex_box .card01 .tit{font-size:2.4rem; }
-.main_sec01 .main_quick .flex_box .card02 { background-image:url('/mental_health_portfolio/images/contents/main_quick_card02.png'); min-height:426px; padding:10px;}
-.main_sec01 .main_quick .flex_box .card02 .tit{font-size:2.4rem; }
-.main_sec01 .main_quick .flex_box .card03{border:2px solid #fff;}
-.main_sec01 .main_quick .flex_box .card03 .tit{position:relative; font-size:2rem; text-align:center; font-weight:500;white-space: nowrap; padding-left:45px;}
-.main_sec01 .main_quick .flex_box .card03 .tit::before{content:''; width:30px; height:35px; background:url('/mental_health_portfolio/images/contents/main_quick_card03.png') no-repeat 0 0 / cover; position:absolute; left:0; top:-3px;}
-.main_sec01 .main_quick .flex_box .card04{border:2px solid #fff;}
-.main_sec01 .main_quick .flex_box .card04 .tit{position:relative; font-size:2rem; text-align:center; font-weight:500;white-space: nowrap;padding-left:45px;}
-.main_sec01 .main_quick .flex_box .card04 .tit::before{content:''; width:33px; height:36px; background:url('/mental_health_portfolio/images/contents/main_quick_card04.png')no-repeat 0 0 / cover; position:absolute; left:2px; top:-4px;}
-.main_sec01 .main_quick .flex_box .card01:hover,
-.main_sec01 .main_quick .flex_box .card02:hover{background-color:#00b6bd; transform:translateY(-10px);}
-.main_sec01 .main_quick .flex_box .card01:hover a,
-.main_sec01 .main_quick .flex_box .card02:hover a{ color:#fff;}
-.main_sec01 .main_quick .flex_box .card03:hover,
-.main_sec01 .main_quick .flex_box .card04:hover{border-color:#e63c64;}
-.main_sec01 .main_quick .flex_box .card03:hover a,
-.main_sec01 .main_quick .flex_box .card04:hover a{text-decoration:underline;}
-.main_sec02{ padding:70px 0 100px; background:url('/mental_health_portfolio/images/contents/main_sec02_bg.png') no-repeat left bottom / auto 100%;}
-.main_sec02 .flex_box{display:flex; flex-wrap:wrap; justify-content:space-between; }
-.main_sec02 .left{width:38%; padding-top:20px;}
-.main_sec02 .right{ width:60%; max-width:920px; }
-.main_sec02 .info_icon li{width:22%; margin-bottom:4%; text-align:center; transition:all ease .3s; font-family: 'SCoreDream';  font-weight:500; pointer-events: auto;}
-.main_sec02 .info_icon li a{ position:relative;display:block;padding:15px 10px; border:1px solid #ddd;  border-radius:20px;  background:#fff; }
-.main_sec02 .info_icon li a p{margin-top:5px; font-size:1.8rem;}
-.main_sec02 .info_icon li a:before{content:''; width:calc(100% - 4px); height:calc(100% - 4px); position:absolute; left:-1px; top:-1px; border:3px solid #228eff; border-radius:20px; opacity:0; transition:all ease .3s;}
-.main_sec02 .info_icon li:hover{transform:translateY(-10px);  }
-.main_sec02 .info_icon li:hover a{box-shadow: 8px 8px 40px rgb(34 142 255 / 15%);}
-.main_sec02 .info_icon li:hover a:before{opacity:1; border-color: #e63c64;}
-.main_sec03{ padding:50px 0 100px; }
-.main_sec03 .main_tit h2{font-size:3.2rem;}
-.main_sec03 .flex_box{display:flex; flex-wrap:wrap; justify-content:space-between; }
-.main_sec03 .left{width:38%; padding-top:56px; }
-.main_sec03 .right{ width:60%; max-width:870px; }
-.main_sec03 .news_slider{position:relative;  }
-.main_sec03 .news_slider .swiper-wr{  padding-top: 60px; margin-top:-60px; }
-.main_sec03 .news_slider .swiper-container{ position: inherit;  border-radius:20px;  overflow:hidden;  }
-.main_sec03 .news_slider .thumb{width:100% ; padding-bottom:70%; position:relative; background:#f7f8f9}
-.main_sec03 .news_slider .thumb > img{width:100%; position:absolute; left:0; top:0; height:100%; object-fit: cover}
-.main_sec03 .swiper-button-wr{width:130px; height:40px; position:absolute; right:0; top:0;}
-.main_sec03 .swiper-button-wr > div{border:1px solid #eee; border-radius:50%; width:40px; height:40px;}
-.main_sec03 .main_news{border:16px solid #fff1f3; border-radius:30px; padding:40px 50px 50px;}
-.main_sec03 .main_news .main_tit h2 b{color:#f25f82;}
-.main_sec03 .main_news .notice{border-top:2px solid #000; border-bottom:1px solid #eee; overflow:hidden; padding:30px 0; }
-.main_sec03 .main_news .notice > a{display:flex; flex-wrap:wrap; justify-content: space-between; align-items:center;}
-.main_sec03 .main_news .notice .date{width:100px; height:100px; float:left; padding:12px 0; border-radius:10px; border:6px solid #f25f82; text-align:center;}
-.main_sec03 .main_news .notice .date strong{display:block; font-size:3.8rem; line-height:1;}
-.main_sec03 .main_news .notice .tit{float:right; width:calc(100% - 120px);}
-.main_sec03 .main_news .notice .tit p::before{content:'N'; display:inline-block; width:24px; height:24px; margin-right:5px; background:#f25f82; border-radius:50%; font-size:11px; line-height:24px; text-align:center; color:#fff; vertical-align:middle; position:absolute; left:0; top:5px;}
-.main_sec03 .main_news .notice .tit p{position:relative; padding-left:30px;font-size:2.2rem; white-space: nowrap; overflow:hidden; text-overflow:ellipsis; -o-text-overflow: ellipsis; -ms-text-overflow: ellipsis; font-weight:600;}
-/*.main_sec03 .main_news .notice .tit p{font-size:1.7rem; overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;word-wrap:break-word; }*/
-.main_sec03 .main_news .list {padding:15px 15px ; border-bottom:1px solid #000;}
-.main_sec03 .main_news .list > li{margin:10px 0; }
-.main_sec03 .main_news .list > li > a{display:block; position:relative; font-size:1.7rem; padding-left:20px;  padding-right:120px;white-space: nowrap; overflow:hidden; text-overflow:ellipsis; -o-text-overflow: ellipsis; }
-.main_sec03 .main_news .list > li > a:before{content:''; width:5px; height:5px; border-radius:50%; background:#ddd; position:absolute; left:0; top:10px;}
-.main_sec03 .main_news .list > li .date{color:#666; font-size:.9em; position:absolute; right:0; top:0;}
-.main_sec04{ padding:110px 0 70px; background:url('/mental_health_portfolio/images/contents/main_sec04_bg.png') no-repeat right top / cover; }
-.main_sec04 .main_tit h2{font-size:3.8rem;}
-.main_sec04 .main_tit h2 b{color:#C54E07;}
-.main_sec04 .flex_box{display:flex; flex-wrap:wrap; justify-content:space-between; }
-.main_sec04 .left{width:28%; padding-top:20px; }
-.main_sec04 .right{ width:70%; max-width:1085px; }
-.main_sec04 .agency li{width:13%;  text-align:center; transition:all ease .3s; font-family: 'SCoreDream';  font-weight:500; border-radius:20px; pointer-events: auto; } /* Removed border from li */
-.main_sec03 .swiper-button-prev,
-.main_sec03 .swiper-button-next,
-.main_sec03 .swiper-pause-wr {
-    pointer-events: auto;
-}
-.main_sec03 .main_news .notice > a,
-.main_sec03 .main_news .list > li > a {
-    pointer-events: auto;
-}
-.main_sec03 .swiper-slide a {
-    pointer-events: auto;
-}
-.main_sec04 .agency li .icon{ margin:0 auto;display:flex;align-items:center; justify-content:center; background:#fff;  border:1px solid #ddd; border-radius:50%; /* padding: 20px; */ box-shadow: 8px 8px 40px rgb(0 0 0 / 5%); transition:all ease .3s; overflow:hidden;}
-.main_sec04 .agency li .icon img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-} /* Added border to icon, made it circular, added transition */
-.main_sec04 .agency li p{margin-top:15px; font-size:1.8rem;}
-.main_sec04 .agency li:hover{transform:translateY(-10px); background-color: transparent;} /* Keep li hover transform, make background transparent */
-.main_sec04 .agency li:hover .icon{border-color:#e63c64;} /* Change icon border color on li hover */
-
-/* === PC - width 100% === */
-
-@media screen and (min-width:961px) and (max-width:1540px){
-  .top_area{padding:0 10px; height:150px;}
-  .top_area:before{content:''; width:100%;  height:1px; background:#e8e8e8; position:absolute; left:0; top:50px;}
-  .top_area h1{left:50% ; margin-left: -230px;}
-  .top_area.move h1{display:none;}
-
-  .gnb_pc > nav{padding-left:0; }
-  .gnb_pc > nav > ul{  background:#fff; width: calc(100% - 90px); }
-  .gnb_pc .th1>a{ padding : 0 15px;}
-  .gnb_pc .th2.on{padding: 20px 0 30px ;}
-  .gnb_pc .th2>li>a{padding-left:15px;}
-
-  .btn_sch{right:20px; }
-  .btn_sch_clo{right:20px; }
-  #wrap:has(.main) .all_menu{right:20px; }
-  .all_menu{right:60px; }
-  .all_menu_area{width:100%;left:0;margin-left:0;}
-  .all_menu_area > ul{width:calc(100% - 41px);}
-  .all_menu_area .btn_all_clo{right:0;}
-
-  /* 메인?�업 */
-  .noti_pop{max-width:960px !important;}
-
-  /* main */
-  .path_top > div .sns{padding-right:5%;}
-  .main_sec01 .main_quick .flex_box .card01 .tit{font-size:2rem;}
-  .main_sec01 .main_quick .flex_box .card02 .tit{font-size:2rem;}
-  .main_sec01 .main_quick .flex_box .card01{min-height:26vw;}
-  .main_sec01 .main_quick .flex_box .card02{min-height:26vw;}
-  .main_sec01 .main_quick .flex_box > div img{width:20px;}
-  .main_sec01 .main_quick .flex_box > div a{padding:15px;}
-  .main_sec01 .main_quick .flex_box .card03 .tit{font-size:1.4rem;}
-  .main_sec01 .main_quick .flex_box .card04 .tit{font-size:1.4rem;}
-  .main_tit h2{font-size:3.2rem;}
-  .main_sec02 .info_icon li a p{font-size:1.4rem;}
-  .main_sec04 .main_tit h2{font-size:3rem;}
-  .main_sec04 .agency li p{font-size:1.4rem;}
-}
-
-/* === Tablet === */
-@media screen and (max-width:960px){
-
-  #container > div{padding-top:50px;}
-  #container{    padding-bottom: 70px;}
-  .path_top > div .sns{padding-right:5%;}
-
-  /* PC ?�용 */
-  .top_area > ul, .all_menu, .sch_area > p, .sch_area .sch_box select, .btn_home, .footer .address > p, .path_top > div .path{display:none;}
-  .footer > div .bot_sns > ul > li.pc_only,  .pc_only{display:none !important;}
-
-  /*.top_area, #footer, .path_top > div{max-width:100%;}
- #container.main{max-width:calc(100% - 20px);} */
-  .m_nav_btn, .m_nav .close, .m_top_login, .m_only{display:block;}
-
-  .footer{font-size:1.4rem;}
-  .footer > div > ul > li > a{margin-right:10px;}
-  .footer > div > ul > li + li > a::before{display:none;}
-  .footer .address > address > p span{display:block; }
-  .footer .address > address > p span + span {margin-left:0}
-  .footer .ft-family{position:relative; width:100%; margin-bottom:20px; top:auto; right:auto;}
-
-  /* top */
-  header{z-index:995;position:fixed;top:0;left:0;width:100%;height:51px; border-bottom:1px solid #e8e8e8; box-sizing:border-box;}
-  .top_area{padding-top:8px;height:50px;}
-  .top_area h1{float:none;position:absolute;top:10px;left:50%;     transform: translateX(-50%); width:223px;height:31px;}
-  .top_area.move h1{ }
-  .gnb_area{position:static;}
-
-  /* ?�단검??*/
-  .btn_sch{position:absolute;top:0;right:0;margin:0;padding-top:12px;text-align:center;width:50px;height:47px;font-size:0;line-height:0;}
-  .btn_sch > a{display:inline-block;width:32px;height:31px; }
-  .btn_sch_clo{position:absolute;top:0;right:0;margin:0; text-align:center;width:50px;height:47px;font-size:0;line-height:0;}
-  .btn_sch_clo > a{display:inline-block;width:26px;height:24px; }
-
-  .sch_area{top:0;left:50px;padding:0;width:calc(100% - 100px);height:50px;box-shadow:none;     z-index: 99;}
-  .sch_area .sch_box{margin:0;width:100%;height:50px;border:none; border-left:1px solid #e8e8e8;border-right:1px solid #e8e8e8;background-color:#fff;}
-  .sch_area .sch_box input[type="text"]{width:100%;height:50px;line-height:50px;background-color:#fff; font-size:1.6rem;}
-  .sch_area .sch_box input::placeholder{text-align:left;}
-  .sch_area .sch_box .sch_send{background-size: 20px; }
-  .sch_area .recommend{display:none;}
-
-  /* main */
-  .main_sec01{padding:30px 0 50px;     background-image: linear-gradient(45deg, #e7f9f6, #e3f5fe);}
-  .main_sec01 .left{width:100%; max-width:100%;}
-  .main_sec01 .right{width:100%; margin-top:20px;}
-  .swiper-control-box{position:relative; width:100%; max-width:100%; border-radius: 0 0 20px 20px;     padding: 10px 20px;}
-  .sch_all .sch_box input[type="text"]{height:50px; line-height:50px;font-size:16px;}
-  .sch_all .sch_box .sch_send{width:50px; height:50px;  background-size:20px}
-
-  .main_sec01 .main_quick .flex_box > div{width:100%;   background-size:150px; background-position: bottom right;}
-  .main_sec01 .main_quick .flex_box .card01{min-height:200px;}
-  .main_sec01 .main_quick .flex_box .card02{min-height:200px;}
-  .main_sec01 .main_quick .flex_box .card01 .tit{font-size:2.2rem;}
-  .main_sec01 .main_quick .flex_box .card02 .tit{font-size:2.2rem;}
-  .main_sec01 .main_quick .flex_box .card03 .tit{font-size:1.8rem; text-align:left;}
-  .main_sec01 .main_quick .flex_box .card04 .tit{font-size:1.8rem; text-align:left;}
-  .main_sec02{padding:50px 0 ;}
-  .main_sec02 .left{width:100%; padding-top:0;}
-  .main_sec02 .right{width:100%;margin-top:40px;}
-  .main_sec02 .info_icon li{width:48%;}
-  .main_sec02 .info_icon li a{padding:20px;}
-  .main_sec02 .info_icon li img{max-width:40%;}
-  .main_tit h2{font-size:3rem; margin-bottom:10px;}
-  .main_sec02 .info_icon li a p{font-size:1.4rem;}
-
-  .main_sec03{padding:50px 0;}
-  .main_sec03 .main_tit h2{font-size:2.4rem; margin-bottom:20px;}
-  .main_sec03 .left{width:100%;  padding-top:0;}
-  .main_sec03 .right{width:100%;margin-top:30px;}
-  .main_sec03 .main_news{padding:30px;     border: 8px solid #fff1f3;}
-  .main_sec03 .main_news .notice{padding:20px 0;}
-  .main_sec03 .main_news .notice .tit{width: calc(100% - 70px);}
-  .main_sec03 .main_news .notice .date{width:50px; height:50px; border: 2px solid #f25f82; padding: 5px 0; font-size: 10px;}
-  .main_sec03 .main_news .notice .date strong{font-size:2rem;}
-  .main_sec03 .main_news .notice .tit p::before{top:2px;}
-  .main_sec03 .main_news .notice .tit p{font-size:1.8rem;}
-  /*.main_sec03 .main_news .notice .tit p{font-size:1.4rem;}*/
-  .main_sec03 .main_news .list{padding: 10px 0;}
-  .main_sec03 .main_news .list > li > a{padding-right:0;     font-size: 1.5rem;}
-  .main_sec03 .main_news .list > li .date{position:relative; top:0; display:block; margin-top:5px;}
-
-  .main_sec04{padding:50px 0;}
-  .main_sec04 .left{width:100%;  paddding-top:0;}
-  .main_sec04 .right{width:100%;margin-top:30px;}
-  .main_sec04 .main_tit h2{font-size:2.6rem;}
-  .main_sec04 .agency li{width:30%; }
-  .main_sec04 .agency li p{font-size:1.4rem; white-space: nowrap; margin-bottom:20px;}
-
-  /* ?�브 ?�이?�웃 */
-  .path_top > div .lnb_area{float:none;}
-  .path_lnb{
-    display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex; display:flex;
-    -webkit-box-orient: vertical;
-    -moz-box-orient: vertical;
-    -ms-flex-direction: column;
-    -webkit-flex-direction: column;
-    flex-direction: column
-  }
-  .path_top{order:2;width:100%;height:auto;border-bottom:1px solid #e8e8e8;;background-color:#fff;}
-  .path_top > div .sns{float:none;padding:7px 0 7px 10px;}
-
-  .path_lnb h1{margin:0;padding:10px 50px 10px 10px;line-height:1.5em;font-size:2rem;text-align:left;border-bottom:1px solid #e8e8e8;background-color:#f7f7f7;}
-  .btn_m_lnb{display:block;position:absolute;top:-50px;right:10px;width:40px;height:30px;text-align:center;font-size:0;line-height:0;}
-  .path_top > div .lnb_area:has(.lnb_th2) .btn_m_lnb:after {
-    content: "\e942";
-    font-family: xeicon!important;display:inline-block;margin-top:24px;width:23px;height:11px;
-    font-size: 3rem;
-    font-weight: 500;
-    color: #000;
-  }
-
-  /* 2020-12-07 추�? */
-  .lnb_subTitle {font-size:1.6rem; padding:30px 5%;     margin: 0 auto 30px;}
-  .lnb_subTitle:after,
-  .lnb_subTitle:before{width:30px; height:30px;}
-
-  .con_area{padding:30px 10px 0 10px;max-width:calc(100% - 20px);}
-
-  /* lnb */
-  .lnb{display:none;top:0;}
-  .lnb > a{display:block;padding:10px 0 15px 10px;font-size:1.8rem; font-weight:600;border-bottom:1px solid #e8e8e8; }
-  .lnb .lnb_th2{padding:10px 0; border-bottom:1px solid #e8e8e8; }
-  .lnb .lnb_th2>li{position:relative;border-bottom:none;}
-  .lnb .lnb_th2>li.current, .lnb .lnb_th2>li.current > a{ }
-
-  .lnb .lnb_th2>li>a{display:block;padding:5px 0 5px 25px;font-size:1.6rem;font-weight:500; }
-  .lnb .lnb_th2>li.up_over > a:after{content:"";position:absolute;top:19px;right:25px;width:18px;height:11px;background:url('/mental_health_portfolio/images/contents/m_bul_all.png') no-repeat -150px 0;}
-  .lnb .lnb_th2>li.up_over.up > a:after{content:"";position:absolute;top:19px;right:25px;width:18px;height:11px;background:url('/mental_health_portfolio/images/contents/m_bul_all.png') no-repeat -100px 0;}
-  /*
-  .lnb .lnb_th2>li.current.up_over > a:after{content:"";position:absolute;top:19px;right:25px;width:18px;height:11px;background:url('/mental_health_portfolio/images/contents/m_bul_all.png') no-repeat 0px -50px;}
-  .lnb .lnb_th2>li.current.up_over.up > a:after{content:"";position:absolute;top:19px;right:25px;width:18px;height:11px;background:url('/mental_health_portfolio/images/contents/m_bul_all.png') no-repeat -50px -50px;}
-   */
-
-  .lnb .lnb_th3{display:none; }
-  .lnb .lnb_th2 .current .lnb_th3{ }
-  .lnb .lnb_th3>li{position:relative;}
-  .lnb .lnb_th3>li>a{display:block;padding:5px 0 5px 10px;color:#fff;}
-  .lnb .lnb_th3>li>a:before{content:"";position:absolute;top:13px;left:0px;width:3px;height:3px;background:url('/mental_health_portfolio/images/contents/m_bul_all.png') no-repeat -200px 0;}
-  .lnb .lnb_th3>li.current>a,.lnb .lnb_th3>li>a:hover,.lnb .lnb_th3>li>a:focus,.lnb .lnb_th3>li>a:active{text-decoration:underline;}
-
-  .lnb .lnb_th2 > li:last-child > .lnb_th3{padding-bottom:20px;}
-  /* .lnb .lnb_th2 > li:last-child > a{padding-bottom:20px;}*/
-  .lnb .lnb_th2 > li.current:last-child > a{padding-bottom:10px;}
-
-  /* Nav */
-  .m_nav_btn{position:absolute;top:13px;left:10px;font-size:0;width:29px;height:21px; color:#000;}
-  .m_nav_btn:after{ content: "\e91c"; font-family: xeicon!important;     font-size: 2.4rem;}
-  .m_nav{z-index:991;position:fixed;top:0px;left:-1000px;width:100%;height:100%;font-size:1.5rem;}
-  .m_nav #gnb{z-index:991;position:fixed;left:-1000px;overflow:auto;width:70%;height:100%;background-color:#fff;}
-  .m_nav #gnb.in{display:block;left:0px}
-  .m_nav .backdrop{display:none;z-index:900;position:fixed;top:0;left:0;width:100%;height:100%;background-color: #000;transition: 0.2s opacity ease;opacity: 0.7;}
-  .m_nav .backdrop.in{display:block;}
-  .m_nav .close{z-index:999;display:block;position:absolute;top:0px;left:calc(70% - 50px);padding-top:17px;width:50px;height:50px;text-align:center;font-size:0;line-height:0;}
-  .m_nav .close:before{content:'';display:inline-block;width:18px;height:18px;background:url('/mental_health_portfolio/images/contents/m_ico_all.png') no-repeat -150px 0;}
-
-  /* 모바???�롭?�운 */
-  .m_nav .m_top_login{height:52px; background:#f8f8f8; font-size:1.8rem;}
-  .m_nav .m_top_login span{display:inline-block;padding-left:5px; }
-  .m_nav .m_top_login span a{display:inline-block;padding:15px 5px 0px 5px;}
-  .m_nav .m_top_login span.cartCount {display:inline-block;width:20px;height:20px;line-height:20px; text-align:center;font-size:1.2rem;color:#fff;background-color:#333;border-radius:50%; vertical-align:middle; padding-left:0;}
-
-  .m_nav a{display:block;position:relative;}
-  .m_nav #gnb > ul>li{border-bottom:1px solid #e8e8e8;background-color:#fff;}
-  .m_nav #gnb > ul>li>a{padding:12px 0 15px 10px;font-size:2.0rem;font-weight:600;}
-  .m_nav #gnb > ul>li>a:after{ position:absolute; right:20px; top:460;
-    content: "\e942";
-    font-family: xeicon!important;
-    display: inline-block;
-    width: 23px;
-    height: 11px;
-    font-size: 2.4rem;
-    font-weight: 500;
-    color: #000;}
-  .m_nav #gnb > ul>li>a.active{ }
-  .m_nav #gnb > ul>li>a.active:after{content:"";top:20px;background-position:-100px 0;}
-  .m_nav .th2{display:none;padding:15px 0; background-color:#f8f8f8;}
-  .m_nav .th2>li>a{padding:7px 0 7px 25px;font-size:1.8rem;font-weight:500; }
-  .m_nav .th2>li:last-child>a{border-bottom:none;}
-
-  .m_nav .th2>li.under>a:after{content:"";position:absolute;top:19px;right:16px;width:18px;height:11px;background:url('/mental_health_portfolio/images/contents/m_bul_all.png') no-repeat -150px 0;}
-  .m_nav .th2>li.under>a.active:after{background-position:-100px 0;}
-  .m_nav .th3{display:none;padding:0 0 0px 30px;background-color:#545760;}
-  .m_nav .th3>li>a{padding:8px 0 8px 10px;color:#fff;}
-  .m_nav .th3>li>a:before{content:"";position:absolute;top:18px;left:0px;width:3px;height:3px;background:url('/mental_health_portfolio/images/contents/m_bul_all.png') no-repeat -200px 0;}
-
-  #shadow_device{z-index:997;display:none;position:fixed;top:0;left:0;width:100%;height:100%;background: rgba(0, 0, 0, 0.7);}
-  .m_nav_clo{z-index:999;display:block;position:fixed;content:"";width:50px; height:51px;top:0px; left:250px;background:#c8c8c8 url('/mental_health_portfolio/images/contents/m_gnb_clo.png') no-repeat center center;}
-
-  /* 모바??Top */
-  .btn_top{display:block;position:fixed;z-index:990;right:20px;bottom:80px;padding-top:25px;}
-  .btn_top > a{display:block;padding-top:10px;width:56px;height:56px;text-align:center;font-size:1.2rem;color:#fff !important;border-radius:50%;background-color:rgba(0,0,0,.7);}
-  .btn_top > a:before{content:'';display:block;margin:0 auto 5px auto;width:15px;height:14px;background:url('/mental_health_portfolio/images/contents/m_ico_all.png') no-repeat -300px 0px;}
-
-  /* 메인?�업 */
-  .noti_pop{left:10% !important;width:80% !important; height:auto !important; padding-bottom:50px;}
-  .noti_pop .pop_bottom{height:50px;}
-
-}
-
-@media screen and (max-width:720px){
-}
-
-@media screen and (max-width:650px){
-}
-
-@media screen and (max-width:600px){
-
-  /* 메인?�업 */
-  .noti_pop{left:5% !important;width:90% !important;}
-
-}
-
-/* === Mobile === */
-@media screen and (max-width:480px){
-
-  /* Nav */
-  .m_nav #gnb{width:calc(100% - 50px)}
-  .m_nav .close{left:calc(100% - 100px);}
-
-}
-
-.gnb_area a {
-	word-break: keep-all !important;
-}
-
-/* Close Button Animation */
-.all_menu_area .btn_all_clo a svg {
-    width: 32px;
-    height: 32px;
-}
-
-.all_menu_area .btn_all_clo svg rect,
-.all_menu_area .btn_all_clo svg line {
-    transition: all 0.1s; /* Add a small transition for reset */
-}
-
-.all_menu_area .btn_all_clo svg rect {
-    stroke-dasharray: 88;
-    stroke-dashoffset: 88;
-}
-.all_menu_area .btn_all_clo svg line {
-    stroke-dasharray: 17;
-    stroke-dashoffset: 17;
-}
-
-@keyframes draw-border {
-    to { stroke-dashoffset: 0; }
-}
-@keyframes draw-x {
-    to { stroke-dashoffset: 0; }
-}
-
-.all_menu_area .btn_all_clo.animating svg rect {
-    animation: draw-border 0.5s forwards;
-}
-.all_menu_area .btn_all_clo.animating svg line {
-    animation: draw-x 0.5s forwards 0.3s;
-}
 
 #con_wrap:focus {
   outline: none;
 }
 
-/* 2020-11-30 추�? */
+/* 2020-11-30 추가 */
 .pc {
   display: block;
 }
@@ -1240,7 +1303,7 @@ a.btn_l {
   color: #fff;
   background-color: #0e3799;
 }
-/* 2020-12-07 추�? */
+/* 2020-12-07 추가 */
 .btn_orange {
   color: #fff;
   background-color: #0e3799;
@@ -1269,7 +1332,7 @@ a.btn_l {
   margin: 2px 6px 2px 0;
   outline: none;
   border: 1px solid #e8e8e8;
-  box-sizing: border-box; /*background:#fff url('/mental_health_portfolio/images/contents/bullet_disease_part_on.png') no-repeat right center;*/
+  box-sizing: border-box; /*background:#fff url('../images/contents/bullet_disease_part_on.png') no-repeat right center;*/
   vertical-align: middle;
   transition: all ease 0.3s;
 }
@@ -1481,7 +1544,7 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: #f8f8f8 url("/mental_health_portfolio/images/contents/ico_select.png") no-repeat right 15px center;
+  background: #f8f8f8 url("../images/contents/ico_select.png") no-repeat right 15px center;
 }
 select::-ms-expand {
   display: none;
@@ -1575,7 +1638,7 @@ textarea {
   line-height: 1.5em;
 } /* 05.12 */
 
-/* ?�단 공통박스 */
+/* 상단 공통박스 */
 .top_box {
   display: table;
   table-layout: fixed;
@@ -1596,10 +1659,10 @@ textarea {
 .top_box.symp > p {
   padding-left: 75px;
   height: 56px;
-  background: url("/mental_health_portfolio/images/contents/symp_img.png") no-repeat 0 center;
+  background: url("../images/contents/symp_img.png") no-repeat 0 center;
 }
 .top_box.medi_info {
-  background: #f9f9f9 url("/mental_health_portfolio/images/contents/ico_noti.png") no-repeat 35px 25px;
+  background: #f9f9f9 url("../images/contents/ico_noti.png") no-repeat 35px 25px;
 }
 
 .top_box.medi_info:after {
@@ -1638,12 +1701,12 @@ textarea {
 .top_box.medi_info .btn_posi {
   margin-left: 50px;
 }
-/* 2020-11-30 추�? */
+/* 2020-11-30 추가 */
 .top_box.medi_info.renew2012 {
   padding: 0;
   border: 0;
   margin-bottom: 0px;
-  background: url("/mental_health_portfolio/images/contents/ico_noti.png") no-repeat 0px 1px;
+  background: url("../images/contents/ico_noti.png") no-repeat 0px 1px;
 }
 .top_box.medi_info.renew2012.mb15 {
   margin-bottom: 15px;
@@ -1665,7 +1728,7 @@ textarea {
   padding: 4px 0 4px 40px;
   border: 0;
   margin: 0 0 50px 0;
-  background: url("/mental_health_portfolio/images/contents/ico_notice.png") no-repeat left top;
+  background: url("../images/contents/ico_notice.png") no-repeat left top;
 }
 .top_box.renew2012 > p {
   font-size: 1.5rem;
@@ -1678,7 +1741,7 @@ textarea {
   margin: 40px 0 0;
 }
 
-/* tbl ?�단 검??*/
+/* tbl 상단 검색 */
 .tbl_sch {
   margin-bottom: 15px;
   display: table;
@@ -1733,16 +1796,16 @@ textarea {
   border: none;
 }
 
-/* ?�단 검???�정 */
+/* 상단 검색 수정 */
 .ico_sch {
   margin-left: -5px;
 }
 .ico_sch input {
-  background: url("/mental_health_portfolio/images/contents/btn_sch_b.png") #f8f8f8 no-repeat center center;
+  background: url("../images/contents/btn_sch_b.png") #f8f8f8 no-repeat center center;
   font-size: 0;
 }
 
-/* faq ?�단 검??*/
+/* faq 상단 검색 */
 .tbl_sch.faq {
   margin-bottom: 20px;
   display: table;
@@ -1804,8 +1867,8 @@ textarea {
   line-height: 40px;
 }
 
-/* 2020-11-30 추�? */
-/* .paging li a.on, .paging li a:hover{color:#fff;border:1px solid #54575f;background-color:#54575f;} ??�� */
+/* 2020-11-30 추가 */
+/* .paging li a.on, .paging li a:hover{color:#fff;border:1px solid #54575f;background-color:#54575f;} 삭제 */
 .paging li a.on,
 .paging li a:hover {
   color: #00349d;
@@ -1813,16 +1876,16 @@ textarea {
 }
 
 .paging li a.first {
-  background: url("/mental_health_portfolio/images/contents/btn_first.png") no-repeat center center;
+  background: url("../images/contents/btn_first.png") no-repeat center center;
 }
 .paging li a.prev {
-  background: url("/mental_health_portfolio/images/contents/btn_prev.png") no-repeat center center;
+  background: url("../images/contents/btn_prev.png") no-repeat center center;
 }
 .paging li a.next {
-  background: url("/mental_health_portfolio/images/contents/btn_next.png") no-repeat center center;
+  background: url("../images/contents/btn_next.png") no-repeat center center;
 }
 .paging li a.last {
-  background: url("/mental_health_portfolio/images/contents/btn_end.png") no-repeat center center;
+  background: url("../images/contents/btn_end.png") no-repeat center center;
 }
 
 /* 3X2 */
@@ -1834,7 +1897,7 @@ textarea {
 }
 .in_box > li > a:focus {
   border: 1px solid #222;
-} /* ?�접근성 webaccess_pub 컬럼 ?��? ?�보???�커??*/
+} /* 웹접근성 webaccess_pub 컬럼 내부 키보드 포커스 */
 .gallery {
   margin-bottom: 25px;
   padding-top: 30px;
@@ -1910,7 +1973,7 @@ textarea {
   font-size: 2rem;
 }
 
-/* 2020-11-30 추�? */
+/* 2020-11-30 추가 */
 .gallery.event {
   margin-bottom: 40px;
   padding-top: 0px;
@@ -1936,7 +1999,7 @@ textarea {
   font-weight: 400;
 }
 
-/* ?�영??*/
+/* 동영상 */
 .gallery.movie .box:after {
   content: "";
   display: block;
@@ -1960,7 +2023,7 @@ textarea {
   margin-right: 0;
 }
 
-/* ?��????�는 ?�보 */
+/* 도움이 되는 정보 */
 .gallery.four.help .box .in_box {
   border-radius: 20px;
 }
@@ -1968,7 +2031,7 @@ textarea {
   text-align: center;
 }
 
-/* ?�계 */
+/* 통계 */
 .gallery.four.state .box:focus {
   border: 1px solid #ccc;
   outline: none;
@@ -2145,7 +2208,7 @@ textarea {
   width: 16px;
   height: 16px;
   vertical-align: middle;
-  background: url("/mental_health_portfolio/images/contents/bul_all.png") no-repeat 0 -100px;
+  background: url("../images/contents/bul_all.png") no-repeat 0 -100px;
 }
 
 .img_list.drug > li {
@@ -2194,7 +2257,7 @@ textarea {
   height: 100%;
 }
 
-/* 2020-12-24 추�? */
+/* 2020-12-24 추가 */
 .img_list.drug.renew2012 {
   margin-bottom: 0;
 }
@@ -2228,7 +2291,7 @@ textarea {
   top: 5px;
   width: 14px;
   height: 17px;
-  background: url("/mental_health_portfolio/images/contents/ico_info.png") no-repeat 0 0;
+  background: url("../images/contents/ico_info.png") no-repeat 0 0;
 }
 .medi-infoArea .mi-link {
   float: right;
@@ -2253,7 +2316,7 @@ textarea {
   text-underline-position: under;
 }
 
-/* img_list ?�세 ?�보�?list */
+/* img_list 상세 더보기 list */
 .img_list_more:after {
   content: "";
   display: block;
@@ -2310,7 +2373,7 @@ textarea {
   line-height: 1.5em;
 }
 
-/* 공공?�리 */
+/* 공공누리 */
 .open {
   display: flex;
   justify-content: space-between;
@@ -2333,7 +2396,7 @@ textarea {
   font-weight: 500;
 }
 
-/* 첨�??�일 */
+/* 첨부파일 */
 .file_down {
   margin-bottom: 10px;
   padding-top: 10px;
@@ -2353,7 +2416,7 @@ textarea {
   width: 22px;
   height: 21px;
   vertical-align: middle;
-  background: url("/mental_health_portfolio/images/contents/ico_all.png") no-repeat -450px -100px;
+  background: url("../images/contents/ico_all.png") no-repeat -450px -100px;
 }
 
 /* 바로보기 */
@@ -2392,7 +2455,7 @@ textarea {
   color: #fff;
 }
 
-/* ?�전글, ?�음글 */
+/* 이전글, 다음글 */
 .list_info {
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
@@ -2452,7 +2515,7 @@ textarea {
   padding-left: 20px;
 }
 
-/* ?�세 */
+/* 싱세 */
 .tbl_tit.ans_tit {
   margin-top: 40px;
   border-top: 1px solid #000;
@@ -2503,7 +2566,7 @@ textarea {
   height: auto !important;
 }
 
-/* 2020-12-07 추�? */
+/* 2020-12-07 추가 */
 .board_con .completionDate {
   position: relative;
   width: 142px;
@@ -2527,7 +2590,7 @@ textarea {
   transform: rotate(45deg);
 }
 
-/* ?�문조사 ?�세 2020-11-30 추�? */
+/* 설문조사 싱세 2020-11-30 추가 */
 .research_detail {
   overflow: hidden;
   margin-bottom: 20px;
@@ -2632,7 +2695,7 @@ textarea {
   margin-bottom: 40px;
 }
 
-/* ?�막 */
+/* 자막 */
 .subtitles {
   margin-bottom: 50px;
   border: 1px solid #e8e8e8;
@@ -2649,7 +2712,7 @@ textarea {
   line-height: 1.5em;
 }
 
-/* tab ?�자??*/
+/* tab 디자인 */
 .tab_page {
   margin-bottom: 60px;
 }
@@ -2725,7 +2788,7 @@ textarea {
   width: 20%;
 }
 
-/* 추�? ??*/
+/* 추가 탭 */
 .tab_sub {
   text-align: center;
   margin-bottom: 40px;
@@ -2749,7 +2812,7 @@ textarea {
   font-weight: 500;
 }
 
-/* ?��? */
+/* 토글 */
 .accordi > li {
   margin: 15px 0;
 }
@@ -2817,17 +2880,17 @@ textarea {
   width: 15px;
   height: 7px;
   vertical-align: middle;
-  background: url("/mental_health_portfolio/images/contents/bul_all.png") no-repeat -250px -50px;
+  background: url("../images/contents/bul_all.png") no-repeat -250px -50px;
   filter: invert(1);
 }
 .open_all.on:before {
-  content: "모두 ?�기";
+  content: "모두 닫기";
 }
 .open_all.on:after {
-  background: url("/mental_health_portfolio/images/contents/bul_all.png") no-repeat -200px -50px;
+  background: url("../images/contents/bul_all.png") no-repeat -200px -50px;
 }
 
-/* 2020-11-30 추�? */
+/* 2020-11-30 추가 */
 .accordi.faq {
   margin-bottom: 50px;
   border-top: 2px solid #333;
@@ -2887,7 +2950,7 @@ textarea {
   height: 29px;
   margin: 0 auto;
   vertical-align: middle;
-  background: url("/mental_health_portfolio/images/contents/bul_all.png") no-repeat -177px -95px;
+  background: url("../images/contents/bul_all.png") no-repeat -177px -95px;
 }
 .accordi.faq > li .tit > a > .faq-keyword {
   width: 13.714285%;
@@ -2949,8 +3012,8 @@ textarea {
   width: 66.714285%;
 }
 
-/* 2020-12-21 추�? */
-/* ?�개?�림 - ?�사�?*/
+/* 2020-12-21 추가 */
+/* 소개알림 - 인사말 */
 .greeting-wr {
   display: flex;
   justify-content: space-between;
@@ -2978,7 +3041,7 @@ textarea {
 .greeting-box {
   position: relative;
   width: 62%;
-  background: url("/mental_health_portfolio/images/contents/greeting_bg.png") no-repeat top right;
+  background: url("../images/contents/greeting_bg.png") no-repeat top right;
 }
 .greeting-box .gree-tit {
   text-align: left;
@@ -3040,7 +3103,7 @@ textarea {
   top: 0;
 }
 
-/* ?�개?�림 - ?�털?�개 */
+/* 소개알림 - 포털소개 */
 .portal-line {
   text-align: center;
 }
@@ -3128,7 +3191,7 @@ textarea {
   width: 100%;
   margin: 0 auto;
   padding-top: 80px;
-  background: url("/mental_health_portfolio/images/contents/bg_portal_arrow_top.png") no-repeat center bottom;
+  background: url("../images/contents/bg_portal_arrow_top.png") no-repeat center bottom;
   background: #f1f8ff;
   padding: 7%;
 }
@@ -3200,9 +3263,9 @@ textarea {
   max-width: 636px;
 }
 
-/* ?�개?�림 - 공정 */
+/* 소개알림 - 공정 */
 .self_boxTop.process > div {
-  background: #fff url("/mental_health_portfolio/images/contents/process_icon01.png") no-repeat 50px center;
+  background: #fff url("../images/contents/process_icon01.png") no-repeat 50px center;
 }
 .self_boxTop.process > div .con .pointColor {
   font-style: normal;
@@ -3358,40 +3421,40 @@ textarea {
   margin-right: 20px;
 }
 .prosess-flowChart ul li > div .icon-graph.typeA {
-  background: url("/mental_health_portfolio/images/contents/icon_prosess_typeA.png") no-repeat left bottom;
+  background: url("../images/contents/icon_prosess_typeA.png") no-repeat left bottom;
 }
 .prosess-flowChart ul li > div .icon-graph.typeB {
-  background: url("/mental_health_portfolio/images/contents/icon_prosess_typeB.png") no-repeat left bottom;
+  background: url("../images/contents/icon_prosess_typeB.png") no-repeat left bottom;
 }
 .prosess-flowChart ul li > div .icon-graph.typeC {
-  background: url("/mental_health_portfolio/images/contents/icon_prosess_typeC.png") no-repeat left bottom;
+  background: url("../images/contents/icon_prosess_typeC.png") no-repeat left bottom;
 }
 .prosess-flowChart ul li > div .icon-graph.typeD {
-  background: url("/mental_health_portfolio/images/contents/icon_prosess_typeD.png") no-repeat left bottom;
+  background: url("../images/contents/icon_prosess_typeD.png") no-repeat left bottom;
 }
 .prosess-flowChart ul li > div .icon-graph.typeE {
-  background: url("/mental_health_portfolio/images/contents/icon_prosess_typeE.png") no-repeat left bottom;
+  background: url("../images/contents/icon_prosess_typeE.png") no-repeat left bottom;
 }
 .prosess-flowChart ul li > div .icon-graph.typeF {
-  background: url("/mental_health_portfolio/images/contents/icon_prosess_typeF.png") no-repeat left bottom;
+  background: url("../images/contents/icon_prosess_typeF.png") no-repeat left bottom;
 }
 .prosess-flowChart ul li > div .icon-graph.typeG {
-  background: url("/mental_health_portfolio/images/contents/icon_prosess_typeG.png") no-repeat left bottom;
+  background: url("../images/contents/icon_prosess_typeG.png") no-repeat left bottom;
 }
 .prosess-flowChart ul li > div .icon-graph.typeH {
-  background: url("/mental_health_portfolio/images/contents/icon_prosess_typeH.png") no-repeat left bottom;
+  background: url("../images/contents/icon_prosess_typeH.png") no-repeat left bottom;
 }
 .prosess-flowChart ul li > div .icon-graph.typeI {
-  background: url("/mental_health_portfolio/images/contents/icon_prosess_typeI.png") no-repeat left bottom;
+  background: url("../images/contents/icon_prosess_typeI.png") no-repeat left bottom;
 }
 .prosess-flowChart ul li > div .icon-graph.typeJ {
-  background: url("/mental_health_portfolio/images/contents/icon_prosess_typeJ.png") no-repeat left bottom;
+  background: url("../images/contents/icon_prosess_typeJ.png") no-repeat left bottom;
 }
 .prosess-flowChart ul li > div .icon-graph.typeK {
-  background: url("/mental_health_portfolio/images/contents/icon_prosess_typeK.png") no-repeat left bottom;
+  background: url("../images/contents/icon_prosess_typeK.png") no-repeat left bottom;
 }
 .prosess-flowChart ul li > div .icon-graph.typeL {
-  background: url("/mental_health_portfolio/images/contents/icon_prosess_typeL.png") no-repeat left bottom;
+  background: url("../images/contents/icon_prosess_typeL.png") no-repeat left bottom;
 }
 .prosess-flowChart ul li > div .ig-tit {
   display: inline-block;
@@ -3439,7 +3502,7 @@ textarea {
   top: 9px;
 }
 
-/* ?�개?�림 - ?�용?�내 */
+/* 소개알림 - 이용안내 */
 .info-txtArea {
   position: relative;
   width: 100%;
@@ -3550,7 +3613,7 @@ textarea {
   top: 0;
   width: 29px;
   height: 29px;
-  background: url("/mental_health_portfolio/images/contents/bul_all.png") no-repeat 0 -206px;
+  background: url("../images/contents/bul_all.png") no-repeat 0 -206px;
   vertical-align: middle;
 }
 .info-qnaArea dl dd {
@@ -3562,7 +3625,7 @@ textarea {
   background-color: #f4f7f9;
 }
 
-/* ?�명글 */
+/* 설명글 */
 .info_txt {
   margin-bottom: 20px;
   padding: 4px 0 4px 35px;
@@ -3570,10 +3633,10 @@ textarea {
   font-size: 1.6rem;
   line-height: 1.5em;
   vertical-align: middle;
-  background: url("/mental_health_portfolio/images/contents/ico_notice.png") no-repeat left top 2px;
+  background: url("../images/contents/ico_notice.png") no-repeat left top 2px;
 }
 
-/* ?�치검??*/
+/* 위치검색 */
 .lineT.calen_date {
   margin-bottom: 20px;
 }
@@ -3603,7 +3666,7 @@ textarea {
   font-size: 1.8rem;
   font-weight: 600;
 }
-/* 2020-11-30 추�? */
+/* 2020-11-30 추가 */
 .lineT.new201210 tr {
   border-bottom: 1px solid #e8e8e8;
 }
@@ -3746,11 +3809,11 @@ textarea {
   padding: 7px 10px 7px 30px;
   font-size: 1.4rem;
   border: 1px solid #333;
-  background: #fff url("/mental_health_portfolio/images/contents/bul_posi.png") no-repeat left 10px center;
+  background: #fff url("../images/contents/bul_posi.png") no-repeat left 10px center;
   border-radius: 4px;
 }
 
-/* ?��?기�? */
+/* 유관기관 */
 .orga_list {
   margin-bottom: 60px;
   padding-bottom: 40px;
@@ -3821,7 +3884,7 @@ textarea {
   margin-top: 15%;
 }
 
-/* ?�애주기�??��?검�?2020-12-07 ?�정 */
+/* 생애주기별 자가검진 2020-12-07 수정 */
 .self_exam {
   position: relative;
   margin: 0 auto;
@@ -3864,13 +3927,13 @@ textarea {
   background-size: contain !important;
 }
 .self_exam > li:nth-child(1) dl {
-  background: url("/mental_health_portfolio/images/contents/life_cycle_card01.png") no-repeat center bottom;
+  background: url("../images/contents/life_cycle_card01.png") no-repeat center bottom;
 }
 .self_exam > li:nth-child(2) dl {
-  background: url("/mental_health_portfolio/images/contents/life_cycle_card02.png") no-repeat center bottom;
+  background: url("../images/contents/life_cycle_card02.png") no-repeat center bottom;
 }
 .self_exam > li:nth-child(3) dl {
-  background: url("/mental_health_portfolio/images/contents/life_cycle_card03.png") no-repeat center bottom;
+  background: url("../images/contents/life_cycle_card03.png") no-repeat center bottom;
 }
 .self_exam > li dl dt,
 .self_exam > li dl dd {
@@ -3911,7 +3974,7 @@ textarea {
   border: 6px solid #f6f6f6;
   padding: 50px 20px 50px 200px;
   margin: 0 auto 50px;
-  background: #fff url("/mental_health_portfolio/images/contents/self_child.png") no-repeat 50px center;
+  background: #fff url("../images/contents/self_child.png") no-repeat 50px center;
 }
 .self_boxTop > div:before {
   content: "";
@@ -3920,7 +3983,7 @@ textarea {
   position: absolute;
   left: -6px;
   top: -6px;
-  background: url("/mental_health_portfolio/images/contents/subTitl_line_left.png") no-repeat left top;
+  background: url("../images/contents/subTitl_line_left.png") no-repeat left top;
 }
 .self_boxTop > div:after {
   content: "";
@@ -3929,7 +3992,7 @@ textarea {
   position: absolute;
   right: -6px;
   bottom: -6px;
-  background: url("/mental_health_portfolio/images/contents/subTitl_line_right.png") no-repeat right bottom;
+  background: url("../images/contents/subTitl_line_right.png") no-repeat right bottom;
 }
 
 .self_boxTop.noBoard {
@@ -3971,30 +4034,30 @@ textarea {
 }
 
 .self_boxTop.teen > div {
-  background-image: url("/mental_health_portfolio/images/contents/self_teen.png");
+  background-image: url("../images/contents/self_teen.png");
 }
 .self_boxTop.adult > div {
-  background-image: url("/mental_health_portfolio/images/contents/self_adult.png");
+  background-image: url("../images/contents/self_adult.png");
 }
 .self_boxTop.checkup > div {
-  background-image: url("/mental_health_portfolio/images/contents/self_icon01.png");
+  background-image: url("../images/contents/self_icon01.png");
 }
 .self_boxTop.checkup .btn_posi {
   display: inline-block;
   margin-top: 20px;
 }
 .self_boxTop.online > div {
-  background-image: url("/mental_health_portfolio/images/contents/online.png");
+  background-image: url("../images/contents/online.png");
 }
 .self_boxTop.screen_test > div {
-  background-image: url("/mental_health_portfolio/images/contents/self_icon01.png");
+  background-image: url("../images/contents/self_icon01.png");
 }
-/* 2020-11-30 추�? */
+/* 2020-11-30 추가 */
 .self_boxTop.faq {
   min-height: 157px;
 }
 .self_boxTop.faq > div {
-  background: #fff url("/mental_health_portfolio/images/contents/self_boxTop_faq.png") no-repeat 50px center;
+  background: #fff url("../images/contents/self_boxTop_faq.png") no-repeat 50px center;
 }
 
 .self_boxBottom.faq {
@@ -4008,7 +4071,7 @@ textarea {
   height: auto;
   padding: 19px 40px 19px 120px;
   border: 1px solid #a3b4c4;
-  background: #f4f7f9 url("/mental_health_portfolio/images/contents/self_mail.png") no-repeat 40px center;
+  background: #f4f7f9 url("../images/contents/self_mail.png") no-repeat 40px center;
 }
 .self_boxBottom.faq > div {
   display: table-cell;
@@ -4032,18 +4095,18 @@ textarea {
 }
 
 .self_boxTop.recover > div {
-  background-image: url("/mental_health_portfolio/images/contents/recover_icon01.png");
+  background-image: url("../images/contents/recover_icon01.png");
 }
 .self_boxTop.recover > div .tit {
   margin-bottom: 0;
 }
-/* 2020-11-30 ?�정 */
+/* 2020-11-30 수정 */
 .self_boxTop.disease_txt {
   min-height: 157px;
 }
 .self_boxTop.disease_txt > div {
   padding-left: 360px;
-  background: #fff url("/mental_health_portfolio/images/contents/disease_img_inverse.png") no-repeat 50px center;
+  background: #fff url("../images/contents/disease_img_inverse.png") no-repeat 50px center;
 }
 .self_boxTop.disease_txt > div .tit {
   margin-top: 20px;
@@ -4053,7 +4116,7 @@ textarea {
 }
 
 .self_boxTop.drug_img > div {
-  background-image: url("/mental_health_portfolio/images/contents/drug_icon01.png");
+  background-image: url("../images/contents/drug_icon01.png");
 }
 .self_boxTop.drug_img .tit {
   margin-bottom: 0;
@@ -4147,76 +4210,76 @@ textarea {
   background-position: center 40px;
 }
 
-/* �?��??*/
+/* 청소년 */
 .self_list .con ul > li:nth-child(1) > a > div {
-  background-image: url("/mental_health_portfolio/images/contents/gloom.png");
+  background-image: url("../images/contents/gloom.png");
 }
 .self_list .con ul > li:nth-child(2) > a > div {
-  background-image: url("/mental_health_portfolio/images/contents/defect.png");
+  background-image: url("../images/contents/defect.png");
 }
 .self_list .con ul > li:nth-child(3) > a > div {
-  background-image: url("/mental_health_portfolio/images/contents/suicide.png");
+  background-image: url("../images/contents/suicide.png");
 }
 .self_list .con ul > li:nth-child(4) > a > div {
-  background-image: url("/mental_health_portfolio/images/contents/internet.png");
+  background-image: url("../images/contents/internet.png");
 }
 .self_list .con ul > li:nth-child(5) > a > div {
-  background-image: url("/mental_health_portfolio/images/contents/game.png");
+  background-image: url("../images/contents/game.png");
 }
 .self_list .con ul > li:nth-child(6) > a > div {
-  background-image: url("/mental_health_portfolio/images/contents/phone.png");
+  background-image: url("../images/contents/phone.png");
 }
 
-/* ?�동 */
+/* 아동 */
 .self_list.child .con ul > li:nth-child(1) > a > div {
-  background-image: url("/mental_health_portfolio/images/contents/adhd.png");
+  background-image: url("../images/contents/adhd.png");
 }
 
-/* ?�인 */
+/* 성인 */
 .self_list.adult .con ul > li:nth-child(1) > a > div {
-  background-image: url("/mental_health_portfolio/images/contents/gloom.png");
+  background-image: url("../images/contents/gloom.png");
 }
 .self_list.adult .con ul > li:nth-child(2) > a > div {
-  background-image: url("/mental_health_portfolio/images/contents/aged.png");
+  background-image: url("../images/contents/aged.png");
 }
 .self_list.adult .con ul > li:nth-child(3) > a > div {
-  background-image: url("/mental_health_portfolio/images/contents/bipolar.png");
+  background-image: url("../images/contents/bipolar.png");
 }
 .self_list.adult .con ul > li:nth-child(4) > a > div {
-  background-image: url("/mental_health_portfolio/images/contents/panic.png");
+  background-image: url("../images/contents/panic.png");
 }
 .self_list.adult .con ul > li:nth-child(5) > a > div {
-  background-image: url("/mental_health_portfolio/images/contents/disorder.png");
+  background-image: url("../images/contents/disorder.png");
 }
 .self_list.adult .con ul > li:nth-child(6) > a > div {
-  background-image: url("/mental_health_portfolio/images/contents/stress.png");
+  background-image: url("../images/contents/stress.png");
 }
 .self_list.adult .con ul > li:nth-child(7) > a > div {
-  background-image: url("/mental_health_portfolio/images/contents/defect.png");
+  background-image: url("../images/contents/defect.png");
 }
 .self_list.adult .con ul > li:nth-child(8) > a > div {
-  background-image: url("/mental_health_portfolio/images/contents/insomnia.png");
+  background-image: url("../images/contents/insomnia.png");
 }
 .self_list.adult .con ul > li:nth-child(9) > a > div {
-  background-image: url("/mental_health_portfolio/images/contents/cognitive.png");
+  background-image: url("../images/contents/cognitive.png");
 }
 .self_list.adult .con ul > li:nth-child(10) > a > div {
-  background-image: url("/mental_health_portfolio/images/contents/obessive.png");
+  background-image: url("../images/contents/obessive.png");
 }
 .self_list.adult .con ul > li:nth-child(11) > a > div {
-  background-image: url("/mental_health_portfolio/images/contents/alcohol.png");
+  background-image: url("../images/contents/alcohol.png");
 }
 .self_list.adult .con ul > li:nth-child(12) > a > div {
-  background-image: url("/mental_health_portfolio/images/contents/suicide.png");
+  background-image: url("../images/contents/suicide.png");
 }
 .self_list.adult .con ul > li:nth-child(13) > a > div {
-  background-image: url("/mental_health_portfolio/images/contents/internet.png");
+  background-image: url("../images/contents/internet.png");
 }
 .self_list.adult .con ul > li:nth-child(14) > a > div {
-  background-image: url("/mental_health_portfolio/images/contents/game.png");
+  background-image: url("../images/contents/game.png");
 }
 .self_list.adult .con ul > li:nth-child(15) > a > div {
-  background-image: url("/mental_health_portfolio/images/contents/phone.png");
+  background-image: url("../images/contents/phone.png");
 }
 
 .self_list > li .on,
@@ -4230,7 +4293,7 @@ textarea {
   display: none;
 }
 
-/* 질환�??��?검�?*/
+/* 질환별 자가검진 */
 .self_checkInfo {
   margin-bottom: 10px;
   display: table;
@@ -4326,25 +4389,25 @@ textarea {
   text-decoration: underline;
   text-underline-position: under;
 }
-/* .self_checkLsit > li:nth-child(1) .thumb{background-image:url('/mental_health_portfolio/images/contents/self_thumb01.jpg');}
-.self_checkLsit > li:nth-child(2) .thumb{background-image:url('/mental_health_portfolio/images/contents/self_thumb02.jpg');}
-.self_checkLsit > li:nth-child(3) .thumb{background-image:url('/mental_health_portfolio/images/contents/self_thumb03.jpg');}
-.self_checkLsit > li:nth-child(4) .thumb{background-image:url('/mental_health_portfolio/images/contents/self_thumb04.jpg');}
-.self_checkLsit > li:nth-child(5) .thumb{background-image:url('/mental_health_portfolio/images/contents/self_thumb05.jpg');}
-.self_checkLsit > li:nth-child(6) .thumb{background-image:url('/mental_health_portfolio/images/contents/self_thumb06.jpg');}
-.self_checkLsit > li:nth-child(7) .thumb{background-image:url('/mental_health_portfolio/images/contents/self_thumb07.jpg');}
-.self_checkLsit > li:nth-child(8) .thumb{background-image:url('/mental_health_portfolio/images/contents/self_thumb08.jpg');}
-.self_checkLsit > li:nth-child(9) .thumb{background-image:url('/mental_health_portfolio/images/contents/self_thumb09.jpg');}
-.self_checkLsit > li:nth-child(10) .thumb{background-image:url('/mental_health_portfolio/images/contents/self_thumb10.jpg');}
-.self_checkLsit > li:nth-child(11) .thumb{background-image:url('/mental_health_portfolio/images/contents/self_thumb11.jpg');}
-.self_checkLsit > li:nth-child(12) .thumb{background-image:url('/mental_health_portfolio/images/contents/self_thumb12.jpg');}
-.self_checkLsit > li:nth-child(13) .thumb{background-image:url('/mental_health_portfolio/images/contents/self_thumb13.jpg');}
-.self_checkLsit > li:nth-child(14) .thumb{background-image:url('/mental_health_portfolio/images/contents/self_thumb14.jpg');}
-.self_checkLsit > li:nth-child(15) .thumb{background-image:url('/mental_health_portfolio/images/contents/self_thumb15.jpg');}
-.self_checkLsit > li:nth-child(16) .thumb{background-image:url('/mental_health_portfolio/images/contents/self_thumb16.jpg');}
-.self_checkLsit > li:nth-child(17) .thumb{background-image:url('/mental_health_portfolio/images/contents/self_thumb17.jpg');}
-.self_checkLsit > li:nth-child(18) .thumb{background-image:url('/mental_health_portfolio/images/contents/self_thumb18.jpg');}
-.self_checkLsit > li:nth-child(19) .thumb{background-image:url('/mental_health_portfolio/images/contents/self_thumb19.jpg');} */
+/* .self_checkLsit > li:nth-child(1) .thumb{background-image:url('../images/contents/self_thumb01.jpg');}
+.self_checkLsit > li:nth-child(2) .thumb{background-image:url('../images/contents/self_thumb02.jpg');}
+.self_checkLsit > li:nth-child(3) .thumb{background-image:url('../images/contents/self_thumb03.jpg');}
+.self_checkLsit > li:nth-child(4) .thumb{background-image:url('../images/contents/self_thumb04.jpg');}
+.self_checkLsit > li:nth-child(5) .thumb{background-image:url('../images/contents/self_thumb05.jpg');}
+.self_checkLsit > li:nth-child(6) .thumb{background-image:url('../images/contents/self_thumb06.jpg');}
+.self_checkLsit > li:nth-child(7) .thumb{background-image:url('../images/contents/self_thumb07.jpg');}
+.self_checkLsit > li:nth-child(8) .thumb{background-image:url('../images/contents/self_thumb08.jpg');}
+.self_checkLsit > li:nth-child(9) .thumb{background-image:url('../images/contents/self_thumb09.jpg');}
+.self_checkLsit > li:nth-child(10) .thumb{background-image:url('../images/contents/self_thumb10.jpg');}
+.self_checkLsit > li:nth-child(11) .thumb{background-image:url('../images/contents/self_thumb11.jpg');}
+.self_checkLsit > li:nth-child(12) .thumb{background-image:url('../images/contents/self_thumb12.jpg');}
+.self_checkLsit > li:nth-child(13) .thumb{background-image:url('../images/contents/self_thumb13.jpg');}
+.self_checkLsit > li:nth-child(14) .thumb{background-image:url('../images/contents/self_thumb14.jpg');}
+.self_checkLsit > li:nth-child(15) .thumb{background-image:url('../images/contents/self_thumb15.jpg');}
+.self_checkLsit > li:nth-child(16) .thumb{background-image:url('../images/contents/self_thumb16.jpg');}
+.self_checkLsit > li:nth-child(17) .thumb{background-image:url('../images/contents/self_thumb17.jpg');}
+.self_checkLsit > li:nth-child(18) .thumb{background-image:url('../images/contents/self_thumb18.jpg');}
+.self_checkLsit > li:nth-child(19) .thumb{background-image:url('../images/contents/self_thumb19.jpg');} */
 
 .self_ico {
   position: absolute;
@@ -4358,7 +4421,7 @@ textarea {
   display: none;
 }
 
-/* 질문 / ?��? */
+/* 질문 / 답변 */
 .self_que {
   margin-bottom: 20px;
   border: 1px solid #e8e8e8; /*border-bottom:none;*/
@@ -4392,7 +4455,7 @@ textarea {
   font-weight: bold;
 }
 
-/* 2020-11-30 추�? */
+/* 2020-11-30 추가 */
 .self_que > ol > li > span.bgf6f6f6 {
   background-color: #f6f6f6;
 }
@@ -4510,10 +4573,10 @@ textarea {
   width: 16px;
   height: 18px;
   vertical-align: middle;
-  background: url("/mental_health_portfolio/images/contents/ico_all.png") no-repeat -600px -550px;
+  background: url("../images/contents/ico_all.png") no-repeat -600px -550px;
 }
 
-/* ?��?검�?결과 */
+/* 자가검진 결과 */
 .self_result_txt {
   position: relative;
   margin-bottom: 100px;
@@ -4574,7 +4637,7 @@ textarea {
   border-top: 1px solid #e8e8e8;
   padding-top: 40px;
 }
-/* 2020-12-07 추�? */
+/* 2020-12-07 추가 */
 .self_result_txt .viewBanner {
   padding-top: 20px;
 }
@@ -4620,7 +4683,7 @@ textarea {
 .box_wrap > div > p {
   display: block;
   padding: 40px 50px 40px 200px;
-  background: url("/mental_health_portfolio/images/contents/self_icon02.png") no-repeat 45px 40px;
+  background: url("../images/contents/self_icon02.png") no-repeat 45px 40px;
 }
 .box_wrap > div > p strong {
   display: block;
@@ -4635,7 +4698,7 @@ textarea {
   color: #fff;
 }
 .box_wrap > div:nth-of-type(3) > p {
-  background-image: url("/mental_health_portfolio/images/contents/self_icon03.png");
+  background-image: url("../images/contents/self_icon03.png");
 }
 .box_wrap > div > p > span {
   display: block;
@@ -4683,7 +4746,7 @@ textarea {
   width: 43px;
   height: 5px;
   vertical-align: middle;
-  background: url("/mental_health_portfolio/images/contents/ico_all.png") no-repeat -150px -650px;
+  background: url("../images/contents/ico_all.png") no-repeat -150px -650px;
 }
 
 .result2_go > ul > li {
@@ -4712,7 +4775,7 @@ textarea {
   font-weight: 500;
 }
 
-/* 질환�??�보 */
+/* 질환별 정보 */
 .disease_part .part_two {
   display: none;
   border-top: none;
@@ -4755,14 +4818,14 @@ textarea {
   color: #0e3799;
 }
 
-/* 2020-11-30 추�? */
+/* 2020-11-30 추가 */
 .disease_part.faq {
   margin-bottom: 40px;
 }
 
 /*.disease_part > ul > li > a:after{content:'';position:absolute;top:13px;right:10px;}
 .disease_part > ul > li.bullet-hide > a:after{content:'';background: none;}
-.disease_part > ul > li.bullet-hide > a:hover:after{content:'';background: none;} ??��*/
+.disease_part > ul > li.bullet-hide > a:hover:after{content:'';background: none;} 삭제*/
 .disease_part > ul > li > a:after {
   content: "";
   position: absolute;
@@ -4784,7 +4847,7 @@ textarea {
   text-align: center;
   font-size: 0;
   line-height: 0;
-  background: url("/mental_health_portfolio/images/contents/disease_dot.png") repeat-x 0 center;
+  background: url("../images/contents/disease_dot.png") repeat-x 0 center;
   filter: grayscale(1) brightness(1.4);
 }
 .disease_part .all_open > a {
@@ -4794,10 +4857,10 @@ textarea {
   font-size: 0;
   line-height: 0;
   text-indent: -9999px;
-  background: url("/mental_health_portfolio/images/contents/btn_down.png") no-repeat 0 0;
+  background: url("../images/contents/btn_down.png") no-repeat 0 0;
 }
 .disease_part .all_open > a.on {
-  background: url("/mental_health_portfolio/images/contents/btn_up.png") no-repeat 0 0;
+  background: url("../images/contents/btn_up.png") no-repeat 0 0;
 }
 
 /* list */
@@ -4882,7 +4945,7 @@ textarea {
   width: calc(100% - 104px);
 }
 
-/* 2020-11-30 추�? */
+/* 2020-11-30 추가 */
 .boardT.research thead th {
   width: auto;
 }
@@ -5008,7 +5071,7 @@ textarea {
   margin: 0 auto 40px auto;
   width: 178px;
   height: 178px;
-  background: url("/mental_health_portfolio/images/contents/ico_all.png") no-repeat -400px -350px;
+  background: url("../images/contents/ico_all.png") no-repeat -400px -350px;
 }
 .pw_change > p {
   margin-bottom: 30px;
@@ -5022,7 +5085,7 @@ textarea {
   line-height: 0;
 }
 
-/* ?�원가??*/
+/* 회원가입 */
 .join_step {
   margin-bottom: 40px;
 }
@@ -5035,7 +5098,7 @@ textarea {
   float: left;
   width: 23.5%;
   margin-right: 2%;
-  background: url("/mental_health_portfolio/images/contents/join_bg.png") no-repeat right center;
+  background: url("../images/contents/join_bg.png") no-repeat right center;
 }
 .join_step > li:last-child {
   margin-right: 0;
@@ -5058,7 +5121,7 @@ textarea {
   font-style: italic;
 }
 .join_step > li.on {
-  background: url("/mental_health_portfolio/images/contents/join_bg_on.png") no-repeat right center;
+  background: url("../images/contents/join_bg_on.png") no-repeat right center;
 }
 .join_step > li.on > span {
   border: 1px solid #007cb7;
@@ -5089,7 +5152,7 @@ textarea {
   margin: 0 auto 30px auto;
   width: 178px;
   height: 178px;
-  background: url("/mental_health_portfolio/images/contents/ico_all.png") no-repeat -200px -150px;
+  background: url("../images/contents/ico_all.png") no-repeat -200px -150px;
 }
 .join_end p > span {
   display: block;
@@ -5112,10 +5175,10 @@ textarea {
   margin: 0 auto 30px auto;
   width: 178px;
   height: 178px;
-  background: url("/mental_health_portfolio/images/contents/ico_all.png") no-repeat -600px -150px;
+  background: url("../images/contents/ico_all.png") no-repeat -600px -150px;
 }
 
-/* 로그??*/
+/* 로그인 */
 .login {
   padding: 60px 0;
 }
@@ -5132,7 +5195,7 @@ textarea {
   margin: 0 auto 30px auto;
   width: 178px;
   height: 178px;
-  background: url("/mental_health_portfolio/images/contents/ico_all.png") no-repeat 0px -150px;
+  background: url("../images/contents/ico_all.png") no-repeat 0px -150px;
 }
 .login ul {
   margin: 0 85px 20px 0;
@@ -5178,7 +5241,7 @@ textarea {
   vertical-align: top;
 }
 
-/* ?�이?�맵 */
+/* 사이트맵 */
 .sitemap a {
   display: block;
 }
@@ -5197,7 +5260,7 @@ textarea {
 .sitemap > li {
   width: calc(100% / 4);
   border-left: 1px solid #ddd;
-} /*2022-12 ?�원종료(마이?�이지, ?�원관�??�음) :?�이?�맵 5x2->4x2 */
+} /*2022-12 회원종료(마이페이지, 회원관리 닫음) :사이트맵 5x2->4x2 */
 .sitemap > li > a {
   padding: 15px 0;
   text-align: center;
@@ -5243,7 +5306,7 @@ textarea {
 }
 /*.sitemap > li:nth-child(n+6){height:350px;}*/
 
-/* 만족??조사 */
+/* 만족도 조사 */
 .satis_survey {
   position: relative;
   margin: 0px auto 0;
@@ -5343,7 +5406,7 @@ textarea {
   width: 38px;
   height: 45px;
   margin: 25px auto 10px auto;
-  background: url("/mental_health_portfolio/images/contents/ico_all.png") no-repeat 0 -650px;
+  background: url("../images/contents/ico_all.png") no-repeat 0 -650px;
 }
 .quick > ul > li:nth-child(2) > a:before {
   width: 39px;
@@ -5382,7 +5445,7 @@ textarea {
   display: inline-block;
   padding-left: 220px;
   text-align: left;
-  background: url("/mental_health_portfolio/images/contents/error.png") no-repeat 0 center;
+  background: url("../images/contents/error.png") no-repeat 0 center;
 }
 .error .error_con > div p {
   line-height: 1.8em;
@@ -5403,7 +5466,7 @@ textarea {
   background: none;
 }
 
-/* ?�업 */
+/* 팝업 */
 .pop_top {
   position: relative;
   padding: 0 50px 0 20px;
@@ -5435,7 +5498,7 @@ textarea {
   display: inline-block;
   width: 21px;
   height: 20px;
-  background: url("/mental_health_portfolio/images/contents/ico_all.png") no-repeat -350px 0;
+  background: url("../images/contents/ico_all.png") no-repeat -350px 0;
 }
 
 .pop_con {
@@ -5460,7 +5523,7 @@ textarea {
   margin: 0 auto 20px auto;
   width: 178px;
   height: 178px;
-  background: url("/mental_health_portfolio/images/contents/ico_all.png") no-repeat -400px -150px;
+  background: url("../images/contents/ico_all.png") no-repeat -400px -150px;
 }
 
 .sch_pw_pop {
@@ -5473,7 +5536,7 @@ textarea {
   margin: 0 auto 20px auto;
   width: 178px;
   height: 178px;
-  background: url("/mental_health_portfolio/images/contents/ico_all.png") no-repeat 0px -350px;
+  background: url("../images/contents/ico_all.png") no-repeat 0px -350px;
 }
 .sch_pw_pop > span {
   display: block;
@@ -5491,14 +5554,14 @@ textarea {
   margin: 0 auto 20px auto;
   width: 178px;
   height: 178px;
-  background: url("/mental_health_portfolio/images/contents/ico_all.png") no-repeat -200px -350px;
+  background: url("../images/contents/ico_all.png") no-repeat -200px -350px;
 }
 .pw_change_pop > span {
   display: block;
   line-height: 1.5em;
 }
 
-/* ?�합검??*/
+/* 통합검색 */
 .intgra_schTop {
   margin-bottom: 40px;
   padding: 35px;
@@ -5521,7 +5584,7 @@ textarea {
   width: 50px;
   height: 50px;
   font-size: 0;
-  background: url("/mental_health_portfolio/images/contents/btn_sch.png") no-repeat center center;
+  background: url("../images/contents/btn_sch.png") no-repeat center center;
 }
 .intgra_schTop .sch_input select,
 .intgra_schTop .sch_input input[type="text"] {
@@ -5571,7 +5634,7 @@ textarea {
   margin-left: 5px;
   width: 17px;
   height: 8px;
-  background: url("/mental_health_portfolio/images/contents/bul_all.png") no-repeat -250px -50px;
+  background: url("../images/contents/bul_all.png") no-repeat -250px -50px;
 }
 .intgra_schTop .sch_btn.close_sch:after {
   background-position: -200px -50px;
@@ -5645,10 +5708,10 @@ textarea {
   display: block;
   width: 30px;
   height: 24px;
-  background: #fff url("/mental_health_portfolio/images/contents/btn_sel.png") no-repeat right center;
+  background: #fff url("../images/contents/btn_sel.png") no-repeat right center;
 }
 .sch_con .sch_date.on > a:after {
-  background: #fff url("/mental_health_portfolio/images/contents/btn_sel_up.png") no-repeat right center;
+  background: #fff url("../images/contents/btn_sel_up.png") no-repeat right center;
 }
 
 .sch_period {
@@ -5771,7 +5834,7 @@ textarea {
   margin-bottom: 25px;
 }
 .result_txt:before {
-  content: "??;
+  content: "▶";
   display: inline-block;
   margin-right: 5px;
 }
@@ -5922,7 +5985,7 @@ textarea {
   width: calc(100% - 150px);
 }
 
-/* 2020-12-07 추�? */
+/* 2020-12-07 추가 */
 .result.attach > ul > li .con_txt,
 .result > ul > li > em,
 .result.attach > ul > li > span,
@@ -6007,7 +6070,7 @@ textarea {
   margin-right: 5px;
 }
 
-/* ?�계 게시??*/
+/* 통계 게시판 */
 .chart_tit {
   padding-bottom: 10px;
   font-size: 1.8rem;
@@ -6029,7 +6092,7 @@ textarea {
 .txt_r .txt_l {
   text-align: left !important;
 }
-/* ?�영?�콘?�츠 YouTube iframe size */
+/* 동영상콘텐츠 YouTube iframe size */
 .board_con > .video-container {
   text-align: center;
 }
@@ -6070,7 +6133,7 @@ iframe {
   width: 25px;
   height: 24px;
   vertical-align: -5px;
-  background: url("/mental_health_portfolio/images/contents/bul_all.png") no-repeat -200px 0;
+  background: url("../images/contents/bul_all.png") no-repeat -200px 0;
 }
 
 .state_con .state_box {
@@ -6102,7 +6165,7 @@ iframe {
   width: 18px;
   height: 15px;
   vertical-align: middle;
-  background: url("/mental_health_portfolio/images/contents/bul_all.png") no-repeat -250px 0;
+  background: url("../images/contents/bul_all.png") no-repeat -250px 0;
 }
 .define .wid_same > dt,
 .define .wid_same > dd {
@@ -6119,11 +6182,11 @@ iframe {
   width: 18px;
   height: 15px;
   vertical-align: middle;
-  background: url("/mental_health_portfolio/images/contents/bul_all.png") no-repeat -250px 0;
+  background: url("../images/contents/bul_all.png") no-repeat -250px 0;
 }
 
 .define .list_sty2 > dt:before {
-  content: "??;
+  content: "▷";
   margin-right: 5px;
   display: inline-block;
   vertical-align: middle;
@@ -6269,7 +6332,7 @@ iframe {
   line-height: 183px;
   font-size: 3.5rem;
   text-align: center;
-  background: url("/mental_health_portfolio/images/contents/map_total.png") no-repeat 0 0;
+  background: url("../images/contents/map_total.png") no-repeat 0 0;
 }
 .state_map .total > div {
   padding-left: 25px;
@@ -6334,7 +6397,7 @@ iframe {
   width: 20px;
   height: 47px;
   vertical-align: top;
-  background: url("/mental_health_portfolio/images/contents/bul_all.png") no-repeat -60px -150px;
+  background: url("../images/contents/bul_all.png") no-repeat -60px -150px;
 }
 
 .state_map .total > div > ul > li:nth-child(2) > span:before {
@@ -6368,7 +6431,7 @@ iframe {
   width: 7px;
   height: 7px;
   vertical-align: 2px;
-  background: url("/mental_health_portfolio/images/contents/bul_all.png") no-repeat -150px -100px;
+  background: url("../images/contents/bul_all.png") no-repeat -150px -100px;
 }
 .state_map .total > div > ul > li > em > strong {
   display: inline-block;
@@ -6378,7 +6441,7 @@ iframe {
 
 .state_map .map_detail {
   position: relative;
-  background: url("/mental_health_portfolio/images/contents/map.png") no-repeat center 50px;
+  background: url("../images/contents/map.png") no-repeat center 50px;
 }
 .state_map .map_detail > ul {
   width: 285px;
@@ -6394,7 +6457,7 @@ iframe {
   margin-top: -10px;
   padding-left: 30px;
   font-size: 2rem;
-  background: url("/mental_health_portfolio/images/contents/map_blue.png") no-repeat 0 center;
+  background: url("../images/contents/map_blue.png") no-repeat 0 center;
 }
 .state_map .map_detail > ul > li > ul {
   padding: 7px 10px;
@@ -6421,7 +6484,7 @@ iframe {
   width: 7px;
   height: 7px;
   vertical-align: middle;
-  background: url("/mental_health_portfolio/images/contents/bul_all.png") no-repeat 0 -150px;
+  background: url("../images/contents/bul_all.png") no-repeat 0 -150px;
 }
 .state_map .map_detail > ul > li > ul > li:nth-child(2) > span:before {
   background-position: -10px -150px;
@@ -6450,7 +6513,7 @@ iframe {
 }
 .state_map .map_detail > ul.kangwon > li > p {
   padding: 0 30px 0 0;
-  background: url("/mental_health_portfolio/images/contents/map_red.png") no-repeat right center;
+  background: url("../images/contents/map_red.png") no-repeat right center;
 }
 .state_map .map_detail > ul.kangwon > li > ul {
   margin-left: 55px;
@@ -6487,7 +6550,7 @@ iframe {
   margin: 0;
   padding: 0 0 30px 0;
   text-align: center;
-  background: url("/mental_health_portfolio/images/contents/map_yell.png") no-repeat center bottom;
+  background: url("../images/contents/map_yell.png") no-repeat center bottom;
 }
 
 .state_map .map_detail > ul.kwangju > li:first-child {
@@ -6504,7 +6567,7 @@ iframe {
   margin-bottom: 0;
 }
 
-/* ?�문가 칼럼 */
+/* 전문가 칼럼 */
 .case_top {
   z-index: 2;
   position: absolute;
@@ -6564,7 +6627,7 @@ iframe {
   font-weight: 500;
   color: #2f4c6b;
   min-height: 76px;
-  background: url("/mental_health_portfolio/images/contents/mark.png") no-repeat 0 0;
+  background: url("../images/contents/mark.png") no-repeat 0 0;
 }
 .case_s_tit {
   margin: 0 auto 10px auto;
@@ -6591,7 +6654,7 @@ iframe {
   max-width: 100%;
 }
 
-/* ?��????�는 ?�보 */
+/* 도움이 되는 정보 */
 .help_step {
   margin-bottom: 20px;
 }
@@ -6604,7 +6667,7 @@ iframe {
   padding: 0 40px 0 0px;
   text-align: left;
   vertical-align: top;
-  background: url("/mental_health_portfolio/images/contents/arrow.png") no-repeat right 80px;
+  background: url("../images/contents/arrow.png") no-repeat right 80px;
 }
 .help_step > ul > li img {
   height: 210px !important;
@@ -6628,7 +6691,7 @@ iframe {
   padding-left: 10px;
 }
 
-/* 질환별정�??�세 */
+/* 질환별정보 상세 */
 /* tab */
 #tab_area {
   position: relative;
@@ -6663,9 +6726,9 @@ iframe {
   font-weight: 400;
   border: none;
 }
-/* 2020-11-30 ?�정 */
-/* .tab_tit a{display:block;width:100%;height:50px;line-height:48px;font-size:1.8rem;text-align:center;border:1px solid #aaa;background-color:#f3f3f3;} ??�� */
-/* .tab_tit.active a{color:#fff;border:1px solid #3e526a;background-color:#3e526a;} ??�� */
+/* 2020-11-30 수정 */
+/* .tab_tit a{display:block;width:100%;height:50px;line-height:48px;font-size:1.8rem;text-align:center;border:1px solid #aaa;background-color:#f3f3f3;} 삭제 */
+/* .tab_tit.active a{color:#fff;border:1px solid #3e526a;background-color:#3e526a;} 삭제 */
 .tab_tit a {
   display: block;
   width: 100%;
@@ -6699,7 +6762,7 @@ iframe {
   left: 75%;
 }
 
-/* 질환별정�? ?�신건강관?�기관 ?�트 */
+/* 질환별정보, 정신건강관련기관 폰트 */
 #tab_area.disease.num4 .box_sty06 {
   line-height: 1.8em;
 }
@@ -6717,7 +6780,7 @@ iframe {
   width: 31px;
   height: 19px;
   vertical-align: middle;
-  background: url("/mental_health_portfolio/images/contents/bul_all.png") no-repeat -50px -50px;
+  background: url("../images/contents/bul_all.png") no-repeat -50px -50px;
 }
 .disease h4 {
   margin-bottom: 30px;
@@ -6745,7 +6808,7 @@ iframe {
   width: 18px;
   height: 18px;
   vertical-align: middle;
-  background: url("/mental_health_portfolio/images/contents/bul_all.png") no-repeat -100px -50px;
+  background: url("../images/contents/bul_all.png") no-repeat -100px -50px;
 }
 
 .org_tit {
@@ -6785,7 +6848,7 @@ iframe {
   vertical-align: 5px;
 }
 
-/* 질환별정�?- ?�면?�애 */
+/* 질환별정보 - 수면장애 */
 .sleep_diagram {
   position: relative;
   width: 780px;
@@ -6794,7 +6857,7 @@ iframe {
 }
 .sleep_diagram > ul {
   padding-bottom: 60px;
-  background: url("/mental_health_portfolio/images/contents/dot.png") repeat-y 195px 0;
+  background: url("../images/contents/dot.png") repeat-y 195px 0;
 }
 .sleep_diagram > ul > li {
   margin-bottom: 30px;
@@ -6813,7 +6876,7 @@ iframe {
 .sleep_diagram > ul > li > div {
   padding-right: 60px;
   width: 450px;
-  background: url("/mental_health_portfolio/images/contents/dot.png") repeat-x 0 center;
+  background: url("../images/contents/dot.png") repeat-x 0 center;
 }
 .sleep_diagram > ul > li > div > p,
 .sleep_diagram > ul > li > p,
@@ -6845,7 +6908,7 @@ iframe {
 .sleep_diagram > div {
   padding: 40px 0 0 0px;
   text-align: left;
-  background: url("/mental_health_portfolio/images/contents/dot_line.png") no-repeat 60px 0;
+  background: url("../images/contents/dot_line.png") no-repeat 60px 0;
 }
 .sleep_diagram > div > dl {
   display: inline-block;
@@ -6859,7 +6922,7 @@ iframe {
   margin-left: 150px;
 }
 
-/* 마이?�이지 */
+/* 마이페이지 */
 .mypage_tab {
   margin-bottom: 50px;
 }
@@ -6908,7 +6971,7 @@ iframe {
   margin-top: 30px;
 }
 
-/* 콘텐�?보�???2020-12-07 추�? */
+/* 콘텐츠 보관함 2020-12-07 추가 */
 .storage_box {
   position: relative;
   overflow: hidden;
@@ -6933,7 +6996,7 @@ iframe {
   margin-right: 20px;
 }
 
-/* ?�신건강 콘텐�??�청?�보 ?�력 */
+/* 정신건강 콘텐츠 신청정보 입력 */
 .prosess_infoGraphic {
   position: relative;
   overflow: hidden;
@@ -7007,7 +7070,7 @@ iframe {
   display: none;
 }
 
-/* ?�디?????�이�?�?박스 */
+/* 에디트 내 테이블 및 박스 */
 .board_con table td,
 .board_con table th {
   border: 1px solid #e8e8e8;
@@ -7041,7 +7104,7 @@ iframe {
   max-width: 100%;
 }
 
-/* 2020-12-24 추�? */
+/* 2020-12-24 추가 */
 .agree-subTit {
   padding: 0 0 10px 0;
 }
@@ -7067,7 +7130,7 @@ iframe {
   padding: 0 0 10px 20px;
 }
 .agree-box > span:before {
-  content: "??;
+  content: "○";
   position: absolute;
   left: 0;
   top: 1px;
@@ -7108,7 +7171,7 @@ iframe {
   padding-left: 45px;
 }
 .agree-box .conBox .sample-txt span:before {
-  content: "[?�시]";
+  content: "[예시]";
   position: absolute;
   left: 0;
   top: 1px;
@@ -7117,7 +7180,7 @@ iframe {
   /*color:red;*/
 }
 
-/* ?�력 ??select */
+/* 달력 내 select */
 .ui-datepicker .ui-datepicker-title select {
   padding: 5px;
   height: auto;
@@ -7134,7 +7197,7 @@ iframe {
   font-size: 15px;
 }
 
-/* ?�업 모달 */
+/* 팝업 모달 */
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -7191,7 +7254,7 @@ iframe {
   margin: 0 auto 20px auto;
   width: 178px;
   height: 178px;
-  background: url("/mental_health_portfolio/images/contents/ico_all.png") no-repeat -400px -350px;
+  background: url("../images/contents/ico_all.png") no-repeat -400px -350px;
 }
 .sess_pop > span {
   display: block;
@@ -7232,13 +7295,13 @@ iframe {
   .sch_list .sch_tit > li > a {
     padding-top: 13px;
     font-size: 1.4rem;
-  } /*?�합검??/
+  } /*통합검색*/
 
   .disease_part > ul > li > a span {
     display: block;
   }
 
-  /* 극북?��? */
+  /* 극북사례 */
   .case_box {
     padding: 0px 50px;
     width: 80%;
@@ -7250,7 +7313,7 @@ iframe {
   .help_step > ul > li img {
     width: auto;
   }
-  /* 2020-11-30 추�? */
+  /* 2020-11-30 추가 */
   .self_boxBottom.faq {
     width: calc(100% - 20px);
   }
@@ -7486,7 +7549,7 @@ iframe {
     text-align: center;
   }
 
-  /* 2020-11-30 추�? */
+  /* 2020-11-30 추가 */
   .top_box.medi_info.new201201 {
     margin-bottom: 25px;
   }
@@ -7518,7 +7581,7 @@ iframe {
     width: auto !important;
     height: auto !important;
   }
-  /* 2020-11-30 추�? */
+  /* 2020-11-30 추가 */
   .research_detail .bind.ment input[type="button"] {
     width: 80px;
   }
@@ -7541,7 +7604,7 @@ iframe {
     height: auto !important;
   }
 
-  /* 마이?�이지 */
+  /* 마이페이지 */
   .mypage_tab {
     margin-bottom: 30px;
   }
@@ -7564,7 +7627,7 @@ iframe {
     letter-spacing: -0.06em;
   }
 
-  /* 콘텐�?보�???2020-12-07 추�? */
+  /* 콘텐츠 보관함 2020-12-07 추가 */
   .storage_box {
     padding: 20px 0 10px 0;
   }
@@ -7583,7 +7646,7 @@ iframe {
     border: 0;
   }
 
-  /* 만족??조사 */
+  /* 만족도 조사 */
   .satis_survey {
     padding: 30px;
   }
@@ -7616,7 +7679,7 @@ iframe {
     padding: 0 10px;
   }
 
-  /* ?�합검??*/
+  /* 통합검색 */
   .sch_section .sch_list,
   .sch_section .sch_aside {
     float: none;
@@ -7644,7 +7707,7 @@ iframe {
     border-right: none;
   }
 
-  /* ?�계게시??*/
+  /* 통계게시판 */
   .define > dl > dt {
     width: 180px;
   }
@@ -7666,7 +7729,7 @@ iframe {
     line-height: 1.5em;
     font-size: 1.8rem;
     text-align: left;
-    background: url("/mental_health_portfolio/images/contents/map_blue.png") no-repeat 0 center;
+    background: url("../images/contents/map_blue.png") no-repeat 0 center;
   }
   .state_map .total > div {
     padding-left: 0;
@@ -7734,7 +7797,7 @@ iframe {
     padding-top: 0;
   }
 
-  /* 극북?��? */
+  /* 극북사례 */
   .case_img,
   .case_txt,
   .case_tit,
@@ -7753,7 +7816,7 @@ iframe {
     padding: 0 50px 0 10px;
   }
 
-  /* 질환별정�?- ?�면?�애 */
+  /* 질환별정보 - 수면장애 */
   .sleep_diagram {
     width: 650px;
   }
@@ -7777,7 +7840,7 @@ iframe {
     padding: 25px 20px;
   }
 
-  /* 2020-11-30 추�? */
+  /* 2020-11-30 추가 */
   .accordi.faq > li .tit > a {
     overflow: overlay;
     padding: 15px 10px;
@@ -7841,8 +7904,8 @@ iframe {
     line-height: 34px;
   }
 
-  /* 2020-12-21 추�? */
-  /* ?�개?�림 - ?�사�?*/
+  /* 2020-12-21 추가 */
+  /* 소개알림 - 인사말 */
   .greeting-wr {
     flex-wrap: wrap;
     padding-top: 0;
@@ -7879,7 +7942,7 @@ iframe {
     text-align: left;
   }
 
-  /* ?�개?�림 - ?�털?�개 */
+  /* 소개알림 - 포털소개 */
   .portal-txtArea .pt-tit {
     font-size: 2.6rem;
   }
@@ -7949,7 +8012,7 @@ iframe {
     max-width: 636px;
   }
 
-  /* ?�개?�림 - 공정 */
+  /* 소개알림 - 공정 */
   .process-txtArea .pt-desc {
     font-size: 1.6rem;
   }
@@ -8001,7 +8064,7 @@ iframe {
     bottom: auto !important;
   }
 
-  /* ?�개?�림 - ?�용?�내 */
+  /* 소개알림 - 이용안내 */
   .info-inner {
     padding-bottom: 30px;
     margin-bottom: 30px;
@@ -8077,7 +8140,7 @@ iframe {
     margin: 10px 0 0 0;
   }
 
-  /* ?�업 - 모달 */
+  /* 팝업 - 모달 */
   .modal-content {
     left: 5%;
     width: 90%;
@@ -8234,7 +8297,7 @@ iframe {
     background-position: center 30px;
   }
 
-  /* 2020-12-24 추�? */
+  /* 2020-12-24 추가 */
   .medi-infoArea {
     padding: 20px;
   }
@@ -8382,7 +8445,7 @@ iframe {
     background-size: auto 68px;
   }
 
-  /* 2020-11-30 추�? */
+  /* 2020-11-30 추가 */
   .self_boxTop.faq > div {
     padding: 150px 20px 20px 20px;
     background-position: center 30px;
@@ -8414,7 +8477,7 @@ iframe {
     width: 36px;
     height: 36px;
     font-size: 0;
-    background: url("/mental_health_portfolio/images/contents/self_btn_down.png") no-repeat 0 0;
+    background: url("../images/contents/self_btn_down.png") no-repeat 0 0;
   }
 
   .self_list > li .on {
@@ -8425,7 +8488,7 @@ iframe {
   }
   .self_list > li .off {
     display: none;
-    background-image: url("/mental_health_portfolio/images/contents/self_btn_up.png");
+    background-image: url("../images/contents/self_btn_up.png");
   }
   .self_list > li .off.view {
     display: block;
@@ -8446,7 +8509,7 @@ iframe {
     width: 60px;
   }
 
-  /* 2020-11-30 추�? */
+  /* 2020-11-30 추가 */
   .boardT.applyT.fourHide.renew2012 th:nth-of-type(1),
   .boardT.applyT.fourHide.renew2012 td:nth-of-type(1) {
     width: 30px;
@@ -8636,7 +8699,7 @@ iframe {
     padding-right: 3%;
   }
 
-  /* 마이?�이지 */
+  /* 마이페이지 */
   .mypage_tab {
     display: -webkit-box;
     display: -moz-box;
@@ -8646,7 +8709,7 @@ iframe {
     flex-wrap: wrap;
   }
 
-  /* ?�합검??*/
+  /* 통합검색 */
   .result > ul > li > p {
     padding-right: 20px;
     width: 200px;
@@ -8663,7 +8726,7 @@ iframe {
     width: calc(100% - 200px);
   }
 
-  /* ?�계게시??*/
+  /* 통계게시판 */
   .state_con .state_box {
     padding: 15px;
   }
@@ -8687,7 +8750,7 @@ iframe {
     overflow-x: auto;
     border-right: 1px solid #bbb;
     border-left: 1px solid #bbb;
-    background: url("/mental_health_portfolio/images/contents/scroll_arrow.png") no-repeat center center;
+    background: url("../images/contents/scroll_arrow.png") no-repeat center center;
   }
   .state_scroll table {
     margin-bottom: 0;
@@ -8697,7 +8760,7 @@ iframe {
   .state_scroll table td:first-child {
     border-left: none;
   }
-  /* ?�영?�콘?�츠 YouTube iframe size */
+  /* 동영상콘텐츠 YouTube iframe size */
   iframe {
     border: none;
     overflow: hidden;
@@ -8719,7 +8782,7 @@ iframe {
     height: 100%;
   }
 
-  /* 극북?��? */
+  /* 극북사례 */
   .case_box {
     padding: 20px;
   }
@@ -8806,7 +8869,7 @@ iframe {
     display: block;
   }
 
-  /* 질환별정�?- ?�면?�애 */
+  /* 질환별정보 - 수면장애 */
   .sleep_diagram {
     width: 100%;
   }
@@ -8869,7 +8932,7 @@ iframe {
     min-height: 200px !important;
   }
 
-  /* ?��????�는 ?�보 - tab */
+  /* 도움이 되는 정보 - tab */
   .tab_page {
     margin-bottom: 40px;
   }
@@ -8911,7 +8974,7 @@ iframe {
     padding-bottom: 180px;
   }
 
-  /* ?�업 - 모달 */
+  /* 팝업 - 모달 */
   .modal-content .lineT colgroup {
     display: none;
   }
@@ -8968,7 +9031,7 @@ iframe {
 }
 
 @media screen and (max-width: 660px) {
-  /* ?��????�는 ?�보 */
+  /* 도움이 되는 정보 */
   .help_step {
     width: 300px;
     margin: 0 auto;
@@ -8978,14 +9041,14 @@ iframe {
     margin-bottom: 0px;
     padding: 10px 0px 50px 0px;
     text-align: center;
-    background: url("/mental_health_portfolio/images/contents/arrow2.png") no-repeat center bottom;
+    background: url("../images/contents/arrow2.png") no-repeat center bottom;
   }
   .help_step > ul > li dl {
     width: 100%;
     text-align: left;
   }
 
-  /* 2020-11-30 추�? */
+  /* 2020-11-30 추가 */
   .self_boxBottom.faq {
     min-height: 150px;
   }
@@ -9045,7 +9108,7 @@ iframe {
     font-size: 1.3rem;
   }
 
-  /* 2020-11-30 추�? */
+  /* 2020-11-30 추가 */
   .lineT.new201210 {
     margin-bottom: 15px;
   }
@@ -9085,7 +9148,7 @@ iframe {
     width: 100%;
   }
 
-  /* ?�신건강 콘텐�??�청?�보 ?�력 2020-12-10 추�? */
+  /* 정신건강 콘텐츠 신청정보 입력 2020-12-10 추가 */
   .prosess_infoGraphic {
     padding: 20px 0;
     margin-bottom: 30px;
@@ -9157,7 +9220,7 @@ iframe {
     width: calc(100% - 140px);
   }
 
-  /* ?��?기�? */
+  /* 유관기관 */
   .orga_list {
   }
   .orga_list > li {
@@ -9217,13 +9280,13 @@ iframe {
     flex-wrap: wrap;
   }
 
-  /* ?�업
+  /* 팝업
     .pop_con .lineT{width:100%;}
     .pop_con .lineT colgroup{display:table-column-group;}
     .pop_con .lineT th, .pop_con .lineT td{display:table-cell;width:auto;border-bottom:1px solid #ccc;}
     .pop_con .lineT th{padding:0px 15px 0 0;}
 
-	/* ?�계 */
+	/* 통계 */
   .intgra_schTop {
     padding: 30px 20px;
   }
@@ -9236,7 +9299,7 @@ iframe {
     left: auto;
     right: 0;
   }
-  /* ?�영?�콘?�츠 YouTube iframe size */
+  /* 동영상콘텐츠 YouTube iframe size */
   iframe {
     border: none;
     overflow: hidden;
@@ -9244,7 +9307,7 @@ iframe {
     height: auto;
   }
 
-  /* ?�합검??/
+  /* 통합검색*/
   .result > ul > li:after {
     content: "";
     display: block;
@@ -9300,7 +9363,7 @@ iframe {
 }
 
 @media screen and (max-width: 599px) {
-  /* ?�업 */
+  /* 팝업 */
   #pop .lineT colgroup {
     display: none;
   }
@@ -9420,7 +9483,7 @@ iframe {
     width: 15%;
   }
 
-  /* 버튼 �?select 기본 ?�렬*/
+  /* 버튼 및 select 기본 정렬*/
   select {
     width: 100%;
   }
@@ -9645,7 +9708,7 @@ iframe {
     text-align: left;
   }
 
-  /* 2020-11-30 faq ?�단 검??*/
+  /* 2020-11-30 faq 상단 검색 */
   .tbl_sch.faq {
     margin-bottom: 20px;
     padding: 20px;
@@ -9675,7 +9738,7 @@ iframe {
     width: 68px !important;
   }
 
-  /* 2020-11-30 추�? */
+  /* 2020-11-30 추가 */
   .tbl_hding.new201210 {
     overflow: hidden;
   }
@@ -9788,7 +9851,7 @@ iframe {
   .disease_part {
     display: none;
   }
-  /* 2020-11-30 추�? */
+  /* 2020-11-30 추가 */
   .disease_part.faq {
     display: block;
   }
@@ -9851,7 +9914,7 @@ iframe {
     right: 10px;
   }
 
-  /* ?�원가??*/
+  /* 회원가입 */
   .join_step > li {
     margin-bottom: 10px !important;
     width: 49%;
@@ -9863,7 +9926,7 @@ iframe {
     margin: 0 0 0 1%;
   }
 
-  /* ?�합검??*/
+  /* 통합검색 */
   .intgra_schTop .sch_input select {
     display: none;
   }
@@ -9896,7 +9959,7 @@ iframe {
     padding: 30px 20px;
   }
 
-  /* 2020-11-30 추�? */
+  /* 2020-11-30 추가 */
   .self_boxBottom.faq {
     min-height: 170px;
   }
@@ -9967,7 +10030,7 @@ iframe {
     padding: 20px;
     background-position: 20px 25px;
   }
-  /* 극북?��? */
+  /* 극북사례 */
   .case_box {
     padding: 10px;
     min-width: 210px;
@@ -10039,247 +10102,160 @@ iframe {
 }
 
 @media screen and (max-width:960px) {
-  /* 모바??GNB ?��? 로고 ?��?지 ?�기 ?�기 조정 */
+  /* 모바일 GNB 내부 로고 이미지 크기 크기 조정 */
   .gnb_nav #gnb ul li.th1 a img[src*="cmpn_logo.png"] {
-    width: 85px !important; /* ?�비�?85px�?강제 */
-    height: auto !important; /* 종횡�??��? */
-    max-width: 100% !important; /* 모바?�에???��?지가 컨테?�너 ?�비�?초과?��? ?�도�?보장 */
+    width: 85px !important; /* 너비를 85px로 강제 */
+    height: auto !important; /* 종횡비 유지 */
+    max-width: 100% !important; /* 모바일에서 이미지가 컨테이너 너비를 초과하지 않도록 보장 */
     margin-bottom: 4px !important;
   }
 }
 
-:root {
-  --popup-primary-color: #007bff;
-  --popup-background-color: #ffffff;
-  --popup-text-color: #333;
-  --popup-header-background: #f7f8f9;
-  --popup-border-color: #dee2e6;
-  --popup-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-}
+/* Source: popup.css */
+:root {
+  --popup-primary-color: #007bff;
+  --popup-background-color: #ffffff;
+  --popup-text-color: #333;
+  --popup-header-background: #f7f8f9;
+  --popup-border-color: #dee2e6;
+  --popup-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.popup-overlay:not(.hidden) {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup-card {
+  background: var(--popup-background-color);
+  border-radius: 12px;
+  box-shadow: var(--popup-shadow);
+  width: 90%;
+  max-width: 450px;
+  overflow: hidden;
+  transform: scale(0.95);
+  transition: transform 0.3s ease;
+}
+
+.popup-overlay:not(.hidden) .popup-card {
+  transform: scale(1);
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background: var(--popup-header-background);
+  border-bottom: 1px solid var(--popup-border-color);
+}
+
+.popup-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--popup-text-color);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.popup-title-icon {
+  color: var(--popup-primary-color);
+}
+
+.popup-close-icon {
+  background: none;
+  border: none;
+  font-size: 28px;
+  font-weight: 300;
+  color: #888;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+  transition: color 0.2s ease;
+}
+
+.popup-close-icon:hover {
+  color: #333;
+}
+
+.popup-body {
+  padding: 24px 20px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.popup-footer {
+  padding: 16px 20px;
+  background: var(--popup-header-background);
+  border-top: 1px solid var(--popup-border-color);
+  text-align: right;
+}
+
+.popup-confirm-btn {
+  background-color: var(--popup-primary-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.popup-confirm-btn:hover {
+  background-color: #0056b3;
+}
+
+.popup-confirm-btn:active {
+  transform: scale(0.98);
+}
 
-.popup-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 1000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
-}
 
-.popup-overlay:not(.hidden) {
-  opacity: 1;
-  visibility: visible;
-}
-
-.popup-card {
-  background: var(--popup-background-color);
-  border-radius: 12px;
-  box-shadow: var(--popup-shadow);
-  width: 90%;
-  max-width: 450px;
-  overflow: hidden;
-  transform: scale(0.95);
-  transition: transform 0.3s ease;
-}
-
-.popup-overlay:not(.hidden) .popup-card {
-  transform: scale(1);
-}
-
-.popup-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px 20px;
-  background: var(--popup-header-background);
-  border-bottom: 1px solid var(--popup-border-color);
-}
-
-.popup-title {
-  font-size: 18px;
-  font-weight: 600;
-  color: var(--popup-text-color);
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.popup-title-icon {
-  color: var(--popup-primary-color);
-}
-
-.popup-close-icon {
-  background: none;
-  border: none;
-  font-size: 28px;
-  font-weight: 300;
-  color: #888;
-  cursor: pointer;
-  padding: 0;
-  line-height: 1;
-  transition: color 0.2s ease;
-}
-
-.popup-close-icon:hover {
-  color: #333;
-}
-
-.popup-body {
-  padding: 24px 20px;
-  font-size: 16px;
-  line-height: 1.6;
-  color: #555;
-}
-
-.popup-footer {
-  padding: 16px 20px;
-  background: var(--popup-header-background);
-  border-top: 1px solid var(--popup-border-color);
-  text-align: right;
-}
-
-.popup-confirm-btn {
-  background-color: var(--popup-primary-color);
-  color: white;
-  border: none;
-  border-radius: 6px;
-  padding: 10px 24px;
-  font-size: 16px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background-color 0.2s ease, transform 0.1s ease;
-}
-
-.popup-confirm-btn:hover {
-  background-color: #0056b3;
-}
-
-.popup-confirm-btn:active {
-  transform: scale(0.98);
-}
+/* Source: inline_styles.css */
+
+
+/* index.html 내 인라인 스타일 외부화 */
+
+/* GNB 메뉴 위치 초기화 (데스크탑 및 태블릿 구간까지 확장) */
+@media screen and (min-width: 801px) {
+    .gnb_nav.gnb_pc, #gnb {
+        left: 0px;
+    }
+}
+
+/* 알림 팝업 텍스트 스타일 */
+.popup-body p.mt-10 {
+    margin-top: 10px !important;
+}
+
+.popup-body p.popup-note {
+    margin-top: 10px !important;
+    font-size: 0.9em !important;
+    color: #888 !important;
+}
+
+/* 뉴스 슬라이더 재생 버튼 초기 상태 */
+#playNews {
+    display: none !important;
+}
 
 
-/* Popup Styles */
-:root {
-  --popup-primary-color: #007bff;
-  --popup-background-color: #ffffff;
-  --popup-text-color: #333;
-  --popup-header-background: #f7f8f9;
-  --popup-border-color: #dee2e6;
-  --popup-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-}
-
-.popup-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 1000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
-}
-
-.popup-overlay:not(.hidden) {
-  opacity: 1;
-  visibility: visible;
-}
-
-.popup-card {
-  background: var(--popup-background-color);
-  border-radius: 12px;
-  box-shadow: var(--popup-shadow);
-  width: 90%;
-  max-width: 450px;
-  overflow: hidden;
-  transform: scale(0.95);
-  transition: transform 0.3s ease;
-}
-
-.popup-overlay:not(.hidden) .popup-card {
-  transform: scale(1);
-}
-
-.popup-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px 20px;
-  background: var(--popup-header-background);
-  border-bottom: 1px solid var(--popup-border-color);
-}
-
-.popup-title {
-  font-size: 18px;
-  font-weight: 600;
-  color: var(--popup-text-color);
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.popup-title-icon {
-  color: var(--popup-primary-color);
-}
-
-.popup-close-icon {
-  background: none;
-  border: none;
-  font-size: 28px;
-  font-weight: 300;
-  color: #888;
-  cursor: pointer;
-  padding: 0;
-  line-height: 1;
-  transition: color 0.2s ease;
-}
-
-.popup-close-icon:hover {
-  color: #333;
-}
-
-.popup-body {
-  padding: 24px 20px;
-  font-size: 16px;
-  line-height: 1.6;
-  color: #555;
-}
-
-.popup-footer {
-  padding: 16px 20px;
-  background: var(--popup-header-background);
-  border-top: 1px solid var(--popup-border-color);
-  text-align: right;
-}
-
-.popup-confirm-btn {
-  background-color: var(--popup-primary-color);
-  color: white;
-  border: none;
-  border-radius: 6px;
-  padding: 10px 24px;
-  font-size: 16px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background-color 0.2s ease, transform 0.1s ease;
-}
-
-.popup-confirm-btn:hover {
-  background-color: #0056b3;
-}
-
-.popup-confirm-btn:active {
-  transform: scale(0.98);
-}

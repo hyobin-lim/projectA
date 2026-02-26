@@ -48,6 +48,13 @@
     - **1단계 완료**: `index.html` 내의 모든 인라인 스타일(`style="..."`)을 `inline_styles.css`로 외부화 완료.
     - **이슈 해결**: CSS의 `!important` 규칙이 자바스크립트의 모바일 메뉴 애니메이션을 방해하는 문제를 미디어 쿼리(Media Query) 적용을 통해 해결함.
     - **검증**: PC/태블릿/모바일 전 구간에서 UI 및 GNB 동작 무결성 확인됨.
+
+## 2026-02-26 10:10:00
+- **계획**: Phase 2 - 인라인 스크립트 및 정적 호출(`javascript:void(0)`) 정규화.
+- **상태**: 완료.
+- **세부사항**:
+    - **정규화 완료**: `index.html` 내의 모든 `href="javascript:void(0);"`를 `href="#"`로 변경하여 HTML 구조를 순수하게 정규화함.
+    - **로직 이관**: `mental_health_portfolio/js/inline_scripts.js`에 공통 클릭 핸들러를 추가하여 `#` 링크 클릭 시 페이지 튐 현상 방지 및 기본 동작 차단 로직 구현.
+    - **연결 완료**: `index.html` 하단에 `inline_scripts.js`를 연결하여 외부 로직 분리 완료.
 - **다음 단계**: 
-    - 2단계: 인라인 이벤트 핸들러 및 숨겨진 스크립트를 `inline_scripts.js`로 분리.
-    - 3단계: 정규화된 개별 파일 기반 번들링 재구축.
+    - 3단계: 정규화된 개별 파일 기반 번들링 재구축 및 번들 에셋(`app.bundle.css`, `main.bundle.js` 등) 수정/검증.
